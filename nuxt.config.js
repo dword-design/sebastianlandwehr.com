@@ -20,11 +20,15 @@ export default {
     ],
     'nuxt-responsive-loader',
     ['@nuxtjs/google-gtag', { id: 'UA-77425155-1' }],
+    [
+      '@nuxtjs/recaptcha',
+      {
+        siteKey: process.env.RECAPTCHA_KEY,
+        version: 2,
+      },
+    ],
   ],
   name: appName,
-  optimizedImages: {
-    optimizeImages: true,
-  },
   router: {
     linkActiveClass: 'is-active',
   },

@@ -9,6 +9,12 @@ export default {
   }),
   methods: {
     async submit() {
+      try {
+        await this.$recaptcha.getResponse()
+      } catch (error) {
+        this.error = 'You have to fill in the captcha.'
+        return
+      }
       this.isLoading = true
       await this.$mail.send({
         from: this.email,
@@ -41,6 +47,9 @@ export default {
                 type="textarea"
                 v-model={this.message}
               />
+            </b-field>
+            <b-field>
+              <recaptcha />
             </b-field>
             <div class="buttons">
               <b-button
