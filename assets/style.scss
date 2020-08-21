@@ -1,4 +1,5 @@
 $fullhd-enabled: false;
+$widescreen-enabled: false;
 $body-size: 17px;
 $body-line-height: 1.8;
 $size-3: 2.25rem;
@@ -10,7 +11,6 @@ $section-padding-medium: 6rem 1.5rem;
 
 @import "~bulma/sass/utilities/_all";
 @import "@dword-design/nuxt-buefy/dist/style";
-@import "logo-list";
 
 .navbar-item img {
   max-height: 7rem;
