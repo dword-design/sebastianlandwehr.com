@@ -17,7 +17,7 @@ export default {
         tag="nuxt-server-link"
         to={{ name: 'index' }}
       >
-        <Logo aria-hidden="true" style={{ width: '22rem' }} />
+        <Logo aria-hidden="true" style={{ maxWidth: '22rem', width: '100%' }} />
       </b-navbar-item>
       <b-navbar-item slot="end" tag="div">
         <app-accounts />

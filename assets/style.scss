@@ -11,6 +11,17 @@ $section-padding-medium: 5rem 1.5rem;
 @import "~bulma/sass/utilities/_all";
 @import "@dword-design/nuxt-buefy/dist/style";
 
+body {
+  // fixes horizontal spacing bug on mobile
+  // https://stackoverflow.com/questions/49642824/bulma-columns-mobile-overflowing-body
+  overflow-x: hidden;
+}
+
+.navbar-item {
+  // otherwise the brand will overflow on mobile
+  flex-shrink: 1;
+}
+
 .boxlink::after {
   content: "";
   position: absolute;
