@@ -6,8 +6,8 @@ $size-3: 2.25rem;
 $size-7: 0.9rem;
 $mobile: 500px;
 $navbar-padding-vertical: 0.5rem;
-$hero-body-padding-medium: 6rem 1.5rem;
-$section-padding-medium: 6rem 1.5rem;
+$hero-body-padding-medium: 5rem 1.5rem;
+$section-padding-medium: 5rem 1.5rem;
 
 @import "~bulma/sass/utilities/_all";
 @import "@dword-design/nuxt-buefy/dist/style";
@@ -67,4 +67,8 @@ a.is-text {
       margin: 0.5rem;
     }
   }
+}
+
+.section.is-bordered {
+  border-bottom: 2px solid $background;
 }

@@ -1,5 +1,5 @@
 <script>
-import portraitUrl from '@/assets/portrait.jpg?resize&size=420'
+import portraitUrl from '@/assets/portrait.jpg'
 
 export default {
   head: {
@@ -7,10 +7,10 @@ export default {
   },
   render: () => (
     <div>
-      <section class="section is-medium">
+      <section class="section is-medium is-bordered">
         <div class="container">
           <div class="columns is-variable is-8">
-            <div class="column is-three-fifths">
+            <div class="column is-7">
               <div class="content">
                 <p>
                   I'm Sebastian Landwehr, a web developer from Bonn in Germany.
@@ -30,12 +30,18 @@ export default {
                   discussions, philosophy, psychology, and good movies.
                 </p>
               </div>
-              <app-libraries />
             </div>
-            <div class="column is-two-fifths">
-              <img alt="Portrait" src={portraitUrl} />
+            <div class="column is-5 is-4by5">
+              <figure class="image">
+                <img alt="Portrait" src={portraitUrl} />
+              </figure>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <app-libraries />
         </div>
       </section>
       <section class="hero is-light is-medium">

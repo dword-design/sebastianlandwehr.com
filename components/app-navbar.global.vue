@@ -11,13 +11,13 @@ export default {
       wrapper-class="container"
     >
       <b-navbar-item
+        aria-label={appName}
         class="is-size-5"
         slot="brand"
         tag="nuxt-server-link"
         to={{ name: 'index' }}
       >
-        <Logo aria-hidden="true" style={{ width: '20rem' }} />
-        <span class="is-sr-only">{appName}</span>
+        <Logo aria-hidden="true" style={{ width: '22rem' }} />
       </b-navbar-item>
       <b-navbar-item slot="end" tag="div">
         <app-accounts />

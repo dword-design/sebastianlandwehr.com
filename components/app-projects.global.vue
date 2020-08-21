@@ -71,7 +71,7 @@ export default {
     <div class="columns is-multiline is-centered">
       {projects
         |> map(project => (
-          <div class="column is-one-third">
+          <div class="column is-half">
             <article class="card is-hover-image" style={{ height: '100%' }}>
               <header class="card-image">
                 <figure class="image is-3by2">

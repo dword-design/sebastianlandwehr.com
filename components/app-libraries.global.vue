@@ -21,7 +21,7 @@ export default {
     <ul class="columns is-variable is-multiline is-vcentered is-8">
       {libraries
         |> map(library => (
-          <li class="column is-one-third">
+          <li class="column">
             <img alt={library.title} src={library.url} />
           </li>
         ))}
