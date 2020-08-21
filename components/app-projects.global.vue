@@ -1,14 +1,14 @@
 <script>
 import { map } from '@dword-design/functions'
 
-import crosswindMusicUrl from '@/assets/projects/crosswind-music.png?resize&size=467&format=jpg'
-import feedbutlerUrl from '@/assets/projects/feedbutler.png?resize&size=467&format=jpg'
-import flatoutFolkUrl from '@/assets/projects/flatout-folk.png?resize&size=467&format=jpg'
-import furtherAlongUrl from '@/assets/projects/furtheralong.png?resize&size=467&format=jpg'
-import myNpmStatsUrl from '@/assets/projects/my-npm-stats.png?resize&size=467&format=jpg'
-import sebastianLandwehrMusicUrl from '@/assets/projects/sebastianlandwehr-music.png?resize&size=467&format=jpg'
-import songs4lifeUrl from '@/assets/projects/songs4life.png?resize&size=467&format=jpg'
-import stoutUrl from '@/assets/projects/stout.png?resize&size=467&format=jpg'
+import crosswindMusicUrl from '@/assets/projects/crosswind-music.png'
+import feedbutlerUrl from '@/assets/projects/feedbutler.png'
+import flatoutFolkUrl from '@/assets/projects/flatout-folk.png'
+import furtherAlongUrl from '@/assets/projects/furtheralong.png'
+import myNpmStatsUrl from '@/assets/projects/my-npm-stats.png'
+import sebastianLandwehrMusicUrl from '@/assets/projects/sebastianlandwehr-music.png'
+import songs4lifeUrl from '@/assets/projects/songs4life.png'
+import stoutUrl from '@/assets/projects/stout.png'
 
 const projects = [
   {
@@ -68,13 +68,13 @@ const projects = [
 export default {
   functional: true,
   render: () => (
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-centered">
       {projects
         |> map(project => (
-          <div class="column is-half">
+          <div class="column is-one-third">
             <article class="card is-hover-image" style={{ height: '100%' }}>
               <header class="card-image">
-                <figure class="image is-4by3">
+                <figure class="image is-3by2">
                   <img aria-hidden="true" src={project.imageUrl} />
                 </figure>
               </header>
