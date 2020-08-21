@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dword-design/dword-design.de/compare/v1.0.1...v1.0.2) (2020-08-21)
+
+
+### Bug Fixes
+
+* fix images ([583d133](https://github.com/dword-design/dword-design.de/commit/583d13338082f1d1e67f5c9bc35fa42ec3a7bc44))
+
 ## [1.0.1](https://github.com/dword-design/dword-design.de/compare/v1.0.0...v1.0.1) (2020-08-21)
 
 
