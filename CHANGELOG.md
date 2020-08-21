@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/dword-design.de/compare/v1.0.3...v1.1.0) (2020-08-21)
+
+
+### Features
+
+* add google analytics ([a16b518](https://github.com/dword-design/dword-design.de/commit/a16b518b5adf227f0727429dcf0cfc0cbf824b04))
+
 ## [1.0.3](https://github.com/dword-design/dword-design.de/compare/v1.0.2...v1.0.3) (2020-08-21)
 
 
