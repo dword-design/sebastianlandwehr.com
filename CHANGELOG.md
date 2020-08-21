@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/dword-design/dword-design.de/compare/v1.2.0...v1.2.1) (2020-08-21)
+
+
+### Bug Fixes
+
+* fix contact form ([6115448](https://github.com/dword-design/dword-design.de/commit/6115448934570c8391fbb8282c70c9ad23f29db5))
+
 # [1.2.0](https://github.com/dword-design/dword-design.de/compare/v1.1.0...v1.2.0) (2020-08-21)
 
 
