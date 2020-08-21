@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/dword-design/dword-design.de/compare/v1.2.3...v1.2.4) (2020-08-21)
+
+
+### Bug Fixes
+
+* fix libraries size ([a06487b](https://github.com/dword-design/dword-design.de/commit/a06487bc2f438b27d1669249247c85ea2bf21786))
+
 ## [1.2.3](https://github.com/dword-design/dword-design.de/compare/v1.2.2...v1.2.3) (2020-08-21)
 
 
