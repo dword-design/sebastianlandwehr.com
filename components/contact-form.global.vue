@@ -4,6 +4,7 @@ import { appName } from '@/model/variables'
 export default {
   data: () => ({
     email: '',
+    error: '',
     isLoading: false,
     message: '',
   }),
@@ -26,19 +27,20 @@ export default {
       this.isLoading = false
       this.email = ''
       this.message = ''
+      this.error = ''
     },
   },
   render() {
     return (
-      <div class="container is-size-5">
+      <div class="container">
         <div class="columns is-centered">
           <form class="column is-two-thirds" v-on:submit_prevent={this.submit}>
             <h2 class="title">Any questions?</h2>
-            <div class="content">
+            <div class="content is-size-5">
               <p>I'm happily answer your questions and take your feedback!</p>
             </div>
             <b-field label="Email">
-              <b-input required type="text" v-model={this.email} />
+              <b-input required type="email" v-model={this.email} />
             </b-field>
             <b-field label="Message">
               <b-input
@@ -51,6 +53,11 @@ export default {
             <b-field>
               <recaptcha />
             </b-field>
+            {!!this.error && (
+              <b-field>
+                <b-notification type="is-danger">{this.error}</b-notification>
+              </b-field>
+            )}
             <div class="buttons">
               <b-button
                 loading={this.isLoading}
