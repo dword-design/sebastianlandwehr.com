@@ -19,7 +19,6 @@ jobs:
           PORT: ${{ secrets.PORT }}
           BASE_URL: ${{ secrets.BASE_URL }}
           MAIL_CONFIG: ${{ secrets.MAIL_CONFIG }}
-          RECAPTCHA_KEY: ${{ secrets.RECAPTCHA_KEY }}
       - if: github.ref == 'refs/heads/master'
         uses: webfactory/ssh-agent@v0.4.0
         with:

@@ -13,13 +13,6 @@ export default {
     '@dword-design/nuxt-server-link',
     ['nuxt-mail', { smtp: process.env.MAIL_CONFIG || '{}' |> JSON.parse }],
     [
-      '@nuxtjs/recaptcha',
-      {
-        siteKey: process.env.RECAPTCHA_KEY,
-        version: 2,
-      },
-    ],
-    [
       '@nuxtjs/sitemap',
       {
         hostname: process.env.BASE_URL,
@@ -28,11 +21,11 @@ export default {
     'nuxt-responsive-loader',
   ],
   name: appName,
+  optimizedImages: {
+    optimizeImages: true,
+  },
   router: {
     linkActiveClass: 'is-active',
   },
   title: appName,
-  optimizedImages: {
-    optimizeImages: true
-  },
 }
