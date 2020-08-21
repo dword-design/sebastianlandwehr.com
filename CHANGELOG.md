@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/dword-design/dword-design.de/compare/v1.0.0...v1.0.1) (2020-08-21)
+
+
+### Bug Fixes
+
+* add title ([53d9333](https://github.com/dword-design/dword-design.de/commit/53d93336ecba950af898f76ef69de4fcaf10bef4))
+
 # 1.0.0 (2020-08-21)
 
 
