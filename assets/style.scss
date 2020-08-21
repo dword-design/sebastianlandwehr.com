@@ -4,17 +4,12 @@ $body-size: 17px;
 $body-line-height: 1.8;
 $size-3: 2.25rem;
 $size-7: 0.9rem;
-$mobile: 500px;
 $navbar-padding-vertical: 0.5rem;
 $hero-body-padding-medium: 5rem 1.5rem;
 $section-padding-medium: 5rem 1.5rem;
 
 @import "~bulma/sass/utilities/_all";
 @import "@dword-design/nuxt-buefy/dist/style";
-
-.navbar-item img {
-  max-height: 7rem;
-}
 
 .boxlink::after {
   content: "";

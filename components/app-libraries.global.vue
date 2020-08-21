@@ -18,10 +18,10 @@ const libraries = [
 export default {
   functional: true,
   render: () => (
-    <ul class="columns is-variable is-multiline is-vcentered is-8">
+    <ul class="columns is-variable is-multiline is-centered is-vcentered is-8 is-mobile">
       {libraries
         |> map(library => (
-          <li class="column">
+          <li class="column is-half-mobile">
             <img alt={library.title} src={library.url} />
           </li>
         ))}
