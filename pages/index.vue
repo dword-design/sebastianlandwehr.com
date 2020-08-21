@@ -1,7 +1,10 @@
 <script>
-import portraitUrl from '@/assets/portrait.jpg?resize&size=353'
+import portraitUrl from '@/assets/portrait.jpg?resize&size=420'
 
 export default {
+  head: {
+    title: 'Sebastian Landwehr',
+  },
   render: () => (
     <div>
       <section class="section is-medium">
