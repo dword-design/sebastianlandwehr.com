@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/dword-design/dword-design.de/compare/v1.2.4...v1.2.5) (2020-08-21)
+
+
+### Bug Fixes
+
+* mobile fixes ([e40fed8](https://github.com/dword-design/dword-design.de/commit/e40fed8bd18ae06660deeef997896180ea13fd2e))
+
 ## [1.2.4](https://github.com/dword-design/dword-design.de/compare/v1.2.3...v1.2.4) (2020-08-21)
 
 
