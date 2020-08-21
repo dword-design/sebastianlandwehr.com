@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/dword-design/dword-design.de/compare/v1.2.1...v1.2.2) (2020-08-21)
+
+
+### Bug Fixes
+
+* change gtag id ([7b91112](https://github.com/dword-design/dword-design.de/commit/7b911126b55539a436c14187b6d44c4c64051a04))
+
 ## [1.2.1](https://github.com/dword-design/dword-design.de/compare/v1.2.0...v1.2.1) (2020-08-21)
 
 
