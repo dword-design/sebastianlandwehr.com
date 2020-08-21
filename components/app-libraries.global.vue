@@ -1,0 +1,31 @@
+<script>
+import { map } from '@dword-design/functions'
+
+import firebaseUrl from '@/assets/libraries/firebase.png'
+import nodejsUrl from '@/assets/libraries/nodejs.png'
+import npmUrl from '@/assets/libraries/npm.png'
+import nuxtUrl from '@/assets/libraries/nuxt.png'
+import vueUrl from '@/assets/libraries/vue.png'
+
+const libraries = [
+  { title: 'Nuxt.js', url: nuxtUrl },
+  { title: 'Vue.js', url: vueUrl },
+  { title: 'Node.js', url: nodejsUrl },
+  { title: 'NPM', url: npmUrl },
+  { title: 'Firebase', url: firebaseUrl },
+]
+
+export default {
+  functional: true,
+  render: () => (
+    <ul class="logo-list">
+      {libraries
+        |> map(library => (
+          <li>
+            <img alt={library.title} src={library.url} />
+          </li>
+        ))}
+    </ul>
+  ),
+}
+</script>

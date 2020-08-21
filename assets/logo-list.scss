@@ -1,0 +1,18 @@
+.logo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -1rem;
+
+  li {
+    @include tablet {
+      width: 100/3 + 0%;
+    }
+
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 20rem;
+    padding: 1rem;
+  }
+}
