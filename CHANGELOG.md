@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/dword-design/dword-design.de/compare/v1.1.0...v1.2.0) (2020-08-21)
+
+
+### Features
+
+* add captcha ([1123c10](https://github.com/dword-design/dword-design.de/commit/1123c10a3dd35e334380bac449fcb00e374feb02))
+
 # [1.1.0](https://github.com/dword-design/dword-design.de/compare/v1.0.3...v1.1.0) (2020-08-21)
 
 
