@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/dword-design/dword-design.de/compare/v1.0.2...v1.0.3) (2020-08-21)
+
+
+### Bug Fixes
+
+* refactoring ([53a2c86](https://github.com/dword-design/dword-design.de/commit/53a2c86c087f3395c26725f8e88115799ee3128c))
+
 ## [1.0.2](https://github.com/dword-design/dword-design.de/compare/v1.0.1...v1.0.2) (2020-08-21)
 
 
