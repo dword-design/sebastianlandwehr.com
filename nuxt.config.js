@@ -19,6 +19,7 @@ export default {
       },
     ],
     'nuxt-responsive-loader',
+    ['@nuxtjs/google-gtag', { id: 'UA-77425155-1' }],
   ],
   name: appName,
   optimizedImages: {

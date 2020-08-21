@@ -27,6 +27,7 @@
     "@dword-design/functions": "^1.1.3",
     "@dword-design/nuxt-buefy": "^1.0.5",
     "@dword-design/nuxt-server-link": "^1.0.1",
+    "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt-mail": "^1.0.0",
     "nuxt-responsive-loader": "dword-design/nuxt-responsive-loader#fork"
