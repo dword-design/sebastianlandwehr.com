@@ -37,7 +37,7 @@ export default {
           <form class="column is-two-thirds" v-on:submit_prevent={this.submit}>
             <h2 class="title">Any questions?</h2>
             <div class="content is-size-5">
-              <p>I'm happily answer your questions and take your feedback!</p>
+              <p>I'll happily answer your questions and take your feedback!</p>
             </div>
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
