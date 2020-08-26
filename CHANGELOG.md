@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/dword-design/dword-design.de/compare/v1.2.6...v1.2.7) (2020-08-26)
+
+
+### Bug Fixes
+
+* add paypal badge ([d380d86](https://github.com/dword-design/dword-design.de/commit/d380d86b7284dea10974158ec630dee5d28b60d3))
+
 ## [1.2.6](https://github.com/dword-design/dword-design.de/compare/v1.2.5...v1.2.6) (2020-08-23)
 
 
