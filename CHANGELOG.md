@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/dword-design/dword-design.de/compare/v1.2.8...v1.2.9) (2020-08-26)
+
+
+### Bug Fixes
+
+* update paypal button ([52b7237](https://github.com/dword-design/dword-design.de/commit/52b7237270ef697e66193b2d1cec55a3249e1860))
+
 ## [1.2.8](https://github.com/dword-design/dword-design.de/compare/v1.2.7...v1.2.8) (2020-08-26)
 
 
