@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/dword-design/dword-design.de/compare/v1.2.9...v1.2.10) (2020-08-26)
+
+
+### Bug Fixes
+
+* reset paypal image ([9f1a9f4](https://github.com/dword-design/dword-design.de/commit/9f1a9f44b2f2879bb88413707fc91f4485d8f48b))
+
 ## [1.2.9](https://github.com/dword-design/dword-design.de/compare/v1.2.8...v1.2.9) (2020-08-26)
 
 
