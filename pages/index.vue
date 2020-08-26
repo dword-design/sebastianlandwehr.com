@@ -10,7 +10,7 @@ export default {
       <section class="section is-medium is-bordered">
         <div class="container">
           <div class="columns is-variable is-8">
-            <div class="column is-7">
+            <div class="column is-three-fifths">
               <div class="content">
                 <p>
                   I'm Sebastian Landwehr, a web developer from Bonn in Germany.
@@ -31,7 +31,7 @@ export default {
                 </p>
               </div>
             </div>
-            <div class="column is-5 is-4by5">
+            <div class="column is-two-fifths is-4by5">
               <figure class="image">
                 <img alt="Portrait" src={portraitUrl} />
               </figure>

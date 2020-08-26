@@ -1,5 +1,5 @@
 $fullhd-enabled: false;
-$widescreen-enabled: false;
+//$widescreen-enabled: false;
 $body-size: 17px;
 $body-line-height: 1.8;
 $size-3: 2.25rem;
@@ -31,19 +31,8 @@ body {
   left: 0;
 }
 
-.card.is-hover-image {
-  .image {
-    overflow: hidden;
-  }
-
-  img {
-    transition: 0.3s all;
-    backface-visibility: hidden;
-  }
-
-  &:hover img {
-    transform: scale(1.1);
-  }
+.card-image {
+  border-bottom: 1px solid $border-light;
 }
 
 a.is-text {
@@ -77,4 +66,8 @@ a.is-text {
 
 .section.is-bordered {
   border-bottom: 2px solid $background;
+}
+
+.columns.is-variable.is-10 {
+  --columnGap: 2.5rem;
 }

@@ -1,10 +1,13 @@
 <script>
-import { map } from '@dword-design/functions'
+import { endent, map } from '@dword-design/functions'
 
+import accessibilityViewUrl from '@/assets/projects/accessibility-view.png'
 import crosswindMusicUrl from '@/assets/projects/crosswind-music.png'
 import feedbutlerUrl from '@/assets/projects/feedbutler.png'
 import flatoutFolkUrl from '@/assets/projects/flatout-folk.png'
 import furtherAlongUrl from '@/assets/projects/furtheralong.png'
+import githubRepositoryListBadgesUrl from '@/assets/projects/github-repository-list-badges.png'
+import githubSavedFiltersUrl from '@/assets/projects/github-saved-filters.png'
 import myNpmStatsUrl from '@/assets/projects/my-npm-stats.png'
 import sebastianLandwehrMusicUrl from '@/assets/projects/sebastianlandwehr-music.png'
 import songs4lifeUrl from '@/assets/projects/songs4life.png'
@@ -23,6 +26,39 @@ const projects = [
     imageUrl: myNpmStatsUrl,
     projectUrl: 'https://my-npm-stats.org',
     title: 'my-npm-stats',
+  },
+  {
+    description: endent`
+      Browser extension that converts an arbitrary website into its accessibility relevant form.<br/>
+      <a href="https://chrome.google.com/webstore/detail/accessibility-view/ekpmnemcmjcimpnmofmiaeoggjkjohjg" target="_blank">Chrome</a><br/>
+      <a href="https://addons.mozilla.org/de/firefox/addon/accessibility-view" target="_blank">Firefox</a>
+    `,
+    imageUrl: accessibilityViewUrl,
+    projectUrl:
+      'https://chrome.google.com/webstore/detail/accessibility-view/ekpmnemcmjcimpnmofmiaeoggjkjohjg',
+    title: 'Accessibility View',
+  },
+  {
+    description: endent`
+      Allows to save issue and pull request filters on GitHub and access them via the main menu.<br/>
+      <a href="https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de" target="_blank">Chrome</a><br/>
+      <a href="https://addons.mozilla.org/de/firefox/addon/github-saved-filters/" target="_blank">Firefox</a>
+    `,
+    imageUrl: githubSavedFiltersUrl,
+    projectUrl:
+      'https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de',
+    title: 'GitHub Saved Filters',
+  },
+  {
+    description: endent`
+      Displays badges in the GitHub repository list of a user.<br/>
+      <a href="https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba" target="_blank">Chrome</a><br/>
+      <a href="https://addons.mozilla.org/de/firefox/addon/github-repository-list-badges/" target="_blank">Firefox</a>
+    `,
+    imageUrl: githubRepositoryListBadgesUrl,
+    projectUrl:
+      'https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba',
+    title: 'GitHub Repository List Badges',
   },
   {
     description:
@@ -71,8 +107,8 @@ export default {
     <div class="columns is-multiline is-centered">
       {projects
         |> map(project => (
-          <div class="column is-half">
-            <article class="card is-hover-image" style={{ height: '100%' }}>
+          <div class="column is-one-third">
+            <article class="card" style={{ height: '100%' }}>
               <header class="card-image">
                 <figure class="image is-3by2">
                   <img aria-hidden="true" src={project.imageUrl} />
@@ -80,11 +116,11 @@ export default {
               </header>
               <main class="card-content is-size-7">
                 <h3 class="title is-5">
-                  <a class="boxlink" href={project.projectUrl} target="_blank">
+                  <a href={project.projectUrl} target="_blank">
                     {project.title}
                   </a>
                 </h3>
-                <p>{project.description}</p>
+                <div class="content" domPropsInnerHTML={project.description} />
               </main>
             </article>
           </div>

@@ -18,7 +18,7 @@ const libraries = [
 export default {
   functional: true,
   render: () => (
-    <ul class="columns is-variable is-multiline is-centered is-vcentered is-8 is-mobile">
+    <ul class="columns is-variable is-multiline is-centered is-vcentered is-10 is-mobile">
       {libraries
         |> map(library => (
           <li class="column is-half-mobile">
