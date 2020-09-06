@@ -16,7 +16,7 @@ const accounts = [
   {
     icon: 'twitter',
     title: 'Twitter',
-    url: 'https://twitter.com/DwordSebastian',
+    url: 'https://twitter.com/DwordDesign',
   },
   {
     icon: 'xing',
