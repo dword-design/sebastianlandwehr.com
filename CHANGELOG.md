@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/dword-design/dword-design.de/compare/v1.3.0...v1.3.1) (2020-09-30)
+
+
+### Bug Fixes
+
+* **config:** Update changed files ([1252dbd](https://github.com/dword-design/dword-design.de/commit/1252dbd30fa5724e61760e0e72b430906da4bb38))
+* trigger release ([b84d5d3](https://github.com/dword-design/dword-design.de/commit/b84d5d332d009502f45a55bdd371b0a0659b99f5))
+
 # [1.3.0](https://github.com/dword-design/dword-design.de/compare/v1.2.11...v1.3.0) (2020-08-26)
 
 
