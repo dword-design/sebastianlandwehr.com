@@ -8,11 +8,15 @@ import nuxtUrl from '@/assets/libraries/nuxt.png'
 import vueUrl from '@/assets/libraries/vue.png'
 
 const libraries = [
-  { title: 'Nuxt.js', url: nuxtUrl },
-  { title: 'Vue.js', url: vueUrl },
-  { title: 'Node.js', url: nodejsUrl },
-  { title: 'NPM', url: npmUrl },
-  { title: 'Firebase', url: firebaseUrl },
+  { imageUrl: nuxtUrl, title: 'Nuxt.js', websiteUrl: 'https://nuxtjs.org' },
+  { imageUrl: vueUrl, title: 'Vue.js', websiteUrl: 'https://vuejs.org' },
+  { imageUrl: nodejsUrl, title: 'Node.js', websiteUrl: 'https://nodejs.org' },
+  { imageUrl: npmUrl, title: 'npm', websiteUrl: 'https://www.npmjs.com' },
+  {
+    imageUrl: firebaseUrl,
+    title: 'Firebase',
+    websiteUrl: 'https://firebase.google.com',
+  },
 ]
 
 export default {
@@ -22,7 +26,9 @@ export default {
       {libraries
         |> map(library => (
           <li class="column is-half-mobile">
-            <img alt={library.title} src={library.url} />
+            <a href={library.websiteUrl} target="_blank">
+              <img alt={library.title} src={library.imageUrl} />
+            </a>
           </li>
         ))}
     </ul>
