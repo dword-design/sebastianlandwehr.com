@@ -1,4 +1,6 @@
 <script>
+import { endent } from '@dword-design/functions'
+
 import { appName } from '@/model/variables'
 
 export default {
@@ -20,7 +22,11 @@ export default {
       await this.$mail.send({
         from: this.email,
         subject: `${appName} Nachricht`,
-        text: this.message,
+        text: endent`
+          Von: ${this.email}
+
+          ${this.message}
+        `,
         to: 'info@dword-design.de',
       })
       this.$buefy.toast.open('Your message has been sent successfully.')
