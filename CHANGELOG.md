@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/dword-design/dword-design.de/compare/v1.3.1...v1.3.2) (2020-12-11)
+
+
+### Bug Fixes
+
+* add email address to contact form message ([420addf](https://github.com/dword-design/dword-design.de/commit/420addfc54cecd50e59cf67f1d422935005d7135))
+* add links to libraries ([657bad0](https://github.com/dword-design/dword-design.de/commit/657bad09bb6049e735265a0def2e5c0478704a00))
+* upgrades ([dbb217e](https://github.com/dword-design/dword-design.de/commit/dbb217e876f5b345ca58af9b989c276c97ab5323))
+
 ## [1.3.1](https://github.com/dword-design/dword-design.de/compare/v1.3.0...v1.3.1) (2020-09-30)
 
 
