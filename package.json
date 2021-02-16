@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "analyze": "base analyze",
-    "clean": "base clean",
+    "check-unknown-files": "base check-unknown-files",
     "commit": "base commit",
     "dev": "base dev",
     "lint": "base lint",
@@ -34,7 +34,7 @@
     "nuxt-responsive-loader": "dword-design/nuxt-responsive-loader#fork"
   },
   "devDependencies": {
-    "@dword-design/base": "^6.24.2",
+    "@dword-design/base": "^7.0.0",
     "@dword-design/base-config-app": "^1.5.7"
   },
   "publishConfig": {
