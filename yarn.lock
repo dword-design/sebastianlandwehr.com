@@ -1021,9 +1021,9 @@
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
 "@dword-design/babel-config@^1.0.0", "@dword-design/babel-config@^1.0.10", "@dword-design/babel-config@^1.0.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@dword-design/babel-config/-/babel-config-1.7.4.tgz#ffba0e1af2c71d636514062665ae3f31fcb52943"
-  integrity sha512-nky9ji/ZnmrQ8N1hS64P2GTzq1ATFLm13PX5515LxU7g1hqtTz+Aj6bMO8xSlowiSottUmorZ8eYVpXRWaLHvQ==
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/@dword-design/babel-config/-/babel-config-1.7.5.tgz#021675a7122947fab17242edc9e9130a4886187c"
+  integrity sha512-Mt1EnCwFZLYwo8NZZB/lyzLWJFHOLQ/zl52LkStdZBkqOBF3jNH2NktWVDJQnkX4cR6ORIYhDKcjjL8DrC2S5w==
   dependencies:
     "@babel/plugin-proposal-optional-chaining" "^7.6.0"
     "@babel/plugin-proposal-pipeline-operator" "^7.5.0"
@@ -1108,9 +1108,9 @@
     vue "^2.6.11"
 
 "@dword-design/base@^7.0.0":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-7.0.3.tgz#5088d806c68b2a26f05fab765b2b276d6e4720e8"
-  integrity sha512-LpZS6Yim1vB8fkgFpdWmfOO10BFNA5eHzJeite6VQY4Czx7j/zVUdzWlUzeH9LSiWZVgTfuA05c6lkYk3oCZdw==
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-7.0.4.tgz#38742e51605eda5d14c960a48970d110cfa8163a"
+  integrity sha512-IRe/sfvBmz/Sp8rxTF++C2LBaTcsgczFW2qnF2eivL9ln7T6wNv1idR/u++jS7AK+qvNwe7Z4pprO2UuO9RuCQ==
   dependencies:
     "@babel/core" "^7.6.4"
     "@babel/register" "^7.6.2"
@@ -1203,7 +1203,7 @@
     find-up "^5.0.0"
     fs-extra "^9.0.0"
 
-"@dword-design/eslint-config@^1.4.0", "@dword-design/eslint-config@^1.9.0":
+"@dword-design/eslint-config@^1.4.0":
   version "1.26.7"
   resolved "https://registry.yarnpkg.com/@dword-design/eslint-config/-/eslint-config-1.26.7.tgz#dcf6018efa13870503dfaf81b38c8d72f3e74f1e"
   integrity sha512-nOR2CYw2aUEoTFnf7pH9osm1mJsDb6QT5JshchZlEi7XkLE7aU9IUQelcqMY1HZH9L8hscdXNl+Bl6cJ8u4FZg==
@@ -1229,19 +1229,54 @@
     prettier "^2.1.1"
     vue-eslint-parser "^7.0.0"
 
+"@dword-design/eslint-config@^1.9.0":
+  version "1.26.8"
+  resolved "https://registry.yarnpkg.com/@dword-design/eslint-config/-/eslint-config-1.26.8.tgz#179e1327afbd6e3761dd6d2685956d0f6801834b"
+  integrity sha512-by5Ph3jv1ttGe62zAv/AvmB539QRVlBN+WHCTxDILYK+H72oNLRik3gKE9U4fVyqNd3mLqqGO7oWlxFFm2+VIQ==
+  dependencies:
+    "@dword-design/babel-config" "^1.0.0"
+    "@dword-design/eslint-plugin-import-alias" "^1.1.1"
+    "@dword-design/functions" "^2.2.2"
+    babel-eslint "^11.0.0-beta.0"
+    depcheck-package-name "^1.0.0"
+    eslint-config-airbnb-base "^14.2.1"
+    eslint-config-prettier "^7.0.0"
+    eslint-import-resolver-babel-module dword-design/eslint-import-resolver-babel-module#fork
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-json-format "^2.0.1"
+    eslint-plugin-prefer-arrow "^1.1.6"
+    eslint-plugin-prettier "^3.1.3"
+    eslint-plugin-promise "^4.2.1"
+    eslint-plugin-react "^7.20.0"
+    eslint-plugin-simple-import-sort "^5.0.3"
+    eslint-plugin-sort-keys-fix "^1.1.1"
+    eslint-plugin-vue "^7.0.0-alpha.6"
+    load-pkg "^4.0.0"
+    prettier "^2.1.1"
+    vue-eslint-parser "^7.0.0"
+
 "@dword-design/eslint-plugin-import-alias@^1.1.1":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@dword-design/eslint-plugin-import-alias/-/eslint-plugin-import-alias-1.4.5.tgz#24d82c0d5c8bb23f2012e49866cc4aafba200645"
-  integrity sha512-abImZ3vDJ0e2HoKjFSVAc3umUN/9cIUbyyPTogvypZKczMz2YUyFY2Nyh78QYW45zskDI6U4rUVQff4bt/ygRw==
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/@dword-design/eslint-plugin-import-alias/-/eslint-plugin-import-alias-1.4.6.tgz#582edef31f2011a8367001e7c55f3ece42efab67"
+  integrity sha512-jyyUidXFaswKLbm+qmAGtXpE8IAm2/wf5WTfwkt7F/4E3HB7TP2O3MD10LGc4oIEG8PZDvvKYfFpOgA4rEQYXQ==
   dependencies:
     "@babel/core" "^7.10.2"
     "@dword-design/functions" "^1.1.2"
     babel-plugin-module-resolver "^4.0.0"
 
-"@dword-design/functions@^1.1.0", "@dword-design/functions@^1.1.2", "@dword-design/functions@^1.1.3":
+"@dword-design/functions@^1.1.0", "@dword-design/functions@^1.1.3":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-1.1.5.tgz#0b39b7a15ed2b162641991c6950cca9844f4cd4e"
   integrity sha512-j/pqGY6PC/8ccXM+SMxekarpwsHsDPOUkia+Eu/28ZTx3FQ2mUDb0EEAmFj9OwEXIjVvU+F710Wh0fBB7/9eyg==
+  dependencies:
+    endent dword-design/endent#fork
+    lodash "^4.17.15"
+    tinycolor2 "^1.4.1"
+
+"@dword-design/functions@^1.1.2":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-1.1.6.tgz#6ea6707beb01d330681f66b2275882d47452e4ce"
+  integrity sha512-qar2Xywk8GMpx9IJTGg6A+6pswH/z9sTAFBQqDc1b7E/OwnXUwNO3Q4ELo/ZeLbJeXl5DDwvshYMcJfs2MZxDQ==
   dependencies:
     endent dword-design/endent#fork
     lodash "^4.17.15"
@@ -2644,7 +2679,7 @@
     "@vue/babel-sugar-v-model" "^1.2.3"
     "@vue/babel-sugar-v-on" "^1.2.3"
 
-"@vue/babel-preset-jsx@dword-design/jsx#fork-babel-preset-jsx":
+"@vue/babel-preset-jsx@github:dword-design/jsx#fork-babel-preset-jsx":
   version "1.1.2"
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/a73cb9961541a60a66b1b99a69a32e00bc66d336"
   dependencies:
@@ -3467,7 +3502,7 @@ babel-plugin-transform-imports@^2.0.0:
     "@babel/types" "^7.4"
     is-valid-path "^0.1.1"
 
-babel-plugin-wildcard@dword-design/babel-plugin-wildcard#fork:
+"babel-plugin-wildcard@github:dword-design/babel-plugin-wildcard#fork":
   version "6.0.0"
   resolved "https://codeload.github.com/dword-design/babel-plugin-wildcard/tar.gz/691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   dependencies:
@@ -5284,7 +5319,7 @@ debug@^3.0, debug@^3.1.0, debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
-debuglog@^1.0.1:
+debuglog@*, debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -5427,29 +5462,29 @@ delegates@^1.0.0:
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
 depcheck-detector-execa@^1.2.1:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-1.2.5.tgz#7601c422b0d3ea5ee9539d8f1fdf8a6282e6aa41"
-  integrity sha512-gYZW9dNwNuLnm3qfdxiEB3/wEGdibcggrKvrwO+ymqwgTxTFRzpvhiBl0gtqk+qm3EIuOveNe3jKyMu3D+PbMA==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/depcheck-detector-execa/-/depcheck-detector-execa-1.2.6.tgz#e2f385644a743d9d0d0330f76b7f40e631f204ce"
+  integrity sha512-Gal9ubFWVhgVGBgj2W5h8FtN1WhW65ev2Roefl2d39+3wi/mkim9k2JTEcS97Zw+SKtpi2h9+12UIOGd5/+BeA==
   dependencies:
     "@dword-design/functions" "^2.2.4"
     resolve-from "^5.0.0"
 
 depcheck-detector-package-name@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/depcheck-detector-package-name/-/depcheck-detector-package-name-1.0.0.tgz#a5a9f8f9456ce65e38cc56e6c67d493cc63c7f2b"
-  integrity sha512-nBheBvQe7H4ilPkfnp8oTUl6rL+iWqSbmKX0rHAWKOaqqM/X/3KkbFEBxQdpCS1WQsEWHl4uvQA2ts+INoYrdg==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/depcheck-detector-package-name/-/depcheck-detector-package-name-1.0.1.tgz#f159548d3a50b3a6f7cc35d5686104f0cd087987"
+  integrity sha512-R5hiZx8RZIB+KbBHq0vBXMeuc4cIGsyrLB/A2uB0Wq85rf1jMoVhzSSNV3fEcGpcuOhx2sfJZ3XjX5JflRiaKg==
 
 depcheck-package-name@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/depcheck-package-name/-/depcheck-package-name-1.0.0.tgz#dfd49da4d93fcde0bbd94024c6402e98c29f1768"
-  integrity sha512-waLEAV5jp0WdqgQoCN0G8SngRB5xmc4WRh6C9L0Bcn6Zk3884XJ6UWH6Cvd5ye5X9dMotkCDTUjUQ5sE+88X+Q==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/depcheck-package-name/-/depcheck-package-name-1.0.1.tgz#9cb5699a441b9084eb5d8db6cb6b16e9bcb69405"
+  integrity sha512-G9bfiyO0SZ6O0DkNoENZnclU7Wp12vySIsSOPY/htn9vOX++Rt4Px2IKieF9q+COqSUfp/8/f4CedO5hW0qE0g==
   dependencies:
     resolve-tagged-template "^1.0.0"
 
 depcheck-parser-babel@^1.2.0:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/depcheck-parser-babel/-/depcheck-parser-babel-1.2.6.tgz#781954c5ac09656255f6e89e97e475c40914ec3d"
-  integrity sha512-1j6mz5RLsrR6Ha/zTEgDAtsxgMSL010Eo+ZKvalbYHxOYuaaIaiLufysXJ9Bm065zF90eoIF9icrTbooHZPLLg==
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/depcheck-parser-babel/-/depcheck-parser-babel-1.2.7.tgz#d9152197d01e70b0b50846701b4aafd6a975b7a3"
+  integrity sha512-5foAP+cWj40ChmuHvOjlGbo3vSGcmPOx/8PfWYdtmRx3LPDDtz9DuvmHlZfjg4JDhfXywOmsf/nabkZh+vd1LQ==
   dependencies:
     "@babel/core" "^7.7.7"
     fs-extra "^9.0.0"
@@ -5815,7 +5850,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
-endent@dword-design/endent#fork:
+endent@dword-design/endent#fork, "endent@github:dword-design/endent#fork":
   version "1.4.0"
   resolved "https://codeload.github.com/dword-design/endent/tar.gz/be5433db67eaec07c6c9d00ba3bed2ed946dc664"
   dependencies:
@@ -6007,7 +6042,7 @@ eslint-config-prettier@^7.0.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.2.0.tgz#f4a4bd2832e810e8cc7c1411ec85b3e85c0c53f9"
   integrity sha512-rV4Qu0C3nfJKPOAhFujFxB7RMP+URFyQqqOZW9DMRD7ZDTFyjaIlETU3xzHELt++4ugC0+Jm084HQYkkJe+Ivg==
 
-eslint-import-resolver-babel-module@dword-design/eslint-import-resolver-babel-module#fork:
+eslint-import-resolver-babel-module@dword-design/eslint-import-resolver-babel-module#fork, "eslint-import-resolver-babel-module@github:dword-design/eslint-import-resolver-babel-module#fork":
   version "5.1.2"
   resolved "https://codeload.github.com/dword-design/eslint-import-resolver-babel-module/tar.gz/97550c5b7626a9cf582ea2392b9749702a27473d"
   dependencies:
@@ -7942,7 +7977,7 @@ import-lazy@^4.0.0:
   resolved "https://registry.yarnpkg.com/import-lazy/-/import-lazy-4.0.0.tgz#e8eb627483a0a43da3c03f3e35548be5cb0cc153"
   integrity sha512-rKtvo6a868b5Hu3heneU+L4yEQ4jYKLtjpnPeUdK7h0yzXGmyBTypknlkCvHFBqfX9YlorEiMM6Dnq/5atfHkw==
 
-imurmurhash@^0.1.4:
+imurmurhash@*, imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -9271,6 +9306,11 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
+lodash._baseindexof@*:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/lodash._baseindexof/-/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
+  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
+
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash._baseuniq/-/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -9279,10 +9319,32 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
+lodash._bindcallback@*:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
+
+lodash._cacheindexof@*:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/lodash._cacheindexof/-/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
+  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
+
+lodash._createcache@*:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/lodash._createcache/-/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
+  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
+  dependencies:
+    lodash._getnative "^3.0.0"
+
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash._createset/-/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
+
+lodash._getnative@*, lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -9343,6 +9405,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.restparam@*:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
+  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash.template@^4.5.0:
   version "4.5.0"
@@ -9477,7 +9544,15 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-make-cli@^1.0.16, make-cli@^1.0.4, make-cli@^1.0.9:
+make-cli@^1.0.16, make-cli@^1.0.9:
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/make-cli/-/make-cli-1.0.26.tgz#5fde2c8f42a4d16e40f96c9486bd6f2cd18aec8d"
+  integrity sha512-WsEEM5i+4HoxpVlPmLaaxSIGuMo7UIfl5JWkJXELnZtpmul5qBoBRINzacuQaC1T19+Wy+bTvfu2oqVd/wCTFQ==
+  dependencies:
+    "@dword-design/functions" "^2.2.2"
+    commander "^6.0.0"
+
+make-cli@^1.0.4:
   version "1.0.24"
   resolved "https://registry.yarnpkg.com/make-cli/-/make-cli-1.0.24.tgz#f0f8926954cd6460b7c3698aadfbad6e0ca7d6ff"
   integrity sha512-tWA4ks5BVl0BJ0AnhLJHSa1EFqU8LavK4sXPgwRl7naP9nojwq8oaJORdW7rNdtLULRDkP70ULAz++zA0JoTMg==
@@ -11005,10 +11080,18 @@ osenv@^0.1.4, osenv@^0.1.5:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-output-files@^1.1.10, output-files@^1.1.7:
+output-files@^1.1.10:
   version "1.1.19"
   resolved "https://registry.yarnpkg.com/output-files/-/output-files-1.1.19.tgz#475172cef7488e9bf4dd436cf9f142179df94a81"
   integrity sha512-cekYaoQ+QYyJls0CgEI0NQdKKyXxdFDA2VLptRN0GJik/Kqq/OlPhsQgpLV+7uXoEvKPwbyZ0TD3u2+xdHtpkQ==
+  dependencies:
+    "@dword-design/functions" "^2.2.2"
+    fs-extra "^9.0.0"
+
+output-files@^1.1.7:
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/output-files/-/output-files-1.1.20.tgz#78936102b245a564ac3ed6e18afe4a5612768ad4"
+  integrity sha512-l6u9rWngf4WX80K9UOBunWLJtWyJKcSJ20dDSkr95Fiys2FslrQYeU4ensRcy1HHbM7mBwnnxzzxZoAIv6nyeA==
   dependencies:
     "@dword-design/functions" "^2.2.2"
     fs-extra "^9.0.0"
