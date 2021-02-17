@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/dword-design/dword-design.de/compare/v1.3.3...v1.3.4) (2021-02-17)
+
+
+### Bug Fixes
+
+* update dependency @nuxtjs/recaptcha to v1 ([027968c](https://github.com/dword-design/dword-design.de/commit/027968cdf9b8b369802678df0dd46a16c1621ad6))
+
 ## [1.3.3](https://github.com/dword-design/dword-design.de/compare/v1.3.2...v1.3.3) (2021-02-17)
 
 
