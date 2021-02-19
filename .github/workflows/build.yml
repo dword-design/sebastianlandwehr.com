@@ -20,7 +20,7 @@ jobs:
           MAIL_CONFIG: ${{ secrets.MAIL_CONFIG }}
           RECAPTCHA_KEY: ${{ secrets.RECAPTCHA_KEY }}
       - run: yarn check-unknown-files
-      - uses: webfactory/ssh-agent@v0.4.1
+      - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - run: ssh-keyscan dword-design.de >> ~/.ssh/known_hosts
