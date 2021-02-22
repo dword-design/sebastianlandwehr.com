@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/dword-design/dword-design.de/compare/v1.3.4...v1.3.5) (2021-02-22)
+
+
+### Bug Fixes
+
+* convert index to vue template ([fc49c3d](https://github.com/dword-design/dword-design.de/commit/fc49c3dfb6c4d99be72a0bf73721c70366feb40f))
+
 ## [1.3.4](https://github.com/dword-design/dword-design.de/compare/v1.3.3...v1.3.4) (2021-02-17)
 
 
