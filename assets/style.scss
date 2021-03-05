@@ -71,3 +71,21 @@ a.is-text {
 .columns.is-variable.is-10 {
   --columnGap: 2.5rem;
 }
+
+.icon {
+  &.is-small {
+    height: 0.9rem;
+  }
+
+  path {
+    fill: currentColor !important;
+  }
+  .button & {
+    &,
+    &.is-small,
+    &.is-medium,
+    &.is-large {
+      height: 1em;
+    }
+  }
+}

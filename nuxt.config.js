@@ -8,6 +8,7 @@ export default {
       {
         css: false,
         defaultLinkTags: ['a', 'button', 'nuxt-server-link'],
+        materialDesignIcons: false,
       },
     ],
     '@dword-design/nuxt-server-link',

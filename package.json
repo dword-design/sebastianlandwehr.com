@@ -21,12 +21,14 @@
     "push": "base push",
     "setupDeploy": "base setupDeploy",
     "start": "base start",
-    "test": "base test"
+    "test": "base test",
+    "test:raw": "base test:raw"
   },
   "dependencies": {
     "@dword-design/functions": "^1.1.3",
     "@dword-design/nuxt-buefy": "^1.0.5",
     "@dword-design/nuxt-server-link": "^1.0.1",
+    "@mdi/svg": "^5.9.55",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/recaptcha": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
@@ -35,10 +37,18 @@
   },
   "devDependencies": {
     "@dword-design/base": "^7.0.0",
-    "@dword-design/base-config-app": "^1.5.7"
+    "@dword-design/base-config-app": "^1.5.7",
+    "@dword-design/base-config-nuxt": "^2.20.5",
+    "@dword-design/puppeteer": "^2.0.0",
+    "@dword-design/tester": "^1.1.1",
+    "@dword-design/tester-plugin-nuxt": "^1.0.1",
+    "@dword-design/tester-plugin-puppeteer": "^1.0.1"
   },
   "publishConfig": {
     "access": "public"
   },
-  "baseConfig": "@dword-design/app"
+  "baseConfig": {
+    "name": "@dword-design/app",
+    "testInContainer": true
+  }
 }
