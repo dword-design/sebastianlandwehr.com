@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/dword-design/dword-design.de/compare/v1.3.5...v1.3.6) (2021-03-05)
+
+
+### Bug Fixes
+
+* upgrades and write some tests ([f25d107](https://github.com/dword-design/dword-design.de/commit/f25d1073fa731212e48c45664d3e91c33497fe20))
+
 ## [1.3.5](https://github.com/dword-design/dword-design.de/compare/v1.3.4...v1.3.5) (2021-02-22)
 
 
