@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/dword-design/dword-design.de/compare/v1.3.6...v1.4.0) (2021-03-07)
+
+
+### Features
+
+* add blog ([#16](https://github.com/dword-design/dword-design.de/issues/16)) ([83b2f7d](https://github.com/dword-design/dword-design.de/commit/83b2f7d218b18aee1aeb317c7a1fc3d3191627cc))
+
 ## [1.3.6](https://github.com/dword-design/dword-design.de/compare/v1.3.5...v1.3.6) (2021-03-05)
 
 
