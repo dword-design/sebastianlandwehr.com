@@ -29,6 +29,7 @@
     "@dword-design/nuxt-buefy": "^1.0.5",
     "@dword-design/nuxt-server-link": "^1.0.1",
     "@mdi/svg": "^5.9.55",
+    "@nuxt/content": "^1.14.0",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/recaptcha": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",

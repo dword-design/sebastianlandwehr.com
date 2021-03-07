@@ -2,7 +2,6 @@
 import text from '@/assets/imprint.html'
 
 export default {
-  auth: false,
   head: {
     title: 'Imprint',
   },

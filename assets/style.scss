@@ -45,25 +45,6 @@ a.is-text {
   }
 }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: -0.25rem;
-
-  a {
-    margin: 0.25rem;
-  }
-
-  &.is-wide {
-    margin: -0.5rem;
-
-    a {
-      margin: 0.5rem;
-    }
-  }
-}
-
 .section.is-bordered {
   border-bottom: 2px solid $background;
 }
@@ -87,5 +68,45 @@ a.is-text {
     &.is-large {
       height: 1em;
     }
+  }
+}
+
+.nuxt-content {
+  /* h1 {
+    @extend .title;
+  }
+
+  h2 {
+    @extend .title;
+    @extend .is-size-4;
+  } */
+
+  .icon.icon-link {
+    width: auto;
+    height: auto;
+    margin-right: 0.25em;
+    color: $grey;
+
+    &::after {
+      content: "#";
+    }
+  }
+}
+
+.container {
+  &.is-content {
+    max-width: 740px;
+  }
+}
+
+.image.is-devto-banner {
+  padding-top: 42%;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
