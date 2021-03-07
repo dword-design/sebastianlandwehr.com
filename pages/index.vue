@@ -60,8 +60,5 @@ export default {
   computed: {
     portraitUrl: () => portraitUrl,
   },
-  head: {
-    title: 'Sebastian Landwehr',
-  },
 }
 </script>

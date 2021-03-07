@@ -6,7 +6,7 @@ import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 export default tester(
   {
     async init() {
-      await this.page.goto('http://localhost:3000')
+      await this.page.goto('http://localhost:3000/blog')
       await this.page.setViewport({
         height: 1,
         width: 1400,

@@ -1,3 +1,5 @@
+import { map } from '@dword-design/functions'
+
 import { appName } from './model/variables'
 
 export default {
@@ -17,6 +19,14 @@ export default {
       '@nuxtjs/sitemap',
       {
         hostname: process.env.BASE_URL,
+        routes: async () => {
+          const $content = require('@nuxt/content').$content
+          return (
+            $content('posts').fetch()
+            |> await
+            |> map(post => `blog/${post.slug}`)
+          )
+        },
       },
     ],
     'nuxt-responsive-loader',
@@ -28,10 +38,11 @@ export default {
         version: 2,
       },
     ],
+    '@nuxt/content',
   ],
   name: appName,
   router: {
     linkActiveClass: 'is-active',
   },
-  title: appName,
+  title: 'Sebastian Landwehr',
 }

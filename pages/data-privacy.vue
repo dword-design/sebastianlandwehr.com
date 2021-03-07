@@ -2,7 +2,6 @@
 import text from '@/assets/data-privacy.html'
 
 export default {
-  auth: false,
   head: {
     title: 'Data Privacy',
   },
