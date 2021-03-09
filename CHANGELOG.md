@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/dword-design/dword-design.de/compare/v1.4.2...v1.4.3) (2021-03-09)
+
+
+### Bug Fixes
+
+* add image snapshot testing blog post ([cd11511](https://github.com/dword-design/dword-design.de/commit/cd115110f1d2963a6f797ca5f22f52af148e155a))
+
 ## [1.4.2](https://github.com/dword-design/dword-design.de/compare/v1.4.1...v1.4.2) (2021-03-09)
 
 
