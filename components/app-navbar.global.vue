@@ -1,11 +1,14 @@
 <script>
 import { map } from '@dword-design/functions'
 import MdiDevTo from '@mdi/svg/svg/dev-to.svg'
+import MdiFacebook from '@mdi/svg/svg/facebook.svg'
 import MdiGitHub from '@mdi/svg/svg/github.svg'
 import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiNpm from '@mdi/svg/svg/npm.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
+import IconHashnode from '@/assets/icon-hashnode.svg'
+import IconMedium from '@/assets/icon-medium.svg'
 import Logo from '@/assets/logo.svg'
 import { appName } from '@/model/variables'
 
@@ -22,6 +25,23 @@ const accounts = [
     url: 'https://www.npmjs.com/~dword-design',
   },
   {
+    icon: MdiDevTo,
+    size: 'is-medium',
+    title: 'DEV Community Profile',
+    url: 'https://dev.to/dworddesign',
+  },
+  {
+    icon: IconHashnode,
+    size: 'is-small',
+    title: 'Hashnode',
+    url: 'https://dworddesign.hashnode.dev',
+  },
+  {
+    icon: IconMedium,
+    title: 'Medium',
+    url: 'https://dworddesign.medium.com',
+  },
+  {
     icon: MdiTwitter,
     title: 'Twitter',
     url: 'https://twitter.com/DwordDesign',
@@ -32,10 +52,9 @@ const accounts = [
     url: 'https://instagram.com/dword.design',
   },
   {
-    icon: MdiDevTo,
-    size: 'is-medium',
-    title: 'DEV Community Profile',
-    url: 'https://dev.to/dworddesign',
+    icon: MdiFacebook,
+    title: 'Facebook',
+    url: 'https://www.facebook.com/Dword-Design-101161921820497',
   },
 ]
 
