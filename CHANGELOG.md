@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/dword-design/dword-design.de/compare/v1.4.1...v1.4.2) (2021-03-09)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v3 ([db7da94](https://github.com/dword-design/dword-design.de/commit/db7da9447bfdfd00990e5b2481aa7c36d64cd180))
+
 ## [1.4.1](https://github.com/dword-design/dword-design.de/compare/v1.4.0...v1.4.1) (2021-03-09)
 
 
