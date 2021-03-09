@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/dword-design/dword-design.de/compare/v1.4.3...v1.4.4) (2021-03-09)
+
+
+### Bug Fixes
+
+* add accounts ([eeaebaf](https://github.com/dword-design/dword-design.de/commit/eeaebaf81996079c506b538d3ae031a69b7f3372))
+
 ## [1.4.3](https://github.com/dword-design/dword-design.de/compare/v1.4.2...v1.4.3) (2021-03-09)
 
 
