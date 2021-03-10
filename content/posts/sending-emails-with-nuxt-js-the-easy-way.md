@@ -81,3 +81,5 @@ That's basically it, I hope that this is of use for some of you.
 ## Final Thoughts
 
 You can use the module to easily setup email sending capabilities. If you plan to build a bigger SaaS that sends a lot of emails, an async solution that does the sending via a cronjob or via server-side hooks is probably a better idea. But for a first-off solution, it should work fine.
+
+**If you like what I'm doing, follow me on [Twitter](https://twitter.com/DwordDesign). I'm blogging all about web development and interesting topics that come to my mind.**

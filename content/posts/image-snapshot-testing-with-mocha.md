@@ -38,3 +38,5 @@ You can have a look at the code in case you are interested in how it works. It i
 ## Conclusion
 
 That was my guide to image snapshot testing with Mocha. If you like [expect-mocha-image-snapshot](https://github.com/dword-design/expect-mocha-image-snapshot), you can support me by putting a star on GitHub. Also, let me know what you think about it.
+
+**If you like what I'm doing, follow me on [Twitter](https://twitter.com/DwordDesign). I'm blogging all about web development and interesting topics that come to my mind.**
