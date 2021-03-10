@@ -1,3 +1,11 @@
+## [1.4.5](https://github.com/dword-design/dword-design.de/compare/v1.4.4...v1.4.5) (2021-03-10)
+
+
+### Bug Fixes
+
+* add blog footers ([06eecd4](https://github.com/dword-design/dword-design.de/commit/06eecd4bfc5b666f5cd00c508abf47d84c0cf842))
+* add blog post ([6bb77b6](https://github.com/dword-design/dword-design.de/commit/6bb77b66d87371898bc34940fcd27c3f83530b0e))
+
 ## [1.4.4](https://github.com/dword-design/dword-design.de/compare/v1.4.3...v1.4.4) (2021-03-09)
 
 
