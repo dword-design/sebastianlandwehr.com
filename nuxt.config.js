@@ -5,7 +5,7 @@ import { appName } from './model/variables'
 
 export default {
   css: ['@/assets/style.scss'],
-  hooks: nuxtContentHooksGit,
+  hooks: nuxtContentHooksGit(),
   modules: [
     [
       '@dword-design/nuxt-buefy',
