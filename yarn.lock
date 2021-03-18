@@ -1160,9 +1160,9 @@
     vue "^2.6.11"
 
 "@dword-design/base@^7.0.0":
-  version "7.8.4"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-7.8.4.tgz#dae663d18279972e34b404fc0076fa80128387a0"
-  integrity sha512-IE6fpXeQHTzpEysVeuaqQcD/uJ0iyc72J7tcEYAA7qyufbzETB1HdJMyKp5Cq3kVsYCVbzTxapRxu69L3P2QnQ==
+  version "7.8.5"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-7.8.5.tgz#66231840f14b67be34e28533cb59a593ae76ce0b"
+  integrity sha512-iVYi11TfU0x1dN9LxAeiZhryWkO/NJ892fwtu6VgSSdFtIE38Eoh+ZSVL1mMwC5gxKwJVMS4cpksMr/APpXlZg==
   dependencies:
     "@babel/core" "^7.6.4"
     "@babel/register" "^7.6.2"
