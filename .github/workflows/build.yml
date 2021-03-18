@@ -8,6 +8,7 @@ jobs:
         uses: rokroskar/workflow-run-cleanup-action@v0.3.2
       - uses: actions/checkout@v2
         with:
+          fetch-depth: 0
           lfs: true
       - uses: actions/setup-node@v2
         with:
