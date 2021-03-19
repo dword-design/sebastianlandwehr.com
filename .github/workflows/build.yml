@@ -26,7 +26,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           path: "**/__image_snapshots__/__diff_output__"
-      - run: yarn check-unknown-files
+      - run: yarn checkUnknownFiles
       - uses: codecov/codecov-action@v1
         with:
           fail_ci_if_error: true

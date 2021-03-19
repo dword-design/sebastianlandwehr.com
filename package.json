@@ -12,10 +12,11 @@
   ],
   "scripts": {
     "analyze": "base analyze",
-    "check-unknown-files": "base check-unknown-files",
+    "checkUnknownFiles": "base checkUnknownFiles",
     "commit": "base commit",
     "dev": "base dev",
     "lint": "base lint",
+    "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
     "pull": "base pull",
     "push": "base push",

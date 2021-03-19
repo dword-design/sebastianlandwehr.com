@@ -1160,9 +1160,9 @@
     vue "^2.6.11"
 
 "@dword-design/base@^7.0.0":
-  version "7.9.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-7.9.1.tgz#a9c14814fc277ad0f7ed744e655022616fddb021"
-  integrity sha512-Xybucxw3oqlDU8fA5nhoGbnP8A5tICF4mAyjk14p39C1wQ06gR29xxhFvypCgfh81m0FNOE4/8UOO7iOWivCXQ==
+  version "7.9.4"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-7.9.4.tgz#19990d3ff0934d0491859e7cf6bdc0d60a9ceaec"
+  integrity sha512-TStUREtQ4bUSe76q18ROwST1bz1Klms8PG3+BxG6v5eT5c9GZapmxlvyCWcXQzLprA+sBID9PAsTY8VtFoQieQ==
   dependencies:
     "@babel/core" "^7.6.4"
     "@babel/register" "^7.6.2"
@@ -1192,7 +1192,7 @@
     fs-extra "^9.0.0"
     get-projectz-readme-section-regex "^2.0.0"
     globby "^11.0.1"
-    hosted-git-info "^3.0.2"
+    hosted-git-info "^4.0.0"
     husky "^4.2.5"
     ignore "^5.1.4"
     import-cwd "^3.0.0"
@@ -8350,7 +8350,7 @@ hosted-git-info@^2.1.4, hosted-git-info@^2.7.1, hosted-git-info@^2.8.8:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
-hosted-git-info@^3.0.2, hosted-git-info@^3.0.8:
+hosted-git-info@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.8.tgz#6e35d4cc87af2c5f816e4cb9ce350ba87a3f370d"
   integrity sha512-aXpmwoOhRBrw6X3j0h5RloK4x1OzsxMPyxqIHyNfSe2pypkVTZFpEiRoSipPEPlMrh0HW/XsjkJ5WgnCirpNUw==
