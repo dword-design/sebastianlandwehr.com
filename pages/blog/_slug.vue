@@ -24,6 +24,13 @@ export default {
             />
           </figure>
           <h1 class="title">{this.post.title}</h1>
+          <div class="subtitle is-size-6">
+            {new Date(this.post.createdAt).toLocaleDateString('en', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            })}
+          </div>
           <nuxt-content class="content" document={this.post} />
         </article>
       </section>
