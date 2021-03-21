@@ -33,7 +33,7 @@ export default {
   ],
 }
 ```
-Note that you probably should pass the credentials or the whole config via environment variables (e.g. via [dotenv](https://www.npmjs.com/package/dotenv)). Also note that you can only use the module in universal mode. It will not work for static sites (via `nuxt generate`) because the server middleware does not exist.
+Note that you probably should pass the credentials or the whole config via environment variables (e.g. via [dotenv](https://www.npmjs.com/package/dotenv)). Also note that you can only use the module in universal mode. It will not work for static sites (via `nuxt generate`), because the server middleware does not exist.
 
 And there we go! Now we can implement ourselves a contact form page and send emails:
 
