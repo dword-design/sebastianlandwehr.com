@@ -1,3 +1,11 @@
+## [1.4.9](https://github.com/dword-design/dword-design.de/compare/v1.4.8...v1.4.9) (2021-03-23)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v3 ([#27](https://github.com/dword-design/dword-design.de/issues/27)) ([1e1895a](https://github.com/dword-design/dword-design.de/commit/1e1895ae320fb3f0e38532b6e30c5f85923a73ae))
+* update dependency @dword-design/tester-plugin-puppeteer to v2 ([#26](https://github.com/dword-design/dword-design.de/issues/26)) ([78986c4](https://github.com/dword-design/dword-design.de/commit/78986c45a0189a230840e18ecfdc66ef8ae9fb23))
+
 ## [1.4.8](https://github.com/dword-design/dword-design.de/compare/v1.4.7...v1.4.8) (2021-03-22)
 
 
