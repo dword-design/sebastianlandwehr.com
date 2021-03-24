@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/dword-design/dword-design.de/compare/v1.4.9...v1.4.10) (2021-03-24)
+
+
+### Bug Fixes
+
+* update nuxt-mail blog post ([0b695f8](https://github.com/dword-design/dword-design.de/commit/0b695f81050dcfe075531504c629338e70220a67))
+
 ## [1.4.9](https://github.com/dword-design/dword-design.de/compare/v1.4.8...v1.4.9) (2021-03-23)
 
 
