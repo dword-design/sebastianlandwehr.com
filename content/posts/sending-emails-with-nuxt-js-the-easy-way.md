@@ -6,11 +6,11 @@ title: Sending Emails with Nuxt.js the Easy Way
 
 When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
 
-That is why I wrote [nuxt-mail](https://www.npmjs.com/package/nuxt-mail), a Nuxt.js module that adds a `/mail/send` route to the server and injects a `$mail` variable that wraps the API call.
+That is why I wrote [nuxt-mail](https://github.com/dword-design/nuxt-mail), a Nuxt.js module that adds a `/mail/send` route to the server and injects a `$mail` variable that wraps the API call.
 
 ## Usage
 
-You start by installing the module and [@nuxtjs/axios](https://www.npmjs.com/package/@nuxtjs/axios) via `npm install nuxt-mail @nuxtjs/axios` or `yarn add nuxt-mail @nuxtjs/axios`.
+You start by installing the module and [@nuxtjs/axios](https://github.com/axios/axios) via `npm install nuxt-mail @nuxtjs/axios` or `yarn add nuxt-mail @nuxtjs/axios`.
 
 `@nuxtjs/axios` is important here because it allows the module to do the REST call.
 
@@ -33,7 +33,7 @@ export default {
   ],
 }
 ```
-Note that you probably should pass the credentials or the whole config via environment variables (e.g. via [dotenv](https://www.npmjs.com/package/dotenv)). Also note that you can only use the module in universal mode. It will not work for static sites (via `nuxt generate`), because the server middleware does not exist.
+Note that you probably should pass the credentials or the whole config via environment variables (e.g. via [dotenv](https://github.com/motdotla/dotenv)). Also note that you can only use the module in universal mode. It will not work for static sites (via `nuxt generate`), because the server middleware does not exist.
 
 And there we go! Now we can implement ourselves a contact form page and send emails:
 
