@@ -1,3 +1,10 @@
+## [1.4.11](https://github.com/dword-design/dword-design.de/compare/v1.4.10...v1.4.11) (2021-03-25)
+
+
+### Bug Fixes
+
+* show recaptcha in snapshots ([#28](https://github.com/dword-design/dword-design.de/issues/28)) ([29b5cde](https://github.com/dword-design/dword-design.de/commit/29b5cded4976261c4a4547ca2b253933754f9d2e))
+
 ## [1.4.10](https://github.com/dword-design/dword-design.de/compare/v1.4.9...v1.4.10) (2021-03-24)
 
 
