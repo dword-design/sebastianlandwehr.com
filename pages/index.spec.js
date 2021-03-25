@@ -8,7 +8,7 @@ export default tester(
     async init() {
       await this.page.goto('http://localhost:3000')
       await this.page.setViewport({
-        height: 1,
+        height: 4000,
         width: 1400,
       })
       const screenshot = await this.page.screenshot({ fullPage: true })
