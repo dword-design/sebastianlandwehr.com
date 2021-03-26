@@ -114,14 +114,14 @@ export default {
                   <img aria-hidden="true" src={project.imageUrl} />
                 </figure>
               </header>
-              <main class="card-content is-size-7">
+              <section class="card-content is-size-7">
                 <h3 class="title is-5">
                   <a href={project.projectUrl} target="_blank">
                     {project.title}
                   </a>
                 </h3>
                 <div class="content" domPropsInnerHTML={project.description} />
-              </main>
+              </section>
             </article>
           </div>
         ))}

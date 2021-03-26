@@ -14,7 +14,7 @@ export default {
   },
   render() {
     return (
-      <section class="section">
+      <main class="section">
         <article class="container">
           <h1 class="title">Blog</h1>
           <ul>
@@ -45,7 +45,7 @@ export default {
               ))}
           </ul>
         </article>
-      </section>
+      </main>
     )
   },
 }

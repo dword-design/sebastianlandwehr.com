@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <section class="section is-medium is-bordered">
       <div class="container">
         <div class="columns is-variable is-8">
@@ -50,7 +50,7 @@
         <contact-form />
       </div>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>

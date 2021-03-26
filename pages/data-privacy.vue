@@ -6,7 +6,7 @@ export default {
     title: 'Data Privacy',
   },
   render: () => (
-    <section class="section">
+    <main class="section">
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-9">
@@ -14,7 +14,7 @@ export default {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   ),
 }
 </script>
