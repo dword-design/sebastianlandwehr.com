@@ -15,7 +15,7 @@ export default {
   },
   render() {
     return (
-      <section class="section">
+      <main class="section">
         <article class="container is-content">
           <figure class="image is-devto-banner mb-5">
             <img
@@ -33,7 +33,7 @@ export default {
           </div>
           <nuxt-content class="content" document={this.post} />
         </article>
-      </section>
+      </main>
     )
   },
 }
