@@ -1,3 +1,10 @@
+## [1.4.12](https://github.com/dword-design/dword-design.de/compare/v1.4.11...v1.4.12) (2021-03-26)
+
+
+### Bug Fixes
+
+* semantic elements ([#29](https://github.com/dword-design/dword-design.de/issues/29)) ([11fffc4](https://github.com/dword-design/dword-design.de/commit/11fffc40cf6f982d08222ed95a078a77c8b27d9b))
+
 ## [1.4.11](https://github.com/dword-design/dword-design.de/compare/v1.4.10...v1.4.11) (2021-03-25)
 
 
