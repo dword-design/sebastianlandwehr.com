@@ -16,7 +16,13 @@ export default {
       },
     ],
     '@dword-design/nuxt-server-link',
-    ['nuxt-mail', { smtp: process.env.MAIL_CONFIG || '{}' |> JSON.parse }],
+    [
+      'nuxt-mail',
+      {
+        message: { to: 'info@dword-design.de' },
+        smtp: process.env.MAIL_CONFIG || '{}' |> JSON.parse,
+      },
+    ],
     [
       '@nuxtjs/sitemap',
       {

@@ -27,7 +27,6 @@ export default {
 
           ${this.message}
         `,
-        to: 'info@dword-design.de',
       })
       this.$buefy.toast.open('Your message has been sent successfully.')
       this.isLoading = false

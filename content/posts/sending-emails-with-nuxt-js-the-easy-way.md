@@ -14,13 +14,16 @@ You start by installing the module and [@nuxtjs/axios](https://github.com/axios/
 
 `@nuxtjs/axios` is important here because it allows the module to do the REST call.
 
-Then you add `@nuxtjs/axios` and `nuxt-mail` to your `nuxt.config.js` file. We also have to pass the SMPT settings that should internally be used by `nodemailer`:
+Then you add `@nuxtjs/axios` and `nuxt-mail` to your `nuxt.config.js` file. We have to pass the SMPT settings that should internally be used by `nodemailer`. We also configure the recipients here for security reasons. This way, a client cannot send emails to arbitrary recipients from your SMTP server. You can actually preconfigure the messages here in case you always want to give them the same title, from address or something.
 
 ```js
 export default {
   modules: [
     '@nuxtjs/axios',
     ['nuxt-mail', {
+      message: {
+        to: 'me@gmail.com',
+      },
       smtp: {
         host: 'smtp.mailtrap.io',
         port: 2525,
@@ -33,7 +36,7 @@ export default {
   ],
 }
 ```
-Note that you probably should pass the credentials or the whole config via environment variables (e.g. via [dotenv](https://github.com/motdotla/dotenv)). Also note that you can only use the module in universal mode. It will not work for static sites (via `nuxt generate`), because the server middleware does not exist.
+Note that you probably should pass the credentials or the whole config via environment variables (e.g. via [dotenv](https://github.com/motdotla/dotenv)). Also note that you cannot use this module for static sites (via `nuxt generate`), because the server middleware does not exist.
 
 And there we go! Now we can implement ourselves a contact form page and send emails:
 
@@ -66,7 +69,6 @@ export default {
         from: this.email,
         subject: 'Contact form message',
         text: this.message,
-        to: 'me@gmail.com',
       })
     }
   }
