@@ -1,3 +1,10 @@
+## [1.4.14](https://github.com/dword-design/dword-design.de/compare/v1.4.13...v1.4.14) (2021-04-02)
+
+
+### Bug Fixes
+
+* update nuxt-mail post ([7ced746](https://github.com/dword-design/dword-design.de/commit/7ced746a836b6eca06447523d98ff0359e9579d8))
+
 ## [1.4.13](https://github.com/dword-design/dword-design.de/compare/v1.4.12...v1.4.13) (2021-03-28)
 
 
