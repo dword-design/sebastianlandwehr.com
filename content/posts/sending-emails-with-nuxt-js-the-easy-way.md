@@ -78,6 +78,47 @@ export default {
 
 When you hit the `Send` button now, you should receive an email into your inbox!
 
+## Multiple Message Configs
+
+It is also possible to provide multiple message configurations by changing the `message` config into an array.
+
+```js
+export default {
+  modules: [
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: [
+        { name: 'contact', to: 'contact@foo.de' },
+        { name: 'support', to: 'support@foo.de' },
+      ],
+      ...
+    }],
+  ],
+}
+```
+
+Then you can reference the config like this:
+
+```js
+this.$axios.$post('/mail/send', {
+  config: 'support',
+  from: 'John Doe',
+  subject: 'Incredible',
+  text: 'This is an incredible test message',
+})
+```
+
+Or via index (in which case you do not need the `name` property):
+
+```js
+this.$axios.$post('/mail/send', {
+  config: 1, // resolves to 'support'
+  from: 'John Doe',
+  subject: 'Incredible',
+  text: 'This is an incredible test message',
+})
+```
+
 That's basically it, I hope that this is of use for some of you.
 
 ## Final Thoughts
