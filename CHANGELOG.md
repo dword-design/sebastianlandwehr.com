@@ -1,3 +1,10 @@
+## [1.4.15](https://github.com/dword-design/dword-design.de/compare/v1.4.14...v1.4.15) (2021-04-03)
+
+
+### Bug Fixes
+
+* adjust nuxt-mail post image ([e2c322b](https://github.com/dword-design/dword-design.de/commit/e2c322ba675ce3e144bf04234620ed34166a8a24))
+
 ## [1.4.14](https://github.com/dword-design/dword-design.de/compare/v1.4.13...v1.4.14) (2021-04-02)
 
 
