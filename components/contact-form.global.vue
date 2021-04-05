@@ -16,6 +16,7 @@ export default {
         await this.$recaptcha.getResponse()
       } catch (error) {
         this.error = 'You have to fill in the captcha.'
+
         return
       }
       this.isLoading = true

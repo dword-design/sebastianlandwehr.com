@@ -29,6 +29,7 @@ export default {
         hostname: process.env.BASE_URL,
         routes: async () => {
           const $content = require('@nuxt/content').$content
+
           return (
             $content('posts').fetch()
             |> await
