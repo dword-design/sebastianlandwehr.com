@@ -1096,9 +1096,9 @@
     param-case "^3.0.3"
 
 "@dword-design/base-config-app@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-app/-/base-config-app-2.0.0.tgz#6a5b5564cb46aedfe6814e7f71cafaa04e0dc84d"
-  integrity sha512-gAZ92dIAJsAU97YWIrMqdtWi9RCMFZipwPZ9RGl7qKJTx8b6dpVimtdDA0PgX1T3nuUSxiuZvy/zYlmO5rbBDQ==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-app/-/base-config-app-2.0.1.tgz#c031a7dd35b91e5219103094248844a26003b95d"
+  integrity sha512-hkPpneu7ubBQ4xhWORgIG3y/pQnydt8cKHdb/1eXXVhNIzEuV4vFLMheU9IpDQ9obDjIQFeNyTQQtKfbNOtxrg==
   dependencies:
     "@dword-design/base-config-nuxt" "^3.0.0"
     "@dword-design/functions" "^3.0.0"
@@ -1133,44 +1133,6 @@
     fs-extra "^9.0.0"
     micromatch "^4.0.2"
 
-"@dword-design/base-config-nuxt@^2.20.5":
-  version "2.21.5"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-2.21.5.tgz#fc1853fed300b6ed01a356448490088f7ef3be7c"
-  integrity sha512-F9UMb4I0AFYbMQPVo+PmWaooTf4xrzNW5vOjMKv6riFkQJvi1PDTloovgkDtfngdUAe1nKlIdFYHhg67nMg/HQ==
-  dependencies:
-    "@babel/register" "^7.13.8"
-    "@dword-design/depcheck-parser-sass" "^1.1.0"
-    "@dword-design/dotenv-json-extended" "^1.2.0"
-    "@dword-design/eslint-config" "^1.4.0"
-    "@dword-design/functions" "^3.0.0"
-    "@dword-design/nuxt-push-plugins" "^1.0.0"
-    "@dword-design/stylelint-config" "^1.0.0"
-    "@nuxtjs/axios" "^5.10.3"
-    "@nuxtjs/eslint-module" "^3.0.0"
-    "@nuxtjs/global-components" "^0.6.1"
-    "@nuxtjs/stylelint-module" "^4.0.0"
-    body-parser "^1.19.0"
-    depcheck-package-name "^1.0.0"
-    depcheck-parser-vue "^1.0.0"
-    esm "^3.2.25"
-    execa "^5.0.0"
-    express "^4.17.1"
-    express-mount-files dword-design/express-mount-files#fork
-    fs-extra "^9.0.0"
-    globby "^11.0.1"
-    node-sass "^5.0.0"
-    nuxt "~2.15.0"
-    nuxt-babel-runtime "^2.0.0"
-    nuxt-i18n "^6.20.6"
-    nuxt-svg-loader "^1.2.0"
-    output-files "^1.1.10"
-    promise-sequential "^1.1.1"
-    raw-loader "^4.0.1"
-    safe-require dword-design/node-safe-require#fork
-    sass-loader "^10.0.0"
-    stylelint "^13.6.0"
-    vue "^2.6.11"
-
 "@dword-design/base-config-nuxt@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-3.0.0.tgz#7d9c8460650d4ea3706bb697a04e75be6731f611"
@@ -1192,7 +1154,7 @@
     esm "^3.2.25"
     execa "^5.0.0"
     express "^4.17.1"
-    express-mount-files "github:dword-design/express-mount-files#fork"
+    express-mount-files dword-design/express-mount-files#fork
     fs-extra "^9.0.0"
     globby "^11.0.1"
     node-sass "^5.0.0"
@@ -1203,7 +1165,7 @@
     output-files "^1.1.10"
     promise-sequential "^1.1.1"
     raw-loader "^4.0.1"
-    safe-require "github:dword-design/node-safe-require#fork"
+    safe-require dword-design/node-safe-require#fork
     sass-loader "^10.0.0"
     stylelint "^13.6.0"
     vue "^2.6.11"
@@ -2344,14 +2306,6 @@
     consola "^2.15.0"
     eslint-webpack-plugin "^2.4.1"
 
-"@nuxtjs/global-components@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/global-components/-/global-components-0.6.1.tgz#7328530cea320871b19d2db2c814db9362b14784"
-  integrity sha512-9aNDUeSP1HaDwBWveRjOlpEKLL2h7kIwJyeGnr7CflT9upFcm0BkLyjy7eM4oACkUemuOtAIKCOulsnbz2ci2w==
-  dependencies:
-    chokidar "^3.3.1"
-    globby "^11.0.0"
-
 "@nuxtjs/google-gtag@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@nuxtjs/google-gtag/-/google-gtag-1.0.4.tgz#57562d8ec4c7694573e77edf72097da4a34b0d68"
@@ -3193,7 +3147,6 @@
 
 "@vue/babel-preset-jsx@dword-design/jsx#fork-babel-preset-jsx":
   version "1.1.2"
-  uid a73cb9961541a60a66b1b99a69a32e00bc66d336
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/a73cb9961541a60a66b1b99a69a32e00bc66d336"
   dependencies:
     "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
@@ -4017,7 +3970,6 @@ babel-plugin-transform-imports@^2.0.0:
 
 babel-plugin-wildcard@dword-design/babel-plugin-wildcard#fork:
   version "6.0.0"
-  uid "691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   resolved "https://codeload.github.com/dword-design/babel-plugin-wildcard/tar.gz/691d11923ee2dcf63e86f205b0a2c998883e3a3c"
   dependencies:
     rimraf "^2.6.2"
@@ -4711,7 +4663,7 @@ charm@~0.1.1:
   resolved "https://registry.yarnpkg.com/charm/-/charm-0.1.2.tgz#06c21eed1a1b06aeb67553cdc53e23274bac2296"
   integrity sha1-BsIe7RobBq62dVPNxT4jJ0usIpY=
 
-chokidar@3.5.1, chokidar@^3.3.1, chokidar@^3.4.0, chokidar@^3.4.1, chokidar@^3.5.1:
+chokidar@3.5.1, chokidar@^3.4.0, chokidar@^3.4.1, chokidar@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
   integrity sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw==
@@ -6006,7 +5958,6 @@ depcheck-parser-vue@^1.0.0:
 
 depcheck@dword-design/depcheck#fork:
   version "0.0.1"
-  uid "8a9eb41006c2c6f9cbd79e4e68bf265e1c1df1dc"
   resolved "https://codeload.github.com/dword-design/depcheck/tar.gz/8a9eb41006c2c6f9cbd79e4e68bf265e1c1df1dc"
   dependencies:
     "@babel/parser" "^7.8.4"
@@ -6369,7 +6320,6 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0, end-of-stream@^1.4.1:
 
 endent@dword-design/endent#fork:
   version "1.4.0"
-  uid be5433db67eaec07c6c9d00ba3bed2ed946dc664
   resolved "https://codeload.github.com/dword-design/endent/tar.gz/be5433db67eaec07c6c9d00ba3bed2ed946dc664"
   dependencies:
     dedent dword-design/dedent#fork
@@ -6544,7 +6494,6 @@ eslint-config-prettier@^8.0.0:
 
 eslint-import-resolver-babel-module@dword-design/eslint-import-resolver-babel-module#fork:
   version "5.1.2"
-  uid "97550c5b7626a9cf582ea2392b9749702a27473d"
   resolved "https://codeload.github.com/dword-design/eslint-import-resolver-babel-module/tar.gz/97550c5b7626a9cf582ea2392b9749702a27473d"
   dependencies:
     pkg-up "^2.0.0"
@@ -6938,7 +6887,6 @@ expect-mocha-image-snapshot@^1.0.0:
 
 expect-mocha-snapshot@dword-design/expect-mocha-snapshot#fork:
   version "2.0.1"
-  uid f5d168a871ef9073f1b56046dbf875aca6eff1db
   resolved "https://codeload.github.com/dword-design/expect-mocha-snapshot/tar.gz/f5d168a871ef9073f1b56046dbf875aca6eff1db"
   dependencies:
     expect "^1.20.2"
@@ -6969,9 +6917,8 @@ expect@^26.0.0, expect@^26.6.2:
     jest-message-util "^26.6.2"
     jest-regex-util "^26.0.0"
 
-express-mount-files@dword-design/express-mount-files#fork, "express-mount-files@github:dword-design/express-mount-files#fork":
+express-mount-files@dword-design/express-mount-files#fork:
   version "0.1.1"
-  uid c9778e91443c9a3824a01298dc5090a3b53db8df
   resolved "https://codeload.github.com/dword-design/express-mount-files/tar.gz/c9778e91443c9a3824a01298dc5090a3b53db8df"
   dependencies:
     fast-glob "^3.0.4"
@@ -13596,7 +13543,6 @@ punycode@^2.1.0, punycode@^2.1.1:
 
 puppeteer-to-istanbul@dword-design/puppeteer-to-istanbul#fork:
   version "1.4.0"
-  uid bf9e82538230872bffe68b28c40ec70731afd89a
   resolved "https://codeload.github.com/dword-design/puppeteer-to-istanbul/tar.gz/bf9e82538230872bffe68b28c40ec70731afd89a"
   dependencies:
     clone "^2.1.2"
@@ -14421,9 +14367,8 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-safe-require@dword-design/node-safe-require#fork, "safe-require@github:dword-design/node-safe-require#fork":
+safe-require@dword-design/node-safe-require#fork:
   version "1.0.3"
-  uid "53682cf7aa25d784c6278f8ccbc9986ad0dd5f38"
   resolved "https://codeload.github.com/dword-design/node-safe-require/tar.gz/53682cf7aa25d784c6278f8ccbc9986ad0dd5f38"
 
 "safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
@@ -15509,7 +15454,6 @@ stylelint-scss@^3.17.2:
 
 stylelint-use-nesting@dword-design/stylelint-use-nesting#fork:
   version "3.0.0"
-  uid "3fa262d8898e33da3831ed526e45dade37c270e7"
   resolved "https://codeload.github.com/dword-design/stylelint-use-nesting/tar.gz/3fa262d8898e33da3831ed526e45dade37c270e7"
 
 stylelint-webpack-plugin@^2.0.0:
@@ -15804,9 +15748,9 @@ text-table@^0.2.0, text-table@~0.2.0:
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
 thread-loader@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/thread-loader/-/thread-loader-3.0.1.tgz#059752d5c3e223ec58fad5868fe6405e8375d480"
-  integrity sha512-c8Mr7jooXEAochk72XoQ1vPauwFToz9GVwqevqQShAypCUW0nRzYIbkzZo3KErNhhYf/+ga5cUQWxVXQteJj/g==
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/thread-loader/-/thread-loader-3.0.2.tgz#b1c85893767258c7aa1186a36588feeeec5ffa06"
+  integrity sha512-yNNiWjQKM+aS3WufFFMv8jdDaTX65oIBLpnzQpGZ7krhgK8L7WrF5nFa7yTdsVxfXEJlEpPRWd5L353qlWkxig==
   dependencies:
     loader-runner "^4.1.0"
     loader-utils "^2.0.0"
