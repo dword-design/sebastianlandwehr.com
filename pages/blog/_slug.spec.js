@@ -13,6 +13,7 @@ export default tester(
         height: 1,
         width: 1400,
       })
+
       const screenshot = await this.page.screenshot({ fullPage: true })
       expect(screenshot).toMatchImageSnapshot(this)
     },

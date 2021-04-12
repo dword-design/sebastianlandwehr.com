@@ -1,11 +1,9 @@
 import { map } from '@dword-design/functions'
-import nuxtContentHooksGit from 'nuxt-content-hooks-git'
 
 import { appName } from './model/variables'
 
 export default {
   css: ['@/assets/style.scss'],
-  hooks: nuxtContentHooksGit(),
   modules: [
     [
       '@dword-design/nuxt-buefy',
@@ -29,6 +27,7 @@ export default {
         hostname: process.env.BASE_URL,
         routes: async () => {
           const $content = require('@nuxt/content').$content
+
           return (
             $content('posts').fetch()
             |> await
@@ -46,6 +45,7 @@ export default {
         version: 2,
       },
     ],
+    'nuxt-content-git',
     '@nuxt/content',
   ],
   name: appName,
