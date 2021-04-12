@@ -1,3 +1,10 @@
+## [1.4.17](https://github.com/dword-design/dword-design.de/compare/v1.4.16...v1.4.17) (2021-04-12)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base-config-app to v2 ([#36](https://github.com/dword-design/dword-design.de/issues/36)) ([808cd5a](https://github.com/dword-design/dword-design.de/commit/808cd5ada06c4671ba0235b94ab9770e9499a37a))
+
 ## [1.4.16](https://github.com/dword-design/dword-design.de/compare/v1.4.15...v1.4.16) (2021-04-12)
 
 
