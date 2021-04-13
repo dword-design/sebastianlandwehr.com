@@ -1,3 +1,10 @@
+## [1.4.19](https://github.com/dword-design/dword-design.de/compare/v1.4.18...v1.4.19) (2021-04-13)
+
+
+### Bug Fixes
+
+* blog posts in desc order ([#38](https://github.com/dword-design/dword-design.de/issues/38)) ([478dc2f](https://github.com/dword-design/dword-design.de/commit/478dc2fc7788286f7d1f4b50e26413bc3a7ade2b))
+
 ## [1.4.18](https://github.com/dword-design/dword-design.de/compare/v1.4.17...v1.4.18) (2021-04-13)
 
 
