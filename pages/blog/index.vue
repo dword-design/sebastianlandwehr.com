@@ -6,7 +6,7 @@ export default {
     posts: await context
       .$content('posts')
       .only(['title', 'description', 'img', 'slug', 'author', 'createdAt'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
       .fetch(),
   }),
   head: {
