@@ -35,8 +35,7 @@
     "@nuxtjs/recaptcha": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt-content-git": "^1.0.5",
-    "nuxt-mail": "^2.0.0",
-    "nuxt-responsive-loader": "dword-design/nuxt-responsive-loader#fork"
+    "nuxt-mail": "^2.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^7.0.0",
