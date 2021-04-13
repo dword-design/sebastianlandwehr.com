@@ -1,5 +1,5 @@
 ---
-title: Valid createdAt and updatedAt Dates with @nuxt/content after Clones Using the Git History
+title: '@nuxt/content: How to Keep createdAt and updatedAt Valid After Cloning'
 ---
 
 I recently tried out [@nuxt/content](https://github.com/nuxt/content), a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.
@@ -33,6 +33,6 @@ Note that it is important to add it **before** `@nuxt/content`, so `@nuxt/conten
 
 ---
 
-Let me know in the comments below if you like this module. Also leave a [star at GitHub](https://github.com/dword-design/nuxt-content-git) 🌟.
+If you like this module, leave a [star at GitHub](https://github.com/dword-design/nuxt-content-git) 🌟.
 
-**If you like what I'm doing, follow me on [Twitter](https://twitter.com/DwordDesign) or check out my [website](https://dword-design.de). I'm contributing to the open-source community, developing apps and blogging all about web development. Also consider donating at [Buy Me a Coffee](https://www.buymeacoffee.com/dword), [PayPal](https://www.paypal.com/paypalme/SebastianLandwehr) or [Patreon](https://www.patreon.com/dworddesign). Thank you! ❤️**
+**If you like what I'm doing, follow me on [Twitter](https://twitter.com/DwordDesign) or check out my [website](https://dword-design.de). Also consider donating at [Buy Me a Coffee](https://www.buymeacoffee.com/dword), [PayPal](https://www.paypal.com/paypalme/SebastianLandwehr) or [Patreon](https://www.patreon.com/dworddesign). Thank you so much! ❤️**
