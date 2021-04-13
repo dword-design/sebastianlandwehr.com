@@ -1,3 +1,10 @@
+## [1.4.18](https://github.com/dword-design/dword-design.de/compare/v1.4.17...v1.4.18) (2021-04-13)
+
+
+### Bug Fixes
+
+* remove unused nuxt-responsive-loader ([#37](https://github.com/dword-design/dword-design.de/issues/37)) ([814ea00](https://github.com/dword-design/dword-design.de/commit/814ea00a7581e1649f31223fc26327c25efd611b))
+
 ## [1.4.17](https://github.com/dword-design/dword-design.de/compare/v1.4.16...v1.4.17) (2021-04-12)
 
 
