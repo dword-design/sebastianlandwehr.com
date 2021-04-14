@@ -1,3 +1,10 @@
+## [1.4.22](https://github.com/dword-design/dword-design.de/compare/v1.4.21...v1.4.22) (2021-04-14)
+
+
+### Bug Fixes
+
+* adjust blog footer ([c75c7c6](https://github.com/dword-design/dword-design.de/commit/c75c7c6d70b423fbdaac2f4b4019f57cf01e73b8))
+
 ## [1.4.21](https://github.com/dword-design/dword-design.de/compare/v1.4.20...v1.4.21) (2021-04-14)
 
 
