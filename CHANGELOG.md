@@ -1,3 +1,10 @@
+## [1.4.23](https://github.com/dword-design/dword-design.de/compare/v1.4.22...v1.4.23) (2021-04-14)
+
+
+### Bug Fixes
+
+* blog images ([#39](https://github.com/dword-design/dword-design.de/issues/39)) ([f5cbf8c](https://github.com/dword-design/dword-design.de/commit/f5cbf8c42f820f11556ad5e777089b841772595d))
+
 ## [1.4.22](https://github.com/dword-design/dword-design.de/compare/v1.4.21...v1.4.22) (2021-04-14)
 
 
