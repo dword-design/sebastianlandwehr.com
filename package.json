@@ -34,6 +34,7 @@
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/recaptcha": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "date-fns": "^2.21.0",
     "nuxt-content-git": "^1.0.5",
     "nuxt-mail": "^2.0.0"
   },
