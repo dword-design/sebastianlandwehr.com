@@ -1,3 +1,11 @@
+## [1.4.21](https://github.com/dword-design/dword-design.de/compare/v1.4.20...v1.4.21) (2021-04-14)
+
+
+### Bug Fixes
+
+* fix test ([643e779](https://github.com/dword-design/dword-design.de/commit/643e7795310e5fbc874cdd2c74adb8b5605cdb17))
+* foo ([a241da2](https://github.com/dword-design/dword-design.de/commit/a241da23eb7a47bdfda3628ea37889cfec04aef7))
+
 ## [1.4.20](https://github.com/dword-design/dword-design.de/compare/v1.4.19...v1.4.20) (2021-04-13)
 
 
