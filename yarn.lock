@@ -1327,13 +1327,13 @@
   dependencies:
     "@dword-design/functions" "^3.0.0"
 
-"@dword-design/nuxt-server-link@^1.0.1":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@dword-design/nuxt-server-link/-/nuxt-server-link-1.0.8.tgz#0e5a380da2bd36ebeaba09934b8c7563d73f487c"
-  integrity sha512-NDRjiJ4Vfi89wS4qLkCdOTimdVy9SrG9wKbQ+T6hocfVwybYF66R7QHLXrSjk3XjRe3ULtsCD8dNerYLaOQl/A==
+"@dword-design/nuxt-server-link@^1.0.8":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@dword-design/nuxt-server-link/-/nuxt-server-link-1.0.9.tgz#b328ff08063d2939cfb7340b4339ba9659bfe986"
+  integrity sha512-qLPCHLgzE8XUBbB8zzYa+P9cCKYs3xClCGZ3AWPyb7gNyJ/n/sThrTdxnuLH8CWTXTS8MyaDzhmS5XD8yFkZ1A==
   dependencies:
-    "@dword-design/nuxt-push-plugins" "^1.0.2"
     "@dword-design/vue-server-link" "^1.0.0"
+    nuxt-push-plugins "^1.0.16"
 
 "@dword-design/puppeteer@^3.0.0":
   version "3.0.4"
@@ -11192,6 +11192,13 @@ nuxt-mail@^2.0.0:
     "@dword-design/nuxt-push-plugins" "^1.0.2"
     express "^4.17.1"
     nodemailer "^6.4.11"
+
+nuxt-push-plugins@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/nuxt-push-plugins/-/nuxt-push-plugins-1.0.16.tgz#0f4dc86515092dcc667fccd97315aa0cdc017e5a"
+  integrity sha512-3KUVARTJ9x6gQ3s+vgp63levm7L49rwbrNoI+W11MtyE92frqrA3nO7yIsLFwtmRsBrw46UtHJKMm8tQuTtbnw==
+  dependencies:
+    "@dword-design/functions" "^3.0.0"
 
 nuxt-svg-loader@^1.2.0:
   version "1.2.0"
