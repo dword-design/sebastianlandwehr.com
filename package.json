@@ -1,7 +1,7 @@
 {
   "name": "dword-design.de",
   "version": "1.4.23",
-  "description": "",
+  "description": null,
   "repository": "dword-design/dword-design.de",
   "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
@@ -52,5 +52,7 @@
   "baseConfig": {
     "name": "@dword-design/app",
     "testInContainer": true
-  }
+  },
+  "homepage": null,
+  "keywords": []
 }
