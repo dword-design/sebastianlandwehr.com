@@ -1,3 +1,10 @@
+## [1.4.24](https://github.com/dword-design/dword-design.de/compare/v1.4.23...v1.4.24) (2021-04-21)
+
+
+### Bug Fixes
+
+* post about file-based tests ([#49](https://github.com/dword-design/dword-design.de/issues/49)) ([0f2661b](https://github.com/dword-design/dword-design.de/commit/0f2661b149c0102aec316e77127279a360ba961d))
+
 ## [1.4.23](https://github.com/dword-design/dword-design.de/compare/v1.4.22...v1.4.23) (2021-04-14)
 
 
