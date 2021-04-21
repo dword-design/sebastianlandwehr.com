@@ -1,3 +1,12 @@
+## [1.4.26](https://github.com/dword-design/dword-design.de/compare/v1.4.25...v1.4.26) (2021-04-21)
+
+
+### Bug Fixes
+
+* fix watcher limit ([#51](https://github.com/dword-design/dword-design.de/issues/51)) ([0a7565a](https://github.com/dword-design/dword-design.de/commit/0a7565ab4162ab5763a9b28b4ca4907138708275))
+* update post ([51131a1](https://github.com/dword-design/dword-design.de/commit/51131a1a0a45294838211b53413bde7b04162009))
+* update post image ([432c047](https://github.com/dword-design/dword-design.de/commit/432c04761d6c50d382026a5de7cf15f971eaa11e))
+
 ## [1.4.25](https://github.com/dword-design/dword-design.de/compare/v1.4.24...v1.4.25) (2021-04-21)
 
 
