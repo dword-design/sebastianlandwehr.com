@@ -1,3 +1,10 @@
+## [1.4.29](https://github.com/dword-design/dword-design.de/compare/v1.4.28...v1.4.29) (2021-04-21)
+
+
+### Bug Fixes
+
+* trigger release ([8e84617](https://github.com/dword-design/dword-design.de/commit/8e846178afbc866f77f7875fda5982542ec0dd5e))
+
 ## [1.4.28](https://github.com/dword-design/dword-design.de/compare/v1.4.27...v1.4.28) (2021-04-21)
 
 
