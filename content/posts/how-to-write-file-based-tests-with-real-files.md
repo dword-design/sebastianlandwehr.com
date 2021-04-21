@@ -43,16 +43,18 @@ const scaffold = require('.')
 
 it('no existing files', () => withLocalTmpDir(async () => {
   await scaffold()
-  expect(await fs.readFile('README.md', 'utf8')).toEqual(endent`
-    ## Package
+  expect(await fs.readFile('README.md', 'utf8'))
+    .toEqual(endent`
+      ## Package
 
-    This is a test package and the doc needs to be written ...
-  `)
-  expect(await fs.readFile('.configrc.json', 'utf8')).toEqual(endent`
-    {
-      "name": "Package"
-    }
-  `)
+      This is a test package.
+    `)
+  expect(await fs.readFile('.configrc.json', 'utf8'))
+    .toEqual(endent`
+      {
+        "name": "Package"
+      }
+    `)
 }))
 ```
 
@@ -93,16 +95,18 @@ it('existing files', () => withLocalTmpDir(async () => {
     `
   })
   await scaffold()
-  expect(await fs.readFile('README.md', 'utf8')).toEqual(endent`
-    ## My Package
+  expect(await fs.readFile('README.md', 'utf8'))
+    .toEqual(endent`
+      ## My Package
 
-    Here is how to use this package.
-  `)
-  expect(await fs.readFile('.configrc.json', 'utf8')).toEqual(endent`
-    {
-      "name": "My Package"
-    }
-  `)
+      Here is how to use this package.
+    `)
+  expect(await fs.readFile('.configrc.json', 'utf8'))
+    .toEqual(endent`
+      {
+        "name": "My Package"
+      }
+    `)
 }))
 ```
 
@@ -131,17 +135,19 @@ it('uses repository url', () => withLocalTmpDir(async () => {
   await execa.command('git config user.name "foo"')
   await execa.command('git remote add origin git@github.com:foo/bar.git')
   await scaffold()
-  expect(await fs.readFile('README.md', 'utf8')).toEqual(endent`
-    ## Package
+  expect(await fs.readFile('README.md', 'utf8'))
+    .toEqual(endent`
+      ## Package
 
-    This is a test package and the doc needs to be written ...
-  `)
-  expect(await fs.readFile('.configrc.json', 'utf8')).toEqual(endent`
-    {
-      "name": "Package",
-      "repo": "git@github.com:foo/bar.git"
-    }
-  `)
+      This is a test package.
+    `)
+  expect(await fs.readFile('.configrc.json', 'utf8'))
+    .toEqual(endent`
+      {
+        "name": "Package",
+        "repo": "git@github.com:foo/bar.git"
+      }
+    `)
 }))
 ```
 
