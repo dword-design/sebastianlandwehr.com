@@ -1,3 +1,10 @@
+## [1.4.25](https://github.com/dword-design/dword-design.de/compare/v1.4.24...v1.4.25) (2021-04-21)
+
+
+### Bug Fixes
+
+* update post ([75d3b59](https://github.com/dword-design/dword-design.de/commit/75d3b59d5256780a88bac4f73272f1971498a261))
+
 ## [1.4.24](https://github.com/dword-design/dword-design.de/compare/v1.4.23...v1.4.24) (2021-04-21)
 
 
