@@ -1,7 +1,7 @@
 import { map } from '@dword-design/functions'
 
 import { appName } from './model/variables'
- 
+
 export default {
   css: ['@/assets/style.scss'],
   modules: [
