@@ -1,3 +1,10 @@
+## [1.4.27](https://github.com/dword-design/dword-design.de/compare/v1.4.26...v1.4.27) (2021-04-21)
+
+
+### Bug Fixes
+
+* applied a fix from action-sync-node-meta ([#48](https://github.com/dword-design/dword-design.de/issues/48)) ([d40fe56](https://github.com/dword-design/dword-design.de/commit/d40fe56f0ae9197d1cc9df39f04bbd329ba0e1aa))
+
 ## [1.4.26](https://github.com/dword-design/dword-design.de/compare/v1.4.25...v1.4.26) (2021-04-21)
 
 
