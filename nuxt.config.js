@@ -1,4 +1,4 @@
-import { map } from '@dword-design/functions'
+import { identity, map, sortBy } from '@dword-design/functions'
 
 import { appName } from './model/variables'
 
@@ -32,6 +32,7 @@ export default {
             $content('posts').fetch()
             |> await
             |> map(post => `blog/${post.slug}`)
+            |> sortBy(identity)
           )
         },
       },
