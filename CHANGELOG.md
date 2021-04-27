@@ -1,3 +1,10 @@
+## [1.4.32](https://github.com/dword-design/dword-design.de/compare/v1.4.31...v1.4.32) (2021-04-27)
+
+
+### Bug Fixes
+
+* test sitemap ([#56](https://github.com/dword-design/dword-design.de/issues/56)) ([981635a](https://github.com/dword-design/dword-design.de/commit/981635aa9e380bbabe8f4f944e104dfdd1034774))
+
 ## [1.4.31](https://github.com/dword-design/dword-design.de/compare/v1.4.30...v1.4.31) (2021-04-26)
 
 
