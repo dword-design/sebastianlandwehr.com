@@ -1,3 +1,10 @@
+## [1.4.33](https://github.com/dword-design/dword-design.de/compare/v1.4.32...v1.4.33) (2021-04-28)
+
+
+### Bug Fixes
+
+* updated package.json[description] ([#53](https://github.com/dword-design/dword-design.de/issues/53)) ([eef9ac7](https://github.com/dword-design/dword-design.de/commit/eef9ac7554e04543619e15a515ff78e1f2dfbc46))
+
 ## [1.4.32](https://github.com/dword-design/dword-design.de/compare/v1.4.31...v1.4.32) (2021-04-27)
 
 
