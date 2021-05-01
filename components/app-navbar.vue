@@ -7,10 +7,8 @@ import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiNpm from '@mdi/svg/svg/npm.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
-import IconHashnode from '@/assets/icon-hashnode.svg'
 import IconMedium from '@/assets/icon-medium.svg'
-import Logo from '@/assets/logo.svg'
-import { appName } from '@/model/variables'
+import { appName, appTitle } from '@/model/variables'
 
 const accounts = [
   {
@@ -29,12 +27,6 @@ const accounts = [
     size: 'is-medium',
     title: 'DEV Community Profile',
     url: 'https://dev.to/dworddesign',
-  },
-  {
-    icon: IconHashnode,
-    size: 'is-small',
-    title: 'Hashnode',
-    url: 'https://dworddesign.hashnode.dev',
   },
   {
     icon: IconMedium,
@@ -66,14 +58,18 @@ export default {
       class="has-shadow is-spaced"
       wrapper-class="container"
     >
-      <b-navbar-item
-        aria-label={appName}
-        class="is-size-5"
-        slot="brand"
-        tag="nuxt-server-link"
-        to={{ name: 'index' }}
-      >
-        <Logo aria-hidden="true" style={{ maxWidth: '24rem', width: '100%' }} />
+      <b-navbar-item slot="brand" tag="div">
+        <div>
+          <h1 class="is-4 title">
+            <nuxt-server-link
+              class="has-text-grey-darker"
+              to={{ name: 'index' }}
+            >
+              {appName}
+            </nuxt-server-link>
+          </h1>
+          <p class="is-6 subtitle">{appTitle}</p>
+        </div>
       </b-navbar-item>
       <b-navbar-item
         href={context.parent.$router.resolve({ name: 'blog' }).href}

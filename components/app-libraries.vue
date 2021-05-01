@@ -22,10 +22,10 @@ const libraries = [
 export default {
   functional: true,
   render: () => (
-    <ul class="columns is-variable is-multiline is-centered is-vcentered is-10 is-mobile">
+    <ul class="level">
       {libraries
         |> map(library => (
-          <li class="column is-half-mobile">
+          <li class="level-item" style={{ maxWidth: '9rem' }}>
             <a href={library.websiteUrl} target="_blank">
               <img alt={library.title} src={library.imageUrl} />
             </a>
