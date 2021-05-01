@@ -1,3 +1,10 @@
+## [1.4.34](https://github.com/dword-design/dword-design.de/compare/v1.4.33...v1.4.34) (2021-05-01)
+
+
+### Bug Fixes
+
+* adjust site title ([#57](https://github.com/dword-design/dword-design.de/issues/57)) ([53f4f3d](https://github.com/dword-design/dword-design.de/commit/53f4f3d5fd8bc70482696da12e5ca3bce6e3d7a3))
+
 ## [1.4.33](https://github.com/dword-design/dword-design.de/compare/v1.4.32...v1.4.33) (2021-04-28)
 
 
