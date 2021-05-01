@@ -24,7 +24,7 @@
               </p>
             </div>
           </div>
-          <div class="column is-5 is-4by5">
+          <div class="column is-two-fifths is-1by1">
             <figure class="image">
               <img alt="Portrait" :src="portraitUrl" />
             </figure>
