@@ -3,7 +3,7 @@
     <section class="section is-medium is-bordered">
       <div class="container">
         <div class="columns is-variable is-8">
-          <div class="column is-three-fifths">
+          <div class="column">
             <div class="content">
               <p>
                 I'm Sebastian Landwehr, a web developer from Bonn in Germany. My
@@ -24,7 +24,7 @@
               </p>
             </div>
           </div>
-          <div class="column is-two-fifths is-4by5">
+          <div class="column is-two-fifths is-1by1">
             <figure class="image">
               <img alt="Portrait" :src="portraitUrl" />
             </figure>

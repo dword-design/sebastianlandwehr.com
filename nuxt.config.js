@@ -1,6 +1,6 @@
 import { identity, map, sortBy } from '@dword-design/functions'
 
-import { appName } from './model/variables'
+import { appName, appTitle } from './model/variables'
 
 export default {
   css: ['@/assets/style.scss'],
@@ -52,5 +52,5 @@ export default {
   router: {
     linkActiveClass: 'is-active',
   },
-  title: 'Sebastian Landwehr',
+  title: appTitle,
 }

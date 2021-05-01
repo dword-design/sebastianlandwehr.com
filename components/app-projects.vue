@@ -104,7 +104,7 @@ const projects = [
 export default {
   functional: true,
   render: () => (
-    <div class="columns is-multiline is-centered">
+    <div class="columns is-multiline">
       {projects
         |> map(project => (
           <div class="column is-one-third">
