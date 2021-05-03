@@ -1,3 +1,10 @@
+## [1.4.36](https://github.com/dword-design/dword-design.de/compare/v1.4.35...v1.4.36) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#64](https://github.com/dword-design/dword-design.de/issues/64)) ([f8e5d1c](https://github.com/dword-design/dword-design.de/commit/f8e5d1c5fa880625f76799be0b5c55311c022519))
+
 ## [1.4.35](https://github.com/dword-design/dword-design.de/compare/v1.4.34...v1.4.35) (2021-05-03)
 
 
