@@ -11289,10 +11289,10 @@ nuxt-buefy@^0.4.2:
   dependencies:
     buefy "^0.9.7"
 
-nuxt-content-git@^1.0.5:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/nuxt-content-git/-/nuxt-content-git-1.0.10.tgz#5912eeeb1914ddcc25961a6b6362df0ed3de9860"
-  integrity sha512-oWXvNUPqS2cTLV5sByE3qxxA6S3vPmKm8drqJzQC8DPT6i7TAOfR+gnUPbXN/usbvP4u96ThN45RKS5OgSpzbw==
+nuxt-content-git@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nuxt-content-git/-/nuxt-content-git-2.0.0.tgz#51b67cab6b1bec440e1180c5a5d7b6c4faceb563"
+  integrity sha512-wx908+PfvnngfQ/JXIv3ZxSFVgZMw0IbCvXg3ESz+gh/2ER3m9M2k1CybXSKur0EFuRzqz7AkVWxPGPNI/1DyA==
   dependencies:
     "@dword-design/functions" "^3.0.0"
     simple-git "^2.37.0"
