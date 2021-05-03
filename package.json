@@ -38,7 +38,7 @@
     "nuxt-mail": "^2.0.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^7.0.0",
+    "@dword-design/base": "^8.0.0",
     "@dword-design/base-config-app": "^2.0.0",
     "@dword-design/puppeteer": "^4.0.0",
     "@dword-design/tester": "^1.1.1",
@@ -46,6 +46,9 @@
     "@dword-design/tester-plugin-puppeteer": "^2.0.0",
     "axios": "^0.21.1",
     "pretty": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "publishConfig": {
     "access": "public"
