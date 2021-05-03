@@ -27,7 +27,7 @@
   "dependencies": {
     "@dword-design/functions": "^3.0.0",
     "@dword-design/nuxt-buefy": "^2.0.0",
-    "@dword-design/nuxt-server-link": "^1.0.1",
+    "@dword-design/nuxt-server-link": "^2.0.0",
     "@mdi/svg": "^5.9.55",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/google-gtag": "^1.0.4",
