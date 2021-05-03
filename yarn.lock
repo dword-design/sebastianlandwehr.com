@@ -11314,10 +11314,10 @@ nuxt-i18n@^6.20.6:
     ufo "^0.6.11"
     vue-i18n "^8.24.3"
 
-nuxt-mail@^2.0.0:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/nuxt-mail/-/nuxt-mail-2.1.3.tgz#67721f688aae802a7a6c2e14235214ea242636c4"
-  integrity sha512-KwLUxQIE3mcewC7REzF1oL0qz8RX6sqfZz0KBc8gjQViNVPx+TIAR8Y/Rti+0/OQBMn8AjjSrIaTP4hNgvbnBw==
+nuxt-mail@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/nuxt-mail/-/nuxt-mail-3.0.0.tgz#e48f0416b7fe9be8588f98d694108ec355c08b72"
+  integrity sha512-ZExvkyVm+r9pVudCZNo53q/wvw7AF1mvXz8+cmWSsBvFiFAbov0hMv7zRJj1Zfa7jr8JV0zy5YT91en2HWP4Zw==
   dependencies:
     "@dword-design/functions" "^3.0.0"
     express "^4.17.1"
