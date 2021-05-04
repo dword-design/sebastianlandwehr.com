@@ -1,3 +1,13 @@
+## [1.4.38](https://github.com/dword-design/dword-design.de/compare/v1.4.37...v1.4.38) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4 ([#65](https://github.com/dword-design/dword-design.de/issues/65)) ([bd51525](https://github.com/dword-design/dword-design.de/commit/bd515259bb80f771fc64473425e7031004b5893a))
+* update dependency @dword-design/nuxt-server-link to v2 ([#67](https://github.com/dword-design/dword-design.de/issues/67)) ([89bdbe9](https://github.com/dword-design/dword-design.de/commit/89bdbe928307855e9394a8f1fbf8dae701be34f9))
+* update dependency @dword-design/tester to v2 ([#72](https://github.com/dword-design/dword-design.de/issues/72)) ([70bf9dc](https://github.com/dword-design/dword-design.de/commit/70bf9dc40b7d555f1c04faf9d97f90dc3a629d9f))
+* update dependency nuxt-mail to v3 ([#71](https://github.com/dword-design/dword-design.de/issues/71)) ([df95e15](https://github.com/dword-design/dword-design.de/commit/df95e15e3508b7c6760a79c0e9fd34160fe871db))
+
 ## [1.4.37](https://github.com/dword-design/dword-design.de/compare/v1.4.36...v1.4.37) (2021-05-04)
 
 
