@@ -35,7 +35,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
     "nuxt-content-git": "^2.0.0",
-    "nuxt-mail": "^2.0.0"
+    "nuxt-mail": "^3.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^8.0.0",
