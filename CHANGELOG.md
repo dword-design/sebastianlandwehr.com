@@ -1,3 +1,13 @@
+## [1.4.37](https://github.com/dword-design/dword-design.de/compare/v1.4.36...v1.4.37) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/nuxt-buefy to v2 ([#66](https://github.com/dword-design/dword-design.de/issues/66)) ([d2bbd02](https://github.com/dword-design/dword-design.de/commit/d2bbd021c7f4420b8578a5b190f32f1d29fedbc5))
+* update dependency @dword-design/puppeteer to v5 ([#68](https://github.com/dword-design/dword-design.de/issues/68)) ([ffe82ab](https://github.com/dword-design/dword-design.de/commit/ffe82ab96f144f4dfdeb701a60f73bfededd8ea8))
+* update dependency @dword-design/tester-plugin-nuxt to v2 ([#69](https://github.com/dword-design/dword-design.de/issues/69)) ([3021408](https://github.com/dword-design/dword-design.de/commit/3021408b4bbb819f6b85d71b6e36a2e4e90c8ffb))
+* update dependency nuxt-content-git to v2 ([#70](https://github.com/dword-design/dword-design.de/issues/70)) ([fd56807](https://github.com/dword-design/dword-design.de/commit/fd5680718aa87387fd4356fafe5753ca982af652))
+
 ## [1.4.36](https://github.com/dword-design/dword-design.de/compare/v1.4.35...v1.4.36) (2021-05-03)
 
 
