@@ -1,3 +1,10 @@
+## [1.4.39](https://github.com/dword-design/dword-design.de/compare/v1.4.38...v1.4.39) (2021-05-10)
+
+
+### Bug Fixes
+
+* update instagram url ([#75](https://github.com/dword-design/dword-design.de/issues/75)) ([6b88e6f](https://github.com/dword-design/dword-design.de/commit/6b88e6fe8d845739d7afe02f22c5ed2ab798c958))
+
 ## [1.4.38](https://github.com/dword-design/dword-design.de/compare/v1.4.37...v1.4.38) (2021-05-04)
 
 
