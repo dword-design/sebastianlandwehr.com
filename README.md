@@ -1,5 +1,5 @@
 <!-- TITLE/ -->
-# dword-design.de
+# sebastianlandwehr.com
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
@@ -53,10 +53,10 @@
 
 ```bash
 # npm
-$ npm install dword-design.de
+$ npm install sebastianlandwehr.com
 
 # Yarn
-$ yarn add dword-design.de
+$ yarn add sebastianlandwehr.com
 ```
 <!-- /INSTALL -->
 
