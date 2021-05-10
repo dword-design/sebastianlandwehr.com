@@ -1,3 +1,10 @@
+## [1.4.42](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.41...v1.4.42) (2021-05-10)
+
+
+### Bug Fixes
+
+* refactor blog footer ([#78](https://github.com/dword-design/sebastianlandwehr.com/issues/78)) ([9f247fd](https://github.com/dword-design/sebastianlandwehr.com/commit/9f247fdc129a015cdfc1dc7fa07ced421d7658f7))
+
 ## [1.4.41](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.40...v1.4.41) (2021-05-10)
 
 
