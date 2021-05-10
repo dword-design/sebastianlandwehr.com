@@ -41,7 +41,7 @@ const accounts = [
   {
     icon: MdiInstagram,
     title: 'Instagram',
-    url: 'https://instagram.com/dword.design',
+    url: 'https://www.instagram.com/sebastian.landwehr',
   },
   {
     icon: MdiFacebook,
