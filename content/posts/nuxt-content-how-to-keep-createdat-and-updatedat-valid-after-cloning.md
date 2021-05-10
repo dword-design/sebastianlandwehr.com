@@ -34,5 +34,3 @@ Note that it is important to add it **before** `@nuxt/content`, so `@nuxt/conten
 ---
 
 Let me know if you like this module and leave a [star at GitHub](https://github.com/dword-design/nuxt-content-git) 🌟.
-
-**If you like what I'm doing, follow me on [Twitter](https://twitter.com/DwordDesign) or check out my [website](https://dword-design.de). Also consider donating at [Buy Me a Coffee](https://www.buymeacoffee.com/dword), [PayPal](https://www.paypal.com/paypalme/SebastianLandwehr) or [Patreon](https://www.patreon.com/dworddesign). Thank you so much! ❤️**

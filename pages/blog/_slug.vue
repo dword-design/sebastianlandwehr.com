@@ -32,6 +32,7 @@ export default {
             })}
           </div>
           <nuxt-content class="content" document={this.post} />
+          <b>If you like what I'm doing, follow me on <a href="https://twitter.com/DwordDesign">Twitter</a> or check out my <a href="https://sebastianlandwehr.com">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr">PayPal</a> or <a href="https://www.patreon.com/dworddesign">Patreon</a>. Thank you so much! ❤️</b>
         </article>
       </main>
     )
