@@ -15,7 +15,7 @@
       ],
       "path": "/var/www/dword-design.de",
       "user": "root",
-      "repo": "git@github.com:dword-design/dword-design.de.git",
+      "repo": "git@github.com:dword-design/sebastianlandwehr.com.git",
       "post-deploy": "source ~/.nvm/nvm.sh && yarn --frozen-lockfile && yarn prepublishOnly && pm2 startOrReload ecosystem.json",
       "ref": "origin/master"
     }
