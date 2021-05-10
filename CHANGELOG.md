@@ -1,3 +1,10 @@
+## [1.4.43](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.42...v1.4.43) (2021-05-10)
+
+
+### Bug Fixes
+
+* trigger release ([aa4191e](https://github.com/dword-design/sebastianlandwehr.com/commit/aa4191e49733e2eae3ae2a0a0c365928a2ed1607))
+
 ## [1.4.42](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.41...v1.4.42) (2021-05-10)
 
 
