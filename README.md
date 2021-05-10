@@ -4,19 +4,19 @@
 
 <!-- BADGES/ -->
   <p>
-    <img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/dword-design.de/actions">
+    <img src="https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue" alt="Linux macOS Windows compatible"><a href="https://github.com/dword-design/sebastianlandwehr.com/actions">
       <img
-        src="https://github.com/dword-design/dword-design.de/workflows/build/badge.svg"
+        src="https://github.com/dword-design/sebastianlandwehr.com/workflows/build/badge.svg"
         alt="Build status"
       >
-    </a><a href="https://codecov.io/gh/dword-design/dword-design.de">
+    </a><a href="https://codecov.io/gh/dword-design/sebastianlandwehr.com">
       <img
-        src="https://codecov.io/gh/dword-design/dword-design.de/branch/master/graph/badge.svg"
+        src="https://codecov.io/gh/dword-design/sebastianlandwehr.com/branch/master/graph/badge.svg"
         alt="Coverage status"
       >
-    </a><a href="https://david-dm.org/dword-design/dword-design.de">
-      <img src="https://img.shields.io/david/dword-design/dword-design.de" alt="Dependency status">
-    </a><img src="https://img.shields.io/badge/renovate-enabled-brightgreen" alt="Renovate enabled"><br/><a href="https://gitpod.io/#https://github.com/dword-design/dword-design.de">
+    </a><a href="https://david-dm.org/dword-design/sebastianlandwehr.com">
+      <img src="https://img.shields.io/david/dword-design/sebastianlandwehr.com" alt="Dependency status">
+    </a><img src="https://img.shields.io/badge/renovate-enabled-brightgreen" alt="Renovate enabled"><br/><a href="https://gitpod.io/#https://github.com/dword-design/sebastianlandwehr.com">
       <img
         src="https://gitpod.io/button/open-in-gitpod.svg"
         alt="Open in Gitpod"
@@ -63,7 +63,7 @@ $ yarn add dword-design.de
 <!-- LICENSE/ -->
 ## Contribute
 
-Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/dword-design.de/issues) or a [pull request](https://github.com/dword-design/dword-design.de/pulls)! ⚙️
+Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/sebastianlandwehr.com/issues) or a [pull request](https://github.com/dword-design/sebastianlandwehr.com/pulls)! ⚙️
 
 ## Support
 
