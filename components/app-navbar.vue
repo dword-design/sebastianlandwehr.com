@@ -46,7 +46,7 @@ const accounts = [
   {
     icon: MdiFacebook,
     title: 'Facebook',
-    url: 'https://www.facebook.com/Dword-Design-101161921820497',
+    url: 'https://www.facebook.com/Sebastian-Landwehr-101161921820497',
   },
 ]
 
