@@ -1,5 +1,6 @@
 import { identity, map, sortBy } from '@dword-design/functions'
 
+import blogFooter from './content/blog-footer'
 import { appName, appTitle } from './model/variables'
 
 export default {
@@ -46,6 +47,7 @@ export default {
       },
     ],
     'nuxt-content-git',
+    ['~/modules/blog-footer', { text: blogFooter }],
     '@nuxt/content',
   ],
   name: appName,
