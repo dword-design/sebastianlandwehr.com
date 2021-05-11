@@ -36,7 +36,7 @@ const accounts = [
   {
     icon: MdiTwitter,
     title: 'Twitter',
-    url: 'https://twitter.com/DwordDesign',
+    url: 'https://twitter.com/seblandwehr',
   },
   {
     icon: MdiInstagram,
