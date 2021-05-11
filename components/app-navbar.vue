@@ -31,7 +31,7 @@ const accounts = [
   {
     icon: IconMedium,
     title: 'Medium',
-    url: 'https://dworddesign.medium.com',
+    url: 'https://sebastianlandwehr.medium.com',
   },
   {
     icon: MdiTwitter,
