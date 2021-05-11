@@ -18,7 +18,7 @@ export default {
     [
       'nuxt-mail',
       {
-        message: { to: 'info@dword-design.de' },
+        message: { to: 'info@sebastianlandwehr.com' },
         smtp: process.env.MAIL_CONFIG || '{}' |> JSON.parse,
       },
     ],
