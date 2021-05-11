@@ -1,3 +1,10 @@
+## [1.4.48](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.47...v1.4.48) (2021-05-11)
+
+
+### Bug Fixes
+
+* update dev.to url ([27d3e0a](https://github.com/dword-design/sebastianlandwehr.com/commit/27d3e0a83ac7da373295b60c9a3f62045c9eb06c))
+
 ## [1.4.47](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.46...v1.4.47) (2021-05-11)
 
 
