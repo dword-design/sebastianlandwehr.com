@@ -26,7 +26,7 @@ const accounts = [
     icon: MdiDevTo,
     size: 'is-medium',
     title: 'DEV Community Profile',
-    url: 'https://dev.to/dworddesign',
+    url: 'https://dev.to/seblandwehr',
   },
   {
     icon: IconMedium,
