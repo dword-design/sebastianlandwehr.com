@@ -1,3 +1,10 @@
+## [1.4.46](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.45...v1.4.46) (2021-05-11)
+
+
+### Bug Fixes
+
+* fix email address ([0b5189f](https://github.com/dword-design/sebastianlandwehr.com/commit/0b5189f3bb294c64cb95e6b6fefe40153bf3680c))
+
 ## [1.4.45](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.44...v1.4.45) (2021-05-11)
 
 
