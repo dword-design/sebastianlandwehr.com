@@ -1,3 +1,10 @@
+## [1.4.47](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.46...v1.4.47) (2021-05-11)
+
+
+### Bug Fixes
+
+* update medium link ([78bd300](https://github.com/dword-design/sebastianlandwehr.com/commit/78bd300dad66d0e17717039f9835a4dd50373ea8))
+
 ## [1.4.46](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.45...v1.4.46) (2021-05-11)
 
 
