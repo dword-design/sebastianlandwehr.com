@@ -1,3 +1,10 @@
+## [1.4.44](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.43...v1.4.44) (2021-05-11)
+
+
+### Bug Fixes
+
+* favicon ([284e3f3](https://github.com/dword-design/sebastianlandwehr.com/commit/284e3f3d0a4abf5c823de5b15d1a487931439cd8))
+
 ## [1.4.43](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.42...v1.4.43) (2021-05-10)
 
 
