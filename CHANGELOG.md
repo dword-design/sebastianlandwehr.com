@@ -1,3 +1,10 @@
+## [1.4.45](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.44...v1.4.45) (2021-05-11)
+
+
+### Bug Fixes
+
+* fix twitter url ([9ae6179](https://github.com/dword-design/sebastianlandwehr.com/commit/9ae6179dbdeb08c04c422bac3d391a280e5e6dd6))
+
 ## [1.4.44](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.43...v1.4.44) (2021-05-11)
 
 
