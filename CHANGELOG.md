@@ -1,3 +1,10 @@
+## [1.4.49](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.48...v1.4.49) (2021-05-13)
+
+
+### Bug Fixes
+
+* article about nuxt-route-meta ([#79](https://github.com/dword-design/sebastianlandwehr.com/issues/79)) ([6e91554](https://github.com/dword-design/sebastianlandwehr.com/commit/6e91554593813174514e46d4778c9c9462745979))
+
 ## [1.4.48](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.47...v1.4.48) (2021-05-11)
 
 
