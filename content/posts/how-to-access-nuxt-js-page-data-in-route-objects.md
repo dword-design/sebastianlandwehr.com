@@ -1,5 +1,5 @@
 ---
-title: How to access Nuxt.js page data in route objects
+title: How to Access Nuxt.js Page Data in Route Objects
 ---
 
 Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stubled upon, for example when generating sitemaps.
