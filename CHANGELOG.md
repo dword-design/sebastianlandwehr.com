@@ -1,3 +1,10 @@
+## [1.4.50](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.49...v1.4.50) (2021-05-27)
+
+
+### Bug Fixes
+
+* fix post title ([db798c5](https://github.com/dword-design/sebastianlandwehr.com/commit/db798c51c5653b035cecc7a98825915c958d1ec5))
+
 ## [1.4.49](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.48...v1.4.49) (2021-05-13)
 
 
