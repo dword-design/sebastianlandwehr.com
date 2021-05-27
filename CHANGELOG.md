@@ -1,3 +1,11 @@
+## [1.4.51](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.50...v1.4.51) (2021-05-27)
+
+
+### Bug Fixes
+
+* fix test ([d4537ef](https://github.com/dword-design/sebastianlandwehr.com/commit/d4537ef974fed548562331fb5d85d3cb4b271407))
+* rename post ([5673acf](https://github.com/dword-design/sebastianlandwehr.com/commit/5673acfb6316c260b405a654f1ac7c641905f091))
+
 ## [1.4.50](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.49...v1.4.50) (2021-05-27)
 
 
