@@ -1,3 +1,10 @@
+## [1.4.52](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.51...v1.4.52) (2021-05-28)
+
+
+### Bug Fixes
+
+* update config files ([d886cfb](https://github.com/dword-design/sebastianlandwehr.com/commit/d886cfb61ea4c51de584ba8bd7d43d2033a7b645))
+
 ## [1.4.51](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.50...v1.4.51) (2021-05-27)
 
 
