@@ -120,3 +120,25 @@ As a next step we can change the colors for each library type. I've used [Palett
   >
   </iframe>
 </p>
+
+## Usage with Nuxt
+
+If you are a Nuxt user, it is often more convenient to add a module to your project and then have everything available right away. There is [nuxt-mermaid-string](https://github.com/dword-design/nuxt-mermaid-string), which basically wraps the vue component.
+
+Simply install it via `npm install nuxt-mermaid-string` or `yarn add nuxt-mermaid-string`.
+
+Then add it to your `nuxt.config.js` like this:
+
+```js
+export default {
+  modules: ['nuxt-mermaid-string'],
+}
+```
+
+And there we go. The rest works like with plain Vue!
+
+## Conclusion
+
+In this article we had a look at diagram generation in Vue apps. I hope you liked it and it's of some use for you!
+
+You help me know if people like the packages by leaving a GitHub star at [vue-mermaid-string](https://github.com/dword-design/vue-mermaid-string) and/or [nuxt-mermaid-string](https://github.com/dword-design/vue-mermaid-string) 🌟.
