@@ -86,10 +86,12 @@ export default {
 // modules/module.js
 
 export default function () {
-  this.extendRoutes(routes => {
-    // route.meta.auth = true
-    // route.meta.theme = 'light'
-  })
+  this.extendRoutes(routes =>
+    routes.forEach(route => {
+      // route.meta.auth = true
+      // route.meta.theme = 'light'
+    })
+  )
 }
 ```
 
