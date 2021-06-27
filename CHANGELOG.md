@@ -1,3 +1,10 @@
+## [1.4.58](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.57...v1.4.58) (2021-06-27)
+
+
+### Bug Fixes
+
+* show nav on mobile ([#90](https://github.com/dword-design/sebastianlandwehr.com/issues/90)) ([7f6a26f](https://github.com/dword-design/sebastianlandwehr.com/commit/7f6a26fb29d441fe7bb6c2878e5d26e82968772a))
+
 ## [1.4.57](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.56...v1.4.57) (2021-06-27)
 
 
