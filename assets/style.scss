@@ -19,8 +19,15 @@ body {
 }
 
 .navbar-item {
+  display: flex;
+
   // otherwise the brand will overflow on mobile
   flex-shrink: 1;
+}
+
+.navbar-end {
+  display: flex;
+  align-items: center;
 }
 
 .boxlink::after {
