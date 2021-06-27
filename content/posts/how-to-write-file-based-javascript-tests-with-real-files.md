@@ -151,7 +151,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 }))
 ```
 
-Be cautious though, if the repository is not initialized correctly, user user Git config might be overriden.
+Be cautious though, if the repository is not initialized correctly, user user Git config might be overridden.
 
 ## Conclusion
 
