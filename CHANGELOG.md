@@ -1,3 +1,10 @@
+## [1.4.57](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.56...v1.4.57) (2021-06-27)
+
+
+### Bug Fixes
+
+* fix typo ([#89](https://github.com/dword-design/sebastianlandwehr.com/issues/89)) ([077a639](https://github.com/dword-design/sebastianlandwehr.com/commit/077a639e7a425defa4178cf18e97d68cd8b84e42))
+
 ## [1.4.56](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.55...v1.4.56) (2021-06-27)
 
 
