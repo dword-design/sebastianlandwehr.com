@@ -55,7 +55,10 @@ export default {
   render: context => (
     <b-navbar
       {...context.data}
+      active
       class="has-shadow is-spaced"
+      close-on-click={false}
+      mobile-burger={false}
       wrapper-class="container"
     >
       <b-navbar-item slot="brand" tag="div">
@@ -95,10 +98,6 @@ export default {
             />
           </b-navbar-item>
         ))}
-      {/* <app-accounts /> */}
-      {/* <b-navbar-item slot="end" tag="div">
-        <app-accounts />
-      </b-navbar-item> */}
     </b-navbar>
   ),
 }
