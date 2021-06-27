@@ -25,7 +25,7 @@ export default {
     <ul class="level">
       {libraries
         |> map(library => (
-          <li class="level-item" style={{ maxWidth: '9rem' }}>
+          <li class="level-item" style={{ maxWidth: '10rem' }}>
             <a href={library.websiteUrl} target="_blank">
               <img alt={library.title} src={library.imageUrl} />
             </a>

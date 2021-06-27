@@ -8,6 +8,7 @@ $navbar-padding-vertical: 0.5rem;
 $hero-body-padding-medium: 5rem 0.75rem;
 $section-padding-medium: 5rem 0.75rem;
 $link: #3273dc;
+$level-item-spacing: 1.5rem;
 
 @import "~bulma/sass/utilities/_all";
 @import "@dword-design/nuxt-buefy/dist/style";
@@ -27,6 +28,7 @@ body {
 
 .navbar-end {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -117,4 +119,19 @@ a.is-text {
     bottom: 0;
     left: 0;
   }
+}
+
+.level {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.level-item {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
