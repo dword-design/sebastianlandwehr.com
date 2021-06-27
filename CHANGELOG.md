@@ -1,3 +1,10 @@
+## [1.4.59](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.58...v1.4.59) (2021-06-27)
+
+
+### Bug Fixes
+
+* fix libraries on mobile ([#91](https://github.com/dword-design/sebastianlandwehr.com/issues/91)) ([7b5845e](https://github.com/dword-design/sebastianlandwehr.com/commit/7b5845ec94430f2348e884e4ce2157620ceca2ea))
+
 ## [1.4.58](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.57...v1.4.58) (2021-06-27)
 
 
