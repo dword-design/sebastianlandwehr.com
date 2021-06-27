@@ -1,3 +1,10 @@
+## [1.4.56](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.55...v1.4.56) (2021-06-27)
+
+
+### Bug Fixes
+
+* add vscode extensions ([#88](https://github.com/dword-design/sebastianlandwehr.com/issues/88)) ([6adc0c4](https://github.com/dword-design/sebastianlandwehr.com/commit/6adc0c47cd4d18212d57cf1432e9725a9d14a440))
+
 ## [1.4.55](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.54...v1.4.55) (2021-06-26)
 
 
