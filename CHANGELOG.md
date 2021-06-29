@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.60...v1.5.0) (2021-06-29)
+
+
+### Features
+
+* post about vue-mermaid-string ([#93](https://github.com/dword-design/sebastianlandwehr.com/issues/93)) ([98b1dbe](https://github.com/dword-design/sebastianlandwehr.com/commit/98b1dbec14c3231c283315915ba4dce1eac73c6b))
+
 ## [1.4.60](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.59...v1.4.60) (2021-06-28)
 
 
