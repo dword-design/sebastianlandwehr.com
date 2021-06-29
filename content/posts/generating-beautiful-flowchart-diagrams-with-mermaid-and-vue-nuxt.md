@@ -2,11 +2,11 @@
 title: Generating Beautiful Flowchart Diagrams With Mermaid and Vue/Nuxt
 ---
 
-Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using [vue-mermaid-string](https://github.com/dword-design/vue-mermaid-string) and [nuxt-mermaid-string](https://github.com/dword-design/nuxt-mermaid-string). They both help integrating the wonderful [Mermaid library](https://mermaid-js.github.io/) into your Vue-based projects.
+Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using [vue-mermaid-string](https://github.com/dword-design/vue-mermaid-string) and [nuxt-mermaid-string](https://github.com/dword-design/nuxt-mermaid-string). They both help to integrate the wonderful [Mermaid](https://mermaid-js.github.io/) library into your Vue-based projects.
 
 ## Setup
 
-Alright, let's stick to Vue for now and see later how it works for Nuxt. First install the component via NPM or Yarn:
+Alright, let's stick to Vue for now and see later how it works for Nuxt. First we need to install the component.
 
 There are several ways to add the component to your project. The quickest solution is via CDN like this:
 
@@ -21,11 +21,7 @@ Note that you also need to add `mermaid` itself.
 Alternatively, install it via a package manager:
 
 ```bash
-# npm
 $ npm install vue-mermaid-string
-
-# Yarn
-$ yarn add vue-mermaid-string
 ```
 
 And register the component. You can do it locally:
@@ -60,11 +56,11 @@ import VueMermaidString from 'vue-mermaid-string'
 Vue.use(VueMermaidString)
 ```
 
-## Let's Draw some serious stuff
+## Let's draw some serious stuff
 
 Alright, now let's start drawing a diagram! Since probably most of the readers are JavaScript fans, we create a little tech tree for demonstration purposes 😊.
 
-Here is the code needed to display the diagram. We are also adding [endent](https://github.com/indentjs/endent) to make life easier with multi-line strings.
+Here is the code needed to display the diagram. We also add [endent](https://github.com/indentjs/endent) to make life easier with multi-line strings.
 
 ```html
 <template>
@@ -107,9 +103,11 @@ This results in the following diagram:
 
 ![Diagram with JavaScript frameworks (Vue.js, React), DateTime libraries (Moment.js, date-fns), and 3D libraries (Three.js, Babylon.js)](/blog/vue-mermaid-string/normal.png)
 
-Great! You can also edit the diagram string (for example the node labels), and it updates the generated one accordingly.
+Great! You can also edit the diagram string (for example the node labels), and it updates the result accordingly.
 
-As a next step we can change the colors for each library type. I've used [Paletton](https://www.paletton.com/#uid=73+1p0k2O++00++00++7n++be+Z) to generate a tetradic color scheme and applied the colors to the corresponding nodes. The result looks like this:
+As a next step we change the colors for each library type. I've used [Paletton](https://www.paletton.com/#uid=73+1p0k2O++00++00++7n++be+Z) to generate a tetradic color scheme and applied the colors to the corresponding nodes. 
+
+I've put the result into a sandbox with source code, the result looks like this:
 
 <p>
   <iframe src="https://codesandbox.io/embed/demo-vue-mermaid-string-e2sp4?codemirror=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
@@ -121,11 +119,13 @@ As a next step we can change the colors for each library type. I've used [Palett
   </iframe>
 </p>
 
+Feel free to play around with the sandbox and try out different Mermaid strings!
+
 ## Usage with Nuxt
 
-If you are a Nuxt user, it is often more convenient to add a module to your project and then have everything available right away. There is [nuxt-mermaid-string](https://github.com/dword-design/nuxt-mermaid-string), which basically wraps the vue component.
+If you are a Nuxt user, it is probably more convenient to add a module to your project and then have everything available right away. There is [nuxt-mermaid-string](https://github.com/dword-design/nuxt-mermaid-string), which basically wraps the vue component.
 
-Simply install it via `npm install nuxt-mermaid-string` or `yarn add nuxt-mermaid-string`.
+Simply install it via `npm install nuxt-mermaid-string`.
 
 Then add it to your `nuxt.config.js` like this:
 
@@ -135,10 +135,10 @@ export default {
 }
 ```
 
-And there we go. The rest works like with plain Vue!
+And there we go. The rest works like above!
 
 ## Conclusion
 
-In this article we had a look at diagram generation in Vue apps. I hope you liked it and it's of some use for you!
+In this article we had a look at diagram generation in Vue and Nuxt apps. I hope you liked it and it's of some use for you!
 
 You help me know if people like the packages by leaving a GitHub star at [vue-mermaid-string](https://github.com/dword-design/vue-mermaid-string) and/or [nuxt-mermaid-string](https://github.com/dword-design/vue-mermaid-string) 🌟.
