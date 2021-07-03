@@ -2,7 +2,6 @@ import nuxtConfig from '@dword-design/base-config-app/dist/nuxt.config'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
-import { delay } from '@dword-design/functions'
 
 export default tester(
   {
