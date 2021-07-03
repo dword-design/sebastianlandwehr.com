@@ -7,6 +7,7 @@ import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiNpm from '@mdi/svg/svg/npm.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
+import IconHashnode from '@/assets/icon-hashnode.svg'
 import IconMedium from '@/assets/icon-medium.svg'
 import { appName, appTitle } from '@/model/variables'
 
@@ -27,6 +28,11 @@ const accounts = [
     size: 'is-medium',
     title: 'DEV Community Profile',
     url: 'https://dev.to/seblandwehr',
+  },
+  {
+    icon: IconHashnode,
+    title: 'Hashnode',
+    url: 'https://dworddesign.hashnode.dev',
   },
   {
     icon: IconMedium,

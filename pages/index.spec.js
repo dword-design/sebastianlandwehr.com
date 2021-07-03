@@ -2,13 +2,14 @@ import nuxtConfig from '@dword-design/base-config-app/dist/nuxt.config'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
+import { delay } from '@dword-design/functions'
 
 export default tester(
   {
     async init() {
       await this.page.goto('http://localhost:3000')
       await this.page.setViewport({
-        height: 4000,
+        height: 5100,
         width: 1400,
       })
 
