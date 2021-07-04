@@ -74,7 +74,7 @@ A lot of my past projects in some way had to do with file access. I started to t
       </title>
       <link>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</link>
       <guid>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</guid>
-      <pubDate>Wed, 10 Mar 2021 13:54:06 GMT</pubDate>
+      <pubDate>Wed, 10 Mar 2021 13:47:54 GMT</pubDate>
       <description>
         <![CDATA[What is Modernizr?
 Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this.]]>

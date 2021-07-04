@@ -9,13 +9,14 @@ export default tester(
       await this.page.goto(
         'http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way'
       )
+      //await this.page.waitForSelector('.prism-tag')
       await this.page.setViewport({
         height: 1,
         width: 1400,
       })
-
-      const screenshot = await this.page.screenshot({ fullPage: true })
-      expect(screenshot).toMatchImageSnapshot(this)
+      expect(
+        await this.page.screenshot({ fullPage: true })
+      ).toMatchImageSnapshot(this)
     },
   },
   [testerPluginNuxt(nuxtConfig), testerPluginPuppeteer()]

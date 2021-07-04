@@ -13,7 +13,10 @@ export default tester(
           |> await
           |> property('data')
           |> pretty
-          |> replace(/<lastBuildDate>.*?<\/lastBuildDate>/g, '<lastBuildDate>Foo</lastBuildDate>')
+          |> replace(
+            /<lastBuildDate>.*?<\/lastBuildDate>/g,
+            '<lastBuildDate>Foo</lastBuildDate>'
+          )
       ).toMatchSnapshot(this)
     },
   },

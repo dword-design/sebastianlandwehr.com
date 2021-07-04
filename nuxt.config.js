@@ -91,6 +91,7 @@ export default {
     'nuxt-content-git',
     ['~/modules/blog-footer', { text: blogFooter }],
     '@nuxt/content',
+    '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
   ],
   name: appName,
