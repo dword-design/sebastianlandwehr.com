@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.5.0...v1.6.0) (2021-07-03)
+
+
+### Features
+
+* various improvements ([982e5f3](https://github.com/dword-design/sebastianlandwehr.com/commit/982e5f3852472c0b4f106af7513fc45b445eb5be))
+
 # [1.5.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.4.60...v1.5.0) (2021-06-29)
 
 
