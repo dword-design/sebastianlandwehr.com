@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.2...v1.7.3) (2021-07-04)
+
+
+### Bug Fixes
+
+* various stuff ([c7ec357](https://github.com/dword-design/sebastianlandwehr.com/commit/c7ec357d392f9bbb302cf473db29dd75406c2c65))
+
 ## [1.7.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.1...v1.7.2) (2021-07-04)
 
 
