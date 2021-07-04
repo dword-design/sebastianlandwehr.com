@@ -1,3 +1,18 @@
+# [1.7.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.6.0...v1.7.0) (2021-07-04)
+
+
+### Bug Fixes
+
+* fix feed order ([3eef35b](https://github.com/dword-design/sebastianlandwehr.com/commit/3eef35bf7da03f6231af5c83dcbc0fcded40cda3))
+* fix syntax highlighting ([ff3eb15](https://github.com/dword-design/sebastianlandwehr.com/commit/ff3eb15f7d5e4c457c13222c8844e1429346a29c))
+* fix syntax highlighting ([4e15998](https://github.com/dword-design/sebastianlandwehr.com/commit/4e15998e192b2cd7f0fc177ca8b0d718876287e8))
+* remove comment ([f8d0b84](https://github.com/dword-design/sebastianlandwehr.com/commit/f8d0b84bd0454c515b121f910906198ecf792b99))
+
+
+### Features
+
+* add rss feed ([162bc13](https://github.com/dword-design/sebastianlandwehr.com/commit/162bc138d992de2f32e367ec254b9b0f136dbb24))
+
 # [1.6.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.5.0...v1.6.0) (2021-07-03)
 
 
