@@ -7,7 +7,7 @@ export default {
     value: {},
   },
   render: context => (
-    <div class="columns is-multiline">
+    <div {...context.data} class="columns is-multiline">
       {context.props.value
         |> map(project => (
           <div class="column is-one-third">

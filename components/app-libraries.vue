@@ -21,8 +21,8 @@ const libraries = [
 
 export default {
   functional: true,
-  render: () => (
-    <ul class="level">
+  render: context => (
+    <ul {...context.data} class="level">
       {libraries
         |> map(library => (
           <li class="level-item" style={{ maxWidth: '10rem' }}>
