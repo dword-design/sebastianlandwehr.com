@@ -1,1 +1,0 @@
-import 'prismjs/plugins/custom-class/prism-custom-class'

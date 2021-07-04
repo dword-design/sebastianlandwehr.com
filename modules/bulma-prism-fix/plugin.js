@@ -1,4 +1,7 @@
 import Prism from 'prismjs'
-import './custom-class'
+import customClass from 'prismjs/plugins/custom-class/prism-custom-class'
 
-Prism.plugins.customClass.map({ number: 'prism-number', tag: 'prism-tag' })
+customClass.name = 'customClass'
+
+Prism.plugins[customClass.name].map({ number: 'prism-number', tag: 'prism-tag' })
+
