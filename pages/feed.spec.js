@@ -1,5 +1,5 @@
 import nuxtConfig from '@dword-design/base-config-app/dist/nuxt.config'
-import { property } from '@dword-design/functions'
+import { property, replace } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import axios from 'axios'
@@ -13,6 +13,7 @@ export default tester(
           |> await
           |> property('data')
           |> pretty
+          |> replace(/<lastBuildDate>.*?<\/lastBuildDate>/g, '<lastBuildDate>Foo</lastBuildDate>')
       ).toMatchSnapshot(this)
     },
   },
