@@ -4,6 +4,8 @@ title: Generating Beautiful Flowchart Diagrams With Mermaid and Vue/Nuxt
 
 Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using [vue-mermaid-string](https://github.com/dword-design/vue-mermaid-string) and [nuxt-mermaid-string](https://github.com/dword-design/nuxt-mermaid-string). They both help to integrate the wonderful [Mermaid](https://mermaid-js.github.io/) library into your Vue-based projects.
 
+<!--more-->
+
 ## Setup
 
 Alright, let's stick to Vue for now and see later how it works for Nuxt. First we need to install the component.

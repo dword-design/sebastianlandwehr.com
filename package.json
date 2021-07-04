@@ -30,6 +30,7 @@
     "@dword-design/nuxt-server-link": "^2.0.0",
     "@mdi/svg": "^5.9.55",
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/recaptcha": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",

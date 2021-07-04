@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`feed init 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?>
+<rss version=\\"2.0\\" xmlns:dc=\\"http://purl.org/dc/elements/1.1/\\" xmlns:content=\\"http://purl.org/rss/1.0/modules/content/\\">
+  <channel>
+    <title>Sebastian Landwehr</title>
+    <link>http://localhost:3000/blog</link>
+    <description>Developing web apps and blogging about JavaScript and Nuxt.js</description>
+    <lastBuildDate>Sun, 04 Jul 2021 02:17:31 GMT</lastBuildDate>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <generator>https://github.com/nuxt-community/feed-module</generator>
+    <item>
+      <title>
+        <![CDATA[How to Access Nuxt.js Page Data in Route Meta Fields]]>
+      </title>
+      <link>http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</link>
+      <guid>http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</guid>
+      <pubDate>Thu, 13 May 2021 13:08:54 GMT</pubDate>
+      <description>
+        <![CDATA[Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Generating Beautiful Flowchart Diagrams With Mermaid and Vue/Nuxt]]>
+      </title>
+      <link>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</link>
+      <guid>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</guid>
+      <pubDate>Tue, 29 Jun 2021 16:06:44 GMT</pubDate>
+      <description>
+        <![CDATA[Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using vue-mermaid-string and nuxt-mermaid-string. They both help to integrate the wonderful Mermaid library into your Vue-based projects.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using vue-mermaid-string and nuxt-mermaid-string. They both help to integrate the wonderful Mermaid library into your Vue-based projects.]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[How to Write File-Based JavaScript Tests With Real Files]]>
+      </title>
+      <link>http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</link>
+      <guid>http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</guid>
+      <pubDate>Wed, 21 Apr 2021 10:33:23 GMT</pubDate>
+      <description>
+        <![CDATA[Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.
+A lot of my past projects in some way had to do with file access. I started to test with mocking libraries like mock-fs, but soon recognized that they do not work for all cases, and sometimes you are using third party libraries internally that you cannot mock easily. So I thought of a different solution and the one I'm using right now for most projects actually uses real files.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.
+A lot of my past projects in some way had to do with file access. I started to test with mocking libraries like mock-fs, but soon recognized that they do not work for all cases, and sometimes you are using third party libraries internally that you cannot mock easily. So I thought of a different solution and the one I'm using right now for most projects actually uses real files.]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Image Snapshot Testing with Mocha]]>
+      </title>
+      <link>http://localhost:3000/blog/image-snapshot-testing-with-mocha</link>
+      <guid>http://localhost:3000/blog/image-snapshot-testing-with-mocha</guid>
+      <pubDate>Tue, 09 Mar 2021 18:53:01 GMT</pubDate>
+      <description>
+        <![CDATA[What Is Snapshot Testing?
+Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[What Is Snapshot Testing?
+Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images.]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Using Modernizr with Nuxt.js to Detect Browser Features]]>
+      </title>
+      <link>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</link>
+      <guid>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</guid>
+      <pubDate>Wed, 10 Mar 2021 13:47:54 GMT</pubDate>
+      <description>
+        <![CDATA[What is Modernizr?
+Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[What is Modernizr?
+Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this.]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Sending Emails with Nuxt.js the Easy Way]]>
+      </title>
+      <link>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</link>
+      <guid>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</guid>
+      <pubDate>Sun, 07 Mar 2021 14:43:42 GMT</pubDate>
+      <description>
+        <![CDATA[Introduction
+When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
+That is why I wrote nuxt-mail, a Nuxt.js module that adds a /mail/send route to the server and injects a $mail variable that wraps the API call.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[Introduction
+When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
+That is why I wrote nuxt-mail, a Nuxt.js module that adds a /mail/send route to the server and injects a $mail variable that wraps the API call.]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[@nuxt/content: How to Keep createdAt and updatedAt Valid After Cloning]]>
+      </title>
+      <link>http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</link>
+      <guid>http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</guid>
+      <pubDate>Tue, 13 Apr 2021 22:45:06 GMT</pubDate>
+      <description>
+        <![CDATA[I recently tried out @nuxt/content, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[I recently tried out @nuxt/content, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.]]>
+      </content:encoded>
+    </item>
+  </channel>
+</rss>"
+`;

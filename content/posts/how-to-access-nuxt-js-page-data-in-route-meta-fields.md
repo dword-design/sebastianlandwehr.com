@@ -4,6 +4,8 @@ title: How to Access Nuxt.js Page Data in Route Meta Fields
 
 Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.
 
+<!--more-->
+
 Nuxt pages allow you to define structural data like the [meta](https://github.com/nuxt/nuxt.js/issues/1687) property or the [auth property from @nuxtjs/auth](https://auth.nuxtjs.org/guide/middleware) (note that they should not be confused with [meta tags](https://nuxtjs.org/docs/2.x/features/meta-tags-seo)). It would be great to be able to access them elsewhere. The route object can be accessed at quite a lot of places:
 
 - `context.route` in `asyncData`

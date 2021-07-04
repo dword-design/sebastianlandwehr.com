@@ -6,6 +6,8 @@ title: Using Modernizr with Nuxt.js to Detect Browser Features
 
 [Modernizr](https://github.com/Modernizr/Modernizr) is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this.
 
+<!--more-->
+
 ## Using Modernizr with Nuxt.js
 
 Modernizr uses a plugin-based architecture, and you have to build the package yourself, depending on the features you need to detect – at least if you are not using Nuxt.js! I have created the [nuxt-modernizr](https://github.com/dword-design/nuxt-modernizr) module that makes it easy to add Modernizr to your Nuxt.js app. You pass the features as module options, and the module creates a Modernizr build and places it in the `.nuxt` folder. Here is how to configure it:

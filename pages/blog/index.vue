@@ -1,5 +1,6 @@
 <script>
 import { map } from '@dword-design/functions'
+import MdiRss from '@mdi/svg/svg/rss.svg'
 import { format } from 'date-fns'
 
 export default {
@@ -17,7 +18,21 @@ export default {
     return (
       <main class="section">
         <div class="container is-content">
-          <h1 class="title">Blog</h1>
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <h1 class="title">Blog</h1>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">
+                <a class="button" href="/feed" target="_blank">
+                  <MdiRss class="icon" />
+                  <span>Subscribe via RSS</span>
+                </a>
+              </div>
+            </div>
+          </div>
           <div class="tile is-ancestor is-vertical">
             {this.posts
               |> map(post => (

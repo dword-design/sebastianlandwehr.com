@@ -6,6 +6,8 @@ Hey guys, this post is about writing tests for projects that access the file sys
 
 A lot of my past projects in some way had to do with file access. I started to test with mocking libraries like [mock-fs](https://github.com/tschaub/mock-fs), but soon recognized that they do not work for all cases, and sometimes you are using third party libraries internally that you cannot mock easily. So I thought of a different solution and the one I'm using right now for most projects actually uses real files.
 
+<!--more-->
+
 ## with-local-tmp-dir and output-files
 
 Why not use real files for testing instead of mocking? I built an NPM package called [with-local-tmp-dir](https://github.com/dword-design/with-local-tmp-dir) that basically creates a temporary subfolder inside cwd, `cd`s into it, runs a function, and `cd`s back to the previous cwd afterwards. In this function you can create files and pretty much anything, run your unit under test. Afterwards the folder is removed and everything is cleaned up. You actually do not solely need to use it for tests, you can use it anywhere, but it's mostly useful for tests.

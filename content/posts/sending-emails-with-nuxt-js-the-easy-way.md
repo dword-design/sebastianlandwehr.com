@@ -8,6 +8,8 @@ When I started to work with Nuxt.js, I frequently had the problem that I wanted 
 
 That is why I wrote [nuxt-mail](https://github.com/dword-design/nuxt-mail), a Nuxt.js module that adds a `/mail/send` route to the server and injects a `$mail` variable that wraps the API call.
 
+<!--more-->
+
 ## Usage
 
 You start by installing the module and [@nuxtjs/axios](https://github.com/axios/axios) via `npm install nuxt-mail @nuxtjs/axios` or `yarn add nuxt-mail @nuxtjs/axios`.

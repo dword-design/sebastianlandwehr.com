@@ -5,6 +5,47 @@ import { appName, appTitle } from './model/variables'
 
 export default {
   css: ['@/assets/style.scss'],
+  feed: () => {
+    const $content = require('@nuxt/content').$content
+
+    return [
+      {
+        create: async feed => {
+          feed.options = {
+            description: appTitle,
+            link: `${process.env.BASE_URL}/blog`,
+            title: appName,
+          }
+
+          const posts = await $content('posts').fetch()
+          posts.forEach(post => {
+            const url = `${process.env.BASE_URL}/blog/${post.slug}`
+            feed.addItem({
+              author: post.authors,
+              content: post.description,
+              date: new Date(post.createdAt),
+              description: post.description,
+              id: url,
+              link: url,
+              title: post.title,
+            })
+          })
+        },
+        path: '/feed',
+        type: 'rss2',
+      },
+    ]
+  },
+  head: {
+    link: [
+      {
+        href: '/feed',
+        rel: 'alternate',
+        title: 'Blog',
+        type: 'application/rss+xml',
+      },
+    ],
+  },
   modules: [
     [
       '@dword-design/nuxt-buefy',
@@ -49,6 +90,7 @@ export default {
     'nuxt-content-git',
     ['~/modules/blog-footer', { text: blogFooter }],
     '@nuxt/content',
+    '@nuxtjs/feed',
   ],
   name: appName,
   router: {

@@ -6,6 +6,8 @@ title: Image Snapshot Testing with Mocha
 
 Snapshot testing is a testing mechanism that for long has seemed to be exclusive to [Jest](https://github.com/facebook/jest). The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images.
 
+<!--more-->
+
 ## Snapshot Testing with Jest
 
 Snapshot testing itself is a [built-in feature](https://jestjs.io/docs/en/snapshot-testing) of Jest, and when searching specifically for image snapshots, you'll quickly find [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot), which does great work comparing and updating image snapshots. It also provides convenience features like a base64 diff output, which allows us to view the diff from a CI environment (since the diff image file cannot be saved or viewed).
