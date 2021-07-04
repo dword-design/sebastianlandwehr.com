@@ -2,24 +2,6 @@
 import { map } from '@dword-design/functions'
 import MdiRss from '@mdi/svg/svg/rss.svg'
 import { format } from 'date-fns'
-/* import IconHashnode from '@/assets/icon-hashnode.svg'
-import IconMedium from '@/assets/icon-medium.svg'
-
-icon: MdiDevTo,
-    size: 'is-medium',
-    title: 'DEV Community Profile',
-    url: '',
-  },
-  {
-    icon: IconHashnode,
-    title: 'Hashnode',
-    url: 'https://dworddesign.hashnode.dev',
-  },
-  {
-    icon: IconMedium,
-    title: 'Medium',
-    url: 'https://sebastianlandwehr.medium.com',
-  }, */
 
 export default {
   asyncData: async context => ({
@@ -54,15 +36,15 @@ export default {
           <div class="content">
             <p class="has-text-right">
               I'm also publishing on{' '}
-              <a href="https://dev.to/seblandwehr">
+              <a href="https://dev.to/seblandwehr" target="_blank">
                 <strong>dev.to</strong>
               </a>
               ,{' '}
-              <a href="https://dworddesign.hashnode.dev">
+              <a href="https://dworddesign.hashnode.dev" target="_blank">
                 <strong>Hashnode</strong>
               </a>{' '}
               and{' '}
-              <a href="https://sebastianlandwehr.medium.com">
+              <a href="https://sebastianlandwehr.medium.com" target="_blank">
                 <strong>Medium</strong>
               </a>
               .
