@@ -1,4 +1,4 @@
-import { identity, map, sortBy } from '@dword-design/functions'
+import { map } from '@dword-design/functions'
 
 import blogFooter from './content/blog-footer'
 import { appName, appTitle } from './model/variables'
@@ -17,7 +17,9 @@ export default {
             title: appName,
           }
 
-          const posts = await $content('posts').fetch()
+          const posts = await $content('posts')
+            .sortBy('createdAt', 'desc')
+            .fetch()
           posts.forEach(post => {
             const url = `${process.env.BASE_URL}/blog/${post.slug}`
             feed.addItem({
@@ -71,10 +73,9 @@ export default {
           const $content = require('@nuxt/content').$content
 
           return (
-            $content('posts').fetch()
+            $content('posts').sortBy('slug').fetch()
             |> await
             |> map(post => `blog/${post.slug}`)
-            |> sortBy(identity)
           )
         },
       },
