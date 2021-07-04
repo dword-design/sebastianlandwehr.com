@@ -5,39 +5,35 @@ import { appName, appTitle } from './model/variables'
 
 export default {
   css: ['@/assets/style.scss'],
-  feed: () => {
-    const $content = require('@nuxt/content').$content
+  feed: [{
+    create: async feed => {
+      const $content = require('@nuxt/content').$content
 
-    return [
-      {
-        create: async feed => {
-          feed.options = {
-            description: appTitle,
-            link: `${process.env.BASE_URL}/blog`,
-            title: appName,
-          }
+      feed.options = {
+        description: appTitle,
+        link: `${process.env.BASE_URL}/blog`,
+        title: appName,
+      }
 
-          const posts = await $content('posts')
-            .sortBy('createdAt', 'desc')
-            .fetch()
-          posts.forEach(post => {
-            const url = `${process.env.BASE_URL}/blog/${post.slug}`
-            feed.addItem({
-              author: post.authors,
-              content: post.description,
-              date: new Date(post.createdAt),
-              description: post.description,
-              id: url,
-              link: url,
-              title: post.title,
-            })
-          })
-        },
-        path: '/feed',
-        type: 'rss2',
-      },
-    ]
-  },
+      const posts = await $content('posts')
+        .sortBy('createdAt', 'desc')
+        .fetch()
+      posts.forEach(post => {
+        const url = `${process.env.BASE_URL}/blog/${post.slug}`
+        feed.addItem({
+          author: post.authors,
+          content: post.description,
+          date: new Date(post.createdAt),
+          description: post.description,
+          id: url,
+          link: url,
+          title: post.title,
+        })
+      })
+    },
+    path: '/feed',
+    type: 'rss2',
+  }],
   head: {
     link: [
       {
