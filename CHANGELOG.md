@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.1...v1.7.2) (2021-07-04)
+
+
+### Bug Fixes
+
+* fix margin ([fb307fe](https://github.com/dword-design/sebastianlandwehr.com/commit/fb307fe4b00cc4208518458bda861abd53e9a799))
+
 ## [1.7.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.0...v1.7.1) (2021-07-04)
 
 
