@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.3...v1.7.4) (2021-07-04)
+
+
+### Bug Fixes
+
+* fix blog link targets ([c30df71](https://github.com/dword-design/sebastianlandwehr.com/commit/c30df711b9b5a9eacb5081d60476d330480e938f))
+
 ## [1.7.3](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.2...v1.7.3) (2021-07-04)
 
 
