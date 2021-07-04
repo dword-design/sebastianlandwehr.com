@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.0...v1.7.1) (2021-07-04)
+
+
+### Bug Fixes
+
+* simplify feed ([f3c9698](https://github.com/dword-design/sebastianlandwehr.com/commit/f3c9698329f36fab62e7387d4dc91ebf4e379514))
+
 # [1.7.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.6.0...v1.7.0) (2021-07-04)
 
 
