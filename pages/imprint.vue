@@ -7,12 +7,8 @@ export default {
   },
   render: () => (
     <main class="section">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-9">
-            <div class="content" domPropsInnerHTML={text} />
-          </div>
-        </div>
+      <div class="container is-content">
+        <div class="content" domPropsInnerHTML={text} />
       </div>
     </main>
   ),

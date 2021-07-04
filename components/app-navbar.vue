@@ -1,14 +1,11 @@
 <script>
 import { map } from '@dword-design/functions'
-import MdiDevTo from '@mdi/svg/svg/dev-to.svg'
 import MdiFacebook from '@mdi/svg/svg/facebook.svg'
 import MdiGitHub from '@mdi/svg/svg/github.svg'
 import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiNpm from '@mdi/svg/svg/npm.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
-import IconHashnode from '@/assets/icon-hashnode.svg'
-import IconMedium from '@/assets/icon-medium.svg'
 import { appName, appTitle } from '@/model/variables'
 
 const accounts = [
@@ -22,22 +19,6 @@ const accounts = [
     size: 'is-large',
     title: 'NPM',
     url: 'https://www.npmjs.com/~dword-design',
-  },
-  {
-    icon: MdiDevTo,
-    size: 'is-medium',
-    title: 'DEV Community Profile',
-    url: 'https://dev.to/seblandwehr',
-  },
-  {
-    icon: IconHashnode,
-    title: 'Hashnode',
-    url: 'https://dworddesign.hashnode.dev',
-  },
-  {
-    icon: IconMedium,
-    title: 'Medium',
-    url: 'https://sebastianlandwehr.medium.com',
   },
   {
     icon: MdiTwitter,
@@ -79,6 +60,13 @@ export default {
           </h1>
           <p class="is-6 subtitle">{appTitle}</p>
         </div>
+      </b-navbar-item>
+      <b-navbar-item
+        href={context.parent.$router.resolve({ name: 'support-me' }).href}
+        slot="end"
+        tag="a"
+      >
+        Support me
       </b-navbar-item>
       <b-navbar-item
         href={context.parent.$router.resolve({ name: 'blog' }).href}
