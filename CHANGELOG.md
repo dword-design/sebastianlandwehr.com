@@ -1,3 +1,11 @@
+## [1.7.5](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.4...v1.7.5) (2021-07-05)
+
+
+### Bug Fixes
+
+* move og-image ([e474911](https://github.com/dword-design/sebastianlandwehr.com/commit/e474911575891ccfd9c5b465a933dd30ab0dc563))
+* og-image ([a1845e3](https://github.com/dword-design/sebastianlandwehr.com/commit/a1845e30710de919ad22a9c81f7b6b7c2ccac114))
+
 ## [1.7.4](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.3...v1.7.4) (2021-07-04)
 
 
