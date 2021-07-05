@@ -2,7 +2,7 @@
   "name": "sebastianlandwehr.com",
   "version": "1.7.4",
   "repository": "dword-design/sebastianlandwehr.com",
-  "funding": "https://www.buymeacoffee.com/dword",
+  "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
   "main": "dist/index.js",
