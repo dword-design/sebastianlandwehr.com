@@ -1,3 +1,11 @@
+## [1.7.6](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.5...v1.7.6) (2021-07-05)
+
+
+### Bug Fixes
+
+* adjust og-image ([2bcc014](https://github.com/dword-design/sebastianlandwehr.com/commit/2bcc014c1992caea49f9b83c9840728e0b24456e))
+* adjust social media image path ([c3a7815](https://github.com/dword-design/sebastianlandwehr.com/commit/c3a7815d274e4bc137290dc9f8a86508b1ac871b))
+
 ## [1.7.5](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.4...v1.7.5) (2021-07-05)
 
 
