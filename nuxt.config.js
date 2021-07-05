@@ -96,4 +96,5 @@ export default {
     linkActiveClass: 'is-active',
   },
   title: appTitle,
+  ogImage: `${process.env.BASE_URL}/og-image.png`,
 }
