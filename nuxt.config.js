@@ -92,9 +92,9 @@ export default {
     '@nuxtjs/feed',
   ],
   name: appName,
+  ogImage: `${process.env.BASE_URL}/og-image.png`,
   router: {
     linkActiveClass: 'is-active',
   },
   title: appTitle,
-  ogImage: `${process.env.BASE_URL}/og-image.png`,
 }
