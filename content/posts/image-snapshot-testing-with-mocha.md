@@ -2,9 +2,7 @@
 title: Image Snapshot Testing with Mocha
 ---
 
-## What Is Snapshot Testing?
-
-Snapshot testing is a testing mechanism that for long has seemed to be exclusive to [Jest](https://github.com/facebook/jest). The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images.
+Snapshot testing is a testing mechanism that for long has seemed to be exclusive to [Jest](https://github.com/facebook/jest). The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with [Mocha](https://github.com/mochajs/mocha).
 
 <!--more-->
 

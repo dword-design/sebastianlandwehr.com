@@ -76,12 +76,10 @@ A lot of my past projects in some way had to do with file access. I started to t
       <guid>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</guid>
       <pubDate>Wed, 10 Mar 2021 13:47:54 GMT</pubDate>
       <description>
-        <![CDATA[What is Modernizr?
-Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this.]]>
+        <![CDATA[Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.]]>
       </description>
       <content:encoded>
-        <![CDATA[What is Modernizr?
-Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this.]]>
+        <![CDATA[Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.]]>
       </content:encoded>
     </item>
     <item>
@@ -92,12 +90,10 @@ Modernizr is a package that detects browser features and makes them queriable vi
       <guid>http://localhost:3000/blog/image-snapshot-testing-with-mocha</guid>
       <pubDate>Tue, 09 Mar 2021 18:53:01 GMT</pubDate>
       <description>
-        <![CDATA[What Is Snapshot Testing?
-Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images.]]>
+        <![CDATA[Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with Mocha.]]>
       </description>
       <content:encoded>
-        <![CDATA[What Is Snapshot Testing?
-Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images.]]>
+        <![CDATA[Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with Mocha.]]>
       </content:encoded>
     </item>
     <item>
@@ -108,13 +104,11 @@ Snapshot testing is a testing mechanism that for long has seemed to be exclusive
       <guid>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</guid>
       <pubDate>Sun, 07 Mar 2021 14:43:42 GMT</pubDate>
       <description>
-        <![CDATA[Introduction
-When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
+        <![CDATA[When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
 That is why I wrote nuxt-mail, a Nuxt.js module that adds a /mail/send route to the server and injects a $mail variable that wraps the API call.]]>
       </description>
       <content:encoded>
-        <![CDATA[Introduction
-When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
+        <![CDATA[When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?
 That is why I wrote nuxt-mail, a Nuxt.js module that adds a /mail/send route to the server and injects a $mail variable that wraps the API call.]]>
       </content:encoded>
     </item>
