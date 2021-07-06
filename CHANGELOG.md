@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.0...v1.8.1) (2021-07-06)
+
+
+### Bug Fixes
+
+* add freelance to description ([59334e1](https://github.com/dword-design/sebastianlandwehr.com/commit/59334e1fd3d729aeb3551a905b597b75e4089fba))
+
 # [1.8.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.6...v1.8.0) (2021-07-06)
 
 
