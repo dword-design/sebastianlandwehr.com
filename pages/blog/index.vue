@@ -26,7 +26,11 @@ export default {
             </div>
             <div class="level-right">
               <div class="level-item">
-                <a class="button" href="/feed" target="_blank">
+                <a
+                  class="button is-small is-rounded"
+                  href="/feed"
+                  target="_blank"
+                >
                   <MdiRss class="icon" />
                   <span>Subscribe via RSS</span>
                 </a>

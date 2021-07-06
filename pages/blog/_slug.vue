@@ -1,4 +1,6 @@
 <script>
+import MdiRss from '@mdi/svg/svg/rss.svg'
+
 export default {
   asyncData: async context => ({
     post: await context
@@ -31,7 +33,13 @@ export default {
               year: 'numeric',
             })}
           </div>
-          <nuxt-content class="content" document={this.post} />
+          <nuxt-content class="content mb-4" document={this.post} />
+          <div>
+            <a class="button is-small is-rounded" href="/feed" target="_blank">
+              <MdiRss class="icon" />
+              <span>Subscribe via RSS</span>
+            </a>
+          </div>
         </article>
       </main>
     )
