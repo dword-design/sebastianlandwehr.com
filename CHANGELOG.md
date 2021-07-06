@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.1...v1.8.2) (2021-07-06)
+
+
+### Bug Fixes
+
+* remove introduction headings ([98d4839](https://github.com/dword-design/sebastianlandwehr.com/commit/98d4839be9f5d98421a57bddc47b1b957a6698e7))
+
 ## [1.8.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.0...v1.8.1) (2021-07-06)
 
 
