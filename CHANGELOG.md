@@ -1,3 +1,11 @@
+## [1.8.3](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.2...v1.8.3) (2021-07-06)
+
+
+### Bug Fixes
+
+* lock file maintenance ([eb53185](https://github.com/dword-design/sebastianlandwehr.com/commit/eb531859df82ca044d09503d317f82c62cd5cbc7))
+* update config files ([55da186](https://github.com/dword-design/sebastianlandwehr.com/commit/55da186ce8c4bcae771a596695a97d1f39e2629c))
+
 ## [1.8.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.1...v1.8.2) (2021-07-06)
 
 
