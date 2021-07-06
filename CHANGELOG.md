@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.6...v1.8.0) (2021-07-06)
+
+
+### Features
+
+* subscribe button below each blog post ([9486424](https://github.com/dword-design/sebastianlandwehr.com/commit/94864242fd5dcafdb62b11be5a86c533dfcefb84))
+
 ## [1.7.6](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.7.5...v1.7.6) (2021-07-05)
 
 
