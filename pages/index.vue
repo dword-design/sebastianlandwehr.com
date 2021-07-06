@@ -6,7 +6,8 @@
           <div class="column">
             <div class="content" style="padding-bottom: 1rem">
               <p>
-                I'm Sebastian Landwehr, a web developer from Bonn in Germany.
+                I'm Sebastian Landwehr, a freelance web developer from Bonn in
+                Germany.
               </p>
               <p>
                 My passion is all about JavaScript, especially related to
