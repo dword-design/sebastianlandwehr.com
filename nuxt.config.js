@@ -1,4 +1,6 @@
 import { map } from '@dword-design/functions'
+import packageName from 'depcheck-package-name'
+import { URL } from 'url'
 
 import blogFooter from './content/blog-footer'
 import { appName, appTitle } from './model/variables'
@@ -22,7 +24,7 @@ export default {
           const url = `${process.env.BASE_URL}/blog/${post.slug}`
           feed.addItem({
             author: post.authors,
-            content: post.description,
+            content: post.bodyHtml,
             date: new Date(post.createdAt),
             description: post.description,
             id: url,
@@ -86,6 +88,17 @@ export default {
       },
     ],
     'nuxt-content-git',
+    [
+      'nuxt-content-body-html',
+      {
+        rehypePlugins: [
+          [
+            packageName`rehype-urls`,
+            url => (url.host ? url : new URL(url.href, process.env.BASE_URL)),
+          ],
+        ],
+      },
+    ],
     ['~/modules/blog-footer', { text: blogFooter }],
     '@nuxt/content',
     '~/modules/bulma-prism-fix',

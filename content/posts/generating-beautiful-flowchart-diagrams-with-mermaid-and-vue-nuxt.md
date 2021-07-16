@@ -103,7 +103,7 @@ export default {
 
 This results in the following diagram:
 
-![Diagram with JavaScript frameworks (Vue.js, React), DateTime libraries (Moment.js, date-fns), and 3D libraries (Three.js, Babylon.js)](/blog/vue-mermaid-string/normal.png)
+![Diagram with JavaScript frameworks (Vue.js, React), DateTime libraries (Moment.js, date-fns), and 3D libraries (Three.js, Babylon.js)](/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt/normal.png)
 
 Great! You can also edit the diagram string (for example the node labels), and it updates the result accordingly.
 
