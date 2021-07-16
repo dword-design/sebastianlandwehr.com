@@ -40,7 +40,7 @@ export default {
       {
         href: '/feed',
         rel: 'alternate',
-        title: 'Blog',
+        title: appName,
         type: 'application/rss+xml',
       },
     ],
