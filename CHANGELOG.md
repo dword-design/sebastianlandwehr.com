@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.5...v1.8.6) (2021-07-16)
+
+
+### Bug Fixes
+
+* add full text html to rss feed ([0dbcf90](https://github.com/dword-design/sebastianlandwehr.com/commit/0dbcf90922d2af5891b5d015a624ba2f3bc617c2))
+
 ## [1.8.5](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.4...v1.8.5) (2021-07-16)
 
 
