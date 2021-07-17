@@ -1,4 +1,4 @@
-import { map } from '@dword-design/functions'
+import { endent, map } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
 import { URL } from 'url'
 
@@ -24,11 +24,13 @@ export default {
           const url = `${process.env.BASE_URL}/blog/${post.slug}`
           feed.addItem({
             author: post.authors,
-            content: post.bodyHtml,
+            content: endent`
+              <p><img src="${process.env.BASE_URL}/blog/${post.slug}/banner.png"></p>
+              ${post.bodyHtml}
+            `,
             date: new Date(post.createdAt),
             description: post.description,
             id: url,
-            image: `${process.env.BASE_URL}/blog/${post.slug}/banner.png`,
             link: url,
             title: post.title,
           })

@@ -21,7 +21,8 @@ exports[`feed init 1`] = `
         <![CDATA[Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using vue-mermaid-string and nuxt-mermaid-string. They both help to integrate the wonderful Mermaid library into your Vue-based projects.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p>Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using <a href=\\"https://github.com/dword-design/vue-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">vue-mermaid-string</a> and <a href=\\"https://github.com/dword-design/nuxt-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-mermaid-string</a>. They both help to integrate the wonderful <a href=\\"https://mermaid-js.github.io/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Mermaid</a> library into your Vue-based projects.</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt/banner.png\\"></p>
+<p>Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using <a href=\\"https://github.com/dword-design/vue-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">vue-mermaid-string</a> and <a href=\\"https://github.com/dword-design/nuxt-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-mermaid-string</a>. They both help to integrate the wonderful <a href=\\"https://mermaid-js.github.io/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Mermaid</a> library into your Vue-based projects.</p>
 <!--more-->
 <h2 id=\\"setup\\"><a href=\\"http://localhost:3000/#setup\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Setup</h2>
 <p>Alright, let's stick to Vue for now and see later how it works for Nuxt. First we need to install the component.</p>
@@ -117,7 +118,6 @@ export default {
 <p>You help me know if people like the packages by leaving a GitHub star at <a href=\\"https://github.com/dword-design/vue-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">vue-mermaid-string</a> and/or <a href=\\"https://github.com/dword-design/vue-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-mermaid-string</a> 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -130,7 +130,8 @@ export default {
         <![CDATA[Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p>Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields/banner.png\\"></p>
+<p>Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.</p>
 <!--more-->
 <p>Nuxt pages allow you to define structural data like the <a href=\\"https://github.com/nuxt/nuxt.js/issues/1687\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">meta</a> property or the <a href=\\"https://auth.nuxtjs.org/guide/middleware\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">auth property from @nuxtjs/auth</a> (note that they should not be confused with <a href=\\"https://nuxtjs.org/docs/2.x/features/meta-tags-seo\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">meta tags</a>). It would be great to be able to access them elsewhere. The route object can be accessed at quite a lot of places:</p>
 <ul>
@@ -241,7 +242,6 @@ export default {
 <p>That was an introduction to <a href=\\"https://github.com/dword-design/nuxt-route-meta\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-route-meta</a>. I hope it's of some use for you! If you like it, feel free to leave a star at <a href=\\"https://github.com/dword-design/nuxt-route-meta\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟. Also, the module probably needs some more work, so in case you need something or there is a bug, <a href=\\"https://github.com/dword-design/nuxt-route-meta/issues\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">file an issue</a>. Thanks for reading!</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -255,7 +255,8 @@ export default {
 A lot of my past projects in some way had to do with file access. I started to test with mocking libraries like mock-fs, but soon recognized that they do not work for all cases, and sometimes you are using third party libraries internally that you cannot mock easily. So I thought of a different solution and the one I'm using right now for most projects actually uses real files.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p>Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files/banner.png\\"></p>
+<p>Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.</p>
 <p>A lot of my past projects in some way had to do with file access. I started to test with mocking libraries like <a href=\\"https://github.com/tschaub/mock-fs\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">mock-fs</a>, but soon recognized that they do not work for all cases, and sometimes you are using third party libraries internally that you cannot mock easily. So I thought of a different solution and the one I'm using right now for most projects actually uses real files.</p>
 <!--more-->
 <h2 id=\\"with-local-tmp-dir-and-output-files\\"><a href=\\"http://localhost:3000/#with-local-tmp-dir-and-output-files\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>with-local-tmp-dir and output-files</h2>
@@ -383,7 +384,6 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>You see there are plenty of possibilities! 🥳 What do you think about this? Let me know in the comments! Also, if you like <a href=\\"https://github.com/dword-design/with-local-tmp-dir\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">with-local-tmp-dir</a> and <a href=\\"https://github.com/dword-design/output-files\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">output-files</a>, give it a star on GitHub 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -396,7 +396,8 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[I recently tried out @nuxt/content, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p>I recently tried out <a href=\\"https://github.com/nuxt/content\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">@nuxt/content</a>, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning/banner.png\\"></p>
+<p>I recently tried out <a href=\\"https://github.com/nuxt/content\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">@nuxt/content</a>, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.</p>
 <!--more-->
 <p>One thing I noticed when deploying the project to my server was that the <code>createdAt</code> and <code>updatedAt</code> fields were always reset and didn't reflect the actual dates. The reason for this is that Git does not keep file metadata. This means that the timestamps that <code>@nuxt/content</code> relies on are of no use.</p>
 <h2 id=\\"git-to-the-rescue\\"><a href=\\"http://localhost:3000/#git-to-the-rescue\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Git to the Rescue!</h2>
@@ -418,7 +419,6 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>Let me know if you like this module and leave a <a href=\\"https://github.com/dword-design/nuxt-content-git\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -431,7 +431,8 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p><a href=\\"https://github.com/Modernizr/Modernizr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Modernizr</a> is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features/banner.png\\"></p>
+<p><a href=\\"https://github.com/Modernizr/Modernizr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Modernizr</a> is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.</p>
 <!--more-->
 <h2 id=\\"using-modernizr-with-nuxtjs\\"><a href=\\"http://localhost:3000/#using-modernizr-with-nuxtjs\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Using Modernizr with Nuxt.js</h2>
 <p>Modernizr uses a plugin-based architecture, and you have to build the package yourself, depending on the features you need to detect – at least if you are not using Nuxt.js! I have created the <a href=\\"https://github.com/dword-design/nuxt-modernizr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-modernizr</a> module that makes it easy to add Modernizr to your Nuxt.js app. You pass the features as module options, and the module creates a Modernizr build and places it in the <code>.nuxt</code> folder. Here is how to configure it:</p>
@@ -460,7 +461,6 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>That was already it! Usage is pretty simple. Let me know if you find it useful or if there are any things that you are missing. Also, if you find it useful, leave a <a href=\\"https://github.com/dword-design/nuxt-modernizr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">GitHub star on the repository</a>.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -473,7 +473,8 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with Mocha.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p>Snapshot testing is a testing mechanism that for long has seemed to be exclusive to <a href=\\"https://github.com/facebook/jest\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Jest</a>. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with <a href=\\"https://github.com/mochajs/mocha\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Mocha</a>.</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/image-snapshot-testing-with-mocha/banner.png\\"></p>
+<p>Snapshot testing is a testing mechanism that for long has seemed to be exclusive to <a href=\\"https://github.com/facebook/jest\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Jest</a>. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with <a href=\\"https://github.com/mochajs/mocha\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Mocha</a>.</p>
 <!--more-->
 <h2 id=\\"snapshot-testing-with-jest\\"><a href=\\"http://localhost:3000/#snapshot-testing-with-jest\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Snapshot Testing with Jest</h2>
 <p>Snapshot testing itself is a <a href=\\"https://jestjs.io/docs/en/snapshot-testing\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">built-in feature</a> of Jest, and when searching specifically for image snapshots, you'll quickly find <a href=\\"https://github.com/americanexpress/jest-image-snapshot\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">jest-image-snapshot</a>, which does great work comparing and updating image snapshots. It also provides convenience features like a base64 diff output, which allows us to view the diff from a CI environment (since the diff image file cannot be saved or viewed).</p>
@@ -498,7 +499,6 @@ it('works', async function () {
 <p>That was my guide to image snapshot testing with Mocha. If you like <a href=\\"https://github.com/dword-design/expect-mocha-image-snapshot\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">expect-mocha-image-snapshot</a>, you can support me by putting a star on GitHub. Also, let me know what you think about it.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/image-snapshot-testing-with-mocha/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -512,7 +512,8 @@ it('works', async function () {
 That is why I wrote nuxt-mail, a Nuxt.js module that adds a /mail/send route to the server and injects a $mail variable that wraps the API call.]]>
       </description>
       <content:encoded>
-        <![CDATA[<p>When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?</p>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way/banner.png\\"></p>
+<p>When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?</p>
 <p>That is why I wrote <a href=\\"https://github.com/dword-design/nuxt-mail\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-mail</a>, a Nuxt.js module that adds a <code>/mail/send</code> route to the server and injects a <code>$mail</code> variable that wraps the API call.</p>
 <!--more-->
 <h2 id=\\"usage\\"><a href=\\"http://localhost:3000/#usage\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Usage</h2>
@@ -608,7 +609,6 @@ export default {
 <p>You can use the module to easily setup email sending capabilities. If you plan to build a bigger SaaS that sends a lot of emails, an async solution that does the sending via a cronjob or via server-side hooks is probably a better idea. But for a first-off solution, it should work fine.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
-      <enclosure url=\\"http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
   </channel>
 </rss>"
