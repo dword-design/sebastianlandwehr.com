@@ -98,7 +98,10 @@ posts.forEach(post => {
     // ...
     content: `
       <p>
-        <img src="https://me.com/blog/${post.slug}/teaser.png">
+        <img
+          alt="Cover image"
+          src="https://me.com/blog/${post.slug}/teaser.png"
+        >
       </p>
       ${post.bodyHtml}
     `,

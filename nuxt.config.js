@@ -25,7 +25,7 @@ export default {
           feed.addItem({
             author: post.authors,
             content: endent`
-              <p><img src="${process.env.BASE_URL}/blog/${post.slug}/banner.png"></p>
+              <p><img alt="Cover image" src="${process.env.BASE_URL}/blog/${post.slug}/banner.png"></p>
               ${post.bodyHtml}
             `,
             date: new Date(post.createdAt),

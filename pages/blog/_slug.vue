@@ -21,7 +21,7 @@ export default {
         <article class="container is-content">
           <figure class="image is-devto-banner mb-5">
             <img
-              alt={`Cover image for ${this.post.title}`}
+              alt="Cover image"
               src={`/blog/${this.post.slug}/banner.png`}
             />
           </figure>
