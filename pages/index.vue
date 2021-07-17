@@ -1,10 +1,10 @@
 <template>
   <main>
-    <section class="section is-medium is-bordered" style="padding-bottom: 0">
+    <section class="section is-bordered" style="padding-bottom: 0">
       <div class="container">
         <div class="columns">
           <div class="column">
-            <div class="content" style="padding-bottom: 1rem">
+            <div class="content pb-6-tablet">
               <p>
                 I'm Sebastian Landwehr, a freelance web developer from Bonn in
                 Germany.
@@ -27,9 +27,12 @@
               </p>
             </div>
           </div>
-          <div class="column is-two-fifths is-flex is-align-items-flex-end">
-            <figure class="image">
-              <img alt="Portrait" :src="portraitUrl" />
+          <div class="column">
+            <figure
+              class="covering-image mx-auto h-20rem-mobile"
+              style="max-width: 25rem"
+            >
+              <img class="is-block" alt="Portrait" :src="portraitUrl" />
             </figure>
           </div>
         </div>
@@ -51,7 +54,7 @@
           <span class="icon-text">
             <MdiArrowRightBold class="icon" aria-hidden="true" />
             <a href="https://github.com/dword-design" target="_blank">
-              Find more libraries on GitHub!
+              Find more libraries on GitHub
             </a>
           </span>
         </p>
