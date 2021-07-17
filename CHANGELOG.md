@@ -1,3 +1,10 @@
+## [1.8.7](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.6...v1.8.7) (2021-07-17)
+
+
+### Bug Fixes
+
+* redesign blog ([8b9403b](https://github.com/dword-design/sebastianlandwehr.com/commit/8b9403b4369b033ac045ad52de61ff54f0142746))
+
 ## [1.8.6](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.5...v1.8.6) (2021-07-16)
 
 
