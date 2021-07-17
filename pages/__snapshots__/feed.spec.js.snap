@@ -16,7 +16,7 @@ exports[`feed init 1`] = `
       </title>
       <link>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</link>
       <guid>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</guid>
-      <pubDate>Sat, 17 Jul 2021 21:15:29 GMT</pubDate>
+      <pubDate>Sat, 17 Jul 2021 22:31:24 GMT</pubDate>
       <description>
         <![CDATA[There is already an official doc article about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the whole article right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple drop-in module.]]>
       </description>

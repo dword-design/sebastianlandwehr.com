@@ -9,6 +9,7 @@ export default {
     error: '',
     isLoading: false,
     message: '',
+    myEmail: '',
   }),
   methods: {
     async submit() {
@@ -36,6 +37,9 @@ export default {
       this.error = ''
     },
   },
+  mounted() {
+    this.myEmail = 'info@sebastianlandwehr.com'
+  },
   render() {
     return (
       <div class="container">
@@ -44,6 +48,15 @@ export default {
             <h2 class="title">Any questions?</h2>
             <div class="content is-size-5">
               <p>I'll happily answer your questions and take your feedback!</p>
+              <p>
+                Write to{' '}
+                {this.myEmail ? (
+                  <a href={`mailto:${this.myEmail}`}>{this.myEmail}</a>
+                ) : (
+                  '[email protected]'
+                )}
+                , or fill out the form below:
+              </p>
             </div>
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
