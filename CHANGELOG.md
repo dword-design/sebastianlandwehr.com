@@ -1,3 +1,10 @@
+## [1.8.11](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.10...v1.8.11) (2021-07-17)
+
+
+### Bug Fixes
+
+* fix rss featured image ([e7a288e](https://github.com/dword-design/sebastianlandwehr.com/commit/e7a288efa41175ef29cb5e968af9c0ec39920fe1))
+
 ## [1.8.10](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.9...v1.8.10) (2021-07-17)
 
 
