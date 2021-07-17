@@ -1,9 +1,8 @@
 <script>
-import buyMeACoffeeImageUrl from '!url-loader!@/assets/buymeacoffee.svg'
-import githubSponsorsUrl from '!url-loader!@/assets/github-sponsors.svg'
-import patreonUrl from '!url-loader!@/static/images/patreon.svg'
-import paypalUrl from '!url-loader!@/static/images/paypal.svg'
+import { map } from '@dword-design/functions'
+
 import imageUrl from '@/assets/support-me.jpg'
+import donationPlatforms from '@/model/donation-platforms'
 
 export default {
   head: {
@@ -15,7 +14,7 @@ export default {
         <div class="container">
           <div class="columns">
             <div class="column is-two-fifths">
-              <figure class="image is-4by3">
+              <figure class="image is-one-thirdby3">
                 <img alt="Portrait" src={imageUrl} />
               </figure>
             </div>
@@ -67,79 +66,57 @@ export default {
             </p>
             <p>
               <strong>By donating, you help me …</strong>
-              <br />
-              <ol>
-                <li>Ensure future quality of my published projects</li>
-                <li>Open-source more of my projects (there are a lot!)</li>
-                <li>
-                  Have more time for my blog. I want to share knowledge with the
-                  community 🤝.
-                </li>
-              </ol>
             </p>
+            <ol>
+              <li>Ensure future quality of my published projects</li>
+              <li>Open-source more of my projects (there are a lot!)</li>
+              <li>
+                Have more time for my blog. I want to share knowledge with the
+                community 🤝.
+              </li>
+            </ol>
           </div>
         </div>
       </div>
       <div class="section">
         <div class="container is-content">
-          <div class="content">
+          <div class="content mb-4">
             <h2>What you can do 🍻</h2>
             <p>
               There are various ways to support me. Any help is apprechiated, so
               worries thinking about which amount is appropriate.
             </p>
-            <table class="table mb-6">
-              <tr>
-                <td class="has-text-centered" style="width: 13rem">
-                  <a
-                    href="https://github.com/sponsors/dword-design"
-                    target="_blank"
-                  >
-                    <img
-                      alt="Github Sponsors"
-                      src={githubSponsorsUrl}
-                      style="max-width: 6rem"
-                    />
-                  </a>
-                </td>
-                <td>
-                  First of all, GitHub has its very own donation system called
-                  GitHub Sponsors where you can support developers regularly.
-                </td>
-              </tr>
-              <tr>
-                <td style="width: 13rem">
-                  <a href="https://www.buymeacoffee.com/dword" target="_blank">
-                    <img alt="Buy Me a Coffee" src={buyMeACoffeeImageUrl} />
-                  </a>
-                </td>
-                <td>A great platform for quick one-time donations.</td>
-              </tr>
-              <tr>
-                <td style="width: 13rem">
-                  <a href="https://paypal.me/SebastianLandwehr" target="_blank">
-                    <img alt="Paypal" src={paypalUrl} />
-                  </a>
-                </td>
-                <td>Also for one time donations if you are using PayPal.</td>
-              </tr>
-              <tr>
-                <td style="width: 13rem">
-                  <a href="https://www.patreon.com/dworddesign" target="_blank">
-                    <img alt="Patreon" src={patreonUrl} />
-                  </a>
-                </td>
-                <td>
-                  Here you can support me regularly, which is great so I can
-                  steadily work on projects.
-                </td>
-              </tr>
-            </table>
-            <p class="is-size-5 has-text-centered">
-              Thanks a lot for your support!
-              <br />I also want to thank the supporters who already donated ❤️.
-            </p>
           </div>
+          <ul class="mb-6">
+            {donationPlatforms
+              |> map(platform => {
+                platform = { imageMaxWidth: '13rem', ...platform }
+
+                return (
+                  <li class="columns is-vcentered is-variable is-0-mobile has-border-bottom">
+                    <span class="column" style="max-width: 13rem">
+                      <a
+                        class="is-block mx-auto"
+                        href={platform.url}
+                        style={`max-width: ${platform.imageMaxWidth}`}
+                        target="_blank"
+                      >
+                        <img
+                          alt={platform.title}
+                          class="is-block"
+                          src={platform.imageUrl}
+                        />
+                      </a>
+                    </span>
+                    <span class="column">{platform.description}</span>
+                  </li>
+                )
+              })}
+          </ul>
+          <p class="is-size-5 has-text-centered">
+            Thanks a lot for your support!
+            <br />I also want to thank the supporters who donated already ❤️.
+          </p>
         </div>
       </div>
     </main>

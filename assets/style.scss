@@ -60,8 +60,24 @@ a.is-text {
   border-bottom: 2px solid $background;
 }
 
-.columns.is-variable.is-10 {
-  --columnGap: 2.5rem;
+.columns.is-variable {
+  &.is-10 {
+    --columnGap: 2.5rem;
+  }
+
+  &.is-0-mobile {
+    @include mobile {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    > .column {
+      @include mobile {
+        padding: var(--columnGap);
+      }
+    }
+  }
 }
 
 .icon {
@@ -83,15 +99,6 @@ a.is-text {
 }
 
 .nuxt-content {
-  /* h1 {
-    @extend .title;
-  }
-
-  h2 {
-    @extend .title;
-    @extend .is-size-4;
-  } */
-
   .icon.icon-link {
     width: auto;
     height: auto;
@@ -139,4 +146,8 @@ a.is-text {
 .level-item {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
+}
+
+.has-border-bottom {
+  border-bottom: 1px solid $border;
 }
