@@ -117,6 +117,7 @@ export default {
 <p>You help me know if people like the packages by leaving a GitHub star at <a href=\\"https://github.com/dword-design/vue-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">vue-mermaid-string</a> and/or <a href=\\"https://github.com/dword-design/vue-mermaid-string\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-mermaid-string</a> 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -240,6 +241,7 @@ export default {
 <p>That was an introduction to <a href=\\"https://github.com/dword-design/nuxt-route-meta\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-route-meta</a>. I hope it's of some use for you! If you like it, feel free to leave a star at <a href=\\"https://github.com/dword-design/nuxt-route-meta\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟. Also, the module probably needs some more work, so in case you need something or there is a bug, <a href=\\"https://github.com/dword-design/nuxt-route-meta/issues\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">file an issue</a>. Thanks for reading!</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -381,6 +383,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>You see there are plenty of possibilities! 🥳 What do you think about this? Let me know in the comments! Also, if you like <a href=\\"https://github.com/dword-design/with-local-tmp-dir\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">with-local-tmp-dir</a> and <a href=\\"https://github.com/dword-design/output-files\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">output-files</a>, give it a star on GitHub 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -415,6 +418,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>Let me know if you like this module and leave a <a href=\\"https://github.com/dword-design/nuxt-content-git\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -456,6 +460,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>That was already it! Usage is pretty simple. Let me know if you find it useful or if there are any things that you are missing. Also, if you find it useful, leave a <a href=\\"https://github.com/dword-design/nuxt-modernizr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">GitHub star on the repository</a>.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -493,6 +498,7 @@ it('works', async function () {
 <p>That was my guide to image snapshot testing with Mocha. If you like <a href=\\"https://github.com/dword-design/expect-mocha-image-snapshot\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">expect-mocha-image-snapshot</a>, you can support me by putting a star on GitHub. Also, let me know what you think about it.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/image-snapshot-testing-with-mocha/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
     <item>
       <title>
@@ -602,6 +608,7 @@ export default {
 <p>You can use the module to easily setup email sending capabilities. If you plan to build a bigger SaaS that sends a lot of emails, an async solution that does the sending via a cronjob or via server-side hooks is probably a better idea. But for a first-off solution, it should work fine.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
+      <enclosure url=\\"http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way/banner.png\\" length=\\"0\\" type=\\"image/png\\" />
     </item>
   </channel>
 </rss>"

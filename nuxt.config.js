@@ -28,6 +28,7 @@ export default {
             date: new Date(post.createdAt),
             description: post.description,
             id: url,
+            image: `${process.env.BASE_URL}/blog/${post.slug}/banner.png`,
             link: url,
             title: post.title,
           })
