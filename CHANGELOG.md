@@ -1,3 +1,10 @@
+## [1.8.12](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.11...v1.8.12) (2021-07-17)
+
+
+### Bug Fixes
+
+* bigger portrait image ([5a62e6e](https://github.com/dword-design/sebastianlandwehr.com/commit/5a62e6ed5d0fab9691061b5d550f41abe26c95bc))
+
 ## [1.8.11](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.10...v1.8.11) (2021-07-17)
 
 
