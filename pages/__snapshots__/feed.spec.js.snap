@@ -12,6 +12,107 @@ exports[`feed init 1`] = `
     <generator>https://github.com/nuxt-community/feed-module</generator>
     <item>
       <title>
+        <![CDATA[Creating an RSS Feed from Nuxt Content with Full Body Html Code]]>
+      </title>
+      <link>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</link>
+      <guid>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</guid>
+      <pubDate>Sat, 17 Jul 2021 21:15:29 GMT</pubDate>
+      <description>
+        <![CDATA[There is already an official doc article about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the whole article right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple drop-in module.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img src=\\"http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/banner.png\\"></p>
+<p>There is already <a href=\\"https://content.nuxtjs.org/integrations/#nuxtjsfeed\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">an official doc article</a> about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the <strong>whole article</strong> right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple <strong>drop-in module</strong>.</p>
+<!--more-->
+<h2 id=\\"the-problem-with-html-code-outside-the-nuxt-content-component\\"><a href=\\"http://localhost:3000/#the-problem-with-html-code-outside-the-nuxt-content-component\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>The problem with HTML code outside the nuxt-content component</h2>
+<p>Nuxt Content is a great static CMS that makes it incredibly easy to setup a performant Markdown-based blog without the need to add loads of third party services.</p>
+<p>The heart of the system is the <code>nuxt-content</code> component. This component gets the Markdown document that should be rendered, and then applies big magic to make a beautiful blog page out of it 😊.</p>
+<pre><code class=\\"language-html\\">&#x3C;template>
+  &#x3C;nuxt-content :document=\\"post\\" />
+&#x3C;/template>
+</code></pre>
+<p>So far so good. As long as you use Nuxt Content for rendering, there's not much to think about. But as soon as you want to access and work with the <strong>actual generated HTML code</strong>, you won't find any field in the documents containing the raw HTML code.</p>
+<p>Reason is that the component internally generates a <strong>JSON object</strong>, which is then turned into VDOM nodes. So it's made for being rendered by Vue.js. There is no native way of letting the Markdown pipeline run somewhere else and working with the HTML code. But this is what we need, since we want to put the article text with markup inside our RSS feed!</p>
+<h2 id=\\"use-nuxt-content-body-html-to-abstract-it-out\\"><a href=\\"http://localhost:3000/#use-nuxt-content-body-html-to-abstract-it-out\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Use nuxt-content-body-html to abstract it out</h2>
+<p>I built <a href=\\"https://github.com/dword-design/nuxt-content-body-html\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-content-body-html</a>, which basically adds a <code>bodyHtml</code> field to all markdown documents. It reproduces the Nuxt Content Markdown pipeline to generate it and also uses the Remark and Rehype plugins from the module config, so it outputs the same HTML as the component. The good thing is, we can just drop it in and abstracts away the logic of generating the HTML code, so that we can concentrate on the feed creation.</p>
+<p>Let's install the module by running <code>npm install nuxt-content-body-html</code>. Then we add it to our <code>nuxt.config.js</code>:</p>
+<pre><code class=\\"language-js\\">export default {
+  modules: [
+    'nuxt-content-body-html',
+    '@nuxt/content',
+  },
+}
+</code></pre>
+<p>Great! To test, you can check <code>post.bodyHtml</code> on a blog page and it should contain the HTML code.</p>
+<p>Now we can adjust the feed creation to actually use the field. You have probably used a way similar to <a href=\\"https://content.nuxtjs.org/integrations/#nuxtjsfeed\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">the Nuxt Content docs</a> to setup your feed. Here is a reduced example of a single RSS feed configuration:</p>
+<pre><code class=\\"language-js\\">export default {
+  modules: [
+    'nuxt-content-body-html',
+    '@nuxt/content',
+    '@nuxtjs/feed',
+  ],
+  feed: [
+    {
+      create: async feed => {
+        const $content = require('@nuxt/content').$content
+        feed.options = {
+          title: 'My Blog',
+          link: 'https://me.com/blog',
+          description: \\"It's all about programming!\\",
+        }
+
+        const posts = await $content('posts')
+          .sortBy('createdAt', 'desc')
+          .fetch()
+        posts.forEach(post => {
+          const url = \`https://me.com/blog/\${post.slug}\`
+          feed.addItem({
+            author: post.authors,
+            content: post.bodyHtml,
+            date: new Date(post.createdAt),
+            description: post.description,
+            id: url,
+            link: url,
+            title: post.title,
+          })
+        })
+      },
+      path: '/feed',
+      type: 'rss2',
+    },
+  ],
+}
+</code></pre>
+<p>That's it, now you should have a feed with full HTML content! I recommend <a href=\\"https://inoreader.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Inoreader</a> to test it, you can reload the articles with the little reload button and you should then see changes. Below you can see an example of an article shown in Inoreader:</p>
+<p><img alt=\\"Article in Inoreader\\" src=\\"http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/post.jpg\\"></p>
+<h2 id=\\"bonus-tip-add-a-teaser-image-at-the-very-top\\"><a href=\\"http://localhost:3000/#bonus-tip-add-a-teaser-image-at-the-very-top\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Bonus tip: Add a teaser image at the very top</h2>
+<p>Feed readers can not only display the contents of an article, they often also show the first image as a teaser image in the article list. That's a great thing for readers to get a first impression of the article's content! Simply add an image at the very top and you're good to go. Adjust the feed creation like so:</p>
+<pre><code class=\\"language-js\\">// images at static/blog/&#x3C;slug>/banner.png
+
+posts.forEach(post => {
+  const url = \`https://me.com/blog/\${post.slug}\`
+  feed.addItem({
+    // ...
+    content: \`
+      &#x3C;p>
+        &#x3C;img src=\\"https://me.com/blog/\${post.slug}/teaser.png\\">
+      &#x3C;/p>
+      \${post.bodyHtml}
+    \`,
+  })
+})
+</code></pre>
+<p>Here is the result in Inoreader:</p>
+<p><img alt=\\"Article in Inoreader\\" src=\\"http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/post-with-image.jpg\\"></p>
+<p>And the resulting teaser view:</p>
+<p><img alt=\\"Teaser view in Inoreader\\" src=\\"http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/teaser-view.jpg\\"></p>
+<h2 id=\\"conclusion\\"><a href=\\"http://localhost:3000/#conclusion\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Conclusion</h2>
+<p>This article was about RSS feeds with Nuxt Content containing full HTML. <a href=\\"https://github.com/dword-design/nuxt-content-body-html\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-content-body-html</a> is a quick and easy solution to add a <code>bodyHtml</code> field to documents that can be used in the feed creation function. I hope it's of some use for you! If you like it, feel free to leave a star at <a href=\\"https://github.com/dword-design/nuxt-content-body-html\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟. Thanks for reading!</p>
+<p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
         <![CDATA[Generating Beautiful Flowchart Diagrams With Mermaid and Vue/Nuxt]]>
       </title>
       <link>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</link>
