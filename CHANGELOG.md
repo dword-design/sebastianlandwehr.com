@@ -1,3 +1,10 @@
+## [1.8.13](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.12...v1.8.13) (2021-07-17)
+
+
+### Bug Fixes
+
+* do not use title case in subheadings ([d41cde9](https://github.com/dword-design/sebastianlandwehr.com/commit/d41cde90b0425c633cd698c19dbd2c48e6cc109c))
+
 ## [1.8.12](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.11...v1.8.12) (2021-07-17)
 
 
