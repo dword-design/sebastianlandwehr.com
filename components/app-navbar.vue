@@ -3,7 +3,7 @@ import { map } from '@dword-design/functions'
 import MdiFacebook from '@mdi/svg/svg/facebook.svg'
 import MdiGitHub from '@mdi/svg/svg/github.svg'
 import MdiInstagram from '@mdi/svg/svg/instagram.svg'
-import MdiNpm from '@mdi/svg/svg/npm.svg'
+import MdiLinkedIn from '@mdi/svg/svg/linkedin.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
 import { appName, appTitle } from '@/model/variables'
@@ -15,12 +15,6 @@ const accounts = [
     url: 'https://github.com/dword-design',
   },
   {
-    icon: MdiNpm,
-    size: 'is-large',
-    title: 'NPM',
-    url: 'https://www.npmjs.com/~dword-design',
-  },
-  {
     icon: MdiTwitter,
     title: 'Twitter',
     url: 'https://twitter.com/seblandwehr',
@@ -28,12 +22,17 @@ const accounts = [
   {
     icon: MdiInstagram,
     title: 'Instagram',
-    url: 'https://www.instagram.com/sebastian.landwehr',
+    url: 'https://instagram.com/sebastian.landwehr',
   },
   {
     icon: MdiFacebook,
     title: 'Facebook',
-    url: 'https://www.facebook.com/Sebastian-Landwehr-101161921820497',
+    url: 'https://facebook.com/Sebastian-Landwehr-101161921820497',
+  },
+  {
+    icon: MdiLinkedIn,
+    title: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/sebastian-landwehr-9393aaa5/',
   },
 ]
 
