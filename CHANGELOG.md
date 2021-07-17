@@ -1,3 +1,16 @@
+# [1.9.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.13...v1.9.0) (2021-07-17)
+
+
+### Bug Fixes
+
+* add email address to front page ([4350bfb](https://github.com/dword-design/sebastianlandwehr.com/commit/4350bfb7dae51fd781ff2eea3babd4094e5271f1))
+* replace npm with linkedin in navbar ([9822462](https://github.com/dword-design/sebastianlandwehr.com/commit/9822462c494785c9e967e991eeaf2f6de96c9124))
+
+
+### Features
+
+* add blog article about nuxt-content-body-html ([8ab704f](https://github.com/dword-design/sebastianlandwehr.com/commit/8ab704f6d19e8b1adbd058b9676a4b03c787f836))
+
 ## [1.8.13](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.12...v1.8.13) (2021-07-17)
 
 
