@@ -78,7 +78,7 @@ export default {
 
 When you hit the `Send` button now, you should receive an email into your inbox!
 
-## Multiple Message Configs
+## Multiple message configs
 
 It is also possible to provide multiple message configurations by changing the `message` config into an array.
 
@@ -121,6 +121,6 @@ this.$axios.$post('/mail/send', {
 
 That's basically it, I hope that this is of use for some of you.
 
-## Final Thoughts
+## Conclusion
 
 You can use the module to easily setup email sending capabilities. If you plan to build a bigger SaaS that sends a lot of emails, an async solution that does the sending via a cronjob or via server-side hooks is probably a better idea. But for a first-off solution, it should work fine.

@@ -109,7 +109,7 @@ export default ({ route }) => {
 
 As we can see, we can access the page data everywhere now! That's it already on how to use the module.
 
-## Generating a Sitemap with Non-Auth Routes
+## Generating a sitemap with non-auth routes
 
 A common use case of accessing page data is sitemap generation, especially conditionally adding entries to the sitemap. We will now configure `@nuxtjs/sitemap` to only add non-auth routes. So let's add the sitemap module via `npm install @nuxtjs/sitemap` and add it to our config:
 
@@ -143,6 +143,6 @@ export default {
 
 And that's it, if you check `/sitemap.xml`, you should only see non-auth routes!
 
-## Further Thoughts
+## Conclusion
 
 That was an introduction to [nuxt-route-meta](https://github.com/dword-design/nuxt-route-meta). I hope it's of some use for you! If you like it, feel free to leave a star at [star at GitHub](https://github.com/dword-design/nuxt-route-meta) 🌟. Also, the module probably needs some more work, so in case you need something or there is a bug, [file an issue](https://github.com/dword-design/nuxt-route-meta/issues). Thanks for reading!

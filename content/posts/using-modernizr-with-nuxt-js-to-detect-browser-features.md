@@ -41,6 +41,6 @@ html.cssscrollbar {
 }
 ```
 
-## Final Thoughts
+## Conclusion
 
 That was already it! Usage is pretty simple. Let me know if you find it useful or if there are any things that you are missing. Also, if you find it useful, leave a [GitHub star on the repository](https://github.com/dword-design/nuxt-modernizr).

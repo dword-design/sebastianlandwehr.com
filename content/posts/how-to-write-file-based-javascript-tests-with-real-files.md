@@ -14,7 +14,7 @@ Why not use real files for testing instead of mocking? I built an NPM package ca
 
 I also wrote another helper package [output-files](https://github.com/dword-design/output-files) that creates a whole file tree at once by passing an object. It's much easier than writing a lot of `fs.writeFile` calls to create many files.
 
-## Let's Test a Scaffolding Tool!
+## Let's test a scaffolding tool!
 
 Alright, let's dive into it! First of all you need a testing framework. I'm going to use [Mocha](https://github.com/mochajs/mocha) here, but you can also use [Jest](https://github.com/facebook/jest) or any other framework of your choice. I'm also using [expect](https://github.com/mjackson/expect) for assertions. After that, we'll install some packages that we need to write our tests:
 
@@ -29,7 +29,7 @@ $ npm install --save-dev with-local-tmp-dir output-files fs-extra endent
 
 We are going to test a small scaffolding tool that writes config files to disk. If a file already exists, it is not overwritten. Otherwise a default file is created. It's actually not important how it works but how we test it 😀.
 
-## Writing Our First Test
+## Writing our first test
 
 Let's add a test file:
 
@@ -68,7 +68,7 @@ $ mocha index.spec.js
 
 Pretty neat already, we have tested if the scaffolding tool creates a `README.md` and a `.configrc.json` file and checks if the contents are correct!
 
-## Writing Files Beforehand
+## Writing files beforehand
 
 Let's add another test that checks if the files are preserved if they are already existing. We are going to use `output-files` to write those files.
 
@@ -114,7 +114,7 @@ it('existing files', () => withLocalTmpDir(async () => {
 
 Great, that's already most of the work! Of course you can go into detail now and write more tests, but technically that's all it needs. You see, writing file-based tests with these packages is not a lot of more work than without them and you can use real files for your tests 🚀.
 
-## Writing Git-Based Tests
+## Writing Git-based tests
 
 The test setup actually opens up another door: Using Git repositories for tests! I know this sounds a bit scary at first, but now that we can write files to disk for our tests, why not `git init` a git repository?
 

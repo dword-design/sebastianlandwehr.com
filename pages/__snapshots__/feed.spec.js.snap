@@ -212,7 +212,7 @@ export default ({ route }) => {
 }
 </code></pre>
 <p>As we can see, we can access the page data everywhere now! That's it already on how to use the module.</p>
-<h2 id=\\"generating-a-sitemap-with-non-auth-routes\\"><a href=\\"http://localhost:3000/#generating-a-sitemap-with-non-auth-routes\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Generating a Sitemap with Non-Auth Routes</h2>
+<h2 id=\\"generating-a-sitemap-with-non-auth-routes\\"><a href=\\"http://localhost:3000/#generating-a-sitemap-with-non-auth-routes\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Generating a sitemap with non-auth routes</h2>
 <p>A common use case of accessing page data is sitemap generation, especially conditionally adding entries to the sitemap. We will now configure <code>@nuxtjs/sitemap</code> to only add non-auth routes. So let's add the sitemap module via <code>npm install @nuxtjs/sitemap</code> and add it to our config:</p>
 <pre><code class=\\"language-js\\">// nuxt.config.js
 
@@ -238,7 +238,7 @@ export default {
 }
 </code></pre>
 <p>And that's it, if you check <code>/sitemap.xml</code>, you should only see non-auth routes!</p>
-<h2 id=\\"further-thoughts\\"><a href=\\"http://localhost:3000/#further-thoughts\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Further Thoughts</h2>
+<h2 id=\\"conclusion\\"><a href=\\"http://localhost:3000/#conclusion\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Conclusion</h2>
 <p>That was an introduction to <a href=\\"https://github.com/dword-design/nuxt-route-meta\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-route-meta</a>. I hope it's of some use for you! If you like it, feel free to leave a star at <a href=\\"https://github.com/dword-design/nuxt-route-meta\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟. Also, the module probably needs some more work, so in case you need something or there is a bug, <a href=\\"https://github.com/dword-design/nuxt-route-meta/issues\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">file an issue</a>. Thanks for reading!</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
@@ -262,7 +262,7 @@ A lot of my past projects in some way had to do with file access. I started to t
 <h2 id=\\"with-local-tmp-dir-and-output-files\\"><a href=\\"http://localhost:3000/#with-local-tmp-dir-and-output-files\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>with-local-tmp-dir and output-files</h2>
 <p>Why not use real files for testing instead of mocking? I built an NPM package called <a href=\\"https://github.com/dword-design/with-local-tmp-dir\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">with-local-tmp-dir</a> that basically creates a temporary subfolder inside cwd, <code>cd</code>s into it, runs a function, and <code>cd</code>s back to the previous cwd afterwards. In this function you can create files and pretty much anything, run your unit under test. Afterwards the folder is removed and everything is cleaned up. You actually do not solely need to use it for tests, you can use it anywhere, but it's mostly useful for tests.</p>
 <p>I also wrote another helper package <a href=\\"https://github.com/dword-design/output-files\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">output-files</a> that creates a whole file tree at once by passing an object. It's much easier than writing a lot of <code>fs.writeFile</code> calls to create many files.</p>
-<h2 id=\\"lets-test-a-scaffolding-tool\\"><a href=\\"http://localhost:3000/#lets-test-a-scaffolding-tool\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Let's Test a Scaffolding Tool!</h2>
+<h2 id=\\"lets-test-a-scaffolding-tool\\"><a href=\\"http://localhost:3000/#lets-test-a-scaffolding-tool\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Let's test a scaffolding tool!</h2>
 <p>Alright, let's dive into it! First of all you need a testing framework. I'm going to use <a href=\\"https://github.com/mochajs/mocha\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Mocha</a> here, but you can also use <a href=\\"https://github.com/facebook/jest\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Jest</a> or any other framework of your choice. I'm also using <a href=\\"https://github.com/mjackson/expect\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">expect</a> for assertions. After that, we'll install some packages that we need to write our tests:</p>
 <ul>
 <li><a href=\\"https://github.com/dword-design/with-local-tmp-dir\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">with-local-tmp-dir</a> to create our temporary testing folder.</li>
@@ -273,7 +273,7 @@ A lot of my past projects in some way had to do with file access. I started to t
 <pre><code class=\\"language-bash\\">$ npm install --save-dev with-local-tmp-dir output-files fs-extra endent
 </code></pre>
 <p>We are going to test a small scaffolding tool that writes config files to disk. If a file already exists, it is not overwritten. Otherwise a default file is created. It's actually not important how it works but how we test it 😀.</p>
-<h2 id=\\"writing-our-first-test\\"><a href=\\"http://localhost:3000/#writing-our-first-test\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Writing Our First Test</h2>
+<h2 id=\\"writing-our-first-test\\"><a href=\\"http://localhost:3000/#writing-our-first-test\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Writing our first test</h2>
 <p>Let's add a test file:</p>
 <pre><code class=\\"language-js\\">// index.spec.js
 
@@ -304,7 +304,7 @@ it('no existing files', () => withLocalTmpDir(async () => {
 <pre><code class=\\"language-bash\\">$ mocha index.spec.js
 </code></pre>
 <p>Pretty neat already, we have tested if the scaffolding tool creates a <code>README.md</code> and a <code>.configrc.json</code> file and checks if the contents are correct!</p>
-<h2 id=\\"writing-files-beforehand\\"><a href=\\"http://localhost:3000/#writing-files-beforehand\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Writing Files Beforehand</h2>
+<h2 id=\\"writing-files-beforehand\\"><a href=\\"http://localhost:3000/#writing-files-beforehand\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Writing files beforehand</h2>
 <p>Let's add another test that checks if the files are preserved if they are already existing. We are going to use <code>output-files</code> to write those files.</p>
 <pre><code class=\\"language-js\\">// index.spec.js
 
@@ -345,7 +345,7 @@ it('existing files', () => withLocalTmpDir(async () => {
 }))
 </code></pre>
 <p>Great, that's already most of the work! Of course you can go into detail now and write more tests, but technically that's all it needs. You see, writing file-based tests with these packages is not a lot of more work than without them and you can use real files for your tests 🚀.</p>
-<h2 id=\\"writing-git-based-tests\\"><a href=\\"http://localhost:3000/#writing-git-based-tests\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Writing Git-Based Tests</h2>
+<h2 id=\\"writing-git-based-tests\\"><a href=\\"http://localhost:3000/#writing-git-based-tests\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Writing Git-based tests</h2>
 <p>The test setup actually opens up another door: Using Git repositories for tests! I know this sounds a bit scary at first, but now that we can write files to disk for our tests, why not <code>git init</code> a git repository?</p>
 <p>Let's assume that our scaffolding tool makes use of the currently checked out Git repository and puts the origin URL into the <code>.configrc.json</code> file. Now we can test if this works by actually instantiating a Git repository in our testing folder. We need another package for running child processes, run <code>npm install --save-dev execa</code>.</p>
 <pre><code class=\\"language-js\\">// index.spec.js
@@ -400,10 +400,10 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 <p>I recently tried out <a href=\\"https://github.com/nuxt/content\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">@nuxt/content</a>, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.</p>
 <!--more-->
 <p>One thing I noticed when deploying the project to my server was that the <code>createdAt</code> and <code>updatedAt</code> fields were always reset and didn't reflect the actual dates. The reason for this is that Git does not keep file metadata. This means that the timestamps that <code>@nuxt/content</code> relies on are of no use.</p>
-<h2 id=\\"git-to-the-rescue\\"><a href=\\"http://localhost:3000/#git-to-the-rescue\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Git to the Rescue!</h2>
+<h2 id=\\"git-to-the-rescue\\"><a href=\\"http://localhost:3000/#git-to-the-rescue\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Git to the rescue!</h2>
 <p>One way to fix this is not to use the file stats, but instead use the Git history for this. Special thanks to <a href=\\"http://andrewkreuzer.ca/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Andrew Kreuzer</a> for the initial idea. We check the history for each file and take the earliest commit date as <code>createdAt</code> and the latest as <code>updatedAt</code>.</p>
 <p>Requirement for this is that Git is installed on the build system and that the history is actually checked out. There will be problems if a shallow clone is made on CI, in this case the cloning has to be configured accordingly.</p>
-<h2 id=\\"using-the-nuxt-content-git-module-to-make-things-easy\\"><a href=\\"http://localhost:3000/#using-the-nuxt-content-git-module-to-make-things-easy\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Using the nuxt-content-git Module to Make Things Easy</h2>
+<h2 id=\\"using-the-nuxt-content-git-module-to-make-things-easy\\"><a href=\\"http://localhost:3000/#using-the-nuxt-content-git-module-to-make-things-easy\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Using the nuxt-content-git module to make things easy</h2>
 <p>I created the Nuxt module <a href=\\"https://github.com/dword-design/nuxt-content-git\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-content-git</a> to make the setup plug-and-play. You probably do not want to reinvent the wheel in each project.</p>
 <p>Install the module with <code>npm install nuxt-content-git</code> and add it to your <code>nuxt.config.js</code> like this:</p>
 <pre><code class=\\"language-js\\">export default {
@@ -414,8 +414,8 @@ it('uses repository url', () => withLocalTmpDir(async () => {
 }
 </code></pre>
 <p>Note that it is important to add it <strong>before</strong> <code>@nuxt/content</code>, so <code>@nuxt/content</code> knows about the hooks that our helper module installs.</p>
-<p><strong>And that was basically it! The rest works behind the scenes. Your dates should be up to <em>date</em> 😊.</strong></p>
-<hr>
+<h2 id=\\"conclusion\\"><a href=\\"http://localhost:3000/#conclusion\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Conclusion</h2>
+<p>That was basically it! The rest works behind the scenes. Your dates should be up to <em>date</em> 😊.</p>
 <p>Let me know if you like this module and leave a <a href=\\"https://github.com/dword-design/nuxt-content-git\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
@@ -457,7 +457,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
   /* CSS scrollbar support */
 }
 </code></pre>
-<h2 id=\\"final-thoughts\\"><a href=\\"http://localhost:3000/#final-thoughts\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Final Thoughts</h2>
+<h2 id=\\"conclusion\\"><a href=\\"http://localhost:3000/#conclusion\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Conclusion</h2>
 <p>That was already it! Usage is pretty simple. Let me know if you find it useful or if there are any things that you are missing. Also, if you find it useful, leave a <a href=\\"https://github.com/dword-design/nuxt-modernizr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">GitHub star on the repository</a>.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
@@ -476,9 +476,9 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[<p><img src=\\"http://localhost:3000/blog/image-snapshot-testing-with-mocha/banner.png\\"></p>
 <p>Snapshot testing is a testing mechanism that for long has seemed to be exclusive to <a href=\\"https://github.com/facebook/jest\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Jest</a>. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with <a href=\\"https://github.com/mochajs/mocha\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Mocha</a>.</p>
 <!--more-->
-<h2 id=\\"snapshot-testing-with-jest\\"><a href=\\"http://localhost:3000/#snapshot-testing-with-jest\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Snapshot Testing with Jest</h2>
+<h2 id=\\"snapshot-testing-with-jest\\"><a href=\\"http://localhost:3000/#snapshot-testing-with-jest\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Snapshot testing with Jest</h2>
 <p>Snapshot testing itself is a <a href=\\"https://jestjs.io/docs/en/snapshot-testing\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">built-in feature</a> of Jest, and when searching specifically for image snapshots, you'll quickly find <a href=\\"https://github.com/americanexpress/jest-image-snapshot\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">jest-image-snapshot</a>, which does great work comparing and updating image snapshots. It also provides convenience features like a base64 diff output, which allows us to view the diff from a CI environment (since the diff image file cannot be saved or viewed).</p>
-<h2 id=\\"what-about-mocha\\"><a href=\\"http://localhost:3000/#what-about-mocha\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>What About Mocha?</h2>
+<h2 id=\\"what-about-mocha\\"><a href=\\"http://localhost:3000/#what-about-mocha\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>What about Mocha?</h2>
 <p>While this is all great, what if I'm not using Jest for whatever reason? What if I'm using Mocha?</p>
 <p>For simple snapshot testing, there are some options. For Chai users, there is <a href=\\"https://github.com/monojitb02/mocha-chai-snapshot\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">mocha-chai-snapshot</a>. For expect users, there is <a href=\\"https://github.com/blogfoster/expect-mocha-snapshot\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">expect-mocha-snapshot</a>. It basically wraps the jest snapshot logic by injecting an artificial testing context. Big credit to <a href=\\"https://github.com/alexbeletsky\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Alexander Beletsky</a> here!</p>
 <p>What was still missing was a package that ports image snapshot testing to Mocha. Since I'm currently using expect as an assertion library, I focused on finding a solution for this one.</p>
@@ -573,7 +573,7 @@ export default {
 &#x3C;/script>
 </code></pre>
 <p>When you hit the <code>Send</code> button now, you should receive an email into your inbox!</p>
-<h2 id=\\"multiple-message-configs\\"><a href=\\"http://localhost:3000/#multiple-message-configs\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Multiple Message Configs</h2>
+<h2 id=\\"multiple-message-configs\\"><a href=\\"http://localhost:3000/#multiple-message-configs\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Multiple message configs</h2>
 <p>It is also possible to provide multiple message configurations by changing the <code>message</code> config into an array.</p>
 <pre><code class=\\"language-js\\">export default {
   modules: [
@@ -605,7 +605,7 @@ export default {
 })
 </code></pre>
 <p>That's basically it, I hope that this is of use for some of you.</p>
-<h2 id=\\"final-thoughts\\"><a href=\\"http://localhost:3000/#final-thoughts\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Final Thoughts</h2>
+<h2 id=\\"conclusion\\"><a href=\\"http://localhost:3000/#conclusion\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Conclusion</h2>
 <p>You can use the module to easily setup email sending capabilities. If you plan to build a bigger SaaS that sends a lot of emails, an async solution that does the sending via a cronjob or via server-side hooks is probably a better idea. But for a first-off solution, it should work fine.</p>
 <p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
       </content:encoded>
