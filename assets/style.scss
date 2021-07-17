@@ -105,6 +105,10 @@ a.is-text {
 }
 
 .container {
+  &.is-narrow {
+    max-width: 872px; // taken from Hashnode
+  }
+
   &.is-content {
     max-width: 740px;
   }
