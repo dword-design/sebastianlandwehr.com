@@ -1,3 +1,10 @@
+## [1.8.9](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.8...v1.8.9) (2021-07-17)
+
+
+### Bug Fixes
+
+* fix donation table on mobile ([4035a2e](https://github.com/dword-design/sebastianlandwehr.com/commit/4035a2e43b4a06e9ccc5850d93769281f12ae39e))
+
 ## [1.8.8](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.7...v1.8.8) (2021-07-17)
 
 
