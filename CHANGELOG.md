@@ -1,3 +1,11 @@
+## [1.9.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.9.1...v1.9.2) (2021-07-18)
+
+
+### Bug Fixes
+
+* fix title ([54b0bbb](https://github.com/dword-design/sebastianlandwehr.com/commit/54b0bbbc75025fd2b21843f6cca023044fc166ae))
+* fix title ([b299afa](https://github.com/dword-design/sebastianlandwehr.com/commit/b299afa058000b6a046d0b4c959f08d8b6d3df49))
+
 ## [1.9.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.9.0...v1.9.1) (2021-07-18)
 
 
