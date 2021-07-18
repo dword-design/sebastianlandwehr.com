@@ -25,6 +25,9 @@ exports[`sitemap init 1`] = `
     <loc>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</loc>
   </url>
   <url>

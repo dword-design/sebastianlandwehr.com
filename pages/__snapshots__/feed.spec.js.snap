@@ -12,6 +12,43 @@ exports[`feed init 1`] = `
     <generator>https://github.com/nuxt-community/feed-module</generator>
     <item>
       <title>
+        <![CDATA[Using ACSS atomic CSS framework (aka Atomizer) with Nuxt]]>
+      </title>
+      <link>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</link>
+      <guid>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</guid>
+      <pubDate>Sun, 18 Jul 2021 13:20:25 GMT</pubDate>
+      <description>
+        <![CDATA[ACSS is a nice little Atomic CSS framework. In contrast to alternatives like Tailwind, it generates atomic classes from the actual class instances. This allows to 1. keep the number of generated classes at a minimum, and 2. to pass arbitrary values to the classes (which would normally lead to a big class explosion). Under the hood it uses a tool called Atomizer to generate these classes. This article describes how to use ACSS in a Nuxt app using the nuxt-atomizer module.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt=\\"Cover image\\" src=\\"http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt/banner.png\\"></p>
+<p><a href=\\"https://acss.io/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">ACSS</a> is a nice little Atomic CSS framework. In contrast to alternatives like <a href=\\"https://tailwindcss.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Tailwind</a>, it generates atomic classes from the actual class instances. This allows to 1. keep the number of generated classes at a minimum, and 2. to pass arbitrary values to the classes (which would normally lead to a big class explosion). Under the hood it uses a tool called <a href=\\"https://github.com/acss-io/atomizer\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Atomizer</a> to generate these classes. This article describes how to use ACSS in a Nuxt app using the <a href=\\"https://github.com/dword-design/nuxt-atomizer\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">nuxt-atomizer</a> module.</p>
+<!--more-->
+<h2 id=\\"using-the-nuxt-atomizer-module\\"><a href=\\"http://localhost:3000/#using-the-nuxt-atomizer-module\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Using the nuxt-atomizer module</h2>
+<p>Basic usage of the module does not require configuration. We can just add it to our module list. Let's install the module by running <code>npm install nuxt-atomizer</code>. Then we add it to our <code>nuxt.config.js</code>:</p>
+<pre><code class=\\"language-js\\">export default {
+  modules: [
+    'nuxt-atomizer',
+  },
+}
+</code></pre>
+<p>The great thing about Nuxt modules is that they can abstract away a lot of logic. The whole class generation takes place inside the module, so that we can start adding classes right away 🚀.</p>
+<p>Let's create a template and add atomic classes:</p>
+<pre><code class=\\"language-html\\">&#x3C;template>
+  &#x3C;div class=\\"P(2rem) Bgc(#fafafa) C(#111) Bd Bdw(2px) Bdc(#ccc) Bdrs(.5rem) Ff(ss)\\">
+    Hey there, I'm styled with ACSS! 🙌
+  &#x3C;/div>
+&#x3C;/template>
+</code></pre>
+<p>That's it, the result is shown below. Feel free to experiment with the CodeSandbox. Also, check out the docs for further configuration.</p>
+<iframe src=\\"https://codesandbox.io/embed/demo-nuxt-atomizer-k8cky?fontsize=14&#x26;hidenavigation=1&#x26;theme=dark&#x26;view=preview\\" style=\\"width:100%; height:500px; border-right:1px solid #000; border-radius: 4px; overflow:hidden;\\" title=\\"demo-nuxt-atomizer\\" allow=\\"accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking\\" sandbox=\\"allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts\\"></iframe>
+<h2 id=\\"conclusion\\"><a href=\\"http://localhost:3000/#conclusion\\" aria-hidden=\\"true\\" tabindex=\\"-1\\"><span class=\\"icon icon-link\\"></span></a>Conclusion</h2>
+<p>This article showed how to use ACSS in a Nuxt app. I hope it's of some use for you! If you like the module, feel free to leave a star at <a href=\\"https://github.com/dword-design/nuxt-atomizer\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">star at GitHub</a> 🌟. Thanks for reading!</p>
+<p><strong>If you like what I'm doing, follow me on <a href=\\"https://twitter.com/seblandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Twitter</a> or check out my <a href=\\"https://sebastianlandwehr.com/\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">website</a>. Also consider donating at <a href=\\"https://www.buymeacoffee.com/dword\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Buy Me a Coffee</a>, <a href=\\"https://www.paypal.com/paypalme/SebastianLandwehr\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">PayPal</a> or <a href=\\"https://www.patreon.com/dworddesign\\" rel=\\"nofollow noopener noreferrer\\" target=\\"_blank\\">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
         <![CDATA[Creating an RSS Feed from Nuxt Content with Full Body HTML]]>
       </title>
       <link>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</link>
