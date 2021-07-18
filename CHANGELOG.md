@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.9.2...v1.10.0) (2021-07-18)
+
+
+### Features
+
+* add atomizer article ([bc9c614](https://github.com/dword-design/sebastianlandwehr.com/commit/bc9c614fa75a5d5ef2b285350916aeb05364bd1e))
+
 ## [1.9.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.9.1...v1.9.2) (2021-07-18)
 
 
