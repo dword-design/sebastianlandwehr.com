@@ -20,10 +20,7 @@ export default {
       <main class="section">
         <article class="container is-content">
           <figure class="image is-devto-banner mb-5">
-            <img
-              alt="Cover image"
-              src={`/blog/${this.post.slug}/banner.png`}
-            />
+            <img alt="Cover image" src={`/blog/${this.post.slug}/banner.png`} />
           </figure>
           <h1 class="title">{this.post.title}</h1>
           <div class="subtitle is-size-6">
