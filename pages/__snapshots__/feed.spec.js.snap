@@ -16,7 +16,7 @@ exports[`feed init 1`] = `
       </title>
       <link>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</link>
       <guid>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</guid>
-      <pubDate>Sun, 18 Jul 2021 13:20:25 GMT</pubDate>
+      <pubDate>Sun, 18 Jul 2021 14:17:04 GMT</pubDate>
       <description>
         <![CDATA[ACSS is a nice little Atomic CSS framework. In contrast to alternatives like Tailwind, it generates atomic classes from the actual class instances. This allows to 1. keep the number of generated classes at a minimum, and 2. to pass arbitrary values to the classes (which would normally lead to a big class explosion). Under the hood it uses a tool called Atomizer to generate these classes. This article describes how to use ACSS in a Nuxt app using the nuxt-atomizer module.]]>
       </description>
