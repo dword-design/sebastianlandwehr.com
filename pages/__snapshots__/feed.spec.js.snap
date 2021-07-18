@@ -12,7 +12,7 @@ exports[`feed init 1`] = `
     <generator>https://github.com/nuxt-community/feed-module</generator>
     <item>
       <title>
-        <![CDATA[Creating an RSS Feed from Nuxt Content with Full Body Html Code]]>
+        <![CDATA[Creating an RSS Feed from Nuxt Content with Full Body Html]]>
       </title>
       <link>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</link>
       <guid>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</guid>

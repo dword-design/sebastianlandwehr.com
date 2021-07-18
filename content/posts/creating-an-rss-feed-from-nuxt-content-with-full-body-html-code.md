@@ -1,5 +1,5 @@
 ---
-title: Creating an RSS Feed from Nuxt Content with Full Body Html Code
+title: Creating an RSS Feed from Nuxt Content with Full Body Html
 ---
 
 There is already [an official doc article](https://content.nuxtjs.org/integrations/#nuxtjsfeed) about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the **whole article** right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple **drop-in module**.
