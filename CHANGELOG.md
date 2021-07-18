@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.9.0...v1.9.1) (2021-07-18)
+
+
+### Bug Fixes
+
+* add alt text to blog cover images ([f04f421](https://github.com/dword-design/sebastianlandwehr.com/commit/f04f421857d58c485eb791d2cf1260150a54e378))
+
 # [1.9.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.8.13...v1.9.0) (2021-07-17)
 
 
