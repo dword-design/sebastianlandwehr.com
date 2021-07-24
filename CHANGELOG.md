@@ -1,3 +1,12 @@
+## [1.10.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.0...v1.10.1) (2021-07-24)
+
+
+### Bug Fixes
+
+* fix ([84e61cb](https://github.com/dword-design/sebastianlandwehr.com/commit/84e61cb8541a199c6a03679f2e845e9a73780bb5))
+* fix wording ([aa18211](https://github.com/dword-design/sebastianlandwehr.com/commit/aa1821157af5ca89841508d8feaba7cc49c54632))
+* replace from with replyTo email address ([66e6c06](https://github.com/dword-design/sebastianlandwehr.com/commit/66e6c0606e658d24fe3c1677437e6e68e51a033b))
+
 # [1.10.0](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.9.2...v1.10.0) (2021-07-18)
 
 
