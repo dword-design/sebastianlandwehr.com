@@ -26,7 +26,7 @@ export default {
         replyTo: this.email,
         subject: `${appName} Nachricht`,
         text: endent`
-          Von: ${this.email}
+          From: ${this.email}
 
           ${this.message}
         `,
