@@ -24,7 +24,7 @@ export default {
       await this.$mail.send({
         from: 'info@sebastianlandwehr.com',
         replyTo: this.email,
-        subject: `${appName} Nachricht`,
+        subject: `${appName} Message`,
         text: endent`
           From: ${this.email}
 
