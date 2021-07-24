@@ -22,7 +22,8 @@ export default {
       }
       this.isLoading = true
       await this.$mail.send({
-        from: this.email,
+        from: 'info@sebastianlandwehr.com',
+        replyTo: this.email,
         subject: `${appName} Nachricht`,
         text: endent`
           Von: ${this.email}
