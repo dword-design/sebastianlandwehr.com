@@ -4,7 +4,7 @@ import { URL } from 'url'
 
 import blogFooter from './content/blog-footer'
 import { appName, appTitle } from './model/variables'
- 
+
 export default {
   css: ['@/assets/style.scss'],
   feed: [
