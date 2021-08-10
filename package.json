@@ -41,7 +41,8 @@
     "nuxt-content-git": "^2.0.0",
     "nuxt-mail": "^3.0.0",
     "nuxt-push-plugins": "^2.0.5",
-    "rehype-urls": "^1.1.1"
+    "rehype-urls": "^1.1.1",
+    "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "@dword-design/base": "^8.0.0",

@@ -31,12 +31,13 @@ export default {
             })}
           </div>
           <nuxt-content class="content mb-4" document={this.post} />
-          <div>
+          <div class="mb-6">
             <a class="button is-small is-rounded" href="/feed" target="_blank">
               <MdiRss class="icon" />
               <span>Subscribe via RSS</span>
             </a>
           </div>
+          <disqus />
         </article>
       </main>
     )

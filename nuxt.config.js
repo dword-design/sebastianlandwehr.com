@@ -107,6 +107,7 @@ export default {
     '@nuxt/content',
     '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
+    '~/modules/disqus',
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
