@@ -20,7 +20,7 @@ export default {
         const posts = await $content('posts')
           .sortBy('createdAt', 'desc')
           .fetch()
-        posts.forEach(post => {
+        for (const post of posts) {
           const url = `${process.env.BASE_URL}/blog/${post.slug}`
           feed.addItem({
             author: post.authors,
@@ -34,7 +34,7 @@ export default {
             link: url,
             title: post.title,
           })
-        })
+        }
       },
       path: '/feed',
       type: 'rss2',
