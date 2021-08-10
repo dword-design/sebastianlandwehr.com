@@ -82,7 +82,7 @@ export default {
         },
       },
     ],
-    ['@nuxtjs/google-gtag', { id: 'UA-77425155-4' }],
+    ['@nuxtjs/google-gtag', { id: 'UA-77425155-4', anonymize_ip: true }],
     [
       '@nuxtjs/recaptcha',
       {
