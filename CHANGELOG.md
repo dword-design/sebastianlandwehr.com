@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.3...v1.10.4) (2021-08-10)
+
+
+### Bug Fixes
+
+* anonymize google analytics ips ([3ae41d8](https://github.com/dword-design/sebastianlandwehr.com/commit/3ae41d8e127c3153a1f5c498eaadff3bd12fbed1))
+
 ## [1.10.3](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.2...v1.10.3) (2021-08-10)
 
 
