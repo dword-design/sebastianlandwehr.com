@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.1...v1.10.2) (2021-08-10)
+
+
+### Bug Fixes
+
+* replace forEach with for of ([#111](https://github.com/dword-design/sebastianlandwehr.com/issues/111)) ([7f35ced](https://github.com/dword-design/sebastianlandwehr.com/commit/7f35ced1355368d7ae013252fc9b5198e17ce362))
+
 ## [1.10.1](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.0...v1.10.1) (2021-07-24)
 
 
