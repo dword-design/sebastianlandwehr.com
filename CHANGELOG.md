@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.4...v1.10.5) (2021-08-10)
+
+
+### Bug Fixes
+
+* fix anonymize ip ([9c8afb2](https://github.com/dword-design/sebastianlandwehr.com/commit/9c8afb2649cdb4df9ec428d55756266e5d8765d8))
+
 ## [1.10.4](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.3...v1.10.4) (2021-08-10)
 
 
