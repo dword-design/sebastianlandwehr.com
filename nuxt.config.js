@@ -94,6 +94,7 @@ export default {
     [
       'nuxt-content-body-html',
       {
+        highlighter: undefined,
         rehypePlugins: [
           [
             packageName`rehype-urls`,
