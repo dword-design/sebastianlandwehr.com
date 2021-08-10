@@ -82,7 +82,15 @@ export default {
         },
       },
     ],
-    ['@nuxtjs/google-gtag', { anonymize_ip: true, id: 'UA-77425155-4' }],
+    [
+      '@nuxtjs/google-gtag',
+      {
+        config: {
+          anonymize_ip: true,
+        },
+        id: 'UA-77425155-4',
+      },
+    ],
     [
       '@nuxtjs/recaptcha',
       {
