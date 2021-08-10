@@ -1,6 +1,4 @@
 <script>
-import text from '@/assets/data-privacy.html'
-
 export default {
   head: {
     title: 'Data Privacy',
@@ -8,7 +6,7 @@ export default {
   render: () => (
     <main class="section">
       <div class="container is-content">
-        <div class="content" domPropsInnerHTML={text} />
+        <app-data-privacy />
       </div>
     </main>
   ),

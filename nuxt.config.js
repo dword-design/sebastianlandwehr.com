@@ -88,6 +88,7 @@ export default {
         config: {
           anonymize_ip: true,
         },
+        debug: true,
         id: 'UA-77425155-4',
       },
     ],
@@ -115,6 +116,7 @@ export default {
     '@nuxt/content',
     '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
+    '~/modules/cookie-settings',
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
