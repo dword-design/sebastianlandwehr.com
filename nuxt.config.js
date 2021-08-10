@@ -88,7 +88,6 @@ export default {
         config: {
           anonymize_ip: true,
         },
-        debug: true,
         id: 'UA-77425155-4',
       },
     ],
