@@ -111,7 +111,6 @@ export default {
     [
       '@nuxtjs/google-gtag',
       {
-        debug: true,
         config: {
           anonymize_ip: true,
         },

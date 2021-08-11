@@ -2,7 +2,7 @@
 export default {
   render: () => (
     <div>
-      <app-cookie-settings />
+      <app-consent-management />
       <app-navbar />
       <nuxt />
       <app-footer />

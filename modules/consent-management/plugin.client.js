@@ -5,8 +5,8 @@ import options from './options'
 import services from './services'
 
 export default async context => {
-  const settings = JSON.parse(localStorage.getItem('cookie-settings') || '{}')
-  await context.store.dispatch('cookie-settings/init', settings)
+  const settings = JSON.parse(localStorage.getItem('consent-management') || '{}')
+  await context.store.dispatch('consent-management/init', settings)
   await sequential(
     services
       |> mapValues(
