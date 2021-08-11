@@ -5,6 +5,8 @@ import { URL } from 'url'
 import blogFooter from './content/blog-footer'
 import { appName, appTitle } from './model/variables'
 
+const googleAnalyticsId = 'UA-77425155-4'
+
 export default {
   css: ['@/assets/style.scss'],
   feed: [
@@ -83,15 +85,6 @@ export default {
       },
     ],
     [
-      '@nuxtjs/google-gtag',
-      {
-        config: {
-          anonymize_ip: true,
-        },
-        id: 'UA-77425155-4',
-      },
-    ],
-    [
       '@nuxtjs/recaptcha',
       {
         siteKey: process.env.RECAPTCHA_KEY,
@@ -115,7 +108,17 @@ export default {
     '@nuxt/content',
     '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
+    ['~/modules/gdpr', { googleAnalyticsId }],
     '~/modules/cookie-settings',
+    [
+      '@nuxtjs/google-gtag',
+      {
+        config: {
+          anonymize_ip: true,
+        },
+        id: googleAnalyticsId,
+      },
+    ],
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
