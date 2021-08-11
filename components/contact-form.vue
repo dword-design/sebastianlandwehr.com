@@ -7,17 +7,15 @@ export default {
   data: () => ({
     email: '',
     error: '',
+    honeypot: '',
     isLoading: false,
     message: '',
     myEmail: '',
   }),
   methods: {
     async submit() {
-      try {
-        await this.$recaptcha.getResponse()
-      } catch (error) {
-        this.error = 'You have to fill in the captcha.'
-
+      if (this.honeypot) {
+        this.error = 'Look like you are a bot. You have filled out the legendary honeypot field!'
         return
       }
       this.isLoading = true
@@ -62,6 +60,7 @@ export default {
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
             </b-field>
+            <b-input v-model={this.honeypot} class="is-hidden" />
             <b-field label="Message">
               <b-input
                 required
@@ -69,9 +68,6 @@ export default {
                 type="textarea"
                 v-model={this.message}
               />
-            </b-field>
-            <b-field>
-              <recaptcha />
             </b-field>
             {!!this.error && (
               <b-field>

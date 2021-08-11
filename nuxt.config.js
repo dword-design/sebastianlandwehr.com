@@ -84,13 +84,6 @@ export default {
         },
       },
     ],
-    [
-      '@nuxtjs/recaptcha',
-      {
-        siteKey: process.env.RECAPTCHA_KEY,
-        version: 2,
-      },
-    ],
     'nuxt-content-git',
     [
       'nuxt-content-body-html',
