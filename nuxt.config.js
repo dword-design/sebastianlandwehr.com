@@ -108,15 +108,22 @@ export default {
     '@nuxt/content',
     '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
-    ['~/modules/gdpr', { googleAnalyticsId }],
-    '~/modules/cookie-settings',
     [
       '@nuxtjs/google-gtag',
       {
+        debug: true,
         config: {
           anonymize_ip: true,
         },
         id: googleAnalyticsId,
+      },
+    ],
+    [
+      '~/modules/consent-management',
+      {
+        services: {
+          'google-analytics': { id: googleAnalyticsId },
+        },
       },
     ],
   ],

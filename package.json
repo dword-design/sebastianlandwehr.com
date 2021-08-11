@@ -36,11 +36,14 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
     "depcheck-package-name": "^2.0.3",
+    "js-cookie": "^2.0.0",
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^1.0.0",
     "nuxt-content-git": "^2.0.0",
     "nuxt-mail": "^3.0.0",
     "nuxt-push-plugins": "^2.0.5",
+    "parse-domain": "^3.0.3",
+    "promise-sequential": "^1.1.1",
     "rehype-urls": "^1.1.1"
   },
   "devDependencies": {
