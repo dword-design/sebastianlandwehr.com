@@ -16,7 +16,7 @@
           <p>
             See the
             <b-button class="is-link" @click="openDataPrivacy">
-              privacy policy
+              data privacy
             </b-button>
             for details.
           </p>
