@@ -1,3 +1,10 @@
+## [1.10.7](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.6...v1.10.7) (2021-08-22)
+
+
+### Bug Fixes
+
+* update contact data ([7a4bfff](https://github.com/dword-design/sebastianlandwehr.com/commit/7a4bfff7c0bcdcea0bb4c4f2a9730cc97492de9b))
+
 ## [1.10.6](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.5...v1.10.6) (2021-08-18)
 
 
