@@ -1,3 +1,10 @@
+## [1.10.15](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.14...v1.10.15) (2021-09-20)
+
+
+### Bug Fixes
+
+* update dependency @mdi/svg to v6 ([#122](https://github.com/dword-design/sebastianlandwehr.com/issues/122)) ([1b19e7c](https://github.com/dword-design/sebastianlandwehr.com/commit/1b19e7c03d18d8da659c5c3397632369ace58299))
+
 ## [1.10.14](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.13...v1.10.14) (2021-09-20)
 
 
