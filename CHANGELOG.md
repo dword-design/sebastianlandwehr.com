@@ -1,3 +1,10 @@
+## [1.10.19](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.18...v1.10.19) (2021-10-05)
+
+
+### Bug Fixes
+
+* update dependency axios to ^0.22.0 ([#126](https://github.com/dword-design/sebastianlandwehr.com/issues/126)) ([263b681](https://github.com/dword-design/sebastianlandwehr.com/commit/263b6813c4040b47939a905d36211cc4a7ab4c59))
+
 ## [1.10.18](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.17...v1.10.18) (2021-10-04)
 
 
