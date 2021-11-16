@@ -1,3 +1,10 @@
+## [1.10.26](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.25...v1.10.26) (2021-11-16)
+
+
+### Bug Fixes
+
+* add test image ([13fcbb7](https://github.com/dword-design/sebastianlandwehr.com/commit/13fcbb723190da4eea336c666957901f12d68457))
+
 ## [1.10.25](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.24...v1.10.25) (2021-11-15)
 
 
