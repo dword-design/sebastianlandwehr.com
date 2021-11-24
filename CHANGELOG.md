@@ -1,3 +1,10 @@
+## [1.10.28](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.27...v1.10.28) (2021-11-24)
+
+
+### Bug Fixes
+
+* delete test image ([0f83f1e](https://github.com/dword-design/sebastianlandwehr.com/commit/0f83f1e51dbbeb21aae8241dd89bc08b06b1bb82))
+
 ## [1.10.27](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.26...v1.10.27) (2021-11-22)
 
 
