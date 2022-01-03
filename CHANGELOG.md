@@ -1,3 +1,10 @@
+## [1.10.32](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.31...v1.10.32) (2022-01-03)
+
+
+### Bug Fixes
+
+* lock file maintenance ([6b9018d](https://github.com/dword-design/sebastianlandwehr.com/commit/6b9018db99d2433a89ebf2e01539714d244b2b97))
+
 ## [1.10.31](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.30...v1.10.31) (2021-12-28)
 
 
