@@ -43,7 +43,8 @@
     "nuxt-push-plugins": "^2.0.5",
     "parse-domain": "^3.0.3",
     "promise-sequential": "^1.1.1",
-    "rehype-urls": "^1.1.1"
+    "rehype-urls": "^1.1.1",
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@dword-design/base": "^8.0.0",

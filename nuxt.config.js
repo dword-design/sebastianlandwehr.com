@@ -115,7 +115,7 @@ export default {
       '~/modules/consent',
       {
         services: {
-          'google-analytics': { id: googleAnalyticsId },
+          'googleAnalytics': { id: googleAnalyticsId },
         },
       },
     ],

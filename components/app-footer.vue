@@ -16,7 +16,7 @@ export default {
           <span class="column has-text-left">
             <b-button
               class="is-link"
-              v-on:click={() => context.parent.$store.dispatch('consent/open')}
+              v-on:click={() => context.parent.$consent.open()}
             >
               Privacy Settings
             </b-button>

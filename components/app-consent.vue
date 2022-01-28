@@ -1,9 +1,5 @@
 <template>
-  <b-modal
-    :active="$store.getters['consent/isOpened']"
-    :can-cancel="false"
-    :width="640"
-  >
+  <b-modal :active="$consent.isOpened" :can-cancel="false" :width="640">
     <div class="card">
       <div class="card-content">
         <div class="content">
@@ -53,10 +49,7 @@
 export default {
   computed: {
     isOpened() {
-      return this.$store.getters['consent/isOpened']
-    },
-    settings() {
-      return this.$store.getters['consent/settings']
+      return this.$consent.isOpened
     },
   },
   data: () => ({
@@ -75,19 +68,19 @@ export default {
         this.$set(this.editedSettings, 'statistics', true)
       }
 
-      return this.$store.dispatch('consent/set', this.editedSettings)
+      return (this.$consent.settings = this.editedSettings)
     },
   },
   mounted() {
-    if (Object.keys(this.settings).length === 0) {
-      this.$store.dispatch('consent/open')
+    if (Object.keys(this.$consent.settings).length === 0) {
+      this.$consent.open()
     }
   },
   watch: {
     isOpened: {
       handler() {
         if (this.isOpened) {
-          this.editedSettings = { statistics: false, ...this.settings }
+          this.editedSettings = { statistics: false, ...this.$consent.settings }
         }
       },
       immediate: true,

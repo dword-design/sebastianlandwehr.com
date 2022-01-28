@@ -1,4 +1,3 @@
-import { endent, join, keys, map } from '@dword-design/functions'
 import P from 'path'
 
 export default function (options) {
@@ -8,8 +7,7 @@ export default function (options) {
     options,
     src: require.resolve('./options.js.template'),
   })
-
-  const serviceNames = options.services |> keys
+  /* const serviceNames = options.services |> keys
   for (const serviceName of serviceNames) {
     this.addTemplate({
       fileName: P.join('consent', 'services', `${serviceName}.js`),
@@ -38,12 +36,7 @@ export default function (options) {
 
     `,
     src: require.resolve('./services/index.js.template'),
-  })
-  this.addPlugin({
-    fileName: P.join('consent', 'plugin.client.js'),
-    options,
-    src: require.resolve('./plugin.client'),
-  })
+  }) */
   this.addPlugin({
     fileName: P.join('consent', 'plugin.js'),
     src: require.resolve('./plugin'),
