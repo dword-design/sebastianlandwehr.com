@@ -15,7 +15,9 @@ export default {
   methods: {
     async submit() {
       if (this.honeypot) {
-        this.error = 'Look like you are a bot. You have filled out the legendary honeypot field!'
+        this.error =
+          'Look like you are a bot. You have filled out the legendary honeypot field!'
+
         return
       }
       this.isLoading = true
@@ -60,9 +62,14 @@ export default {
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
             </b-field>
-            <label>
+            <label style="opacity: 0; position: absolute; top: 0; left: 0; height: 0; width: 0; z-index: -1">
               <span>Name</span>
-              <input type="text" v-model={this.honeypot} style="display: none" />
+              <input
+                autocomplete="off"
+                tabindex="-1"
+                type="text"
+                v-model={this.honeypot}
+              />
             </label>
             <b-field label="Message">
               <b-input
