@@ -1,3 +1,10 @@
+## [1.10.36](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.35...v1.10.36) (2022-01-28)
+
+
+### Bug Fixes
+
+* gdpr compliance ([#115](https://github.com/dword-design/sebastianlandwehr.com/issues/115)) ([b9f3c6e](https://github.com/dword-design/sebastianlandwehr.com/commit/b9f3c6e3b4f930ca824431feaacc0a2f8d178994))
+
 ## [1.10.35](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.34...v1.10.35) (2022-01-27)
 
 
