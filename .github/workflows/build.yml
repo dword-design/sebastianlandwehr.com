@@ -20,9 +20,9 @@ jobs:
       - run: yarn --frozen-lockfile
       - env:
           TEST_BASE_URL: ${{ secrets.TEST_BASE_URL }}
+          TEST_GOOGLE_ANALYTICS_ID: ${{ secrets.TEST_GOOGLE_ANALYTICS_ID }}
           TEST_MAIL_CONFIG: ${{ secrets.TEST_MAIL_CONFIG }}
           TEST_PORT: ${{ secrets.TEST_PORT }}
-          TEST_RECAPTCHA_KEY: ${{ secrets.TEST_RECAPTCHA_KEY }}
         run: yarn test
       - if: failure()
         uses: actions/upload-artifact@v2

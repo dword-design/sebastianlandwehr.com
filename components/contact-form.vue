@@ -7,6 +7,7 @@ export default {
   data: () => ({
     email: '',
     error: '',
+    honeypot: '',
     isLoading: false,
     message: '',
     myEmail: '',
@@ -14,28 +15,27 @@ export default {
   methods: {
     async submit() {
       try {
-        await this.$recaptcha.getResponse()
+        this.$refs.honeypot.validate()
+        this.isLoading = true
+        await this.$mail.send({
+          from: 'info@sebastianlandwehr.com',
+          replyTo: this.email,
+          subject: `${appName} Message`,
+          text: endent`
+            From: ${this.email}
+
+            ${this.message}
+          `,
+        })
+        this.$buefy.toast.open('Your message has been sent successfully.')
+        this.email = ''
+        this.message = ''
+        this.error = ''
       } catch (error) {
-        this.error = 'You have to fill in the captcha.'
-
-        return
+        this.error = error.message
+      } finally {
+        this.isLoading = false
       }
-      this.isLoading = true
-      await this.$mail.send({
-        from: 'info@sebastianlandwehr.com',
-        replyTo: this.email,
-        subject: `${appName} Message`,
-        text: endent`
-          From: ${this.email}
-
-          ${this.message}
-        `,
-      })
-      this.$buefy.toast.open('Your message has been sent successfully.')
-      this.isLoading = false
-      this.email = ''
-      this.message = ''
-      this.error = ''
     },
   },
   mounted() {
@@ -62,6 +62,7 @@ export default {
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
             </b-field>
+            <vue-honeypot ref="honeypot" />
             <b-field label="Message">
               <b-input
                 required
@@ -69,9 +70,6 @@ export default {
                 type="textarea"
                 v-model={this.message}
               />
-            </b-field>
-            <b-field>
-              <recaptcha />
             </b-field>
             {!!this.error && (
               <b-field>

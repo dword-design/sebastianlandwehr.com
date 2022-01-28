@@ -82,22 +82,6 @@ export default {
         },
       },
     ],
-    [
-      '@nuxtjs/google-gtag',
-      {
-        config: {
-          anonymize_ip: true,
-        },
-        id: 'UA-77425155-4',
-      },
-    ],
-    [
-      '@nuxtjs/recaptcha',
-      {
-        siteKey: process.env.RECAPTCHA_KEY,
-        version: 2,
-      },
-    ],
     'nuxt-content-git',
     [
       'nuxt-content-body-html',
@@ -115,9 +99,19 @@ export default {
     '@nuxt/content',
     '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
+    '@dword-design/nuxt-google-gtag',
+    [
+      '~/modules/consent',
+      {
+        services: {
+          googleAnalytics: {},
+        },
+      },
+    ],
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
+  plugins: [require.resolve('./plugins/vue-honeypot')],
   router: {
     linkActiveClass: 'is-active',
   },

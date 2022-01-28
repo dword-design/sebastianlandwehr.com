@@ -27,21 +27,24 @@
   "dependencies": {
     "@dword-design/functions": "^4.0.0",
     "@dword-design/nuxt-buefy": "^2.0.0",
+    "@dword-design/nuxt-google-gtag": "^1.0.0",
     "@dword-design/nuxt-server-link": "^2.0.0",
     "@mdi/svg": "^6.0.0",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/feed": "^2.0.0",
-    "@nuxtjs/google-gtag": "^1.0.4",
-    "@nuxtjs/recaptcha": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
     "depcheck-package-name": "^2.0.3",
+    "js-cookie": "^2.0.0",
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^1.0.0",
     "nuxt-content-git": "^2.0.0",
     "nuxt-mail": "^3.0.0",
     "nuxt-push-plugins": "^2.0.5",
-    "rehype-urls": "^1.1.1"
+    "parse-domain": "^3.0.3",
+    "rehype-urls": "^1.1.1",
+    "vue": "^2.6.14",
+    "vue-honeypot": "^1.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^8.0.0",
