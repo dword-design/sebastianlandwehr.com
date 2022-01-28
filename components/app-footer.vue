@@ -17,7 +17,7 @@ export default {
             <b-button
               class="is-link"
               v-on:click={() =>
-                context.parent.$store.dispatch('consent-management/open')
+                context.parent.$store.dispatch('consent/open')
               }
             >
               Privacy Settings

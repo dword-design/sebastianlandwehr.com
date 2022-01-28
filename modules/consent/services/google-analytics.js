@@ -17,6 +17,10 @@ export default (settings, config) => {
       domain,
       path: '/',
     })
+    const ga4PropertiesMatch = config.id.match(/^G-(.*)$/)
+    if (ga4PropertiesMatch) {
+      Cookie.remove(`_ga_${ga4PropertiesMatch[1]}`, { domain, path: '/' })
+    }
     Cookie.remove('_gid', { domain, path: '/' })
     Cookie.remove('_gat', { domain, path: '/' })
     Cookie.remove('ajs_anonymous_id', { domain, path: '/' })

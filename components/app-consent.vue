@@ -1,6 +1,6 @@
 <template>
   <b-modal
-    :active="$store.getters['consent-management/isOpened']"
+    :active="$store.getters['consent/isOpened']"
     :can-cancel="false"
     :width="640"
   >
@@ -53,10 +53,10 @@
 export default {
   computed: {
     isOpened() {
-      return this.$store.getters['consent-management/isOpened']
+      return this.$store.getters['consent/isOpened']
     },
     settings() {
-      return this.$store.getters['consent-management/settings']
+      return this.$store.getters['consent/settings']
     },
   },
   data: () => ({
@@ -75,12 +75,12 @@ export default {
         this.$set(this.editedSettings, 'statistics', true)
       }
 
-      return this.$store.dispatch('consent-management/set', this.editedSettings)
+      return this.$store.dispatch('consent/set', this.editedSettings)
     },
   },
   mounted() {
     if (Object.keys(this.settings).length === 0) {
-      this.$store.dispatch('consent-management/open')
+      this.$store.dispatch('consent/open')
     }
   },
   watch: {

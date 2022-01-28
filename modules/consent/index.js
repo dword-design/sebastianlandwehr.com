@@ -4,7 +4,7 @@ import P from 'path'
 export default function (options) {
   options = { services: [], ...options }
   this.addTemplate({
-    fileName: P.join('consent-management', 'options.js'),
+    fileName: P.join('consent', 'options.js'),
     options,
     src: require.resolve('./options.js.template'),
   })
@@ -12,12 +12,12 @@ export default function (options) {
   const serviceNames = options.services |> keys
   for (const serviceName of serviceNames) {
     this.addTemplate({
-      fileName: P.join('consent-management', 'services', `${serviceName}.js`),
+      fileName: P.join('consent', 'services', `${serviceName}.js`),
       src: require.resolve(`./services/${serviceName}`),
     })
   }
   this.addTemplate({
-    fileName: P.join('consent-management', 'services', 'index.js'),
+    fileName: P.join('consent', 'services', 'index.js'),
     options: endent`
       ${
         serviceNames
@@ -40,12 +40,12 @@ export default function (options) {
     src: require.resolve('./services/index.js.template'),
   })
   this.addPlugin({
-    fileName: P.join('consent-management', 'plugin.client.js'),
+    fileName: P.join('consent', 'plugin.client.js'),
     options,
     src: require.resolve('./plugin.client'),
   })
   this.addPlugin({
-    fileName: P.join('consent-management', 'plugin.js'),
+    fileName: P.join('consent', 'plugin.js'),
     src: require.resolve('./plugin'),
   })
 }

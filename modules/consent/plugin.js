@@ -1,5 +1,5 @@
 export default pluginContext =>
-  pluginContext.store.registerModule('consent-management', {
+  pluginContext.store.registerModule('consent', {
     actions: {
       init: (context, settings) => context.commit('init', settings),
       open: context => context.commit('open'),
@@ -15,7 +15,7 @@ export default pluginContext =>
       set: (state, settings) => {
         state.isOpened = false
         state.settings = settings
-        localStorage.setItem('consent-management', JSON.stringify(settings))
+        localStorage.setItem('consent', JSON.stringify(settings))
         window.location.reload()
       },
     },

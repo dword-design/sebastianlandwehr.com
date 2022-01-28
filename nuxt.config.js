@@ -112,7 +112,7 @@ export default {
       },
     ],
     [
-      '~/modules/consent-management',
+      '~/modules/consent',
       {
         services: {
           'google-analytics': { id: googleAnalyticsId },
