@@ -60,7 +60,10 @@ export default {
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
             </b-field>
-            <b-input v-model={this.honeypot} class="is-hidden" />
+            <label>
+              <span>Name</span>
+              <input type="text" v-model={this.honeypot} style="display: none" />
+            </label>
             <b-field label="Message">
               <b-input
                 required
