@@ -1,3 +1,220 @@
+## [1.10.35](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.34...v1.10.35) (2022-01-27)
+
+
+### Bug Fixes
+
+* lock file maintenance ([4cfebaf](https://github.com/dword-design/sebastianlandwehr.com/commit/4cfebafdca36a3bc89fa8898d600c549cb941fa9))
+
+## [1.10.34](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.33...v1.10.34) (2022-01-17)
+
+
+### Bug Fixes
+
+* lock file maintenance ([a1bef22](https://github.com/dword-design/sebastianlandwehr.com/commit/a1bef22e201531a70469a1682bca54c3e073a080))
+
+## [1.10.33](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.32...v1.10.33) (2022-01-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#143](https://github.com/dword-design/sebastianlandwehr.com/issues/143)) ([538e619](https://github.com/dword-design/sebastianlandwehr.com/commit/538e6194b6d79c5651465c72c730ae5cbb4c08e6))
+
+## [1.10.32](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.31...v1.10.32) (2022-01-03)
+
+
+### Bug Fixes
+
+* lock file maintenance ([6b9018d](https://github.com/dword-design/sebastianlandwehr.com/commit/6b9018db99d2433a89ebf2e01539714d244b2b97))
+
+## [1.10.31](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.30...v1.10.31) (2021-12-28)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#141](https://github.com/dword-design/sebastianlandwehr.com/issues/141)) ([195203d](https://github.com/dword-design/sebastianlandwehr.com/commit/195203d9806f2db71e8d009dcfa491c6df5e3540))
+
+## [1.10.30](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.29...v1.10.30) (2021-12-06)
+
+
+### Bug Fixes
+
+* lock file maintenance ([f8a3a32](https://github.com/dword-design/sebastianlandwehr.com/commit/f8a3a324b10662835a47d8f87b66bac0ecec6fef))
+
+## [1.10.29](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.28...v1.10.29) (2021-11-29)
+
+
+### Bug Fixes
+
+* lock file maintenance ([865ea41](https://github.com/dword-design/sebastianlandwehr.com/commit/865ea412174c4ee82f78ad00bd6ce0f0826221dd))
+
+## [1.10.28](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.27...v1.10.28) (2021-11-24)
+
+
+### Bug Fixes
+
+* delete test image ([0f83f1e](https://github.com/dword-design/sebastianlandwehr.com/commit/0f83f1e51dbbeb21aae8241dd89bc08b06b1bb82))
+
+## [1.10.27](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.26...v1.10.27) (2021-11-22)
+
+
+### Bug Fixes
+
+* lock file maintenance ([814321d](https://github.com/dword-design/sebastianlandwehr.com/commit/814321d67f89d08307f6dcb33373dd66c96af8f6))
+
+## [1.10.26](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.25...v1.10.26) (2021-11-16)
+
+
+### Bug Fixes
+
+* add test image ([13fcbb7](https://github.com/dword-design/sebastianlandwehr.com/commit/13fcbb723190da4eea336c666957901f12d68457))
+
+## [1.10.25](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.24...v1.10.25) (2021-11-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([e4c6ff1](https://github.com/dword-design/sebastianlandwehr.com/commit/e4c6ff183fe306769fbfb750f2debb3ab654f8bd))
+
+## [1.10.24](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.23...v1.10.24) (2021-11-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([8669d39](https://github.com/dword-design/sebastianlandwehr.com/commit/8669d3936bdb818beba0190af100adb022a9351d))
+
+## [1.10.23](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.22...v1.10.23) (2021-11-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([91a2091](https://github.com/dword-design/sebastianlandwehr.com/commit/91a209179f5448c8f21e21aebd1d17d52c9684c7))
+
+## [1.10.22](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.21...v1.10.22) (2021-11-08)
+
+
+### Bug Fixes
+
+* lock file maintenance ([3dd63ab](https://github.com/dword-design/sebastianlandwehr.com/commit/3dd63ab62b74c26ffbc62b88a903723576443bb4))
+
+## [1.10.21](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.20...v1.10.21) (2021-11-01)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#132](https://github.com/dword-design/sebastianlandwehr.com/issues/132)) ([184055b](https://github.com/dword-design/sebastianlandwehr.com/commit/184055bb059113274cf48c1a99bd906fcf5976aa))
+
+## [1.10.20](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.19...v1.10.20) (2021-10-11)
+
+
+### Bug Fixes
+
+* lock file maintenance ([6c1e508](https://github.com/dword-design/sebastianlandwehr.com/commit/6c1e50861b1d2c4101eeb467c3666d85d717895b))
+
+## [1.10.19](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.18...v1.10.19) (2021-10-05)
+
+
+### Bug Fixes
+
+* update dependency axios to ^0.22.0 ([#126](https://github.com/dword-design/sebastianlandwehr.com/issues/126)) ([263b681](https://github.com/dword-design/sebastianlandwehr.com/commit/263b6813c4040b47939a905d36211cc4a7ab4c59))
+
+## [1.10.18](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.17...v1.10.18) (2021-10-04)
+
+
+### Bug Fixes
+
+* lock file maintenance ([9d6257e](https://github.com/dword-design/sebastianlandwehr.com/commit/9d6257ec86bca50f0d3a4a33e588401dbb6a3a1b))
+
+## [1.10.17](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.16...v1.10.17) (2021-10-04)
+
+
+### Bug Fixes
+
+* lock file maintenance ([7c9137c](https://github.com/dword-design/sebastianlandwehr.com/commit/7c9137c19ca24c0ff298d63d9c1cfb200b09a762))
+
+## [1.10.16](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.15...v1.10.16) (2021-09-27)
+
+
+### Bug Fixes
+
+* lock file maintenance ([d8554a8](https://github.com/dword-design/sebastianlandwehr.com/commit/d8554a82647ebcd8d0d482910949011b71d9dbb9))
+
+## [1.10.15](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.14...v1.10.15) (2021-09-20)
+
+
+### Bug Fixes
+
+* update dependency @mdi/svg to v6 ([#122](https://github.com/dword-design/sebastianlandwehr.com/issues/122)) ([1b19e7c](https://github.com/dword-design/sebastianlandwehr.com/commit/1b19e7c03d18d8da659c5c3397632369ace58299))
+
+## [1.10.14](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.13...v1.10.14) (2021-09-20)
+
+
+### Bug Fixes
+
+* lock file maintenance ([9f24d03](https://github.com/dword-design/sebastianlandwehr.com/commit/9f24d036ca27646edf65cf4490c19f9140f5797b))
+
+## [1.10.13](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.12...v1.10.13) (2021-09-13)
+
+
+### Bug Fixes
+
+* lock file maintenance ([4e598d5](https://github.com/dword-design/sebastianlandwehr.com/commit/4e598d585533a9cce2fa7f17f839cc2c88be470f))
+
+## [1.10.12](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.11...v1.10.12) (2021-09-06)
+
+
+### Bug Fixes
+
+* lock file maintenance ([09cdede](https://github.com/dword-design/sebastianlandwehr.com/commit/09cdedea081bbfdf2e0e8d32aed88426d7e60c33))
+
+## [1.10.11](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.10...v1.10.11) (2021-09-06)
+
+
+### Bug Fixes
+
+* lock file maintenance ([2c2fbc6](https://github.com/dword-design/sebastianlandwehr.com/commit/2c2fbc68da0cf627dc94865bb0fc139801d145fe))
+
+## [1.10.10](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.9...v1.10.10) (2021-08-30)
+
+
+### Bug Fixes
+
+* lock file maintenance ([191b7a3](https://github.com/dword-design/sebastianlandwehr.com/commit/191b7a31b2b0bd43895f9875ee3106ff6829968b))
+
+## [1.10.9](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.8...v1.10.9) (2021-08-23)
+
+
+### Bug Fixes
+
+* lock file maintenance ([177f8fa](https://github.com/dword-design/sebastianlandwehr.com/commit/177f8fafc09076677fb25c486f7d74baefbfc904))
+
+## [1.10.8](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.7...v1.10.8) (2021-08-22)
+
+
+### Bug Fixes
+
+* update contact data ([76c90c5](https://github.com/dword-design/sebastianlandwehr.com/commit/76c90c5375e81df51b26bdbd9b851f846fae0781))
+
+## [1.10.7](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.6...v1.10.7) (2021-08-22)
+
+
+### Bug Fixes
+
+* update contact data ([7a4bfff](https://github.com/dword-design/sebastianlandwehr.com/commit/7a4bfff7c0bcdcea0bb4c4f2a9730cc97492de9b))
+
+## [1.10.6](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.5...v1.10.6) (2021-08-18)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#116](https://github.com/dword-design/sebastianlandwehr.com/issues/116)) ([9744c1d](https://github.com/dword-design/sebastianlandwehr.com/commit/9744c1d11efa470b487ca2c82a82a225b80f84d1))
+
+## [1.10.5](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.4...v1.10.5) (2021-08-10)
+
+
+### Bug Fixes
+
+* fix anonymize ip ([9c8afb2](https://github.com/dword-design/sebastianlandwehr.com/commit/9c8afb2649cdb4df9ec428d55756266e5d8765d8))
+
 ## [1.10.4](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.3...v1.10.4) (2021-08-10)
 
 

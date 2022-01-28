@@ -1,6 +1,6 @@
 {
   "name": "sebastianlandwehr.com",
-  "version": "1.10.4",
+  "version": "1.10.35",
   "repository": "dword-design/sebastianlandwehr.com",
   "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "@dword-design/functions": "^4.0.0",
     "@dword-design/nuxt-buefy": "^2.0.0",
     "@dword-design/nuxt-server-link": "^2.0.0",
-    "@mdi/svg": "^5.9.55",
+    "@mdi/svg": "^6.0.0",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/google-gtag": "^1.0.4",
@@ -48,11 +48,12 @@
   "devDependencies": {
     "@dword-design/base": "^8.0.0",
     "@dword-design/base-config-app": "^2.0.0",
+    "@dword-design/base-config-nuxt": "^3.0.30",
     "@dword-design/puppeteer": "^5.0.0",
     "@dword-design/tester": "^2.0.0",
     "@dword-design/tester-plugin-nuxt": "^2.0.0",
     "@dword-design/tester-plugin-puppeteer": "^2.0.0",
-    "axios": "^0.21.1",
+    "axios": "^0.22.0",
     "pretty": "^2.0.0"
   },
   "peerDependencies": {
