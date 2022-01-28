@@ -99,27 +99,19 @@ export default {
     '@nuxt/content',
     '~/modules/bulma-prism-fix',
     '@nuxtjs/feed',
-    [
-      '@nuxtjs/google-gtag',
-      {
-        config: {
-          anonymize_ip: true,
-        },
-        debug: true,
-        id: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    ],
+    '@dword-design/nuxt-google-gtag',
     [
       '~/modules/consent',
       {
         services: {
-          googleAnalytics: { id: process.env.GOOGLE_ANALYTICS_ID },
+          googleAnalytics: {},
         },
       },
     ],
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
+  plugins: [require.resolve('./plugins/vue-honeypot')],
   router: {
     linkActiveClass: 'is-active',
   },

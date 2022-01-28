@@ -14,28 +14,28 @@ export default {
   }),
   methods: {
     async submit() {
-      if (this.honeypot) {
-        this.error =
-          'Look like you are a bot. You have filled out the legendary honeypot field!'
+      try {
+        this.$refs.honeypot.validate()
+        this.isLoading = true
+        await this.$mail.send({
+          from: 'info@sebastianlandwehr.com',
+          replyTo: this.email,
+          subject: `${appName} Message`,
+          text: endent`
+            From: ${this.email}
 
-        return
+            ${this.message}
+          `,
+        })
+        this.$buefy.toast.open('Your message has been sent successfully.')
+        this.email = ''
+        this.message = ''
+        this.error = ''
+      } catch (error) {
+        this.error = error.message
+      } finally {
+        this.isLoading = false
       }
-      this.isLoading = true
-      await this.$mail.send({
-        from: 'info@sebastianlandwehr.com',
-        replyTo: this.email,
-        subject: `${appName} Message`,
-        text: endent`
-          From: ${this.email}
-
-          ${this.message}
-        `,
-      })
-      this.$buefy.toast.open('Your message has been sent successfully.')
-      this.isLoading = false
-      this.email = ''
-      this.message = ''
-      this.error = ''
     },
   },
   mounted() {
@@ -62,15 +62,7 @@ export default {
             <b-field label="Email">
               <b-input required type="email" v-model={this.email} />
             </b-field>
-            <label style="opacity: 0; position: absolute; top: 0; left: 0; height: 0; width: 0; z-index: -1">
-              <span>Name</span>
-              <input
-                autocomplete="off"
-                tabindex="-1"
-                type="text"
-                v-model={this.honeypot}
-              />
-            </label>
+            <vue-honeypot ref="honeypot" />
             <b-field label="Message">
               <b-input
                 required

@@ -1499,6 +1499,14 @@
     nuxt-push-plugins "^2.0.0"
     vue "^2.6.11"
 
+"@dword-design/nuxt-google-gtag@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/nuxt-google-gtag/-/nuxt-google-gtag-1.0.1.tgz#58979d87cf93ef15cb66cd33aae851425226da1a"
+  integrity sha512-ADVhjTLoIS1N2VqVmog66eRuldIMwxs3/dTfR/0jQUYyodRMR6bNx9VbP9L1QzfLTSmAX8RK5BayIAj5GeILdA==
+  dependencies:
+    "@nuxtjs/google-gtag" "^1.0.4"
+    depcheck-package-name "^2.0.6"
+
 "@dword-design/nuxt-server-link@^2.0.0":
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/@dword-design/nuxt-server-link/-/nuxt-server-link-2.0.7.tgz#ace15ada9c61506afb2da76d043da539be835aa8"
@@ -6191,7 +6199,7 @@ depcheck-detector-package-name@^2.0.0:
   resolved "https://registry.yarnpkg.com/depcheck-detector-package-name/-/depcheck-detector-package-name-2.0.8.tgz#5007550deb4363fcc7712ba90a61c4f4f0a65926"
   integrity sha512-LZQxahJ+9aMyG++KNSMgufWWLZlDj2ywM/EXNKjR1zD08iQ+epXN9BqHp96AaHJM69/J4aIpyf3zkX3hocKpTw==
 
-depcheck-package-name@^2.0.0, depcheck-package-name@^2.0.3:
+depcheck-package-name@^2.0.0, depcheck-package-name@^2.0.3, depcheck-package-name@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/depcheck-package-name/-/depcheck-package-name-2.0.6.tgz#998015be43593711641fa23569aca131f133dc31"
   integrity sha512-9C8RbkOrafLWXTMt6DIimYiLeKk2qSaQyFoiTTPx1GdnmNo1VpO7zoAmRUy/teEEtSa+5DuyGXi91lhs2G0S8g==
@@ -17194,6 +17202,11 @@ vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^6.3.0"
+
+vue-honeypot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-honeypot/-/vue-honeypot-1.0.0.tgz#8300a6f2695a46a51e743443b81f8754d6c9a4dd"
+  integrity sha512-OBobHIumxOHDu8LCgLtCRO9j1v0Uw3hTg50lQhf3SF67TmtFMmqGyM2scjR3h0DjotY+qIxkivyJFsTHD/4Kog==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
