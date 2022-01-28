@@ -5,7 +5,7 @@ import { URL } from 'url'
 import blogFooter from './content/blog-footer'
 import { appName, appTitle } from './model/variables'
 
-const googleAnalyticsId = 'G-FDH15TCBLL' //'UA-77425155-4'
+const googleAnalyticsId = 'G-FDH15TCBLL' // 'UA-77425155-4'
 
 export default {
   css: ['@/assets/style.scss'],
@@ -104,10 +104,10 @@ export default {
     [
       '@nuxtjs/google-gtag',
       {
-        debug: true,
         config: {
           anonymize_ip: true,
         },
+        debug: true,
         id: googleAnalyticsId,
       },
     ],
