@@ -1478,7 +1478,7 @@
     "@dword-design/functions" "^4.0.0"
     babel-plugin-module-resolver "^4.0.0"
 
-"@dword-design/functions@^4.0.0", "@dword-design/functions@^4.0.5":
+"@dword-design/functions@^4.0.0", "@dword-design/functions@^4.0.5", "@dword-design/functions@^4.0.7":
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.0.7.tgz#678a0402c2890c6061a9605df0ac7153c06be469"
   integrity sha512-Q225czTokHcXIUhe+yVlHuhnETdfKyJptNAfg2LnoB/HXUxQyb76+kwpBzwlldOQ7FJl+RDATj4zTRBh4puesA==
@@ -1498,6 +1498,21 @@
     nuxt-buefy "^0.4.2"
     nuxt-push-plugins "^2.0.0"
     vue "^2.6.11"
+
+"@dword-design/nuxt-consent-buefy@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/nuxt-consent-buefy/-/nuxt-consent-buefy-1.0.1.tgz#298f866427fb9f9871912e2a0a45e68b41444c0d"
+  integrity sha512-HGKEFHS5900+FZOlm0xdALyE9jISmXThLjkaUa2XgPfQVhwXbsdx2dCgQrVXA/v93wjQMx4t3zIofQ85lr8MMA==
+  dependencies:
+    "@dword-design/vue-consent-buefy" "^1.0.0"
+    nuxt-push-plugins "^2.0.9"
+
+"@dword-design/nuxt-consent@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/nuxt-consent/-/nuxt-consent-1.0.0.tgz#e7bf6bec75bcfefce7850dd0eb507d868381abf3"
+  integrity sha512-frqqOz14QbOEMkCwE/RRJbhjoggRIJ8ONkehlr5TwpJIinG/g2NfmcTKQraGdCm1l5ftZscl7r1FX5e9LmiXeA==
+  dependencies:
+    "@dword-design/vue-consent" "^1.0.0"
 
 "@dword-design/nuxt-google-gtag@^1.0.0":
   version "1.0.1"
@@ -1559,6 +1574,20 @@
   dependencies:
     "@dword-design/functions" "^4.0.0"
     promise-sequential "^1.1.1"
+
+"@dword-design/vue-consent-buefy@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent-buefy/-/vue-consent-buefy-1.0.0.tgz#5f7657c6c8e8c0d03e0decedebea9869c488ce0c"
+  integrity sha512-Qj4HcfAXAUfOKXNfXantz2N525e3pb8l2kqi9rwljWvGtPRzuALmxgdG8f6g1KzKw4kQFdJqQhjM+CGVR2qYYQ==
+
+"@dword-design/vue-consent@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent/-/vue-consent-1.0.0.tgz#b958bc56d97efd5fdbdee45d96b7b8f1588878a8"
+  integrity sha512-gyrLrVRsi1Vfcsl2s7d9c7xq59SSyAl2kzWSVgC2GhLkpdg7o0iQQdEwZaNGsb0zdJJ1fD+/NSNr37kvwudf9Q==
+  dependencies:
+    "@dword-design/functions" "^4.0.7"
+    js-cookie "^2.0.0"
+    parse-domain "^3.0.0"
 
 "@dword-design/vue-server-link@^2.0.0":
   version "2.0.11"
@@ -12147,6 +12176,14 @@ nuxt-content-git@^2.0.0:
     "@dword-design/functions" "^4.0.0"
     simple-git "^2.37.0"
 
+nuxt-honeypot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nuxt-honeypot/-/nuxt-honeypot-1.0.0.tgz#3cc4e3ce11c3575bc9b6e10c59bed2e8f95bac96"
+  integrity sha512-UnxCA4MJuMEfBudGwKxDTZOBzWhcNQCpKUMLq5S0KePQxkWlJ9U2OeP2koouI3gOEIpWR3NgXFYskKSR3Nlu5Q==
+  dependencies:
+    nuxt-push-plugins "^2.0.9"
+    vue-honeypot "^1.0.2"
+
 nuxt-mail@^3.0.0:
   version "3.0.18"
   resolved "https://registry.yarnpkg.com/nuxt-mail/-/nuxt-mail-3.0.18.tgz#8bdba28d972fd7f39b72d9e9c88f04d53278a445"
@@ -12157,7 +12194,7 @@ nuxt-mail@^3.0.0:
     nodemailer "^6.4.11"
     nuxt-push-plugins "^2.0.0"
 
-nuxt-push-plugins@^2.0.0, nuxt-push-plugins@^2.0.5:
+nuxt-push-plugins@^2.0.0, nuxt-push-plugins@^2.0.5, nuxt-push-plugins@^2.0.9:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/nuxt-push-plugins/-/nuxt-push-plugins-2.0.9.tgz#faf9932fa97e2568fc08bef1e110576b673ffede"
   integrity sha512-n5XarYrH5cpSlu3BUTNF4FceDKXAcTevdjxsRVC71u9PwLrBUbp4c171hPA9v6CnQXtrsyy4598bRcpw35O2hQ==
@@ -12704,7 +12741,7 @@ parse-conflict-json@^1.1.1:
     just-diff "^3.0.1"
     just-diff-apply "^3.0.0"
 
-parse-domain@^3.0.3:
+parse-domain@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/parse-domain/-/parse-domain-3.0.4.tgz#99811f389864831ef31ee588917f782c120a6fb5"
   integrity sha512-4JVDf87cQ9j9ldbBgXyG7GWnvhnITw23yBv29FuAG7zSCo0QIlLO03NgVopjVB/wX26ayD+yxHXzUW+a4A3RXQ==
@@ -17203,10 +17240,10 @@ vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
     lodash "^4.17.21"
     semver "^6.3.0"
 
-vue-honeypot@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-honeypot/-/vue-honeypot-1.0.0.tgz#8300a6f2695a46a51e743443b81f8754d6c9a4dd"
-  integrity sha512-OBobHIumxOHDu8LCgLtCRO9j1v0Uw3hTg50lQhf3SF67TmtFMmqGyM2scjR3h0DjotY+qIxkivyJFsTHD/4Kog==
+vue-honeypot@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/vue-honeypot/-/vue-honeypot-1.0.2.tgz#9e77d0617c4d79b5542fc99b6493f3032930390b"
+  integrity sha512-UFRWRU8kKT493eYX+dMUG91aZhUKl2zZZChaPF+ME3qzAZ05nyQtqe+O/gsOd6LQeZnv73lKIotstOIMDIOaXg==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

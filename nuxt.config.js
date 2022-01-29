@@ -101,17 +101,18 @@ export default {
     '@nuxtjs/feed',
     '@dword-design/nuxt-google-gtag',
     [
-      '~/modules/consent',
+      '@dword-design/nuxt-consent',
       {
         services: {
           googleAnalytics: {},
         },
       },
     ],
+    '@dword-design/nuxt-consent-buefy',
+    'nuxt-honeypot',
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
-  plugins: [require.resolve('./plugins/vue-honeypot')],
   router: {
     linkActiveClass: 'is-active',
   },
