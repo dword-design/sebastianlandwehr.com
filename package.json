@@ -27,6 +27,8 @@
   "dependencies": {
     "@dword-design/functions": "^4.0.0",
     "@dword-design/nuxt-buefy": "^2.0.0",
+    "@dword-design/nuxt-consent": "^1.0.0",
+    "@dword-design/nuxt-consent-buefy": "^1.0.0",
     "@dword-design/nuxt-google-gtag": "^1.0.0",
     "@dword-design/nuxt-server-link": "^2.0.0",
     "@mdi/svg": "^6.0.0",
@@ -39,6 +41,7 @@
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^1.0.0",
     "nuxt-content-git": "^2.0.0",
+    "nuxt-honeypot": "^1.0.0",
     "nuxt-mail": "^3.0.0",
     "nuxt-push-plugins": "^2.0.5",
     "parse-domain": "^3.0.3",

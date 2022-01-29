@@ -2,7 +2,7 @@
 export default {
   render: () => (
     <div>
-      <app-consent />
+      <b-consent />
       <app-navbar />
       <nuxt />
       <app-footer />
