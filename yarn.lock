@@ -12741,7 +12741,7 @@ parse-conflict-json@^1.1.1:
     just-diff "^3.0.1"
     just-diff-apply "^3.0.0"
 
-parse-domain@^3.0.0, parse-domain@^3.0.3:
+parse-domain@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/parse-domain/-/parse-domain-3.0.4.tgz#99811f389864831ef31ee588917f782c120a6fb5"
   integrity sha512-4JVDf87cQ9j9ldbBgXyG7GWnvhnITw23yBv29FuAG7zSCo0QIlLO03NgVopjVB/wX26ayD+yxHXzUW+a4A3RXQ==
@@ -17239,11 +17239,6 @@ vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^6.3.0"
-
-vue-honeypot@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-honeypot/-/vue-honeypot-1.0.0.tgz#8300a6f2695a46a51e743443b81f8754d6c9a4dd"
-  integrity sha512-OBobHIumxOHDu8LCgLtCRO9j1v0Uw3hTg50lQhf3SF67TmtFMmqGyM2scjR3h0DjotY+qIxkivyJFsTHD/4Kog==
 
 vue-honeypot@^1.0.2:
   version "1.0.2"
