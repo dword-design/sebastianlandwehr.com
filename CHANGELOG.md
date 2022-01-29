@@ -1,3 +1,10 @@
+## [1.10.37](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.36...v1.10.37) (2022-01-29)
+
+
+### Bug Fixes
+
+* refactoring ([#148](https://github.com/dword-design/sebastianlandwehr.com/issues/148)) ([498ab0e](https://github.com/dword-design/sebastianlandwehr.com/commit/498ab0e21570c569c0ad55a86f608defede09dd6))
+
 ## [1.10.36](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.35...v1.10.36) (2022-01-28)
 
 
