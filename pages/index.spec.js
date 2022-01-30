@@ -14,10 +14,10 @@ export default tester(
       })
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
-      const dataPrivacyButton = await this.page.waitForXPath(
-        "//h2[text()='Cookie Settings']/..//button/span[normalize-space(text())='data privacy']/.."
+      const privacyPolicyButton = await this.page.waitForXPath(
+        "//h2[text()='Cookie Settings']/..//button/span[normalize-space(text())='privacy policy']/.."
       )
-      await dataPrivacyButton.click()
+      await privacyPolicyButton.click()
       await delay(300)
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await this.page.mouse.click(10, 10)

@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@dword-design/functions": "^4.0.0",
+    "@dword-design/get-privacy-policy": "^1.0.1",
     "@dword-design/legal-notice": "^1.0.1",
     "@dword-design/nuxt-buefy": "^2.0.0",
     "@dword-design/nuxt-consent": "^1.0.0",

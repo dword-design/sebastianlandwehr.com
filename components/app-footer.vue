@@ -3,28 +3,28 @@ export default {
   functional: true,
   render: context => (
     <footer {...context.data} class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <nuxt-server-link to={{ name: 'legal-notice' }}>
-            Legal Notice
-          </nuxt-server-link>
-        </p>
-        <p class="columns is-mobile">
-          <span class="column has-text-right">
-            <nuxt-server-link to={{ name: 'data-privacy' }}>
-              Data Privacy
+      <nav>
+        <ul class="columns is-centered">
+          <li class="column is-narrow">
+            <nuxt-server-link to={{ name: 'legal-notice' }}>
+              Legal Notice
             </nuxt-server-link>
-          </span>
-          <span class="column has-text-left">
+          </li>
+          <li class="column is-narrow">
+            <nuxt-server-link to={{ name: 'privacy-policy' }}>
+              Privacy Policy
+            </nuxt-server-link>
+          </li>
+          <li class="column is-narrow">
             <b-button
               class="is-link"
               v-on:click={() => context.parent.$consent.open()}
             >
               Privacy Settings
             </b-button>
-          </span>
-        </p>
-      </div>
+          </li>
+        </ul>
+      </nav>
     </footer>
   ),
 }
