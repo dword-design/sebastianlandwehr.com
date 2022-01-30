@@ -5,7 +5,9 @@ export default {
     <footer {...context.data} class="footer">
       <div class="content has-text-centered">
         <p>
-          <nuxt-server-link to={{ name: 'imprint' }}>Imprint</nuxt-server-link>
+          <nuxt-server-link to={{ name: 'legal-notice' }}>
+            Legal Notice
+          </nuxt-server-link>
         </p>
         <p class="columns is-mobile">
           <span class="column has-text-right">
