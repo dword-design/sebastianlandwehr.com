@@ -1,14 +1,14 @@
 <script>
-import text from '@/assets/imprint.html'
+import { en as legalNotice } from '@dword-design/legal-notice'
 
 export default {
   head: {
-    title: 'Imprint',
+    title: 'Legal Notice',
   },
   render: () => (
     <main class="section">
       <div class="container is-content">
-        <div class="content" domPropsInnerHTML={text} />
+        <div class="content" domPropsInnerHTML={legalNotice} />
       </div>
     </main>
   ),

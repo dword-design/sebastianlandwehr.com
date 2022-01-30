@@ -1488,6 +1488,13 @@
     lodash "^4.17.15"
     tinycolor2 "^1.4.1"
 
+"@dword-design/legal-notice@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/legal-notice/-/legal-notice-1.0.1.tgz#8a1afcdcdcd22f49a3c128cab4af859e86166346"
+  integrity sha512-4XpJF9Z9pbGyJCnOMoBUIDv8uKGBqeeG3B2DoSNlM8US0x+gRqaOtskwY5GscxummKYJ6HEkSvgaKgSkDJ0saw==
+  dependencies:
+    "@dword-design/functions" "^4.0.7"
+
 "@dword-design/nuxt-buefy@^2.0.0":
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/@dword-design/nuxt-buefy/-/nuxt-buefy-2.0.8.tgz#3bc482eab5adcf002d41fccdc685434c17e3791c"

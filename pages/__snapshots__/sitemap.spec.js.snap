@@ -37,7 +37,7 @@ exports[`sitemap init 1`] = `
     <loc>http://localhost:3000/data-privacy</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/imprint</loc>
+    <loc>http://localhost:3000/legal-notice</loc>
   </url>
   <url>
     <loc>http://localhost:3000/support-me</loc>
