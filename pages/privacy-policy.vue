@@ -1,12 +1,12 @@
 <script>
 export default {
   head: {
-    title: 'Data Privacy',
+    title: 'Privacy Policy',
   },
   render: () => (
     <main class="section">
       <div class="container is-content">
-        <app-data-privacy />
+        <app-privacy-policy />
       </div>
     </main>
   ),

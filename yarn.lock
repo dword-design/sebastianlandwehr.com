@@ -1488,12 +1488,21 @@
     lodash "^4.17.15"
     tinycolor2 "^1.4.1"
 
-"@dword-design/legal-notice@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/legal-notice/-/legal-notice-1.0.1.tgz#8a1afcdcdcd22f49a3c128cab4af859e86166346"
-  integrity sha512-4XpJF9Z9pbGyJCnOMoBUIDv8uKGBqeeG3B2DoSNlM8US0x+gRqaOtskwY5GscxummKYJ6HEkSvgaKgSkDJ0saw==
+"@dword-design/get-privacy-policy@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/get-privacy-policy/-/get-privacy-policy-1.0.2.tgz#8fef7f79aea49cc7107a92eeda41234061b8c034"
+  integrity sha512-xJtpoAanQITjWnYJbjXL7KA+qYWuf2hiHAbPAR76+eXDtA9ZhknlH3p7t2m1XZ0orfQcdNUzByZUlws8W0UfxQ==
   dependencies:
     "@dword-design/functions" "^4.0.7"
+    "@dword-design/personal-data" "^1.0.1"
+
+"@dword-design/legal-notice@^1.0.1":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@dword-design/legal-notice/-/legal-notice-1.0.4.tgz#c0ccc714e99db46249c296b7e758b9fb1f5db8b0"
+  integrity sha512-20cYCVYynGeatMaJRJRdhFbs7XlNX27Tn6/WgFxZl4VC0KvexEeiFDKjm7Japy4p5FWIeDRXT0N9qHTxLOC7pQ==
+  dependencies:
+    "@dword-design/functions" "^4.0.7"
+    "@dword-design/personal-data" "^1.0.1"
 
 "@dword-design/nuxt-buefy@^2.0.0":
   version "2.0.8"
@@ -1536,6 +1545,13 @@
   dependencies:
     "@dword-design/vue-server-link" "^2.0.0"
     nuxt-push-plugins "^2.0.0"
+
+"@dword-design/personal-data@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/personal-data/-/personal-data-1.0.1.tgz#2f564f4c10c06c189e23b899148d54d4101b0522"
+  integrity sha512-qD8ihxt/i39/oQsOipovRVOET67yEMINu1SYP7Z5PGFq8Yy8476n27oqCZZ0sjXBXhIDCn1+H/5SD74bYcfEFA==
+  dependencies:
+    "@dword-design/functions" "^4.0.7"
 
 "@dword-design/puppeteer@^5.0.0":
   version "5.0.7"
@@ -1583,9 +1599,9 @@
     promise-sequential "^1.1.1"
 
 "@dword-design/vue-consent-buefy@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent-buefy/-/vue-consent-buefy-1.0.0.tgz#5f7657c6c8e8c0d03e0decedebea9869c488ce0c"
-  integrity sha512-Qj4HcfAXAUfOKXNfXantz2N525e3pb8l2kqi9rwljWvGtPRzuALmxgdG8f6g1KzKw4kQFdJqQhjM+CGVR2qYYQ==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent-buefy/-/vue-consent-buefy-1.0.1.tgz#f79ceeaed6f606f2cbe385c6f76b1c26191d9a34"
+  integrity sha512-PmhJIr4E+HSXKRllXFhQOecsjiCq86HC0eOo5kk2h5U+HPZoJTWCzg7sdhvRoxwP9cTSSSRMU0KpKWkUlxNPQA==
 
 "@dword-design/vue-consent@^1.0.0":
   version "1.0.0"
@@ -6090,7 +6106,7 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
-dedent@0.7.0, dedent@dword-design/dedent#fork:
+dedent@0.7.0, "dedent@github:dword-design/dedent#fork":
   version "0.7.0"
   resolved "https://codeload.github.com/dword-design/dedent/tar.gz/c8d46e5017d60504657c2d01b59082c0329a12a7"
   dependencies:
