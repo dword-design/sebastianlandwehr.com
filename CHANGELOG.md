@@ -1,3 +1,10 @@
+## [1.10.39](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.38...v1.10.39) (2022-01-30)
+
+
+### Bug Fixes
+
+* privacy policy ([#150](https://github.com/dword-design/sebastianlandwehr.com/issues/150)) ([50fb587](https://github.com/dword-design/sebastianlandwehr.com/commit/50fb587cff133e18b7c64ab751080ad7ceef43d5))
+
 ## [1.10.38](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.37...v1.10.38) (2022-01-30)
 
 
