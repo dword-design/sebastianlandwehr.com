@@ -14,8 +14,10 @@ export default tester(
       })
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
-      const privacyPolicyButton = await this.page.waitForXPath(
-        "//h2[text()='Cookie Settings']/..//button/span[normalize-space(text())='privacy policy']/.."
+      const privacyPolicyButton = await this.page.waitForFunction(() =>
+        [...document.querySelectorAll('.modal button')].find(
+          el => el.innerText === 'privacy policy'
+        )
       )
       await privacyPolicyButton.click()
       await delay(300)
