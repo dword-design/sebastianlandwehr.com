@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="section is-bordered" style="padding-bottom: 0">
+    <section class="section is-bordered">
       <div class="container">
         <div class="columns">
           <div class="column">
@@ -29,8 +29,8 @@
           </div>
           <div class="column">
             <figure
-              class="covering-image mx-auto h-20rem-mobile"
-              style="max-width: 25rem"
+              class="mx-auto h-20rem-mobile"
+              :style="{ maxWidth: '25rem' }"
             >
               <img class="is-block" alt="Portrait" :src="portraitUrl" />
             </figure>
