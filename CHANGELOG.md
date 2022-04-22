@@ -1,3 +1,10 @@
+## [1.10.43](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.42...v1.10.43) (2022-04-22)
+
+
+### Bug Fixes
+
+* change portrait picture ([4cebd7e](https://github.com/dword-design/sebastianlandwehr.com/commit/4cebd7eabe15675d2747ea120cefd1a0e76855b0))
+
 ## [1.10.42](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.41...v1.10.42) (2022-03-03)
 
 
