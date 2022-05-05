@@ -6,6 +6,7 @@ import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiLinkedIn from '@mdi/svg/svg/linkedin.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
+import XingIcon from '@/assets/xing-icon.svg'
 import { appName, appTitle } from '@/model/variables'
 
 const accounts = [
@@ -33,6 +34,11 @@ const accounts = [
     icon: MdiLinkedIn,
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/sebastian-landwehr-9393aaa5/',
+  },
+  {
+    icon: XingIcon,
+    title: 'Xing',
+    url: 'https://www.xing.com/profile/Sebastian_Landwehr3',
   },
 ]
 
