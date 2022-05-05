@@ -1,3 +1,10 @@
+## [1.10.45](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.44...v1.10.45) (2022-05-05)
+
+
+### Bug Fixes
+
+* add xing ([057ec45](https://github.com/dword-design/sebastianlandwehr.com/commit/057ec458f70ccf5a349312a7f4725bd00d45dd62))
+
 ## [1.10.44](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.43...v1.10.44) (2022-05-05)
 
 
