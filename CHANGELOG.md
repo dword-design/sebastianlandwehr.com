@@ -1,3 +1,10 @@
+## [1.10.46](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.45...v1.10.46) (2022-05-05)
+
+
+### Bug Fixes
+
+* legal notice formatting ([0585fb5](https://github.com/dword-design/sebastianlandwehr.com/commit/0585fb53be387d96f33e4ef2b967cb70f67efd42))
+
 ## [1.10.45](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.44...v1.10.45) (2022-05-05)
 
 
