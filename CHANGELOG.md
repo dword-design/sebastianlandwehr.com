@@ -1,3 +1,10 @@
+## [1.10.47](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.46...v1.10.47) (2022-05-05)
+
+
+### Bug Fixes
+
+* replace image ([82df2bd](https://github.com/dword-design/sebastianlandwehr.com/commit/82df2bd53d4b54488d8fcf0847d934474d76a199))
+
 ## [1.10.46](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.45...v1.10.46) (2022-05-05)
 
 
