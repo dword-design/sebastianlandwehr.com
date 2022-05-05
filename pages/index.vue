@@ -2,7 +2,7 @@
   <main>
     <section class="section is-bordered">
       <div class="container">
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column">
             <div class="content pb-6-tablet">
               <p>
@@ -29,10 +29,10 @@
           </div>
           <div class="column">
             <figure
-              class="mx-auto h-20rem-mobile"
-              :style="{ maxWidth: '25rem' }"
+              class="image mx-auto h-20rem-mobile"
+              :style="{ maxWidth: '24rem' }"
             >
-              <img class="is-block" alt="Portrait" :src="portraitUrl" />
+              <img class="is-rounded" alt="Portrait" :src="portraitUrl" />
             </figure>
           </div>
         </div>
