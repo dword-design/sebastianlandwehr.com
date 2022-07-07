@@ -12,7 +12,7 @@ $link: $primary;
 $level-item-spacing: 1.5rem;
 
 @import "~bulma/sass/utilities/_all";
-@import "@dword-design/nuxt-buefy/dist/style";
+@import "~@dword-design/nuxt-buefy/dist/style";
 
 body {
   // fixes horizontal spacing bug on mobile
@@ -33,15 +33,6 @@ body {
   align-items: center;
 }
 
-.boxlink::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .card-image {
   border-bottom: 1px solid $border-light;
 }
@@ -60,21 +51,25 @@ a.is-text {
   border-bottom: 2px solid $background;
 }
 
-.columns.is-variable {
-  &.is-10 {
-    --columnGap: 2.5rem;
-  }
+.columns {
+  position: relative;
 
-  &.is-0-mobile {
-    @include mobile {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-      padding-bottom: 0.75rem;
+  &.is-variable {
+    &.is-10 {
+      --columnGap: 2.5rem;
     }
 
-    > .column {
+    &.is-0-mobile {
       @include mobile {
-        padding: var(--columnGap);
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+
+      > .column {
+        @include mobile {
+          padding: var(--columnGap);
+        }
       }
     }
   }
