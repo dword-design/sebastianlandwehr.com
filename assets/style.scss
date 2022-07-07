@@ -37,18 +37,24 @@ body {
   align-items: center;
 }
 
-.stretched-link {
+.is-stretched {
   @include stretched-link;
 }
 
-.card {
+.is-scale-on-hover {
   transition: 0.3s all;
 
-  &.is-hover-shadow {
+  &:hover,
+  &:focus-within {
+    transform: scale(1.05);
+  }
+}
+
+.card {
+  &:not(.is-shadowless).is-scale-on-hover {
     &:hover,
     &:focus-within {
       box-shadow: $shadow-lg;
-      transform: scale(1.05);
     }
   }
 }
@@ -71,21 +77,25 @@ a.is-text {
   border-bottom: 2px solid $background;
 }
 
-.columns.is-variable {
-  &.is-10 {
-    --columnGap: 2.5rem;
-  }
+.columns {
+  position: relative;
 
-  &.is-0-mobile {
-    @include mobile {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
-      padding-bottom: 0.75rem;
+  &.is-variable {
+    &.is-10 {
+      --columnGap: 2.5rem;
     }
 
-    > .column {
+    &.is-0-mobile {
       @include mobile {
-        padding: var(--columnGap);
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+
+      > .column {
+        @include mobile {
+          padding: var(--columnGap);
+        }
       }
     }
   }

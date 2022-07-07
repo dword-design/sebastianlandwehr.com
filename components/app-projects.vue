@@ -11,7 +11,7 @@ export default {
       {context.props.value
         |> map(project => (
           <div class="column is-one-third">
-            <article class="card is-hover-shadow" style={{ height: '100%' }}>
+            <article class="card is-scale-on-hover" style={{ height: '100%' }}>
               {project.imageUrl && (
                 <header class="card-image">
                   <figure class="image is-3by2">
@@ -22,7 +22,7 @@ export default {
               <section class="card-content is-size-7">
                 <h3 class="title is-5">
                   <a
-                    class="stretched-link has-text-dark"
+                    class="is-stretched has-text-dark"
                     href={project.projectUrl}
                     target="_blank"
                   >

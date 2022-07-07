@@ -91,6 +91,7 @@ export default {
                 <div class="column">
                   <h2 class="title is-size-4">
                     <a
+                      class="is-stretched"
                       href={
                         this.$router.resolve({
                           name: 'blog.slug',
