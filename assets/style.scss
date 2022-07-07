@@ -12,11 +12,7 @@ $link: $primary;
 $level-item-spacing: 1.5rem;
 
 @import "~bulma/sass/utilities/_all";
-@import "@dword-design/nuxt-buefy/dist/style";
-@import "~sass-stretched-link";
-
-$shadow-lg: 0 0.5em 2em -0.125em rgba($scheme-invert, 0.2),
-  0 0 0 1px rgba($scheme-invert, 0.02);
+@import "~@dword-design/nuxt-buefy/dist/style";
 
 body {
   // fixes horizontal spacing bug on mobile
@@ -35,28 +31,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.is-stretched {
-  @include stretched-link;
-}
-
-.is-scale-on-hover {
-  transition: 0.3s all;
-
-  &:hover,
-  &:focus-within {
-    transform: scale(1.05);
-  }
-}
-
-.card {
-  &:not(.is-shadowless).is-scale-on-hover {
-    &:hover,
-    &:focus-within {
-      box-shadow: $shadow-lg;
-    }
-  }
 }
 
 .card-image {

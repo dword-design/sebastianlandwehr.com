@@ -35,6 +35,7 @@ export default tester(
         height: 5100,
         width: 1400,
       })
+
       const card = await this.page.waitForSelector('.card')
       await card.hover()
       await delay(500)
