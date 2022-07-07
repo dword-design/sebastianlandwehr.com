@@ -1,3 +1,10 @@
+## [1.10.48](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.47...v1.10.48) (2022-07-07)
+
+
+### Bug Fixes
+
+* add hover to cards ([#162](https://github.com/dword-design/sebastianlandwehr.com/issues/162)) ([8597a13](https://github.com/dword-design/sebastianlandwehr.com/commit/8597a13d8f7d5c47ddebba3736fea506aee623cb))
+
 ## [1.10.47](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.46...v1.10.47) (2022-05-05)
 
 
