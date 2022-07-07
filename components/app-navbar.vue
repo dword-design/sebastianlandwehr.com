@@ -2,8 +2,10 @@
 import { map } from '@dword-design/functions'
 import MdiFacebook from '@mdi/svg/svg/facebook.svg'
 import MdiGitHub from '@mdi/svg/svg/github.svg'
+import MdiHeart from '@mdi/svg/svg/heart.svg'
 import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiLinkedIn from '@mdi/svg/svg/linkedin.svg'
+import MdiPencil from '@mdi/svg/svg/pencil.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
 import XingIcon from '@/assets/xing-icon.svg'
@@ -66,19 +68,37 @@ export default {
           <p class="is-6 subtitle">{appTitle}</p>
         </div>
       </b-navbar-item>
-      <b-navbar-item
+      {/* <b-navbar-item
         href={context.parent.$router.resolve({ name: 'support-me' }).href}
         slot="end"
-        tag="a"
       >
-        Support me
+        <MdiHeart aria-hidden="true" class="icon has-text-danger" />
+        <span>Support me</span>
       </b-navbar-item>
       <b-navbar-item
         href={context.parent.$router.resolve({ name: 'blog' }).href}
         slot="end"
-        tag="a"
       >
-        Blog
+        <MdiPencil aria-hidden="true" class="icon has-text-secondary" />
+        <span>Blog</span>
+      </b-navbar-item> */}
+      <b-navbar-item slot="end" tag="div">
+        <div class="buttons">
+          <a
+            class="button is-light"
+            href={context.parent.$router.resolve({ name: 'support-me' }).href}
+          >
+            <MdiHeart aria-hidden="true" class="icon has-text-danger" />
+            <span>Support me</span>
+          </a>
+          <a
+            class="button is-light"
+            href={context.parent.$router.resolve({ name: 'blog' }).href}
+          >
+            <MdiPencil aria-hidden="true" class="icon has-text-secondary" />
+            <span>Blog</span>
+          </a>
+        </div>
       </b-navbar-item>
       {accounts
         |> map(account => (

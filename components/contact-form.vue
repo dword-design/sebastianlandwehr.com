@@ -1,5 +1,6 @@
 <script>
 import { endent } from '@dword-design/functions'
+import MdiSend from '@mdi/svg/svg/send.svg'
 
 import { appName } from '@/model/variables'
 
@@ -77,13 +78,14 @@ export default {
               </b-field>
             )}
             <div class="buttons">
-              <b-button
+              <button
+                class="button is-primary"
                 loading={this.isLoading}
-                native-type="submit"
-                type="is-inverted"
+                type="submit"
               >
-                Send
-              </b-button>
+                <MdiSend class="icon" />
+                <span>Send</span>
+              </button>
             </div>
           </form>
         </div>
