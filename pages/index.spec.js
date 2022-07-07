@@ -35,6 +35,9 @@ export default tester(
         height: 5100,
         width: 1400,
       })
+      const card = await this.page.waitForSelector('.card')
+      await card.hover()
+      await delay(500)
       expect(
         await this.page.screenshot({ fullPage: true })
       ).toMatchImageSnapshot(this)
