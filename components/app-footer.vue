@@ -4,7 +4,7 @@ export default {
   render: context => (
     <footer {...context.data} class="footer">
       <nav>
-        <ul class="columns is-centered">
+        <ul class="columns is-centered has-text-centered has-separator-dot">
           <li class="column is-narrow">
             <nuxt-server-link to={{ name: 'legal-notice' }}>
               Legal Notice

@@ -32,7 +32,11 @@
               class="image mx-auto h-20rem-mobile"
               :style="{ maxWidth: '24rem' }"
             >
-              <img class="is-rounded" alt="Portrait" :src="portraitUrl" />
+              <img
+                class="is-rounded has-shadow-circle"
+                alt="Portrait"
+                :src="portraitUrl"
+              />
             </figure>
           </div>
         </div>

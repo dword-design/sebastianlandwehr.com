@@ -1,5 +1,6 @@
 <script>
 import { endent } from '@dword-design/functions'
+import MdiSend from '@mdi/svg/svg/send.svg'
 
 import { appName } from '@/model/variables'
 
@@ -47,9 +48,10 @@ export default {
         <div class="columns is-centered">
           <form class="column is-two-thirds" v-on:submit_prevent={this.submit}>
             <h2 class="title">Any questions?</h2>
-            <div class="content is-size-5">
-              <p>I'll happily answer your questions and take your feedback!</p>
+            <div class="content">
               <p>
+                I'll happily answer your questions and take your feedback!
+                <br />
                 Write to{' '}
                 {this.myEmail ? (
                   <a href={`mailto:${this.myEmail}`}>{this.myEmail}</a>
@@ -77,13 +79,14 @@ export default {
               </b-field>
             )}
             <div class="buttons">
-              <b-button
+              <button
+                class="button is-primary"
                 loading={this.isLoading}
-                native-type="submit"
-                type="is-inverted"
+                type="submit"
               >
-                Send
-              </b-button>
+                <MdiSend class="icon" />
+                <span>Send</span>
+              </button>
             </div>
           </form>
         </div>

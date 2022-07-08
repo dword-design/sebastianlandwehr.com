@@ -2,8 +2,10 @@
 import { map } from '@dword-design/functions'
 import MdiFacebook from '@mdi/svg/svg/facebook.svg'
 import MdiGitHub from '@mdi/svg/svg/github.svg'
+import MdiHeart from '@mdi/svg/svg/heart.svg'
 import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiLinkedIn from '@mdi/svg/svg/linkedin.svg'
+import MdiRss from '@mdi/svg/svg/rss.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
 import XingIcon from '@/assets/xing-icon.svg'
@@ -16,26 +18,31 @@ const accounts = [
     url: 'https://github.com/dword-design',
   },
   {
+    color: '#1D9BF0',
     icon: MdiTwitter,
     title: 'Twitter',
     url: 'https://twitter.com/seblandwehr',
   },
   {
+    color: '#CA4163',
     icon: MdiInstagram,
     title: 'Instagram',
     url: 'https://instagram.com/sebastian.landwehr',
   },
   {
+    color: '#1A74E4',
     icon: MdiFacebook,
     title: 'Facebook',
     url: 'https://facebook.com/Sebastian-Landwehr-101161921820497',
   },
   {
+    color: '#0966C2',
     icon: MdiLinkedIn,
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/sebastian-landwehr-9393aaa5/',
   },
   {
+    color: '#0698A0',
     icon: XingIcon,
     title: 'Xing',
     url: 'https://www.xing.com/profile/Sebastian_Landwehr3',
@@ -66,19 +73,37 @@ export default {
           <p class="is-6 subtitle">{appTitle}</p>
         </div>
       </b-navbar-item>
-      <b-navbar-item
+      {/* <b-navbar-item
         href={context.parent.$router.resolve({ name: 'support-me' }).href}
         slot="end"
-        tag="a"
       >
-        Support me
+        <MdiHeart aria-hidden="true" class="icon has-text-danger" />
+        <span>Support me</span>
       </b-navbar-item>
       <b-navbar-item
         href={context.parent.$router.resolve({ name: 'blog' }).href}
         slot="end"
-        tag="a"
       >
-        Blog
+        <MdiRss aria-hidden="true" class="icon has-text-secondary" />
+        <span>Blog</span>
+      </b-navbar-item> */}
+      <b-navbar-item slot="end" tag="div">
+        <div class="buttons">
+          <a
+            class="button is-light"
+            href={context.parent.$router.resolve({ name: 'support-me' }).href}
+          >
+            <MdiHeart aria-hidden="true" class="icon has-text-danger" />
+            <span>Support me</span>
+          </a>
+          <a
+            class="button is-light"
+            href={context.parent.$router.resolve({ name: 'blog' }).href}
+          >
+            <MdiRss aria-hidden="true" class="icon has-text-secondary" />
+            <span>Blog</span>
+          </a>
+        </div>
       </b-navbar-item>
       {accounts
         |> map(account => (
@@ -92,8 +117,9 @@ export default {
           >
             <account.icon
               aria-hidden="true"
-              class={['icon', ...(account.size ? [account.size] : [])]}
+              class="icon is-large"
               icon={account.icon}
+              style={{ color: account.color }}
             />
           </b-navbar-item>
         ))}

@@ -2,12 +2,13 @@ $fullhd-enabled: false;
 //$widescreen-enabled: false;
 $body-size: 17px;
 $body-line-height: 1.8;
-$size-3: 2.25rem;
+$size-3: 2rem;
 $size-7: 0.9rem;
 $navbar-padding-vertical: 0.5rem;
 $hero-body-padding-medium: 5rem 0.75rem;
 $section-padding-medium: 5rem 0.75rem;
 $primary: #3273dc;
+$secondary: #ffd257; //#ffca2b;
 $link: $primary;
 $level-item-spacing: 1.5rem;
 
@@ -20,11 +21,72 @@ body {
   overflow-x: hidden;
 }
 
+.has-shadow {
+  box-shadow: $shadow;
+}
+
+.has-shadow-lg {
+  box-shadow: $shadow-lg;
+}
+
+.has-shadow-circle {
+  box-shadow: 0.2rem 0.5rem 1rem 0 rgba(#000, 0.1);
+}
+
+.has-text-secondary {
+  color: $secondary !important;
+}
+
+.icon {
+  .button & {
+    width: auto;
+
+    &,
+    &.is-medium {
+      height: 1.3em;
+    }
+  }
+
+  &.is-small {
+    height: 0.9rem;
+  }
+
+  &.is-large {
+    height: 1.65em;
+  }
+
+  path {
+    fill: currentColor !important;
+  }
+}
+
 .navbar-item {
   display: flex;
 
   // otherwise the brand will overflow on mobile
   flex-shrink: 1;
+
+  // support icons in navbar items. Taken from button
+  > .icon {
+    width: auto;
+
+    &,
+    &.is-medium {
+      height: 1.3em;
+    }
+
+    &.is-large {
+      height: 1.65em;
+    }
+
+    &:first-child:not(:last-child) {
+      @include ltr-property("margin", $button-padding-horizontal * 0.25);
+    }
+
+    &:last-child:not(:first-child) {
+      @include ltr-property("margin", $button-padding-horizontal * 0.25, false);
+    }
+  }
 }
 
 .navbar-end {
@@ -73,22 +135,30 @@ a.is-text {
       }
     }
   }
-}
 
-.icon {
-  &.is-small {
-    height: 0.9rem;
-  }
+  &.has-separator-dot {
+    .column:not(:last-child) {
+      position: relative;
 
-  path {
-    fill: currentColor !important;
-  }
-  .button & {
-    &,
-    &.is-small,
-    &.is-medium,
-    &.is-large {
-      height: 1em;
+      &::after {
+        @include mobile {
+          top: 100%;
+          left: 50%;
+        }
+
+        @include tablet {
+          top: 50%;
+          left: 100%;
+          transform: translate(-50%, -50%);
+        }
+
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: $text;
+      }
     }
   }
 }
