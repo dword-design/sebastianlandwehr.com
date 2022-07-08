@@ -48,9 +48,10 @@ export default {
         <div class="columns is-centered">
           <form class="column is-two-thirds" v-on:submit_prevent={this.submit}>
             <h2 class="title">Any questions?</h2>
-            <div class="content is-size-5">
-              <p>I'll happily answer your questions and take your feedback!</p>
+            <div class="content">
               <p>
+                I'll happily answer your questions and take your feedback!
+                <br />
                 Write to{' '}
                 {this.myEmail ? (
                   <a href={`mailto:${this.myEmail}`}>{this.myEmail}</a>

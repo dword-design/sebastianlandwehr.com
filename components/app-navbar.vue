@@ -5,7 +5,7 @@ import MdiGitHub from '@mdi/svg/svg/github.svg'
 import MdiHeart from '@mdi/svg/svg/heart.svg'
 import MdiInstagram from '@mdi/svg/svg/instagram.svg'
 import MdiLinkedIn from '@mdi/svg/svg/linkedin.svg'
-import MdiPencil from '@mdi/svg/svg/pencil.svg'
+import MdiRss from '@mdi/svg/svg/rss.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
 import XingIcon from '@/assets/xing-icon.svg'
@@ -18,26 +18,31 @@ const accounts = [
     url: 'https://github.com/dword-design',
   },
   {
+    color: '#1D9BF0',
     icon: MdiTwitter,
     title: 'Twitter',
     url: 'https://twitter.com/seblandwehr',
   },
   {
+    color: '#CA4163',
     icon: MdiInstagram,
     title: 'Instagram',
     url: 'https://instagram.com/sebastian.landwehr',
   },
   {
+    color: '#1A74E4',
     icon: MdiFacebook,
     title: 'Facebook',
     url: 'https://facebook.com/Sebastian-Landwehr-101161921820497',
   },
   {
+    color: '#0966C2',
     icon: MdiLinkedIn,
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/sebastian-landwehr-9393aaa5/',
   },
   {
+    color: '#0698A0',
     icon: XingIcon,
     title: 'Xing',
     url: 'https://www.xing.com/profile/Sebastian_Landwehr3',
@@ -79,7 +84,7 @@ export default {
         href={context.parent.$router.resolve({ name: 'blog' }).href}
         slot="end"
       >
-        <MdiPencil aria-hidden="true" class="icon has-text-secondary" />
+        <MdiRss aria-hidden="true" class="icon has-text-secondary" />
         <span>Blog</span>
       </b-navbar-item> */}
       <b-navbar-item slot="end" tag="div">
@@ -95,7 +100,7 @@ export default {
             class="button is-light"
             href={context.parent.$router.resolve({ name: 'blog' }).href}
           >
-            <MdiPencil aria-hidden="true" class="icon has-text-secondary" />
+            <MdiRss aria-hidden="true" class="icon has-text-secondary" />
             <span>Blog</span>
           </a>
         </div>
@@ -112,8 +117,9 @@ export default {
           >
             <account.icon
               aria-hidden="true"
-              class={['icon', ...(account.size ? [account.size] : [])]}
+              class="icon is-large"
               icon={account.icon}
+              style={{ color: account.color }}
             />
           </b-navbar-item>
         ))}
