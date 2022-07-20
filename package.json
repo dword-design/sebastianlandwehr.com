@@ -33,7 +33,7 @@
     "@dword-design/nuxt-consent-buefy": "^1.0.0",
     "@dword-design/nuxt-google-gtag": "^1.0.0",
     "@dword-design/nuxt-server-link": "^2.0.0",
-    "@mdi/svg": "^6.0.0",
+    "@mdi/svg": "^7.0.0",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
