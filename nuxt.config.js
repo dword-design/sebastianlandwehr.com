@@ -2,8 +2,8 @@ import { endent, map } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
 import { URL } from 'url'
 
-import blogFooter from './content/blog-footer'
-import { appName, appTitle } from './model/variables'
+import blogFooter from './content/blog-footer.js'
+import { appName, appTitle } from './model/variables.js'
 
 export default {
   css: ['@/assets/style.scss'],

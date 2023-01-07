@@ -1,4 +1,4 @@
-import nuxtConfig from '@dword-design/base-config-nuxt/dist/nuxt.config'
+import { getNuxtConfig } from '@dword-design/base-config-nuxt'
 import { delay } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
@@ -23,5 +23,5 @@ export default tester(
       expect(screenshot).toMatchImageSnapshot(this)
     },
   },
-  [testerPluginNuxt(nuxtConfig), testerPluginPuppeteer()]
+  [testerPluginNuxt(getNuxtConfig()), testerPluginPuppeteer()]
 )

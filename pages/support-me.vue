@@ -2,7 +2,7 @@
 import { map } from '@dword-design/functions'
 
 import imageUrl from '@/assets/support-me.jpg'
-import donationPlatforms from '@/model/donation-platforms'
+import donationPlatforms from '@/model/donation-platforms.js'
 
 export default {
   head: {
