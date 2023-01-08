@@ -2,7 +2,7 @@
 import { endent } from '@dword-design/functions'
 import MdiSend from '@mdi/svg/svg/send.svg'
 
-import { appName } from '@/model/variables'
+import { appName } from '@/model/variables.js'
 
 export default {
   data: () => ({

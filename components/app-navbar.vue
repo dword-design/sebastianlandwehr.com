@@ -9,7 +9,7 @@ import MdiRss from '@mdi/svg/svg/rss.svg'
 import MdiTwitter from '@mdi/svg/svg/twitter.svg'
 
 import XingIcon from '@/assets/xing-icon.svg'
-import { appName, appTitle } from '@/model/variables'
+import { appName, appTitle } from '@/model/variables.js'
 
 const accounts = [
   {
