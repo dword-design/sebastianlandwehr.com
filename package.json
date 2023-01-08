@@ -40,7 +40,7 @@
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
-    "depcheck-package-name": "^2.0.3",
+    "depcheck-package-name": "^3.0.0",
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^1.0.0",
     "nuxt-content-git": "^2.0.0",
