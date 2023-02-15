@@ -13331,13 +13331,13 @@ nuxt-content-body-html@^1.0.0:
     remark-rehype "^8.1.0"
     unified "^9.0.0"
 
-nuxt-content-git@^2.0.0:
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/nuxt-content-git/-/nuxt-content-git-2.0.14.tgz#ce5222352df064a6b7909db19ba47c00ad0cf631"
-  integrity sha512-H/MfmmQphSFldQz3xSeQeRKnoumuDdNj4kAK0DFr7COiilZEIUJD15q+hhF4R3PNwn8iDTdWLj9Wmlm9k5rroA==
+nuxt-content-git@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/nuxt-content-git/-/nuxt-content-git-3.0.1.tgz#3ebe884d8319d0ec32f3ac0bc29a596334cf8db0"
+  integrity sha512-6BDSze2hHomFu7A4w3NutJ/tK8ZbaeO9CTOuqis/JfbzXVlylSd5AbYmulQdS/SBo+h6N0sZVxaEwHbiwbKvwA==
   dependencies:
     "@dword-design/functions" "^4.0.0"
-    simple-git "^2.37.0"
+    simple-git "^3.15.1"
 
 nuxt-honeypot@^1.0.0:
   version "1.0.0"
@@ -16610,14 +16610,14 @@ signale@^1.2.1:
     figures "^2.0.0"
     pkg-conf "^2.1.0"
 
-simple-git@^2.37.0:
-  version "2.48.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-2.48.0.tgz#87c262dba8f84d7b96bb3a713e9e34701c1f6e3b"
-  integrity sha512-z4qtrRuaAFJS4PUd0g+xy7aN4y+RvEt/QTJpR184lhJguBA1S/LsVlvE/CM95RsYMOFJG3NGGDjqFCzKU19S/A==
+simple-git@^3.15.1:
+  version "3.16.1"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.16.1.tgz#b67f18cbd3c68bbc4b9177ed49256afe51f12d47"
+  integrity sha512-xzRxMKiy1zEYeHGXgAzvuXffDS0xgsq07Oi4LWEEcVH29vLpcZ2tyQRWyK0NLLlCVaKysZeem5tC1qHEOxsKwA==
   dependencies:
     "@kwsites/file-exists" "^1.1.1"
     "@kwsites/promise-deferred" "^1.1.1"
-    debug "^4.3.2"
+    debug "^4.3.4"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
