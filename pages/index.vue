@@ -13,7 +13,7 @@
                 My passion is all about JavaScript, especially related to
                 client-side development. Most projects I'm developing are based
                 on Vue.js and Nuxt.js, which allows me to use the whole tech
-                stach from server to client. I'm also heavily into open source
+                stack from server to client. I'm also heavily into open source
                 development and I'm contributing lots of packages in the NPM
                 world.
               </p>
