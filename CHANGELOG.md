@@ -1,3 +1,10 @@
+## [1.10.59](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.58...v1.10.59) (2023-04-23)
+
+
+### Bug Fixes
+
+* fix spelling ([78c09e3](https://github.com/dword-design/sebastianlandwehr.com/commit/78c09e3b7a4748ecdde08b70adbb546c2bf01f82))
+
 ## [1.10.58](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.57...v1.10.58) (2023-02-15)
 
 
