@@ -1,3 +1,10 @@
+## [1.10.60](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.59...v1.10.60) (2023-04-23)
+
+
+### Bug Fixes
+
+* trigger release ([8a9892e](https://github.com/dword-design/sebastianlandwehr.com/commit/8a9892e961275b99a842386beb9118e823fc9ac0))
+
 ## [1.10.59](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.58...v1.10.59) (2023-04-23)
 
 
