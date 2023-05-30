@@ -4,8 +4,11 @@
 /.eslintcache
 /.nuxt
 /.nyc_output
+/.stylelintcache
 /.test.env.json
+/app.vue
 /coverage
 /dist
 /nginx/default.config
 /node_modules
+/nuxt.config.js

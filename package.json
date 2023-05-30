@@ -30,7 +30,7 @@
     "@dword-design/functions": "^4.0.0",
     "@dword-design/get-privacy-policy": "^1.0.1",
     "@dword-design/legal-notice": "^1.0.1",
-    "@dword-design/nuxt-buefy": "^2.0.0",
+    "@dword-design/nuxt-buefy": "^3.0.2",
     "@dword-design/nuxt-consent": "^1.0.0",
     "@dword-design/nuxt-consent-buefy": "^1.0.0",
     "@dword-design/nuxt-google-gtag": "^1.0.0",
@@ -40,19 +40,19 @@
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
-    "depcheck-package-name": "^2.0.3",
+    "depcheck-package-name": "^3.0.0",
     "lodash.truncate": "^4.4.2",
-    "nuxt-content-body-html": "^1.0.0",
-    "nuxt-content-git": "^2.0.0",
+    "nuxt-content-body-html": "^2.0.17",
+    "nuxt-content-git": "^3.0.31",
     "nuxt-honeypot": "^1.0.0",
-    "nuxt-mail": "^3.0.0",
+    "nuxt-mail": "^4.0.1",
     "nuxt-push-plugins": "^2.0.5",
     "rehype-urls": "^1.1.1",
     "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@dword-design/base": "^9.2.0",
-    "@dword-design/base-config-app": "^2.0.0",
+    "@dword-design/base": "^10.0.3",
+    "@dword-design/base-config-app": "^3.0.0",
     "@dword-design/base-config-nuxt": "^3.0.30",
     "@dword-design/puppeteer": "^6.0.0",
     "@dword-design/tester": "^2.0.0",
@@ -65,7 +65,7 @@
     "prismjs": "^1.23.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "publishConfig": {
     "access": "public"

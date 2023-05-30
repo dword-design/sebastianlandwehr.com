@@ -1,6 +1,14 @@
-<script>
-import { map } from '@dword-design/functions'
+<template>
+  <ul class="level">
+    <li v-for="library in libraries" :key="library.websiteUrl" class="level-item" :style="{ maxWidth: '10rem' }">
+      <a :href="library.websiteUrl" target="_blank">
+        <img :alt="library.title" :src="library.imageUrl" />
+      </a>
+    </li>
+  </ul>
+</template>
 
+<script setup>
 import firebaseUrl from '@/assets/libraries/firebase.png'
 import nodejsUrl from '@/assets/libraries/nodejs.png'
 import npmUrl from '@/assets/libraries/npm.png'
@@ -18,20 +26,4 @@ const libraries = [
     websiteUrl: 'https://firebase.google.com',
   },
 ]
-
-export default {
-  functional: true,
-  render: context => (
-    <ul {...context.data} class="level">
-      {libraries
-        |> map(library => (
-          <li class="level-item" style={{ maxWidth: '10rem' }}>
-            <a href={library.websiteUrl} target="_blank">
-              <img alt={library.title} src={library.imageUrl} />
-            </a>
-          </li>
-        ))}
-    </ul>
-  ),
-}
 </script>
