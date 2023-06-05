@@ -4,11 +4,10 @@ import MdiHeartIcon from '@mdi/svg/svg/heart.svg'
 import MdiInstagramIcon from '@mdi/svg/svg/instagram.svg'
 import MdiLinkedInIcon from '@mdi/svg/svg/linkedin.svg'
 import MdiRssIcon from '@mdi/svg/svg/rss.svg'
-import MdiTwitterIcon from '@mdi/svg/svg/twitter.svg'
 import MdiSendIcon from '@mdi/svg/svg/send.svg'
+import MdiTwitterIcon from '@mdi/svg/svg/twitter.svg'
 
 import XingIcon from '@/assets/xing-icon.svg'
-
 import { defineNuxtPlugin } from '#imports'
 
 const icons = {
@@ -18,9 +17,9 @@ const icons = {
   MdiInstagramIcon,
   MdiLinkedInIcon,
   MdiRssIcon,
+  MdiSendIcon,
   MdiTwitterIcon,
   XingIcon,
-  MdiSendIcon,
 }
 
 export default defineNuxtPlugin(nuxtApp => {

@@ -7,22 +7,18 @@
           <p>
             I'll happily answer your questions and take your feedback!
             <br />
-            Write to{{' '}}
+            Write to{{ ' ' }}
             <a v-if="myEmail" :href="`mailto:${myEmail}`">{{ myEmail }}</a>
-            <template v-else>[email protected]</template>, or fill out the form below:
+            <template v-else>[email protected]</template>, or fill out the form
+            below:
           </p>
         </div>
         <b-field label="Email">
-          <b-input required type="email" v-model="email" />
+          <b-input v-model="email" required type="email" />
         </b-field>
         <vue-honeypot ref="honeypot" />
         <b-field label="Message">
-          <b-input
-            required
-            rows="8"
-            type="textarea"
-            v-model="message"
-          />
+          <b-input v-model="message" required rows="8" type="textarea" />
         </b-field>
         <b-field v-if="error">
           <b-notification type="is-danger">{this.error}</b-notification>

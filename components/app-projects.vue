@@ -1,6 +1,10 @@
 <template>
   <div class="columns is-multiline">
-    <div v-for="project in value" :key="project.title" class="column is-one-third">
+    <div
+      v-for="project in value"
+      :key="project.title"
+      class="column is-one-third"
+    >
       <article class="card is-scale-on-hover" :style="{ height: '100%' }">
         <header v-if="project.imageUrl" class="card-image">
           <figure class="image is-3by2">

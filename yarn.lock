@@ -1318,9 +1318,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base-config-nuxt@^4.0.0":
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-4.0.12.tgz#3e20d028686640bee777d8edbacd17d54b07b8b9"
-  integrity sha512-8XdmX/F2OKcMeeiBtLDboNYB5SlHKaEBqYgJo9T95Ta0s4nHm6Gn7o8fvbaOwwjXt4TfPvCiIM5IDHLI65FFxg==
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-4.0.13.tgz#bd7ec38d8021c3341cbdd7f05e37d19887950c60"
+  integrity sha512-dbS2d4Fgt+zv8fAuw0pRuVhZvgljNJKMf++Gvyktofisks19zh3utGnNH8npJSsLcqSE25rASaaCI2VkNDoALg==
   dependencies:
     "@dword-design/depcheck-parser-sass" "^4.0.0"
     "@dword-design/dotenv-json-extended" "^2.0.0"
