@@ -1,14 +1,17 @@
 import nuxtPushPlugins from 'nuxt-push-plugins'
 import P from 'path'
+import { defineNuxtModule, createResolver } from '@nuxt/kit'
 
-export default function () {
+const resolver = createResolver(import.meta.url)
+
+export default  defineNuxtModule(() => {
   nuxtPushPlugins(this, {
     fileName: P.join('bulma-prism-fix', 'plugin.js'),
-    src: require.resolve('./plugin'),
+    src: resolver.resolve('./plugin.js'),
   })
   this.addTemplate({
     fileName: P.join('bulma-prism-fix', 'custom-class.js'),
-    src: require.resolve('./prism'),
+    src: resolver.resolve('./prism.js'),
   })
-  this.options.css.push(require.resolve('./theme.scss'))
-}
+  this.options.css.push(resolver.resolve('./theme.scss'))
+})

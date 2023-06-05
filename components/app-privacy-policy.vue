@@ -1,13 +1,7 @@
-<script>
-import getPrivacyPolicy from '@dword-design/get-privacy-policy'
+<template>
+  <div class="content" v-html="getPrivacyPolicy('en', { contact: true })" />
+</template>
 
-export default {
-  functional: true,
-  render: () => (
-    <div
-      class="content"
-      domPropsInnerHTML={getPrivacyPolicy('en', { contact: true })}
-    />
-  ),
-}
+<script setup>
+import getPrivacyPolicy from '@dword-design/get-privacy-policy'
 </script>

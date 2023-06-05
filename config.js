@@ -2,12 +2,11 @@ import { endent, map } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
 import { URL } from 'url'
 
-import blogFooter from './content/blog-footer.js'
 import { appName, appTitle } from './model/variables.js'
 
 export default {
   css: ['@/assets/style.scss'],
-  feed: [
+  /*feed: [
     {
       create: async feed => {
         const $content = require('@nuxt/content').$content
@@ -39,7 +38,7 @@ export default {
       path: '/feed',
       type: 'rss2',
     },
-  ],
+  ],*/
   head: {
     link: [
       {
@@ -51,24 +50,16 @@ export default {
     ],
   },
   modules: [
-    [
-      '@dword-design/nuxt-buefy',
-      {
-        css: false,
-        defaultLinkTags: ['a', 'button', 'nuxt-server-link'],
-        materialDesignIcons: false,
-      },
-    ],
-    '@dword-design/nuxt-server-link',
+    '@dword-design/nuxt-buefy',
     [
       'nuxt-mail',
       {
         message: { to: 'info@sebastianlandwehr.com' },
-        smtp: process.env.MAIL_CONFIG || '{}' |> JSON.parse,
+        smtp: JSON.parse(process.env.MAIL_CONFIG || '{}'),
       },
     ],
     [
-      '@nuxtjs/sitemap',
+      '@funken-studio/sitemap-nuxt-3',
       {
         hostname: process.env.BASE_URL,
         routes: async () => {
@@ -82,7 +73,7 @@ export default {
         },
       },
     ],
-    'nuxt-content-git',
+    /*'nuxt-content-git',
     [
       'nuxt-content-body-html',
       {
@@ -94,21 +85,10 @@ export default {
           ],
         ],
       },
-    ],
-    ['~/modules/blog-footer', { text: blogFooter }],
+    ],*/
     '@nuxt/content',
-    '~/modules/bulma-prism-fix',
-    '@nuxtjs/feed',
-    '@dword-design/nuxt-google-gtag',
-    [
-      '@dword-design/nuxt-consent',
-      {
-        services: {
-          googleAnalytics: {},
-        },
-      },
-    ],
-    '@dword-design/nuxt-consent-buefy',
+    //'@nuxtjs/feed',
+    ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
     'nuxt-honeypot',
   ],
   name: appName,

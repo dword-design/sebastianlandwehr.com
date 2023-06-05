@@ -1,6 +1,11 @@
 <template>
   <ul class="level">
-    <li v-for="library in libraries" :key="library.websiteUrl" class="level-item" :style="{ maxWidth: '10rem' }">
+    <li
+      v-for="library in libraries"
+      :key="library.websiteUrl"
+      class="level-item"
+      :style="{ maxWidth: '10rem' }"
+    >
       <a :href="library.websiteUrl" target="_blank">
         <img :alt="library.title" :src="library.imageUrl" />
       </a>

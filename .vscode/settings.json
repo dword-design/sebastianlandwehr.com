@@ -17,6 +17,7 @@
     ".husky": true,
     ".nuxt": true,
     ".nyc_output": true,
+    ".output": true,
     ".releaserc.json": true,
     ".renovaterc.json": true,
     ".stylelintcache": true,

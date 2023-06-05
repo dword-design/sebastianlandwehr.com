@@ -3,14 +3,14 @@
     <nav>
       <ul class="columns is-centered has-text-centered has-separator-dot">
         <li class="column is-narrow">
-          <nuxt-server-link :to="{ name: 'legal-notice' }">
+          <nuxt-locale-link :to="{ name: 'legal-notice' }">
             Legal Notice
-          </nuxt-server-link>
+          </nuxt-locale-link>
         </li>
         <li class="column is-narrow">
-          <nuxt-server-link :to="{ name: 'privacy-policy' }">
+          <nuxt-locale-link :to="{ name: 'privacy-policy' }">
             Privacy Policy
-          </nuxt-server-link>
+          </nuxt-locale-link>
         </li>
         <li class="column is-narrow">
           <b-button
