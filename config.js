@@ -6,7 +6,7 @@ import { appName, appTitle } from './model/variables.js'
 
 export default {
   css: ['@/assets/style.scss'],
-  /*feed: [
+  /* feed: [
     {
       create: async feed => {
         const $content = require('@nuxt/content').$content
@@ -38,7 +38,7 @@ export default {
       path: '/feed',
       type: 'rss2',
     },
-  ],*/
+  ], */
   head: {
     link: [
       {
@@ -73,7 +73,7 @@ export default {
         },
       },
     ],
-    /*'nuxt-content-git',
+    /* 'nuxt-content-git',
     [
       'nuxt-content-body-html',
       {
@@ -85,11 +85,11 @@ export default {
           ],
         ],
       },
-    ],*/
+    ], */
     '@nuxt/content',
-    //'@nuxtjs/feed',
+    // '@nuxtjs/feed',
     ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
-    'nuxt-honeypot',
+    //'nuxt-honeypot',
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,

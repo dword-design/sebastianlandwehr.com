@@ -1,10 +1,10 @@
+import { createResolver, defineNuxtModule } from '@nuxt/kit'
 import nuxtPushPlugins from 'nuxt-push-plugins'
 import P from 'path'
-import { defineNuxtModule, createResolver } from '@nuxt/kit'
 
 const resolver = createResolver(import.meta.url)
 
-export default  defineNuxtModule(() => {
+export default defineNuxtModule(() => {
   nuxtPushPlugins(this, {
     fileName: P.join('bulma-prism-fix', 'plugin.js'),
     src: resolver.resolve('./plugin.js'),

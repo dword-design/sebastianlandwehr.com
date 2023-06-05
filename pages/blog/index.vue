@@ -10,14 +10,15 @@
         <div class="level-right">
           <div class="level-item content is-block has-text-right-tablet">
             <p class="mb-2">
-              <a
-                class="button is-small is-rounded"
+              <b-button
+                tag="a"
+                variant="is-small is-rounded"
                 href="/feed"
                 target="_blank"
+                icon-left="mdi-rss"
               >
-                <MdiRss class="icon" />
-                <span>Subscribe via RSS</span>
-              </a>
+                Subscribe via RSS
+              </b-button>
             </p>
             <p>
               I'm also publishing on{{ ' ' }}
@@ -46,7 +47,7 @@
       >
         <header class="column is-two-fifths">
           <div class="card is-shadowless">
-            <nuxt-locale-link
+            <nuxt-link
               class="card-image"
               :to="{ name: 'blog.slug', params: { slug: post.slug } }"
             >
@@ -56,12 +57,12 @@
                   :src="`/blog/${post.slug}/banner.png`"
                 />
               </figure>
-            </nuxt-locale-link>
+            </nuxt-link>
           </div>
         </header>
         <div class="column">
           <h2 class="title is-size-4">
-            <nuxt-locale-link
+            <nuxt-link
               class="is-stretched"
               :href="{
                 name: 'blog.slug',
@@ -69,7 +70,7 @@
               }"
             >
               {{ post.title }}
-            </nuxt-locale-link>
+            </nuxt-link>
           </h2>
           <div class="subtitle is-size-7" style="margin-bottom: 0.75rem">
             <time :datetime="format(new Date(post.createdAt), 'yyyy-MM-dd')">
@@ -92,13 +93,12 @@
 
 <script setup>
 import { property } from '@dword-design/functions'
-import MdiRss from '@mdi/svg/svg/rss.svg'
 import { format } from 'date-fns'
 import truncate from 'lodash.truncate'
 
-import { queryContent, useAsyncData, useMeta } from '#imports'
+import { queryContent, useAsyncData, useHead } from '#imports'
 
-useMeta({ title: 'Blog' })
+useHead({ title: 'Blog' })
 
 const posts =
   useAsyncData(() =>

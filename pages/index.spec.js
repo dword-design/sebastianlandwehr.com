@@ -1,4 +1,3 @@
-import { getNuxtConfig } from '@dword-design/base-config-nuxt'
 import { delay } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
@@ -16,8 +15,8 @@ export default tester(
 
       const privacyPolicyButton = await this.page.waitForFunction(() =>
         [...document.querySelectorAll('.modal button')].find(
-          el => el.innerText === 'privacy policy'
-        )
+          el => el.innerText === 'privacy policy',
+        ),
       )
       await privacyPolicyButton.click()
       await delay(300)
@@ -27,7 +26,7 @@ export default tester(
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const acceptAllCookiesButton = await this.page.waitForXPath(
-        "//button/span[text()='Accept all cookies']/.."
+        "//button/span[text()='Accept all cookies']/..",
       )
       await acceptAllCookiesButton.click()
       await this.page.waitForNavigation()
@@ -40,9 +39,9 @@ export default tester(
       await card.hover()
       await delay(500)
       expect(
-        await this.page.screenshot({ fullPage: true })
+        await this.page.screenshot({ fullPage: true }),
       ).toMatchImageSnapshot(this)
     },
   },
-  [testerPluginNuxt(getNuxtConfig()), testerPluginPuppeteer()]
+  [testerPluginNuxt(), testerPluginPuppeteer()],
 )

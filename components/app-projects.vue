@@ -21,7 +21,9 @@
               {{ project.title }}
             </a>
           </h3>
-          <div class="content" v-html="project.description" />
+          <div class="content">
+            {{ project.description }}
+          </div>
         </section>
       </article>
     </div>

@@ -1,4 +1,3 @@
-import { getNuxtConfig } from '@dword-design/base-config-nuxt'
 import { delay } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
@@ -14,7 +13,7 @@ export default tester(
       })
 
       const acceptAllCookiesButton = await this.page.waitForXPath(
-        "//button/span[text()='Accept all cookies']/.."
+        "//button/span[text()='Accept all cookies']/..",
       )
       await acceptAllCookiesButton.click()
       await delay(500)
@@ -23,5 +22,5 @@ export default tester(
       expect(screenshot).toMatchImageSnapshot(this)
     },
   },
-  [testerPluginNuxt(getNuxtConfig()), testerPluginPuppeteer()]
+  [testerPluginNuxt(), testerPluginPuppeteer()],
 )

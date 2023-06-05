@@ -1,4 +1,3 @@
-import { getNuxtConfig } from '@dword-design/base-config-nuxt'
 import { property, replace } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
@@ -15,10 +14,10 @@ export default tester(
           |> pretty
           |> replace(
             /<lastBuildDate>.*?<\/lastBuildDate>/g,
-            '<lastBuildDate>Foo</lastBuildDate>'
-          )
+            '<lastBuildDate>Foo</lastBuildDate>',
+          ),
       ).toMatchSnapshot(this)
     },
   },
-  [testerPluginNuxt(getNuxtConfig())]
+  [testerPluginNuxt()],
 )

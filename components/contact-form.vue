@@ -21,7 +21,7 @@
           <b-input v-model="message" required rows="8" type="textarea" />
         </b-field>
         <b-field v-if="error">
-          <b-notification type="is-danger">{this.error}</b-notification>
+          <b-notification type="is-danger">{{ error }}</b-notification>
         </b-field>
         <div class="buttons">
           <b-button

@@ -1,7 +1,9 @@
 <template>
   <main class="section">
     <div class="container is-content">
+      <!-- eslint-disable vue/no-v-html -->
       <div class="content" v-html="legalNotice" />
+      <!-- eslint-enable -->
       <div class="content">
         <h3>Credits</h3>
         Xing icon by{{ ' ' }}
@@ -14,7 +16,7 @@
 <script setup>
 import { en as legalNotice } from '@dword-design/legal-notice'
 
-import { useMeta } from '#imports'
+import { useHead } from '#imports'
 
-useMeta({ title: 'Legal Notice' })
+useHead({ title: 'Legal Notice' })
 </script>

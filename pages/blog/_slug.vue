@@ -16,10 +16,15 @@
       </div>
       <nuxt-content class="content mb-4" :document="post" />
       <div>
-        <a class="button is-small is-rounded" href="/feed" target="_blank">
-          <MdiRss class="icon" />
-          <span>Subscribe via RSS</span>
-        </a>
+        <b-button
+          tag="a"
+          variant="is-small is-rounded"
+          href="/feed"
+          target="_blank"
+          icon-left="mdi-rss"
+        >
+          Subscribe via RSS
+        </b-button>
       </div>
     </article>
   </main>
@@ -27,9 +32,8 @@
 
 <script setup>
 import { property } from '@dword-design/functions'
-import MdiRss from '@mdi/svg/svg/rss.svg'
 
-import { queryContent, useAsyncData, useMeta } from '#imports'
+import { queryContent, useAsyncData, useHead } from '#imports'
 
 const post =
   useAsyncData(() =>
@@ -40,5 +44,5 @@ const post =
   )
   |> await
   |> property('data')
-useMeta({ title: post.title })
+useHead({ title: post.title })
 </script>

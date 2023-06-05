@@ -56,7 +56,7 @@
         <app-projects :value="openSourceLibraries" />
         <p class="has-text-centered mb-6 is-size-5">
           <span class="icon-text">
-            <MdiArrowRightBold class="icon" aria-hidden="true" />
+            <b-icon icon="mdi-arrow-right-bold" aria-hidden="true" />
             <a href="https://github.com/dword-design" target="_blank">
               Find more libraries on GitHub
             </a>
@@ -74,17 +74,12 @@
 </template>
 
 <script>
-import MdiArrowRightBold from '@mdi/svg/svg/arrow-right-bold.svg'
-
 import portraitUrl from '@/assets/portrait.jpg'
 import individualProjects from '@/model/individual-projects.js'
 import openSourceLibraries from '@/model/open-source-libraries.js'
 import websitesAndWebApps from '@/model/websites-and-web-apps.js'
 
 export default {
-  components: {
-    MdiArrowRightBold,
-  },
   computed: {
     individualProjects: () => individualProjects,
     openSourceLibraries: () => openSourceLibraries,

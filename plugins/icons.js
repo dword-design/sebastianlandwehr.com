@@ -1,3 +1,4 @@
+import MdiArrowRightBoldIcon from '@mdi/svg/svg/arrow-right-bold.svg'
 import MdiFacebookIcon from '@mdi/svg/svg/facebook.svg'
 import MdiGitHubIcon from '@mdi/svg/svg/github.svg'
 import MdiHeartIcon from '@mdi/svg/svg/heart.svg'
@@ -11,6 +12,7 @@ import XingIcon from '@/assets/xing-icon.svg'
 import { defineNuxtPlugin } from '#imports'
 
 const icons = {
+  MdiArrowRightBoldIcon,
   MdiFacebookIcon,
   MdiGitHubIcon,
   MdiHeartIcon,

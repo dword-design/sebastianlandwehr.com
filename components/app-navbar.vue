@@ -2,22 +2,19 @@
   <b-navbar
     active
     class="has-shadow is-spaced"
-    close-on-click={false}
-    mobile-burger={false}
+    :close-on-click="false"
+    :mobile-burger="false"
     wrapper-class="container"
   >
     <template #brand>
-      <b-navbar-item slot="brand" tag="div">
+      <b-navbar-item tag="div">
         <div>
           <h1 class="is-4 title">
-            <nuxt-locale-link
-              class="has-text-grey-darker"
-              to={{ name: 'index' }}
-            >
-              {appName}
-            </nuxt-locale-link>
+            <nuxt-link class="has-text-grey-darker" :to="{ name: 'index' }">
+              {{ appName }}
+            </nuxt-link>
           </h1>
-          <p class="is-6 subtitle">{appTitle}</p>
+          <p class="is-6 subtitle">{{ appTitle }}</p>
         </div>
       </b-navbar-item>
     </template>
@@ -38,20 +35,31 @@
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">
-          <a
-            class="button is-light"
-            href={context.parent.$router.resolve({ name: 'support-me' }).href}
+          <b-button
+            tag="nuxt-link"
+            variant="is-light"
+            :to="{ name: 'support-me' }"
           >
-            <MdiHeart aria-hidden="true" class="icon has-text-danger" />
+            <b-icon
+              icon="mdi-heart"
+              aria-hidden="true"
+              class="has-text-danger"
+            />
             <span>Support me</span>
-          </a>
-          <a
-            class="button is-light"
-            href={context.parent.$router.resolve({ name: 'blog' }).href}
+          </b-button>
+          <b-button
+            tag="nuxt-link"
+            variant="is-light"
+            icon="mdi-rss"
+            :to="{ name: 'blog' }"
           >
-            <MdiRss aria-hidden="true" class="icon has-text-secondary" />
+            <b-icon
+              icon="mdi-rss"
+              aria-hidden="true"
+              class="has-text-secondary"
+            />
             <span>Blog</span>
-          </a>
+          </b-button>
         </div>
       </b-navbar-item>
       <b-navbar-item

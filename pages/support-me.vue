@@ -5,7 +5,7 @@
         <div class="columns">
           <div class="column is-two-fifths">
             <figure class="image is-one-thirdby3">
-              <img alt="Portrait" src={imageUrl} />
+              <img alt="Portrait" :src="imageUrl" />
             </figure>
           </div>
           <div class="column">
@@ -13,19 +13,18 @@
               <h1>Support me</h1>
               <p>Hey there! 🙌</p>
               <p>
-                Already big hands for you that you have clicked on the
-                "Support me" link in the navigation bar! This basically means
-                that you think about supporting a developer contributing to
-                the open-source community. So thanks already for this!
+                Already big hands for you that you have clicked on the "Support
+                me" link in the navigation bar! This basically means that you
+                think about supporting a developer contributing to the
+                open-source community. So thanks already for this!
               </p>
               <p>
-                My main goal when working on software packages is to
-                open-source it in some way in the future. Sometimes it takes a
-                lot of time and concept, but in the end this is the goal.
-                Firstly, because making them available to others makes them
-                better in the end. Secondly, I'm using a lot of open-source
-                packages for my end-user projects, so I kind of believe in
-                this ecosystem ❤️.
+                My main goal when working on software packages is to open-source
+                it in some way in the future. Sometimes it takes a lot of time
+                and concept, but in the end this is the goal. Firstly, because
+                making them available to others makes them better in the end.
+                Secondly, I'm using a lot of open-source packages for my
+                end-user projects, so I kind of believe in this ecosystem ❤️.
               </p>
             </div>
           </div>
@@ -78,30 +77,27 @@
           </p>
         </div>
         <ul class="mb-6">
-          {donationPlatforms
-            |> map(platform => {
-              platform = { imageMaxWidth: '13rem', ...platform }
-
-              return (
-                <li class="columns is-vcentered is-variable is-0-mobile has-border-bottom">
-                  <span class="column" style="max-width: 13rem">
-                    <a
-                      class="is-block mx-auto"
-                      href={platform.url}
-                      style={`max-width: ${platform.imageMaxWidth}`}
-                      target="_blank"
-                    >
-                      <img
-                        alt={platform.title}
-                        class="is-block"
-                        src={platform.imageUrl}
-                      />
-                    </a>
-                  </span>
-                  <span class="column">{platform.description}</span>
-                </li>
-              )
-            })}
+          <li
+            v-for="platform in donationPlatforms"
+            :key="platform.title"
+            class="columns is-vcentered is-variable is-0-mobile has-border-bottom"
+          >
+            <span class="column" style="max-width: 13rem">
+              <a
+                class="is-block mx-auto"
+                :href="platform.url"
+                :style="{ maxWidth: platform.imageMaxWidth || '13rem' }"
+                target="_blank"
+              >
+                <img
+                  :alt="platform.title"
+                  class="is-block"
+                  :src="platform.imageUrl"
+                />
+              </a>
+            </span>
+            <span class="column">{{ platform.description }}</span>
+          </li>
         </ul>
         <p class="is-size-5 has-text-centered">
           Thanks a lot for your support!
@@ -113,9 +109,9 @@
 </template>
 
 <script setup>
-import { useMeta } from '#imports'
 import imageUrl from '@/assets/support-me.jpg'
 import donationPlatforms from '@/model/donation-platforms.js'
+import { useHead } from '#imports'
 
-useMeta({ title: 'Support me' })
+useHead({ title: 'Support me' })
 </script>
