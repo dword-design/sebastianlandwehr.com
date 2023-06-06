@@ -36,8 +36,8 @@
       <b-navbar-item tag="div">
         <div class="buttons">
           <b-button
-            tag="nuxt-link"
-            variant="is-light"
+            :tag="NuxtLink"
+            type="is-light"
             :to="{ name: 'support-me' }"
           >
             <b-icon
@@ -47,12 +47,7 @@
             />
             <span>Support me</span>
           </b-button>
-          <b-button
-            tag="nuxt-link"
-            variant="is-light"
-            icon="mdi-rss"
-            :to="{ name: 'blog' }"
-          >
+          <b-button :tag="NuxtLink" type="is-light" :to="{ name: 'blog' }">
             <b-icon
               icon="mdi-rss"
               aria-hidden="true"
@@ -72,10 +67,9 @@
         target="_blank"
       >
         <b-icon
-          :is="account.icon"
+          :icon="account.icon"
           aria-hidden="true"
           class="icon is-large"
-          :icon="account.icon"
           :style="{ color: account.color }"
         />
       </b-navbar-item>
@@ -85,6 +79,9 @@
 
 <script setup>
 import { appName, appTitle } from '@/model/variables.js'
+import { resolveComponent } from '#imports'
+
+const NuxtLink = resolveComponent('NuxtLink')
 
 const accounts = [
   {
@@ -118,7 +115,7 @@ const accounts = [
   },
   {
     color: '#0698A0',
-    icon: 'mdi-xing',
+    icon: 'xing',
     title: 'Xing',
     url: 'https://www.xing.com/profile/Sebastian_Landwehr3',
   },

@@ -1695,9 +1695,9 @@
   integrity sha512-HOjmceRpdt3Nw1CZ2JodWpfgVt/4DLpWh9YGB3OUrYpi6VenBzVmkQWVHS4TkD/EEIW244G6nYX/lf60/EkkCw==
 
 "@dword-design/vue-consent@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent/-/vue-consent-2.0.0.tgz#0574be1e1b7cb61b986554a1aefc5aa5e94a0385"
-  integrity sha512-+vLn1ezmRo/CzYWOTcdcn57tAl7VfM0bt8mu7qYsHxSX8nlSSp4gzVKhG1IMsFbPlH7EYmqF21UXU+AIuO1aJA==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent/-/vue-consent-2.0.1.tgz#d37aff66d8f61c77ce9f2b3691803b99fecf0294"
+  integrity sha512-cAds0HO3xvuB6bx3fQrf+dG3zfxzTcRN5K+eJ8OQN2IAvMAQKFFZ02+I0jRkgMUFrAy4EL5f0YYrSV2QNzw7Hg==
   dependencies:
     js-cookie "^2.0.0"
     lodash-es "^4.17.21"

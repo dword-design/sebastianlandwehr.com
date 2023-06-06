@@ -27,7 +27,7 @@
           <b-button
             type="is-primary"
             :loading="isLoading"
-            icon="mdi-send"
+            icon-left="mdi-send"
             native-type="submit"
           >
             Send

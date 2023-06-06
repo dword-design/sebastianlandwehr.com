@@ -12,7 +12,7 @@
             <p class="mb-2">
               <b-button
                 tag="a"
-                variant="is-small is-rounded"
+                type="is-small is-rounded"
                 href="/feed"
                 target="_blank"
                 icon-left="mdi-rss"

@@ -21,9 +21,9 @@
               {{ project.title }}
             </a>
           </h3>
-          <div class="content">
-            {{ project.description }}
-          </div>
+          <!-- eslint-disable vue/no-v-html -->
+          <div class="content" v-html="project.description" />
+          <!-- eslint-enable -->
         </section>
       </article>
     </div>
