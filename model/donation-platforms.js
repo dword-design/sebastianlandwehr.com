@@ -1,7 +1,7 @@
 import buyMeACoffeeImageUrl from '@/assets/buymeacoffee.svg?url'
 import githubSponsorsImageUrl from '@/assets/github-sponsors.svg?url'
-import patreonImageUrl from '@/static/images/patreon.svg?url'
-import payPalImageUrl from '@/static/images/paypal.svg?url'
+import patreonImageUrl from '@/assets/patreon.svg?url'
+import payPalImageUrl from '@/assets/paypal.svg?url'
 
 export default [
   {

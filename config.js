@@ -89,7 +89,6 @@ export default {
     '@nuxt/content',
     // '@nuxtjs/feed',
     ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
-    //'nuxt-honeypot',
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
