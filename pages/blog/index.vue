@@ -47,10 +47,7 @@
       >
         <header class="column is-two-fifths">
           <div class="card is-shadowless">
-            <nuxt-link
-              class="card-image"
-              :to="{ name: 'blog.slug', params: { slug: post.slug } }"
-            >
+            <nuxt-link class="card-image" :to="post._path">
               <figure class="image is-devto-banner">
                 <img
                   :alt="`Cover image for ${post.title}`"
@@ -62,13 +59,7 @@
         </header>
         <div class="column">
           <h2 class="title is-size-4">
-            <nuxt-link
-              class="is-stretched"
-              :href="{
-                name: 'blog.slug',
-                params: { slug: post.slug },
-              }"
-            >
+            <nuxt-link class="is-stretched" :to="post._path">
               {{ post.title }}
             </nuxt-link>
           </h2>
@@ -102,8 +93,8 @@ useHead({ title: 'Blog' })
 
 const posts =
   useAsyncData(() =>
-    queryContent('/posts')
-      .only(['title', 'description', 'slug', 'createdAt'])
+    queryContent('blog')
+      .only(['title', 'description', 'createdAt'])
       .sortBy('createdAt', 'desc')
       .find(),
   )

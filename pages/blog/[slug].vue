@@ -14,7 +14,7 @@
           })
         }}
       </div>
-      <nuxt-content class="content mb-4" :document="post" />
+      <content-renderer class="content mb-4" :value="post" />
       <div>
         <b-button
           tag="a"
@@ -33,12 +33,14 @@
 <script setup>
 import { property } from '@dword-design/functions'
 
-import { queryContent, useAsyncData, useHead } from '#imports'
+import { queryContent, useAsyncData, useHead, useRoute } from '#imports'
+
+const route = useRoute()
 
 const post =
   useAsyncData(() =>
-    queryContent('/posts')
-      .only(['title', 'description', 'slug', 'createdAt'])
+    queryContent('blog', route.params.slug)
+      .only(['title', 'description', 'createdAt'])
       .sortBy('createdAt', 'desc')
       .findOne(),
   )

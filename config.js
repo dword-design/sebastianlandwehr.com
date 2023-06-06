@@ -16,7 +16,7 @@ export default {
           title: appName,
         }
 
-        const posts = await $content('posts')
+        const posts = await $content('blog')
           .sortBy('createdAt', 'desc')
           .fetch()
         for (const post of posts) {
@@ -66,7 +66,7 @@ export default {
           const $content = require('@nuxt/content').$content
 
           return (
-            $content('posts').sortBy('slug').fetch()
+            $content('blog').sortBy('slug').fetch()
             |> await
             |> map(post => `blog/${post.slug}`)
           )
