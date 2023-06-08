@@ -35,26 +35,22 @@
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">
-          <b-button
-            :tag="NuxtLink"
-            type="is-light"
-            :to="{ name: 'support-me' }"
-          >
+          <nuxt-link class="button is-light" :to="{ name: 'support-me' }">
             <b-icon
               icon="mdi-heart"
               aria-hidden="true"
               class="has-text-danger"
             />
             <span>Support me</span>
-          </b-button>
-          <b-button :tag="NuxtLink" type="is-light" :to="{ name: 'blog' }">
+          </nuxt-link>
+          <nuxt-link class="button is-light" :to="{ name: 'blog' }">
             <b-icon
               icon="mdi-rss"
               aria-hidden="true"
               class="has-text-secondary"
             />
             <span>Blog</span>
-          </b-button>
+          </nuxt-link>
         </div>
       </b-navbar-item>
       <b-navbar-item
