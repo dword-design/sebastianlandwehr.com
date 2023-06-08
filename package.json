@@ -40,15 +40,18 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
     "depcheck-package-name": "^3.0.0",
+    "feed": "^4.2.2",
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^2.0.17",
     "nuxt-content-git": "^3.0.31",
     "nuxt-gtag": "^0.5.7",
     "nuxt-honeypot": "^1.0.0",
     "nuxt-mail": "^4.0.1",
+    "nuxt-module-feed": "^1.0.3",
     "nuxt-push-plugins": "^2.0.5",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-urls": "^1.1.1",
+    "rss": "^1.2.2",
     "vue-honeypot": "^3.0.0"
   },
   "devDependencies": {
