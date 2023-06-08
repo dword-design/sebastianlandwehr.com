@@ -2,7 +2,7 @@
   <main class="section">
     <article class="container is-content">
       <figure class="image is-devto-banner mb-5">
-        <img alt="Cover image" :src="`/blog/${post.slug}/banner.png`" />
+        <img alt="Cover image" :src="`${post._path}/banner.png`" />
       </figure>
       <h1 class="title">{{ post.title }}</h1>
       <div class="subtitle is-size-6">
@@ -38,12 +38,7 @@ import { queryContent, useAsyncData, useHead, useRoute } from '#imports'
 const route = useRoute()
 
 const post =
-  useAsyncData(() =>
-    queryContent('blog', route.params.slug)
-      .only(['title', 'description', 'createdAt'])
-      .sortBy('createdAt', 'desc')
-      .findOne(),
-  )
+  useAsyncData(() => queryContent('blog', route.params.slug).findOne())
   |> await
   |> property('data')
 useHead({ title: post.title })

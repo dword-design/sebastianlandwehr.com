@@ -51,7 +51,7 @@
               <figure class="image is-devto-banner">
                 <img
                   :alt="`Cover image for ${post.title}`"
-                  :src="`/blog/${post.slug}/banner.png`"
+                  :src="`${post._path}/banner.png`"
                 />
               </figure>
             </nuxt-link>
@@ -83,7 +83,7 @@
 </template>
 
 <script setup>
-import { property } from '@dword-design/functions'
+import { keys, property } from '@dword-design/functions'
 import { format } from 'date-fns'
 import truncate from 'lodash.truncate'
 
@@ -94,8 +94,11 @@ useHead({ title: 'Blog' })
 const posts =
   useAsyncData(() =>
     queryContent('blog')
-      .only(['title', 'description', 'createdAt'])
-      .sortBy('createdAt', 'desc')
+      .only(
+        { _path: true, createdAt: true, description: true, title: true }
+          |> keys,
+      )
+      .sort('createdAt', 'desc')
       .find(),
   )
   |> await

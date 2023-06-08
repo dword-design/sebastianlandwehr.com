@@ -73,8 +73,16 @@ export default {
         },
       },
     ],
-    /* 'nuxt-content-git',
-    [
+    ['@nuxt/content', {
+      markdown: {
+        anchorLinks: false,
+        rehypePlugins: {
+          [packageName`rehype-autolink-headings`]: {},
+        },
+      },
+    }],
+    'nuxt-content-git',
+    /*[
       'nuxt-content-body-html',
       {
         highlighter: undefined,
@@ -86,7 +94,6 @@ export default {
         ],
       },
     ], */
-    '@nuxt/content',
     // '@nuxtjs/feed',
     ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
   ],

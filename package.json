@@ -47,6 +47,7 @@
     "nuxt-honeypot": "^1.0.0",
     "nuxt-mail": "^4.0.1",
     "nuxt-push-plugins": "^2.0.5",
+    "rehype-autolink-headings": "^6.1.1",
     "rehype-urls": "^1.1.1",
     "vue-honeypot": "^3.0.0"
   },

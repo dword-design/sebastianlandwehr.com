@@ -2454,7 +2454,7 @@
     unimport "^3.0.7"
     untyped "^1.3.2"
 
-"@nuxt/kit@^3.0.0":
+"@nuxt/kit@^3.0.0", "@nuxt/kit@^3.5.3":
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.5.3.tgz#879d556142febcc8250aff857e75bb8d87daedbb"
   integrity sha512-QzoOGqa1zjKQfg7Y50TrrFAL9DhtIpYYs10gihcM1ISPrn9ROht+VEjqsaMvT+L8JuQbNf8wDYl8qzsdWGU29Q==
@@ -12191,11 +12191,12 @@ nuxt-content-body-html@^2.0.17:
     unified "^10.1.2"
 
 nuxt-content-git@^3.0.31:
-  version "3.0.31"
-  resolved "https://registry.yarnpkg.com/nuxt-content-git/-/nuxt-content-git-3.0.31.tgz#b44a65b65e47664bad3c435da61bd217483a0620"
-  integrity sha512-l+WR4eh45gJuJ4c75Qn7TNlKkzXLVCtXdR3egTM1WSAA+pQatkR3Zdi5bXME40KD2rswk3G7uh1o/wdVhHGARQ==
+  version "3.0.32"
+  resolved "https://registry.yarnpkg.com/nuxt-content-git/-/nuxt-content-git-3.0.32.tgz#03ab02f2e24ac705175166070557fb7c2cb486dc"
+  integrity sha512-b3KDdLKDhW4/VWMW7i+AgvaMYzuF3cN1wMK2oUGyFPyutK8tkpyqh5sp18RSeDmcDijP84HvVPlFnKn8njiIyg==
   dependencies:
-    "@dword-design/functions" "^4.0.0"
+    "@dword-design/functions" "^5.0.20"
+    "@nuxt/kit" "^3.5.3"
     simple-git "^3.15.1"
 
 nuxt-gtag@^0.5.7:
@@ -14104,6 +14105,19 @@ regjsparser@^0.9.1:
   integrity sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==
   dependencies:
     jsesc "~0.5.0"
+
+rehype-autolink-headings@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/rehype-autolink-headings/-/rehype-autolink-headings-6.1.1.tgz#0cb874a56f3de6ead1c2268d7f0fc5006f244db5"
+  integrity sha512-NMYzZIsHM3sA14nC5rAFuUPIOfg+DFmf9EY1YMhaNlB7+3kK/ZlE6kqPfuxr1tsJ1XWkTrMtMoyHosU70d35mA==
+  dependencies:
+    "@types/hast" "^2.0.0"
+    extend "^3.0.0"
+    hast-util-has-property "^2.0.0"
+    hast-util-heading-rank "^2.0.0"
+    hast-util-is-element "^2.0.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
 
 rehype-external-links@^2.0.1:
   version "2.1.0"
