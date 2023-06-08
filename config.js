@@ -77,7 +77,13 @@ export default {
       markdown: {
         anchorLinks: false,
         rehypePlugins: {
-          [packageName`rehype-autolink-headings`]: {},
+          [packageName`rehype-autolink-headings`]: {
+            content: {
+              type: 'element',
+              tagName: 'span',
+              properties: { className: 'hash-link' },
+            },
+          },
         },
       },
     }],

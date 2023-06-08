@@ -164,16 +164,11 @@ a.is-text {
   }
 }
 
-[data-content-id] {
-  .icon.icon-link {
-    width: auto;
-    height: auto;
-    margin-right: 0.25em;
-    color: $grey;
+.hash-link {
+  color: $grey;
 
-    &::after {
-      content: "#";
-    }
+  &::after {
+    content: "# ";
   }
 }
 
