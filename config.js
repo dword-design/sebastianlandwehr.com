@@ -1,6 +1,5 @@
-import { endent, map } from '@dword-design/functions'
+import { map } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
-import { URL } from 'url'
 
 import { appName, appTitle } from './model/variables.js'
 
@@ -40,20 +39,24 @@ export default {
         },
       },
     ],
-    ['@nuxt/content', {
-      markdown: {
-        anchorLinks: false,
-        rehypePlugins: {
-          [packageName`rehype-autolink-headings`]: {
-            content: {
-              type: 'element',
-              tagName: 'span',
-              properties: { className: 'hash-link' },
+    [
+      '@nuxt/content',
+      {
+        highlight: { theme: 'light-plus' },
+        markdown: {
+          anchorLinks: false,
+          rehypePlugins: {
+            [packageName`rehype-autolink-headings`]: {
+              content: {
+                properties: { className: 'hash-link' },
+                tagName: 'span',
+                type: 'element',
+              },
             },
           },
         },
       },
-    }],
+    ],
     'nuxt-content-git',
     ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
   ],

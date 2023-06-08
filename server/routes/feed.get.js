@@ -1,18 +1,18 @@
+import { endent } from '@dword-design/functions'
+import { Feed } from 'feed'
+
+import { appName, appTitle } from '@/model/variables.js'
 import { serverQueryContent } from '#content/server'
 import { defineEventHandler } from '#imports'
-import { Feed } from 'feed'
-import { endent } from '@dword-design/functions'
-import { appName, appTitle } from '@/model/variables.js'
 
 export default defineEventHandler(async event => {
-  const posts = await serverQueryContent(event).sort({ 'createdAt': -1 }).find()
+  const posts = await serverQueryContent(event).sort({ createdAt: -1 }).find()
 
   const feed = new Feed({
     description: appTitle,
     link: `${process.env.BASE_URL}/blog`,
     title: appName,
   })
-
   for (const post of posts) {
     const url = `${process.env.BASE_URL}${post._path}`
     feed.addItem({
@@ -28,7 +28,6 @@ export default defineEventHandler(async event => {
       title: post.title,
     })
   }
-  
   event.res.setHeader('content-type', 'application/rss+xml')
   event.res.end(feed.rss2())
 })
