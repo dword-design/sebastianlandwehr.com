@@ -36,6 +36,7 @@
     "@funken-studio/sitemap-nuxt-3": "^4.0.4",
     "@mdi/svg": "^7.2.96",
     "@nuxt/content": "^2.6.0",
+    "@nuxt/kit": "^3.5.3",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.21.0",
