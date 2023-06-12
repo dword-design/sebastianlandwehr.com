@@ -1276,9 +1276,7 @@
     "@dword-design/babel-config" "^2.1.0"
 
 "@dword-design/base-config-app@^2.0.0":
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-app/-/base-config-app-2.0.17.tgz#a41ab5d9d749a976d1e5d5e1df73d8b3f662d6ae"
-  integrity sha512-5v9z2mkaCeTW41GmWrnGk8MnYSZRzdgC+qrzWi9+nU7ASiSge6hLACF8mvYvwUbhkLjpQ60R8LeU+hhZ03jYjQ==
+  version "2.0.18"
   dependencies:
     "@dword-design/base-config-nuxt" "^3.0.0"
     "@dword-design/functions" "^4.0.0"
