@@ -58,7 +58,7 @@ export default {
       },
     ],
     'nuxt-content-git',
-    'nuxt-content-body-html',
+    //'nuxt-content-body-html',
     ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
   ],
   name: appName,
