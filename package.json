@@ -51,7 +51,7 @@
     "nuxt-module-feed": "^1.0.3",
     "nuxt-push-plugins": "^2.0.5",
     "rehype-autolink-headings": "^6.1.1",
-    "rehype-urls": "^1.1.1",
+    "rehype-urls": "npm:@dword-design/rehype-urls",
     "rss": "^1.2.2",
     "vue-honeypot": "^3.0.0"
   },

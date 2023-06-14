@@ -4650,7 +4650,7 @@ bser@2.1.1:
   dependencies:
     node-int64 "^0.4.0"
 
-"buefy@npm:@dword-design/buefy", "buefy@npm:@dword-design/buefy-me":
+"buefy@npm:@dword-design/buefy":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@dword-design/buefy-me/-/buefy-me-0.0.3.tgz#2a4eb6cbe9ebe612cfedcacd5161d81f5cd9c946"
   integrity sha512-0Fvrt3dbBkNGksmSPDNHXkyOFVJV8Yn/2JUqt6O2ew+Dn9ZJwtT4Nmw5rj6XYUy3OLVOBGNnXF3pu24WcoJhXg==
@@ -14319,10 +14319,10 @@ rehype-stringify@^9.0.3:
     hast-util-to-html "^8.0.0"
     unified "^10.0.0"
 
-rehype-urls@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/rehype-urls/-/rehype-urls-1.1.1.tgz#4a0aed7cc8740ace03a5a323dd50596d272f9fdf"
-  integrity sha512-ct9Kb/nAL6oe/O5fDc0xjiqm8Z9xgXdorOdDhZAWx7awucyiuYXU7Dax+23Gu24nnGwtdaCW6zslKAYzlEW1lw==
+"rehype-urls@npm:@dword-design/rehype-urls":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/rehype-urls/-/rehype-urls-0.0.1.tgz#debb6eaa014fe6151433798fe7c62fe55d93664c"
+  integrity sha512-ZPtr44motyKRwNWbVSH8DAV6kPIEPziipHCNt3GpYwRWIXeVj+vYShTLbevwPdXyQ3FQ7S0CckRnZ6V/nzn0tg==
   dependencies:
     hast-util-has-property "^1.0.2"
     stdopt "^2.0.0"
