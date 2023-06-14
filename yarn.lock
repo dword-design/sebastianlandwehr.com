@@ -1314,9 +1314,7 @@
     micromatch "^4.0.2"
 
 "@dword-design/base-config-nuxt@^3.0.0", "@dword-design/base-config-nuxt@^3.0.30":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-3.2.10.tgz#0604848bb7ae589d5f8c210eab0388f0b01f0564"
-  integrity sha512-81mmZW1WtIX+bwWKNBjJ60VAIsXAz8OJOzl/cZYqYaA9QXDhatN7jw/fCZTUBKJQ3hU2jhgA6d36rv9J0/u8/A==
+  version "3.2.17"
   dependencies:
     "@babel/core" "^7.16.0"
     "@babel/traverse" "^7.16.3"
