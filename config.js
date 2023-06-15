@@ -5,15 +5,17 @@ import { appName, appTitle } from './model/variables.js'
 
 export default {
   css: ['@/assets/style.scss'],
-  head: {
-    link: [
-      {
-        href: '/feed',
-        rel: 'alternate',
-        title: appName,
-        type: 'application/rss+xml',
-      },
-    ],
+  app: {
+    head: {
+      link: [
+        {
+          href: '/feed',
+          rel: 'alternate',
+          title: appName,
+          type: 'application/rss+xml',
+        },
+      ],
+    },
   },
   modules: [
     '@dword-design/nuxt-buefy',
@@ -58,13 +60,15 @@ export default {
       },
     ],
     'nuxt-content-git',
-    //'nuxt-content-body-html',
+    'nuxt-content-body-html',
     ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
   router: {
-    linkActiveClass: 'is-active',
+    options: {
+      linkActiveClass: 'is-active',
+    },
   },
   title: appTitle,
 }
