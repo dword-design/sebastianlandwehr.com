@@ -6,7 +6,7 @@ import { appName, appTitle } from './model/variables.js'
 export default {
   runtimeConfig: {
     public: {
-      googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+      gtag: { id: process.env.GOOGLE_ANALYTICS_ID },
     },
   },
   css: ['@/assets/style.scss'],
@@ -66,7 +66,7 @@ export default {
     ],
     'nuxt-content-git',
     'nuxt-content-body-html',
-    ['nuxt-gtag', { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } }],
+    'nuxt-gtag',
   ],
   name: appName,
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,

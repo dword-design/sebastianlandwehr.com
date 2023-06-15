@@ -7,7 +7,7 @@ export default defineNuxtPlugin(nuxtApp => {
   const runtimeConfig = useRuntimeConfig()
   nuxtApp.vueApp.use(VueConsent, {
     services: {
-      googleAnalytics: { id: runtimeConfig.public.googleAnalyticsId },
+      googleAnalytics: { id: runtimeConfig.public.gtag.id },
     },
   })
   nuxtApp.vueApp.use(BConsent)
