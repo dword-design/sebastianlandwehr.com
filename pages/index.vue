@@ -68,7 +68,7 @@
       </div>
     </section>
     <section class="section is-medium">
-      <contact-form />
+      <app-contact-form />
     </section>
   </main>
 </template>

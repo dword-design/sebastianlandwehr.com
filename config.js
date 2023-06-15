@@ -4,6 +4,11 @@ import packageName from 'depcheck-package-name'
 import { appName, appTitle } from './model/variables.js'
 
 export default {
+  runtimeConfig: {
+    public: {
+      googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+    },
+  },
   css: ['@/assets/style.scss'],
   app: {
     head: {
