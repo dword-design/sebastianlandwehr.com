@@ -1688,14 +1688,14 @@
     "@dword-design/functions" "^4.0.0"
 
 "@dword-design/vue-consent-buefy@^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent-buefy/-/vue-consent-buefy-2.0.1.tgz#1f48429a9a200fba3f02628c9f369422dc6a22c9"
-  integrity sha512-HOjmceRpdt3Nw1CZ2JodWpfgVt/4DLpWh9YGB3OUrYpi6VenBzVmkQWVHS4TkD/EEIW244G6nYX/lf60/EkkCw==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent-buefy/-/vue-consent-buefy-2.0.2.tgz#81d44b4b10adef229b44d4e0f75f06cdb252bf04"
+  integrity sha512-cmJzRcDUEsX8WlJKSyjtABcfBvLAXyRw/+hv/etwvB7zcFO/Vpt6tk/YP/YLhVZ8OYOw5GKBttkEM09zRSIzuw==
 
 "@dword-design/vue-consent@^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent/-/vue-consent-2.0.1.tgz#d37aff66d8f61c77ce9f2b3691803b99fecf0294"
-  integrity sha512-cAds0HO3xvuB6bx3fQrf+dG3zfxzTcRN5K+eJ8OQN2IAvMAQKFFZ02+I0jRkgMUFrAy4EL5f0YYrSV2QNzw7Hg==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-consent/-/vue-consent-2.0.2.tgz#d16c35ad343ca011889510ba04554fcd39f74fd8"
+  integrity sha512-L0lixP6/7U6uKzPxqwzmiqqSjNsrOECrny6RYdkQsuV5Grbap2m61PNT1QQ3cOHc/SZnrzFutrR1jqdWsx2Djw==
   dependencies:
     js-cookie "^2.0.0"
     lodash-es "^4.17.21"
@@ -3552,7 +3552,7 @@
     lodash.kebabcase "^4.1.1"
     svg-tags "^1.0.0"
 
-"@vue/babel-preset-jsx@github:dword-design/jsx#fork-babel-preset-jsx":
+"@vue/babel-preset-jsx@dword-design/jsx#fork-babel-preset-jsx":
   version "1.1.2"
   resolved "https://codeload.github.com/dword-design/jsx/tar.gz/a73cb9961541a60a66b1b99a69a32e00bc66d336"
   dependencies:
@@ -10261,14 +10261,7 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
-load-pkg@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/load-pkg/-/load-pkg-4.0.0.tgz#f80a29aec2f6d02aadde714099fda4eea1b611f1"
-  integrity sha512-xS6uYdbUzHbwO5bExhtM8RsU6Z/fVEfZE4uZpWQOwVygLSUfXz7J97nGzJfZ+FFCZc0Weabn/wA3y1k9Q7Y4mw==
-  dependencies:
-    find-pkg "^2.0.0"
-
-"load-pkg@npm:@dword-design/load-pkg":
+load-pkg@^4.0.0, "load-pkg@npm:@dword-design/load-pkg":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@dword-design/load-pkg/-/load-pkg-4.0.0.tgz#201f76adeb44c64ed22d789591ab740573fe0a5b"
   integrity sha512-lZxKRusgIqSg2y4jLzZzMPWyhrGPGke3YYmAxj4SoJeUGV4CmvYyhJkJnfA7Yaov7GMXZi64nlhx8D809VDazg==
@@ -16649,9 +16642,9 @@ vue-honeypot@^1.0.2:
   integrity sha512-d31nfWSSrXhPoQkC1La89ctSMxOlwkw8jex8Ebmb2uds5q8tBUpN1/cB1ONtJ7rOqgM3Daqp9ZJbOVXrjLWJ7g==
 
 vue-honeypot@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/vue-honeypot/-/vue-honeypot-3.0.0.tgz#ee063894242371b613a4ee849eb0ba976b70f748"
-  integrity sha512-eAsQpJQPkuS5+2pcH+yxzeMb6s0sK/Psv6pdZKIlcMdiUBEZXnzYwK1ZtDhRUqP3AqeGl8B5Efd4+qVCJVU/9g==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/vue-honeypot/-/vue-honeypot-3.0.1.tgz#8bb25762453884a3da55c3d9492dd050742dd0a6"
+  integrity sha512-fJQCVJriWWTY11tHDLWLFCmar+CV9nmEF7lU/iK+uXpEJx447EWoEbJTrkEgWXoBZXipF/kDqGTnnRToFUEMjw==
 
 vue-i18n-routing@^0.12.2:
   version "0.12.2"
