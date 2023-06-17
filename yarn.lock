@@ -1589,13 +1589,12 @@
     babel-plugin-transform-import-meta "^2.2.0"
     depcheck-package-name "^3.0.0"
 
-"@dword-design/legal-notice@^1.0.1":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@dword-design/legal-notice/-/legal-notice-1.0.6.tgz#0522069413204940a82279aea3a21eaf1a431927"
-  integrity sha512-hxk+raLM+lIfpg6xHzJscdRLRSQ/vj/HUKTV93LOkzd29bqnLrm1jL+k4zD48te5Vfu3YWctvsjlTU0Cl/dzJQ==
+"@dword-design/legal-notice@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/legal-notice/-/legal-notice-2.0.0.tgz#af0cf584a6f5482519b8514c113869aab7e897fc"
+  integrity sha512-c06/cObzf2ROi/hQHqj9s97HfrfRMxDFNolLhTjRcEDHNPTzOGdn+a9NyOujp9i5rou6xORraWQZ4KroeIQv3g==
   dependencies:
-    "@dword-design/functions" "^4.0.7"
-    "@dword-design/personal-data" "^1.0.1"
+    "@dword-design/personal-data" "^2.0.3"
 
 "@dword-design/nuxt-buefy@^3.0.2":
   version "3.0.5"

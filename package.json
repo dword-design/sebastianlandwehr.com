@@ -29,7 +29,7 @@
   "dependencies": {
     "@dword-design/functions": "^5.0.20",
     "@dword-design/get-privacy-policy": "^1.0.1",
-    "@dword-design/legal-notice": "^1.0.1",
+    "@dword-design/legal-notice": "^2.0.0",
     "@dword-design/nuxt-buefy": "^3.0.2",
     "@dword-design/vue-consent": "^2.0.0",
     "@dword-design/vue-consent-buefy": "^2.0.0",
