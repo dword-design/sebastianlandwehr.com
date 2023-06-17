@@ -4,12 +4,6 @@ import packageName from 'depcheck-package-name'
 import { appName, appTitle } from './model/variables.js'
 
 export default {
-  runtimeConfig: {
-    public: {
-      gtag: { id: process.env.GOOGLE_ANALYTICS_ID },
-    },
-  },
-  css: ['@/assets/style.scss'],
   app: {
     head: {
       link: [
@@ -22,6 +16,7 @@ export default {
       ],
     },
   },
+  css: ['@/assets/style.scss'],
   modules: [
     '@dword-design/nuxt-buefy',
     [
@@ -73,6 +68,11 @@ export default {
   router: {
     options: {
       linkActiveClass: 'is-active',
+    },
+  },
+  runtimeConfig: {
+    public: {
+      gtag: { id: process.env.GOOGLE_ANALYTICS_ID },
     },
   },
   title: appTitle,
