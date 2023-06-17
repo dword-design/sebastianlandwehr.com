@@ -1356,9 +1356,9 @@
     micromatch "^4.0.2"
 
 "@dword-design/base-config-nuxt@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-5.0.2.tgz#83ba4fc9193d0346446b61d58a2e9ba7a27628b2"
-  integrity sha512-11AfxNEb41mFzD8bEn2X925c/orWUO/03atS4eobRWjEgJcfLkFYbthBL8Kfo5nbNOUqof7JeY+jPANOxP00dw==
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/base-config-nuxt/-/base-config-nuxt-5.0.3.tgz#913123b7337aa039454acee2e915763fff70547a"
+  integrity sha512-xa4cjCZCnZEsJtHMe/Pb//MokPasiBnj51oF8EOD4g+3JQY2VrMP7daXGHjbfPhqwrWvO8K713myI8m31A26ig==
   dependencies:
     "@babel/core" "^7.22.5"
     "@dword-design/depcheck-parser-sass" "^4.0.0"
