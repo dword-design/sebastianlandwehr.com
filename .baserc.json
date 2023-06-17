@@ -1,0 +1,16 @@
+{
+  "name": "@dword-design/app",
+  "testInContainer": true,
+  "eslintConfig": {
+    "rules": {
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "#content"
+          ]
+        }
+      ]
+    }
+  }
+}

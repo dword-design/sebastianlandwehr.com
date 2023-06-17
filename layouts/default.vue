@@ -1,12 +1,6 @@
-<script>
-export default {
-  render: () => (
-    <div>
-      <b-consent />
-      <app-navbar />
-      <nuxt />
-      <app-footer />
-    </div>
-  ),
-}
-</script>
+<template>
+  <b-consent />
+  <app-navbar />
+  <slot />
+  <app-footer />
+</template>

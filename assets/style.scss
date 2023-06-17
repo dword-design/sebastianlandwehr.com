@@ -1,5 +1,6 @@
 $fullhd-enabled: false;
-//$widescreen-enabled: false;
+
+// $widescreen-enabled: false;
 $body-size: 17px;
 $body-line-height: 1.8;
 $size-3: 2rem;
@@ -8,12 +9,12 @@ $navbar-padding-vertical: 0.5rem;
 $hero-body-padding-medium: 5rem 0.75rem;
 $section-padding-medium: 5rem 0.75rem;
 $primary: #3273dc;
-$secondary: #ffd257; //#ffca2b;
+$secondary: #ffd257; // #ffca2b;
 $link: $primary;
 $level-item-spacing: 1.5rem;
 
-@import "~bulma/sass/utilities/_all";
-@import "~@dword-design/nuxt-buefy/dist/style";
+@import "bulma/sass/utilities/all";
+@import "@dword-design/nuxt-buefy/style";
 
 body {
   // fixes horizontal spacing bug on mobile
@@ -56,7 +57,7 @@ body {
   }
 
   path {
-    fill: currentColor !important;
+    fill: currentcolor !important;
   }
 }
 
@@ -118,7 +119,7 @@ a.is-text {
 
   &.is-variable {
     &.is-10 {
-      --columnGap: 2.5rem;
+      --column-gap: 2.5rem;
     }
 
     &.is-0-mobile {
@@ -130,7 +131,7 @@ a.is-text {
 
       > .column {
         @include mobile {
-          padding: var(--columnGap);
+          padding: var(--column-gap);
         }
       }
     }
@@ -163,16 +164,11 @@ a.is-text {
   }
 }
 
-.nuxt-content {
-  .icon.icon-link {
-    width: auto;
-    height: auto;
-    margin-right: 0.25em;
-    color: $grey;
+.hash-link {
+  color: $grey;
 
-    &::after {
-      content: "#";
-    }
+  &::after {
+    content: "# ";
   }
 }
 
@@ -199,14 +195,11 @@ a.is-text {
     }
 
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     object-fit: cover;
+    object-position: top;
     width: 100%;
     height: 100%;
-    object-position: top;
   }
 }
 
@@ -216,10 +209,7 @@ a.is-text {
 
     img {
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      inset: 0;
     }
   }
 }

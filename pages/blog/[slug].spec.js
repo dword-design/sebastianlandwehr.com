@@ -1,4 +1,3 @@
-import { getNuxtConfig } from '@dword-design/base-config-nuxt'
 import { delay } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
@@ -8,7 +7,7 @@ export default tester(
   {
     async init() {
       await this.page.goto(
-        'http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way'
+        'http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way',
       )
       await this.page.setViewport({
         height: 1,
@@ -16,14 +15,14 @@ export default tester(
       })
 
       const acceptAllCookiesButton = await this.page.waitForXPath(
-        "//button/span[text()='Accept all cookies']/.."
+        "//button/span[text()='Accept all cookies']/..",
       )
       await acceptAllCookiesButton.click()
       await delay(500)
       expect(
-        await this.page.screenshot({ fullPage: true })
+        await this.page.screenshot({ fullPage: true }),
       ).toMatchImageSnapshot(this)
     },
   },
-  [testerPluginNuxt(getNuxtConfig()), testerPluginPuppeteer()]
+  [testerPluginNuxt(), testerPluginPuppeteer()],
 )

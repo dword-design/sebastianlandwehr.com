@@ -1,129 +1,119 @@
-<script>
-import { map } from '@dword-design/functions'
-import MdiFacebook from '@mdi/svg/svg/facebook.svg'
-import MdiGitHub from '@mdi/svg/svg/github.svg'
-import MdiHeart from '@mdi/svg/svg/heart.svg'
-import MdiInstagram from '@mdi/svg/svg/instagram.svg'
-import MdiLinkedIn from '@mdi/svg/svg/linkedin.svg'
-import MdiRss from '@mdi/svg/svg/rss.svg'
-import MdiTwitter from '@mdi/svg/svg/twitter.svg'
+<template>
+  <b-navbar
+    active
+    class="has-shadow is-spaced"
+    :close-on-click="false"
+    :mobile-burger="false"
+    wrapper-class="container"
+  >
+    <template #brand>
+      <b-navbar-item tag="div">
+        <div>
+          <h1 class="is-4 title">
+            <nuxt-link class="has-text-grey-darker" :to="{ name: 'index' }">
+              {{ appName }}
+            </nuxt-link>
+          </h1>
+          <p class="is-6 subtitle">{{ appTitle }}</p>
+        </div>
+      </b-navbar-item>
+    </template>
+    <!--<b-navbar-item
+      href={context.parent.$router.resolve({ name: 'support-me' }).href}
+      slot="end"
+    >
+      <MdiHeart aria-hidden="true" class="icon has-text-danger" />
+      <span>Support me</span>
+    </b-navbar-item>
+    <b-navbar-item
+      href={context.parent.$router.resolve({ name: 'blog' }).href}
+      slot="end"
+    >
+      <MdiRss aria-hidden="true" class="icon has-text-secondary" />
+      <span>Blog</span>
+    </b-navbar-item>-->
+    <template #end>
+      <b-navbar-item tag="div">
+        <div class="buttons">
+          <nuxt-link class="button is-light" :to="{ name: 'support-me' }">
+            <b-icon
+              icon="mdi-heart"
+              aria-hidden="true"
+              class="has-text-danger"
+            />
+            <span>Support me</span>
+          </nuxt-link>
+          <nuxt-link class="button is-light" :to="{ name: 'blog' }">
+            <b-icon
+              icon="mdi-rss"
+              aria-hidden="true"
+              class="has-text-secondary"
+            />
+            <span>Blog</span>
+          </nuxt-link>
+        </div>
+      </b-navbar-item>
+      <b-navbar-item
+        v-for="account in accounts"
+        :key="account.url"
+        :aria-label="account.title"
+        class="navbar-item"
+        :href="account.url"
+        tag="a"
+        target="_blank"
+      >
+        <b-icon
+          :icon="account.icon"
+          aria-hidden="true"
+          class="icon is-large"
+          :style="{ color: account.color }"
+        />
+      </b-navbar-item>
+    </template>
+  </b-navbar>
+</template>
 
-import XingIcon from '@/assets/xing-icon.svg'
+<script setup>
 import { appName, appTitle } from '@/model/variables.js'
+import { resolveComponent } from '#imports'
+
+const NuxtLink = resolveComponent('NuxtLink')
 
 const accounts = [
   {
-    icon: MdiGitHub,
+    icon: 'mdi-github',
     title: 'GitHub',
     url: 'https://github.com/dword-design',
   },
   {
     color: '#1D9BF0',
-    icon: MdiTwitter,
+    icon: 'mdi-twitter',
     title: 'Twitter',
     url: 'https://twitter.com/seblandwehr',
   },
   {
     color: '#CA4163',
-    icon: MdiInstagram,
+    icon: 'mdi-instagram',
     title: 'Instagram',
     url: 'https://instagram.com/sebastian.landwehr',
   },
   {
     color: '#1A74E4',
-    icon: MdiFacebook,
+    icon: 'mdi-facebook',
     title: 'Facebook',
     url: 'https://facebook.com/Sebastian-Landwehr-101161921820497',
   },
   {
     color: '#0966C2',
-    icon: MdiLinkedIn,
+    icon: 'mdi-linkedin',
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/sebastian-landwehr-9393aaa5/',
   },
   {
     color: '#0698A0',
-    icon: XingIcon,
+    icon: 'xing',
     title: 'Xing',
     url: 'https://www.xing.com/profile/Sebastian_Landwehr3',
   },
 ]
-
-export default {
-  functional: true,
-  render: context => (
-    <b-navbar
-      {...context.data}
-      active
-      class="has-shadow is-spaced"
-      close-on-click={false}
-      mobile-burger={false}
-      wrapper-class="container"
-    >
-      <b-navbar-item slot="brand" tag="div">
-        <div>
-          <h1 class="is-4 title">
-            <nuxt-server-link
-              class="has-text-grey-darker"
-              to={{ name: 'index' }}
-            >
-              {appName}
-            </nuxt-server-link>
-          </h1>
-          <p class="is-6 subtitle">{appTitle}</p>
-        </div>
-      </b-navbar-item>
-      {/* <b-navbar-item
-        href={context.parent.$router.resolve({ name: 'support-me' }).href}
-        slot="end"
-      >
-        <MdiHeart aria-hidden="true" class="icon has-text-danger" />
-        <span>Support me</span>
-      </b-navbar-item>
-      <b-navbar-item
-        href={context.parent.$router.resolve({ name: 'blog' }).href}
-        slot="end"
-      >
-        <MdiRss aria-hidden="true" class="icon has-text-secondary" />
-        <span>Blog</span>
-      </b-navbar-item> */}
-      <b-navbar-item slot="end" tag="div">
-        <div class="buttons">
-          <a
-            class="button is-light"
-            href={context.parent.$router.resolve({ name: 'support-me' }).href}
-          >
-            <MdiHeart aria-hidden="true" class="icon has-text-danger" />
-            <span>Support me</span>
-          </a>
-          <a
-            class="button is-light"
-            href={context.parent.$router.resolve({ name: 'blog' }).href}
-          >
-            <MdiRss aria-hidden="true" class="icon has-text-secondary" />
-            <span>Blog</span>
-          </a>
-        </div>
-      </b-navbar-item>
-      {accounts
-        |> map(account => (
-          <b-navbar-item
-            aria-label={account.title}
-            class="navbar-item"
-            href={account.url}
-            slot="end"
-            tag="a"
-            target="_blank"
-          >
-            <account.icon
-              aria-hidden="true"
-              class="icon is-large"
-              icon={account.icon}
-              style={{ color: account.color }}
-            />
-          </b-navbar-item>
-        ))}
-    </b-navbar>
-  ),
-}
 </script>

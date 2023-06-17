@@ -1,13 +1,9 @@
-<script>
-import getPrivacyPolicy from '@dword-design/get-privacy-policy'
+<template>
+  <!-- eslint-disable vue/no-v-html -->
+  <div class="content" v-html="getPrivacyPolicy('en', { contact: true })" />
+  <!-- eslint-enable -->
+</template>
 
-export default {
-  functional: true,
-  render: () => (
-    <div
-      class="content"
-      domPropsInnerHTML={getPrivacyPolicy('en', { contact: true })}
-    />
-  ),
-}
+<script setup>
+import getPrivacyPolicy from '@dword-design/get-privacy-policy'
 </script>
