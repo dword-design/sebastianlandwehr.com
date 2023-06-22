@@ -30,15 +30,7 @@ export default {
       '@funken-studio/sitemap-nuxt-3',
       {
         hostname: process.env.BASE_URL,
-        routes: async () => {
-          const $content = require('@nuxt/content').$content
-
-          return (
-            $content('blog').sortBy('slug').fetch()
-            |> await
-            |> map(post => `blog/${post.slug}`)
-          )
-        },
+        routes: async () => (await $fetch('/api/_content/query?_path=blog&only=_path')).map(_ => _._path)
       },
     ],
     [

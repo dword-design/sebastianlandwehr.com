@@ -15,7 +15,6 @@ export default defineNitroPlugin(nitroApp => {
         },
       },
     })
-    console.log(bodyHtmls[file._id])
   })
   nitroApp.hooks.hook(
     'content:file:afterParse',
