@@ -1,4 +1,3 @@
-import { map } from '@dword-design/functions'
 import packageName from 'depcheck-package-name'
 
 import { appName, appTitle } from './model/variables.js'
