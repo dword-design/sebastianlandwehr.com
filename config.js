@@ -29,7 +29,10 @@ export default {
       '@funken-studio/sitemap-nuxt-3',
       {
         hostname: process.env.BASE_URL,
-        routes: async () => (await $fetch('/api/_content/query?_path=blog&only=_path')).map(_ => _._path)
+        routes: async () =>
+          (await $fetch('/api/_content/query?_path=blog&only=_path')).map(
+            _ => _._path,
+          ),
       },
     ],
     [
