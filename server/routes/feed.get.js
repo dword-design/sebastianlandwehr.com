@@ -18,7 +18,7 @@ export default defineEventHandler(async event => {
     feed.addItem({
       author: post.authors,
       content: endent`
-        <p><img alt="Cover image" src="${process.env.BASE_URL}/${post._path}/banner.png"></p>
+        <p><img alt="Cover image" src="${process.env.BASE_URL}${post._path}/banner.png"></p>
         ${post.bodyHtml}
       `,
       date: new Date(post.createdAt),

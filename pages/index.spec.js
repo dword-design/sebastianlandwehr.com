@@ -11,18 +11,19 @@ export default tester(
         height: 875,
         width: 1400,
       })
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const privacyPolicyButton = await this.page.waitForFunction(() =>
         [...document.querySelectorAll('.modal button')].find(
           el => el.innerText === 'privacy policy',
         ),
       )
+      await delay(150)
+      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await privacyPolicyButton.click()
-      await delay(300)
+      await delay(150)
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await this.page.mouse.click(10, 10)
-      await delay(300)
+      await delay(150)
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
 
       const acceptAllCookiesButton = await this.page.waitForXPath(

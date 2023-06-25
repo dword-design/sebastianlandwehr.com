@@ -36,19 +36,19 @@
         <div class="content">
           <h2>What I'm doing</h2>
           <p>
-            Besides putting the packages online, I am very keen on
-            actively&nbsp;
-            <em>maintaining</em>&nbsp;them over time. There are a lot of great
-            tools available for free, but a lot are outdated, which is a pity.
-            So one of my principles is to have all packages continuously
-            integrated and automatically tested. Also, I'm using&nbsp;
+            Besides putting the packages online, I am very keen on actively{{
+              ' '
+            }}<em>maintaining</em>{{ ' ' }}them over time. There are a lot of
+            great tools available for free, but a lot are outdated, which is a
+            pity. So one of my principles is to have all packages continuously
+            integrated and automatically tested. Also, I'm using{{ ' ' }}
             <a
               href="https://www.whitesourcesoftware.com/free-developer-tools/renovate/"
               target="_blank"
             >
               Renovate
             </a>
-            &nbsp;to keep dependencies up-to-date.
+            {{ ' ' }}to keep dependencies up-to-date.
           </p>
           <p>
             As you can imagine this takes a lot of time and also resources! ⚙️
