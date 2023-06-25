@@ -34,6 +34,9 @@ exports[`sitemap init 1`] = `
     <loc>http://localhost:3000/blog</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/legal-notice</loc>
   </url>
   <url>
@@ -41,9 +44,6 @@ exports[`sitemap init 1`] = `
   </url>
   <url>
     <loc>http://localhost:3000/support-me</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/</loc>
   </url>
 </urlset>"
 `;
