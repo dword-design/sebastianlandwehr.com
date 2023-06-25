@@ -8,6 +8,7 @@ export default defineNitroPlugin(nitroApp => {
   const bodyHtmls = {}
   nitroApp.hooks.hook('content:file:beforeParse', async file => {
     bodyHtmls[file._id] = await nuxtContentBodyHtml.generate(file, {
+      highlight: false,
       rehypePlugins: {
         [packageName`rehype-urls`]: {
           transform: url =>
