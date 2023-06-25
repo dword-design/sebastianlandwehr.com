@@ -98,7 +98,7 @@ const posts =
         { _path: true, createdAt: true, description: true, title: true }
           |> keys,
       )
-      .sort('createdAt', 'desc')
+      .sort({ createdAt: -1 })
       .find(),
   )
   |> await
