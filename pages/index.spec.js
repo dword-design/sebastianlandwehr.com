@@ -20,7 +20,7 @@ export default tester(
       await delay(150)
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await privacyPolicyButton.click()
-      await delay(150)
+      await delay(300)
       expect(await this.page.screenshot()).toMatchImageSnapshot(this)
       await this.page.mouse.click(10, 10)
       await delay(150)
