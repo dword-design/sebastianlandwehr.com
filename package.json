@@ -46,7 +46,7 @@
     "nuxt-content-git": "^3.0.31",
     "nuxt-gtag": "^0.5.7",
     "nuxt-mail": "^4.0.1",
-    "rehype-autolink-headings": "^6.1.1",
+    "rehype-autolink-headings": "^7.0.0",
     "rehype-urls": "npm:@dword-design/rehype-urls",
     "vue-honeypot": "^3.0.0"
   },
