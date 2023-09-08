@@ -44,7 +44,7 @@
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^3.0.0",
     "nuxt-content-git": "^3.0.31",
-    "nuxt-gtag": "^0.5.7",
+    "nuxt-gtag": "^1.0.0",
     "nuxt-mail": "^4.0.1",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-urls": "npm:@dword-design/rehype-urls",
