@@ -3,5 +3,5 @@
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
-  "postCreateCommand": "yarn --frozen-lockfile"
+  "updateContentCommand": "yarn --frozen-lockfile"
 }
