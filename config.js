@@ -1,5 +1,5 @@
-import packageName from 'depcheck-package-name';
 import { createResolver } from '@nuxt/kit';
+import packageName from 'depcheck-package-name';
 
 import { appName, appTitle } from './model/variables.js';
 
@@ -17,9 +17,6 @@ export default {
         },
       ],
     },
-  },
-  site: {
-    url: process.env.BASE_URL
   },
   css: ['@/assets/style.scss'],
   modules: [
@@ -56,13 +53,10 @@ export default {
     'nuxt-gtag',
   ],
   name: appName,
+  nitro: { externals: { inline: [resolver.resolve('./model')] } },
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
   router: { options: { linkActiveClass: 'is-active' } },
   runtimeConfig: { public: { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } } },
+  site: { url: process.env.BASE_URL },
   title: appTitle,
-  nitro: {
-    externals: {
-      inline: [resolver.resolve('./model')],
-    }
-  }
 };
