@@ -109,9 +109,9 @@
 </template>
 
 <script setup>
-import imageUrl from '@/assets/support-me.jpg'
-import donationPlatforms from '@/model/donation-platforms.js'
-import { useHead } from '#imports'
+import imageUrl from '@/assets/support-me.jpg';
+import donationPlatforms from '@/model/donation-platforms.js';
+import { useHead } from '#imports';
 
-useHead({ title: 'Support me' })
+useHead({ title: 'Support me' });
 </script>

@@ -11,11 +11,11 @@
           <div class="level-item content is-block has-text-right-tablet">
             <p class="mb-2">
               <b-button
-                tag="a"
-                type="is-small is-rounded"
                 href="/feed"
-                target="_blank"
                 icon-left="mdi-rss"
+                tag="a"
+                target="_blank"
+                type="is-small is-rounded"
               >
                 Subscribe via RSS
               </b-button>
@@ -83,13 +83,13 @@
 </template>
 
 <script setup>
-import { keys, property } from '@dword-design/functions'
-import { format } from 'date-fns'
-import truncate from 'lodash.truncate'
+import { keys, property } from '@dword-design/functions';
+import { format } from 'date-fns';
+import truncate from 'lodash.truncate';
 
-import { queryContent, useAsyncData, useHead } from '#imports'
+import { queryContent, useAsyncData, useHead } from '#imports';
 
-useHead({ title: 'Blog' })
+useHead({ title: 'Blog' });
 
 const posts =
   useAsyncData(() =>
@@ -102,5 +102,5 @@ const posts =
       .find(),
   )
   |> await
-  |> property('data')
+  |> property('data');
 </script>

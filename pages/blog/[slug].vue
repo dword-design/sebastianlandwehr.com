@@ -17,11 +17,11 @@
       <content-renderer class="content mb-4" :value="post" />
       <div>
         <b-button
-          tag="a"
-          type="is-small is-rounded"
           href="/feed"
-          target="_blank"
           icon-left="mdi-rss"
+          tag="a"
+          target="_blank"
+          type="is-small is-rounded"
         >
           Subscribe via RSS
         </b-button>
@@ -31,15 +31,16 @@
 </template>
 
 <script setup>
-import { property } from '@dword-design/functions'
+import { property } from '@dword-design/functions';
 
-import { queryContent, useAsyncData, useHead, useRoute } from '#imports'
+import { queryContent, useAsyncData, useHead, useRoute } from '#imports';
 
-const route = useRoute()
+const route = useRoute();
 
 const post =
   useAsyncData(() => queryContent('blog', route.params.slug).findOne())
   |> await
-  |> property('data')
-useHead({ title: post.title })
+  |> property('data');
+
+useHead({ title: post.title });
 </script>

@@ -14,9 +14,9 @@
 </template>
 
 <script setup>
-import { en as legalNotice } from '@dword-design/legal-notice'
+import { en as legalNotice } from '@dword-design/legal-notice';
 
-import { useHead } from '#imports'
+import { useHead } from '#imports';
 
-useHead({ title: 'Legal Notice' })
+useHead({ title: 'Legal Notice' });
 </script>

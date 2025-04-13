@@ -25,10 +25,10 @@
         </b-field>
         <div class="buttons">
           <b-button
-            type="is-primary"
-            :loading="isLoading"
             icon-left="mdi-send"
+            :loading="isLoading"
             native-type="submit"
+            type="is-primary"
           >
             Send
           </b-button>
@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import { endent } from '@dword-design/functions'
+import { endent } from '@dword-design/functions';
 
-import { appName } from '@/model/variables.js'
+import { appName } from '@/model/variables.js';
 
 export default {
   data: () => ({
@@ -55,8 +55,9 @@ export default {
   methods: {
     async submit() {
       try {
-        this.$refs.honeypot.validate()
-        this.isLoading = true
+        this.$refs.honeypot.validate();
+        this.isLoading = true;
+
         await this.$mail.send({
           from: 'info@sebastianlandwehr.com',
           replyTo: this.email,
@@ -66,20 +67,21 @@ export default {
 
             ${this.message}
           `,
-        })
-        this.$buefy.toast.open('Your message has been sent successfully.')
-        this.email = ''
-        this.message = ''
-        this.error = ''
+        });
+
+        this.$buefy.toast.open('Your message has been sent successfully.');
+        this.email = '';
+        this.message = '';
+        this.error = '';
       } catch (error) {
-        this.error = error.message
+        this.error = error.message;
       } finally {
-        this.isLoading = false
+        this.isLoading = false;
       }
     },
   },
   mounted() {
-    this.myEmail = 'info@sebastianlandwehr.com'
+    this.myEmail = 'info@sebastianlandwehr.com';
   },
-}
+};
 </script>

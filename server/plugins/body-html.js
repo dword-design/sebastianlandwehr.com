@@ -1,11 +1,12 @@
-import packageName from 'depcheck-package-name'
+import packageName from 'depcheck-package-name';
 
-import { defineNitroPlugin, useNuxtContentBodyHtml } from '#imports'
+import { defineNitroPlugin, useNuxtContentBodyHtml } from '#imports';
 
-const nuxtContentBodyHtml = useNuxtContentBodyHtml()
+const nuxtContentBodyHtml = useNuxtContentBodyHtml();
 
 export default defineNitroPlugin(nitroApp => {
-  const bodyHtmls = {}
+  const bodyHtmls = {};
+
   nitroApp.hooks.hook('content:file:beforeParse', async file => {
     bodyHtmls[file._id] = await nuxtContentBodyHtml.generate(file, {
       highlight: false,
@@ -15,10 +16,11 @@ export default defineNitroPlugin(nitroApp => {
             url.host ? url : new URL(url.href, process.env.BASE_URL),
         },
       },
-    })
-  })
+    });
+  });
+
   nitroApp.hooks.hook(
     'content:file:afterParse',
     file => (file.bodyHtml = bodyHtmls[file._id]),
-  )
-})
+  );
+});

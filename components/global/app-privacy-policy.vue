@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-import getPrivacyPolicy from '@dword-design/get-privacy-policy'
+import getPrivacyPolicy from '@dword-design/get-privacy-policy';
 </script>

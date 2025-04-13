@@ -27,44 +27,45 @@
     "test:raw": "base test:raw"
   },
   "dependencies": {
-    "@dword-design/functions": "^5.0.27",
+    "@dword-design/functions": "^6.0.2",
     "@dword-design/get-privacy-policy": "^1.0.6",
-    "@dword-design/legal-notice": "^1.0.6",
-    "@dword-design/nuxt-buefy": "^3.0.5",
-    "@dword-design/vue-consent": "^2.0.2",
+    "@dword-design/legal-notice": "^2.0.0",
+    "@dword-design/nuxt-buefy": "^4.1.2",
+    "@dword-design/vue-consent": "^3.0.0",
     "@dword-design/vue-consent-buefy": "^2.0.5",
-    "@funken-studio/sitemap-nuxt-3": "^4.0.4",
     "@mdi/svg": "^7.4.47",
     "@nuxt/content": "^2.13.4",
     "@nuxt/devtools": "^0.6.7",
     "@nuxt/kit": "^3.16.2",
+    "@nuxtjs/sitemap": "^7.2.10",
     "date-fns": "^2.30.0",
     "depcheck-package-name": "^3.0.1",
     "feed": "^4.2.2",
     "lodash.truncate": "^4.4.2",
     "nuxt-content-body-html": "^3.0.2",
-    "nuxt-content-git": "^3.0.32",
+    "nuxt-content-git": "^4.0.1",
     "nuxt-gtag": "^0.5.9",
-    "nuxt-mail": "^4.0.3",
+    "nuxt-mail": "^5.1.1",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-urls": "npm:@dword-design/rehype-urls@^0.0.1",
     "vue-honeypot": "^3.0.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^10.1.4",
-    "@dword-design/base-config-app": "^4.0.2",
-    "@dword-design/puppeteer": "^6.0.10",
+    "@dword-design/base": "^11.2.10",
+    "@dword-design/base-config-app": "^5.0.6",
     "@dword-design/tester": "^2.0.19",
-    "@dword-design/tester-plugin-nuxt": "^3.0.2",
-    "@dword-design/tester-plugin-puppeteer": "^2.1.68",
-    "axios": "^0.22.0",
+    "@dword-design/tester-plugin-nuxt": "^4.0.0",
+    "axios": "^1.8.4",
+    "playwright": "^1.51.1",
+    "playwright-chromium": "^1.51.1",
     "pretty": "^2.0.0"
   },
   "peerDependencies": {
     "prismjs": "^1.23.0"
   },
+  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"

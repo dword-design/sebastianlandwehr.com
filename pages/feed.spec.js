@@ -1,8 +1,8 @@
-import { property, replace } from '@dword-design/functions'
-import tester from '@dword-design/tester'
-import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
-import axios from 'axios'
-import pretty from 'pretty'
+import { property, replace } from '@dword-design/functions';
+import tester from '@dword-design/tester';
+import testerPluginNuxt from '@dword-design/tester-plugin-nuxt';
+import axios from 'axios';
+import pretty from 'pretty';
 
 export default tester(
   {
@@ -16,8 +16,8 @@ export default tester(
             /<lastBuildDate>.*?<\/lastBuildDate>/g,
             '<lastBuildDate>Foo</lastBuildDate>',
           ),
-      ).toMatchSnapshot(this)
+      ).toMatchSnapshot(this);
     },
   },
   [testerPluginNuxt()],
-)
+);

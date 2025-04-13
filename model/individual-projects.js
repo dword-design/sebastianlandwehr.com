@@ -1,10 +1,10 @@
-import crosswindMusicUrl from '@/assets/projects/crosswind-music.png'
-import flatoutFolkUrl from '@/assets/projects/flatout-folk.png'
-import furtherAlongUrl from '@/assets/projects/furtheralong.png'
-import larunMusicUrl from '@/assets/projects/larun-music.png'
-import sebastianLandwehrMusicUrl from '@/assets/projects/sebastianlandwehr-music.png'
-import songs4lifeUrl from '@/assets/projects/songs4life.png'
-import stoutUrl from '@/assets/projects/stout.png'
+import crosswindMusicUrl from '@/assets/projects/crosswind-music.png';
+import flatoutFolkUrl from '@/assets/projects/flatout-folk.png';
+import furtherAlongUrl from '@/assets/projects/furtheralong.png';
+import larunMusicUrl from '@/assets/projects/larun-music.png';
+import sebastianLandwehrMusicUrl from '@/assets/projects/sebastianlandwehr-music.png';
+import songs4lifeUrl from '@/assets/projects/songs4life.png';
+import stoutUrl from '@/assets/projects/stout.png';
 
 export default [
   {
@@ -53,4 +53,4 @@ export default [
     projectUrl: 'https://furtheralong.de',
     title: 'Further Along',
   },
-]
+];
