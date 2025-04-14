@@ -12,6 +12,19 @@
     }
   ],
   "rules": {
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "ignorePackages": true,
+        "pathGroupOverrides": [
+          {
+            "action": "ignore",
+            "pattern": "#*/**"
+          }
+        ]
+      }
+    ],
     "import/no-unresolved": [
       "error",
       {
