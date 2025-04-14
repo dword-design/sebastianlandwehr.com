@@ -20,7 +20,6 @@ export default {
   },
   css: ['@/assets/style.scss'],
   modules: [
-    '@nuxt/devtools',
     '@dword-design/nuxt-buefy',
     [
       'nuxt-mail',
