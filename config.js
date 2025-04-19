@@ -5,11 +5,6 @@ import { appName, appTitle } from './model/variables.js';
 
 const resolver = createResolver(import.meta.url);
 
-if (process.env.CODESPACE_NAME) {
-  process.env.BASE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
-  process.env.HOST = '0.0.0.0';
-}
-
 export default {
   app: {
     head: {
