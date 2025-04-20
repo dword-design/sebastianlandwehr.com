@@ -39,7 +39,7 @@
       </div>
       <article
         v-for="(post, index) in posts"
-        :key="post._path"
+        :key="post.path"
         class="columns is-flex-direction-row-reverse"
         :style="
           index < posts.length - 1 ? { marginBottom: '2.25rem' } : undefined
@@ -47,11 +47,11 @@
       >
         <header class="column is-two-fifths">
           <div class="card is-shadowless">
-            <nuxt-link class="card-image" :to="post._path">
+            <nuxt-link class="card-image" :to="post.path">
               <figure class="image is-devto-banner">
                 <img
                   :alt="`Cover image for ${post.title}`"
-                  :src="`${post._path}/banner.png`"
+                  :src="`${post.path}/banner.png`"
                 />
               </figure>
             </nuxt-link>
@@ -59,13 +59,13 @@
         </header>
         <div class="column">
           <h2 class="title is-size-4">
-            <nuxt-link class="is-stretched" :to="post._path">
+            <nuxt-link class="is-stretched" :to="post.path">
               {{ post.title }}
             </nuxt-link>
           </h2>
           <div class="subtitle is-size-7" style="margin-bottom: 0.75rem">
-            <time :datetime="format(new Date(post.createdAt), 'yyyy-MM-dd')">
-              {{ format(new Date(post.createdAt), 'PP') }}
+            <time :datetime="format(post.createdAt, 'yyyy-MM-dd')">
+              {{ format(post.createdAt, 'PP') }}
             </time>
           </div>
           <p>
@@ -83,24 +83,29 @@
 </template>
 
 <script setup>
-import { keys, property } from '@dword-design/functions';
 import { format } from 'date-fns';
 import truncate from 'lodash.truncate';
 
-import { queryContent, useAsyncData, useHead } from '#imports';
+import { queryCollection, useAsyncData, useHead } from '#imports';
 
 useHead({ title: 'Blog' });
 
-const posts =
-  useAsyncData(() =>
-    queryContent('blog')
-      .only(
-        { _path: true, createdAt: true, description: true, title: true }
-          |> keys,
+const { data: posts } = await useAsyncData(
+  () =>
+    queryCollection('blog')
+      .select(
+        ...Object.keys({
+          createdAt: true,
+          description: true,
+          path: true,
+          title: true,
+        }),
       )
-      .sort({ createdAt: -1 })
-      .find(),
-  )
-  |> await
-  |> property('data');
+      .order('createdAt', 'DESC')
+      .all(),
+  {
+    transform: _ =>
+      _.map(post => ({ ...post, createdAt: new Date(post.createdAt) })),
+  },
+);
 </script>

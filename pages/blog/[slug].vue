@@ -2,12 +2,12 @@
   <main class="section">
     <article class="container is-content">
       <figure class="image is-devto-banner mb-5">
-        <img alt="Cover image" :src="`${post._path}/banner.png`" />
+        <img alt="Cover image" :src="`${post.path}/banner.png`" />
       </figure>
       <h1 class="title">{{ post.title }}</h1>
       <div class="subtitle is-size-6">
         {{
-          new Date(post.createdAt).toLocaleDateString('en', {
+          post.createdAt.toLocaleDateString('en', {
             day: 'numeric',
             month: 'short',
             year: 'numeric',
@@ -31,16 +31,15 @@
 </template>
 
 <script setup>
-import { property } from '@dword-design/functions';
-
-import { queryContent, useAsyncData, useHead, useRoute } from '#imports';
+import { queryCollection, useAsyncData, useHead, useRoute } from '#imports';
 
 const route = useRoute();
 
-const post =
-  useAsyncData(() => queryContent('blog', route.params.slug).findOne())
-  |> await
-  |> property('data');
+const { data: post } = await useAsyncData(
+  route.path,
+  () => queryCollection('blog').path(route.path).first(),
+  { transform: _ => ({ ..._, createdAt: new Date(_.createdAt) }) },
+);
 
-useHead({ title: post.title });
+useHead({ title: () => post.value.title });
 </script>
