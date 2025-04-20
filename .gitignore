@@ -1,5 +1,6 @@
 .DS_Store
 /.ceilingrc.json
+/.data
 /.env.json
 /.eslintcache
 /.nuxt
