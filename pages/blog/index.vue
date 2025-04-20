@@ -64,7 +64,7 @@
             </nuxt-link>
           </h2>
           <div class="subtitle is-size-7" style="margin-bottom: 0.75rem">
-            <time :datetime="format(post.createdAt, 'yyyy-MM-dd')">
+            <time :datetime="post.createdAt.toISOString()">
               {{ format(post.createdAt, 'PP') }}
             </time>
           </div>

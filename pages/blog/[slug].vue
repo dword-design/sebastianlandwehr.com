@@ -6,13 +6,18 @@
       </figure>
       <h1 class="title">{{ post.title }}</h1>
       <div class="subtitle is-size-6">
-        {{
-          post.createdAt.toLocaleDateString('en', {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
-          })
-        }}
+        <time
+          data-allow-mismatch="text"
+          :datetime="post.createdAt.toISOString()"
+        >
+          {{
+            post.createdAt.toLocaleDateString('en', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            })
+          }}
+        </time>
       </div>
       <content-renderer class="content mb-4" :value="post" />
       <div>
