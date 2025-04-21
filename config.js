@@ -45,39 +45,41 @@ export default {
               [packageName`rehype-autolink-headings`]: {
                 options: {
                   content: {
+                    children: [],
                     properties: { className: 'hash-link' },
                     tagName: 'span',
                     type: 'element',
-                    children: [],
                   },
                 },
               },
             },
           },
         },
-        renderer: {
-          anchorLinks: false,
-        },
+        renderer: { anchorLinks: false },
       },
     ],
     'nuxt-content-git',
-    ['nuxt-content-body-html', {
-      fields: {
-        bodyHtml: {
-          highlight: false,
-          rehypePlugins: {
-            [packageName`rehype-urls`]: {
-              options: url => {
-                if (url.host || !url.path) {
-                  return url;
-                }
-                return new URL(url.href, process.env.BASE_URL);
-              }
+    [
+      'nuxt-content-body-html',
+      {
+        fields: {
+          bodyHtml: {
+            highlight: false,
+            rehypePlugins: {
+              [packageName`rehype-urls`]: {
+                options: url => {
+                  if (url.host || !url.path) {
+                    return url;
+                  }
+
+                  return new URL(url.href, process.env.BASE_URL);
+                },
+              },
             },
           },
         },
       },
-    }],
+    ],
     'nuxt-gtag',
     /* ...process.env.CODESPACES ? [(options, nuxt) => nuxt.hook('nitro:config', () => nuxt.hook("nitro:init", nitro => {
       nitro.options.runtimeConfig.public.content.wsUrl = `wss://${process.env.CODESPACE_NAME}-4000.app.github.dev/`

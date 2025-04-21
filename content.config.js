@@ -5,7 +5,11 @@ export default defineContentConfig({
   collections: {
     blog: defineCollection(
       asSitemapCollection({
-        schema: z.object({ createdAt: z.date(), updatedAt: z.date(), bodyHtml: z.string() }),
+        schema: z.object({
+          bodyHtml: z.string(),
+          createdAt: z.date(),
+          updatedAt: z.date(),
+        }),
         source: 'blog/*.md',
         type: 'page',
       }),
