@@ -1,9 +1,10 @@
 import { addComponent, defineNuxtModule } from '@nuxt/kit';
+import packageName from 'depcheck-package-name';
 
 export default defineNuxtModule({
   setup: () =>
     addComponent({
-      filePath: '@dword-design/legal-notice',
+      filePath: packageName`@dword-design/legal-notice`,
       name: 'AppLegalNotice',
     }),
 });
