@@ -32,6 +32,6 @@ export default defineEventHandler(async event => {
     });
   }
 
-  event.res.setHeader('content-type', 'application/rss+xml');
+  event.res.setHeader('content-type', 'application/rss+xml; charset=utf-8');
   event.res.end(feed.rss2());
 });
