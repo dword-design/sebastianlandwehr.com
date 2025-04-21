@@ -14,5 +14,10 @@
     }
   },
   "editorIgnore": [".data"],
-  "gitignore": ["/.data"]
+  "gitignore": ["/.data"],
+  "depcheckConfig": {
+    "ignoreMatches": [
+      "playwright-chromium"
+    ]
+  }
 }

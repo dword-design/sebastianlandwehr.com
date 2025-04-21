@@ -30,8 +30,8 @@ importers:
         specifier: ^7.4.47
         version: 7.4.47
       '@nuxt/content':
-        specifier: npm:@dword-design/nuxt-content-fork@^0.1.2
-        version: '@dword-design/nuxt-content-fork@0.1.2(magicast@0.3.5)(typescript@5.8.3)'
+        specifier: npm:@dword-design/nuxt-content-fork@^0.1.3
+        version: '@dword-design/nuxt-content-fork@0.1.3(magicast@0.3.5)(typescript@5.8.3)'
       '@nuxt/kit':
         specifier: ^3.16.2
         version: 3.16.2(magicast@0.3.5)
@@ -49,7 +49,7 @@ importers:
         version: 4.17.21
       nuxt-content-body-html:
         specifier: ^4.0.0
-        version: 4.0.0(@dword-design/nuxt-content-fork@0.1.2(magicast@0.3.5)(typescript@5.8.3))(@nuxtjs/mdc@0.16.1(magicast@0.3.5))(magicast@0.3.5)
+        version: 4.0.0(@dword-design/nuxt-content-fork@0.1.3(magicast@0.3.5)(typescript@5.8.3))(@nuxtjs/mdc@0.16.1(magicast@0.3.5))(magicast@0.3.5)
       nuxt-content-git:
         specifier: ^6.0.0
         version: 6.0.0
@@ -972,8 +972,8 @@ packages:
     resolution: {integrity: sha512-/69gs6M3XlOlA9LnlqG+8orLl9G7+TzZd5T1proi6izCGtWiBP3Xq3jliFH3+eyQRE6/Jk1zwESmln/zYJWp2A==}
     engines: {node: '>=18'}
 
-  '@dword-design/nuxt-content-fork@0.1.2':
-    resolution: {integrity: sha512-nlN6mpkmO7duRYLcclglIpfwDaYrmjZHH4pnd5WgqymzAO6HjzQ9uqM7VVM502W6dHUt68/oSY3j00CztYfZ+A==}
+  '@dword-design/nuxt-content-fork@0.1.3':
+    resolution: {integrity: sha512-AqV+WMNPlWV01/jKrtol7nYal++COEXeG5YB5Lbr8jD4VHeDNFuFwKNKwVcxsmXpdJCRmBGXHP7N5PIBa5uC2Q==}
     peerDependencies:
       '@electric-sql/pglite': '*'
       '@libsql/client': '*'
@@ -3636,6 +3636,29 @@ packages:
       sqlite3:
         optional: true
 
+  db0@0.3.2:
+    resolution: {integrity: sha512-xzWNQ6jk/+NtdfLyXEipbX55dmDSeteLFt/ayF+wZUU5bzKgmrDOxmInUTbyVRp46YwnJdkDA1KhB7WIXFofJw==}
+    peerDependencies:
+      '@electric-sql/pglite': '*'
+      '@libsql/client': '*'
+      better-sqlite3: '*'
+      drizzle-orm: '*'
+      mysql2: '*'
+      sqlite3: '*'
+    peerDependenciesMeta:
+      '@electric-sql/pglite':
+        optional: true
+      '@libsql/client':
+        optional: true
+      better-sqlite3:
+        optional: true
+      drizzle-orm:
+        optional: true
+      mysql2:
+        optional: true
+      sqlite3:
+        optional: true
+
   de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
 
@@ -4421,6 +4444,9 @@ packages:
   exsolve@1.0.4:
     resolution: {integrity: sha512-xsZH6PXaER4XoV+NiT7JHp1bJodJVT+cxeSH1G0f0tlT0lJqYuHUP3bUx2HtfTDvOagMINYp8rsqusxud3RXhw==}
 
+  exsolve@1.0.5:
+    resolution: {integrity: sha512-pz5dvkYYKQ1AHVrgOzBKWeP4u4FRb3a6DNK2ucr0OoNwYIU4QWsJ+NM36LLzORT+z845MzKHHhpXiUF5nvQoJg==}
+
   extend-shallow@2.0.1:
     resolution: {integrity: sha512-zCnTtlxNoAiDc3gqY2aYAWFx7XWWiasuF2K8Me5WbN8otHKTUKBwjPtNpRs/rbUZm7KxWAaNj7P1a/p52GbVug==}
     engines: {node: '>=0.10.0'}
@@ -4844,6 +4870,9 @@ packages:
 
   git-url-parse@16.0.1:
     resolution: {integrity: sha512-mcD36GrhAzX5JVOsIO52qNpgRyFzYWRbU1VSRFCvJt1IJvqfvH427wWw/CFqkWvjVPtdG5VTx4MKUeC5GeFPDQ==}
+
+  git-url-parse@16.1.0:
+    resolution: {integrity: sha512-cPLz4HuK86wClEW7iDdeAKcCVlWXmrLpb2L+G9goW0Z1dtpNS6BXXSOckUTlJT/LDQViE1QZKstNORzHsLnobw==}
 
   github-from-package@0.0.0:
     resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
@@ -7246,8 +7275,8 @@ packages:
     resolution: {integrity: sha512-1Y1A//QUXEZK7YKz+rD9WydcE1+EuPr6ZBgKecAB8tmoW6UFv0NREVJe1p+jRxtThkcbbKkfwIbWJe/IeE6m2Q==}
     engines: {node: '>=0.10.0'}
 
-  parse-path@7.0.2:
-    resolution: {integrity: sha512-env5u88RpqhTX1OGbWCkZuueRhmK8qFXwyGyTWuC/Vz4a+eUIHM/CCq5L1YtmdQeKBVh+CtZdH0WiY4axuySfg==}
+  parse-path@7.1.0:
+    resolution: {integrity: sha512-EuCycjZtfPcjWk7KTksnJ5xPMvWGA/6i4zrLYhRG0hGvC3GPU/jGUj3Cy+ZR0v30duV3e23R95T1lE2+lsndSw==}
 
   parse-url@9.2.0:
     resolution: {integrity: sha512-bCgsFI+GeGWPAvAiUv63ZorMeif3/U0zaXABGJbOWt5OH2KCaPHF6S+0ok4aqM9RuIPGyZdx9tR9l13PsW4AYQ==}
@@ -11279,7 +11308,7 @@ snapshots:
       - magicast
       - vue
 
-  '@dword-design/nuxt-content-fork@0.1.2(magicast@0.3.5)(typescript@5.8.3)':
+  '@dword-design/nuxt-content-fork@0.1.3(magicast@0.3.5)(typescript@5.8.3)':
     dependencies:
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
       '@nuxtjs/mdc': https://pkg.pr.new/@nuxtjs/mdc@c44090f(magicast@0.3.5)
@@ -11290,11 +11319,11 @@ snapshots:
       c12: 3.0.3(magicast@0.3.5)
       chokidar: 4.0.3
       consola: 3.4.2
-      db0: 0.3.1(better-sqlite3@11.9.1)
+      db0: 0.3.2(better-sqlite3@11.9.1)
       defu: 6.1.4
       destr: 2.0.5
       fast-glob: 3.3.3
-      git-url-parse: 16.0.1
+      git-url-parse: 16.1.0
       jiti: 2.4.2
       knitwork: 1.2.0
       listhen: 1.9.0
@@ -14020,7 +14049,7 @@ snapshots:
       confbox: 0.2.2
       defu: 6.1.4
       dotenv: 16.5.0
-      exsolve: 1.0.4
+      exsolve: 1.0.5
       giget: 2.0.0
       jiti: 2.4.2
       ohash: 2.0.11
@@ -14667,6 +14696,10 @@ snapshots:
   dayjs@1.8.36: {}
 
   db0@0.3.1(better-sqlite3@11.9.1):
+    optionalDependencies:
+      better-sqlite3: 11.9.1
+
+  db0@0.3.2(better-sqlite3@11.9.1):
     optionalDependencies:
       better-sqlite3: 11.9.1
 
@@ -15620,6 +15653,8 @@ snapshots:
 
   exsolve@1.0.4: {}
 
+  exsolve@1.0.5: {}
+
   extend-shallow@2.0.1:
     dependencies:
       is-extendable: 0.1.1
@@ -16069,6 +16104,10 @@ snapshots:
       parse-url: 9.2.0
 
   git-url-parse@16.0.1:
+    dependencies:
+      git-up: 8.1.1
+
+  git-url-parse@16.1.0:
     dependencies:
       git-up: 8.1.1
 
@@ -18795,9 +18834,9 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  nuxt-content-body-html@4.0.0(@dword-design/nuxt-content-fork@0.1.2(magicast@0.3.5)(typescript@5.8.3))(@nuxtjs/mdc@0.16.1(magicast@0.3.5))(magicast@0.3.5):
+  nuxt-content-body-html@4.0.0(@dword-design/nuxt-content-fork@0.1.3(magicast@0.3.5)(typescript@5.8.3))(@nuxtjs/mdc@0.16.1(magicast@0.3.5))(magicast@0.3.5):
     dependencies:
-      '@nuxt/content': '@dword-design/nuxt-content-fork@0.1.2(magicast@0.3.5)(typescript@5.8.3)'
+      '@nuxt/content': '@dword-design/nuxt-content-fork@0.1.3(magicast@0.3.5)(typescript@5.8.3)'
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
       '@nuxtjs/mdc': 0.16.1(magicast@0.3.5)
       defu: 6.1.4
@@ -19371,14 +19410,14 @@ snapshots:
 
   parse-passwd@1.0.0: {}
 
-  parse-path@7.0.2:
+  parse-path@7.1.0:
     dependencies:
       protocols: 2.0.2
 
   parse-url@9.2.0:
     dependencies:
       '@types/parse-path': 7.0.3
-      parse-path: 7.0.2
+      parse-path: 7.1.0
 
   parse5@6.0.1: {}
 
@@ -19470,7 +19509,7 @@ snapshots:
   pkg-types@2.1.0:
     dependencies:
       confbox: 0.2.2
-      exsolve: 1.0.4
+      exsolve: 1.0.5
       pathe: 2.0.3
 
   pkg-up@3.1.0:
