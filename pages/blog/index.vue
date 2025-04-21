@@ -64,7 +64,10 @@
             </nuxt-link>
           </h2>
           <div class="subtitle is-size-7" style="margin-bottom: 0.75rem">
-            <time :datetime="post.createdAt.toISOString()">
+            <time
+              data-allow-mismatch="text"
+              :datetime="post.createdAt.toISOString()"
+            >
               {{
                 post.createdAt.toLocaleDateString('en', {
                   day: 'numeric',
