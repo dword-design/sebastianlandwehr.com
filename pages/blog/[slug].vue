@@ -42,7 +42,18 @@ const route = useRoute();
 
 const { data: post } = await useAsyncData(
   route.path,
-  () => queryCollection('blog').path(route.path).first(),
+  () =>
+    queryCollection('blog')
+      .path(route.path)
+      .select(
+        ...Object.keys({
+          body: true,
+          createdAt: true,
+          path: true,
+          title: true,
+        }),
+      )
+      .first(),
   { transform: _ => ({ ..._, createdAt: new Date(_.createdAt) }) },
 );
 

@@ -2,11 +2,13 @@ import { endent } from '@dword-design/functions';
 import { Feed } from 'feed';
 
 import { appName, appTitle } from '@/model/variables.js';
-import { serverQueryContent } from '#content/server';
-import { defineEventHandler } from '#imports';
+import { defineEventHandler, queryCollection } from '#imports';
 
 export default defineEventHandler(async event => {
-  const posts = await serverQueryContent(event).sort({ createdAt: -1 }).find();
+  const posts = await queryCollection(event, 'blog')
+    .select(...Object.keys({ path: true, bodyHtml: true, createdAt: true, description: true, title: true }))
+    .order('createdAt', 'DESC')
+    .all();
 
   const feed = new Feed({
     description: appTitle,
@@ -15,12 +17,11 @@ export default defineEventHandler(async event => {
   });
 
   for (const post of posts) {
-    const url = `${process.env.BASE_URL}${post._path}`;
+    const url = `${process.env.BASE_URL}${post.path}`;
 
     feed.addItem({
-      author: post.authors,
       content: endent`
-        <p><img alt="Cover image" src="${process.env.BASE_URL}${post._path}/banner.png"></p>
+        <p><img alt="Cover image" src="${process.env.BASE_URL}${post.path}/banner.png"></p>
         ${post.bodyHtml}
       `,
       date: new Date(post.createdAt),

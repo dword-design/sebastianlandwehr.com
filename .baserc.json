@@ -13,5 +13,6 @@
       ]
     }
   },
+  "editorIgnore": [".data"],
   "gitignore": ["/.data"]
 }

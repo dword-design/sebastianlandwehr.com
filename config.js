@@ -5,6 +5,10 @@ import { appName, appTitle } from './model/variables.js';
 
 const resolver = createResolver(import.meta.url);
 
+if (process.env.CODESPACES) {
+  process.env.BASE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
+}
+
 export default {
   app: {
     head: {
@@ -32,24 +36,52 @@ export default {
     [
       '@nuxt/content',
       {
-        highlight: { theme: 'light-plus' },
-        markdown: {
-          anchorLinks: false,
-          rehypePlugins: {
-            [packageName`rehype-autolink-headings`]: {
-              content: {
-                properties: { className: 'hash-link' },
-                tagName: 'span',
-                type: 'element',
+        ...(process.env.CODESPACES && { watch: false }),
+        build: {
+          markdown: {
+            highlight: { theme: 'light-plus' },
+            rehypePlugins: {
+              [packageName`rehype-slug`]: {},
+              [packageName`rehype-autolink-headings`]: {
+                options: {
+                  content: {
+                    properties: { className: 'hash-link' },
+                    tagName: 'span',
+                    type: 'element',
+                    children: [],
+                  },
+                },
               },
             },
           },
         },
+        renderer: {
+          anchorLinks: false,
+        },
       },
     ],
     'nuxt-content-git',
-    'nuxt-content-body-html',
+    ['nuxt-content-body-html', {
+      fields: {
+        bodyHtml: {
+          highlight: false,
+          rehypePlugins: {
+            [packageName`rehype-urls`]: {
+              options: url => {
+                if (url.host || !url.path) {
+                  return url;
+                }
+                return new URL(url.href, process.env.BASE_URL);
+              }
+            },
+          },
+        },
+      },
+    }],
     'nuxt-gtag',
+    /* ...process.env.CODESPACES ? [(options, nuxt) => nuxt.hook('nitro:config', () => nuxt.hook("nitro:init", nitro => {
+      nitro.options.runtimeConfig.public.content.wsUrl = `wss://${process.env.CODESPACE_NAME}-4000.app.github.dev/`
+    }))] : [], */
   ],
   name: appName,
   nitro: { externals: { inline: [resolver.resolve('./model')] } },

@@ -4,6 +4,7 @@
   "files.exclude": {
     ".commitlintrc.json": true,
     ".cz.json": true,
+    ".data": true,
     ".devcontainer": true,
     ".editorconfig": true,
     ".eslintcache": true,

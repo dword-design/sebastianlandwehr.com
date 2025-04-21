@@ -65,7 +65,13 @@
           </h2>
           <div class="subtitle is-size-7" style="margin-bottom: 0.75rem">
             <time :datetime="post.createdAt.toISOString()">
-              {{ format(post.createdAt, 'PP') }}
+              {{
+                post.createdAt.toLocaleDateString('en', {
+                  day: 'numeric',
+                  month: 'short',
+                  year: 'numeric',
+                })
+              }}
             </time>
           </div>
           <p>
@@ -83,8 +89,7 @@
 </template>
 
 <script setup>
-import { format } from 'date-fns';
-import truncate from 'lodash.truncate';
+import { truncate } from 'lodash-es';
 
 import { queryCollection, useAsyncData, useHead } from '#imports';
 
