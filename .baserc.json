@@ -19,5 +19,6 @@
     "ignoreMatches": [
       "playwright-chromium"
     ]
-  }
+  },
+  "allowedMatches": ["content.config.js"]
 }
