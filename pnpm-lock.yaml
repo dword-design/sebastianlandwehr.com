@@ -85,8 +85,8 @@ importers:
         specifier: ^2.0.19
         version: 2.0.19
       '@dword-design/tester-plugin-nuxt':
-        specifier: ^4.0.1
-        version: 4.0.1(@babel/core@7.26.10)(@nuxt/cli@3.24.1(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/eslint@9.6.1)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(@vue/compiler-dom@3.5.13)(babel-plugin-module-resolver@5.0.2)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.1)(ioredis@5.6.1)(jest@27.5.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.0)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)
+        specifier: ^4.0.2
+        version: 4.0.2(@babel/core@7.26.10)(@nuxt/cli@3.24.1(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/eslint@9.6.1)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(@vue/compiler-dom@3.5.13)(babel-plugin-module-resolver@5.0.2)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.1)(ioredis@5.6.1)(jest@27.5.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.0)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)
       axios:
         specifier: ^1.8.4
         version: 1.8.4
@@ -1016,8 +1016,8 @@ packages:
     resolution: {integrity: sha512-VkXvIeTTutLLGr05RQEcuAs+ePlJa3yN2xuUuA3OtfXywdKlxA9r5xMFzGnHVc/y8T/95Z2eOEBpCn2QkChokg==}
     engines: {node: '>=14'}
 
-  '@dword-design/tester-plugin-nuxt@4.0.1':
-    resolution: {integrity: sha512-OTaOxvNpKx+4FwZwQEHDy9IFcJMXH12GsLAb/0rzoE/+HzYisXFQ5EYlviJkHBseSDfsfm9CHaPmvhWvUQjjsg==}
+  '@dword-design/tester-plugin-nuxt@4.0.2':
+    resolution: {integrity: sha512-Y0Xkg3xu8XxxycRRpG64XdgPnbtPiiMolszP23rie4ppL2OacizPPyuJXpMrrXJsb+MKBUWcX2IECiW86nN0uA==}
     engines: {node: '>=18'}
 
   '@dword-design/tester@2.0.19':
@@ -6947,6 +6947,10 @@ packages:
     resolution: {integrity: sha512-JRwa7qySGbkmVXhv1KmY+TgvH2kMhpnVcJVPXfRbJEOt33M4tYV+aJTTw8ngyuG/78Tj3CGdcFZYISUaIL+f0g==}
     engines: {node: '>=18'}
 
+  nuxt-dev-ready@3.0.0:
+    resolution: {integrity: sha512-7F+zTD0I/a7QZPUpnFq4WWt8TbMYUYRjQTKBnFLayIYqx6a5k8w61n9aS3gafHwRGBEX00mPv7ggn0n3b004Cg==}
+    engines: {node: '>=18'}
+
   nuxt-gtag@0.5.9:
     resolution: {integrity: sha512-rT6HaGzECmIAbc4fyyl0KzQWd8YwMoNBbXcSTYCwZ5WEZiPGViBicz8NP5j8Olgj6JLqD1EZiGEfAVyFNGNhuA==}
 
@@ -7196,6 +7200,10 @@ packages:
     resolution: {integrity: sha512-88em58dDVB/KzPEx1X0N3LwFfYZPyDc4B6eF38M1rk9VTZMbxXXgjugz8mmwpS9Ox4BDZ+t6t3QP5+/gazweIA==}
     engines: {node: '>=4'}
 
+  p-timeout@6.1.4:
+    resolution: {integrity: sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==}
+    engines: {node: '>=14.16'}
+
   p-try@1.0.0:
     resolution: {integrity: sha512-U1etNYuMJoIz3ZXSrrySFjsXQTWOx2/jdi86L+2pRvph/qMKL6sbcCYdH23fqsbm8TH2Gn0OybpT4eSFlCVHww==}
     engines: {node: '>=4'}
@@ -7207,6 +7215,10 @@ packages:
   p-wait-for@1.0.0:
     resolution: {integrity: sha512-raZs7eMN7mRqP2UEaXMSxDAkSqwN41J0yXCV1AVU9PbB4t7aBAj/6nDPgFcUikX+4GeBgXWLxITAn9hr+bdhrg==}
     engines: {node: '>=4'}
+
+  p-wait-for@5.0.2:
+    resolution: {integrity: sha512-lwx6u1CotQYPVju77R+D0vFomni/AqRfqLmqQ8hekklqZ6gAY9rONh7lBQ0uxWMkC2AuX9b2DVAl8To0NyP1JA==}
+    engines: {node: '>=12'}
 
   pac-proxy-agent@7.2.0:
     resolution: {integrity: sha512-TEB8ESquiLMc0lV8vcd5Ql/JAKAoyzHFXaStwjkzpOpC5Yv+pIzLfHvjTSdf3vpa2bMiUQrg9i6276yn8666aA==}
@@ -11413,12 +11425,12 @@ snapshots:
 
   '@dword-design/suppress-babel-register-esm-warning@1.1.10': {}
 
-  '@dword-design/tester-plugin-nuxt@4.0.1(@babel/core@7.26.10)(@nuxt/cli@3.24.1(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/eslint@9.6.1)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(@vue/compiler-dom@3.5.13)(babel-plugin-module-resolver@5.0.2)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.1)(ioredis@5.6.1)(jest@27.5.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.0)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)':
+  '@dword-design/tester-plugin-nuxt@4.0.2(@babel/core@7.26.10)(@nuxt/cli@3.24.1(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/eslint@9.6.1)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(@vue/compiler-dom@3.5.13)(babel-plugin-module-resolver@5.0.2)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.1)(ioredis@5.6.1)(jest@27.5.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.0)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)':
     dependencies:
       '@dword-design/base': 11.2.10(@babel/core@7.26.10)(@types/eslint@9.6.1)(@types/node@22.14.1)(@typescript-eslint/parser@8.29.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)
       '@dword-design/base-config-nuxt': 6.1.6(@nuxt/cli@3.24.1(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.14.1)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.1)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.0)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)
       depcheck-package-name: 3.0.1
-      port-ready: 0.1.0
+      nuxt-dev-ready: 3.0.0
       tree-kill-promise: 3.0.14
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -11451,6 +11463,7 @@ snapshots:
       - better-sqlite3
       - bufferutil
       - db0
+      - debug
       - drizzle-orm
       - encoding
       - eslint
@@ -18853,6 +18866,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  nuxt-dev-ready@3.0.0:
+    dependencies:
+      axios: 1.8.4
+      p-wait-for: 5.0.2
+      port-ready: 0.1.0
+    transitivePeerDependencies:
+      - debug
+
   nuxt-gtag@0.5.9(magicast@0.3.5):
     dependencies:
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
@@ -19317,11 +19338,17 @@ snapshots:
     dependencies:
       p-finally: 1.0.0
 
+  p-timeout@6.1.4: {}
+
   p-try@1.0.0: {}
 
   p-try@2.2.0: {}
 
   p-wait-for@1.0.0: {}
+
+  p-wait-for@5.0.2:
+    dependencies:
+      p-timeout: 6.1.4
 
   pac-proxy-agent@7.2.0:
     dependencies:

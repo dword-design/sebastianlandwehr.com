@@ -5,9 +5,9 @@ import { appName, appTitle } from './model/variables.js';
 
 const resolver = createResolver(import.meta.url);
 
-if (process.env.CODESPACES) {
+/* if (process.env.CODESPACES) {
   process.env.BASE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
-}
+} */
 
 export default {
   app: {
