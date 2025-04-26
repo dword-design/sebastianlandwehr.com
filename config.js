@@ -23,6 +23,9 @@ export default {
     },
   },
   css: ['@/assets/style.scss'],
+  devtools: {
+    enabled: false
+  },
   modules: [
     '@dword-design/nuxt-buefy',
     [
