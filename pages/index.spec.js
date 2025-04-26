@@ -7,7 +7,7 @@ export default tester(
   {
     async init() {
       await this.page.goto('http://localhost:3000');
-      await this.page.setViewport({ height: 875, width: 1400 });
+      await this.page.setViewportSize({ height: 875, width: 1400 });
 
       const privacyPolicyButton = await this.page.waitForFunction(() =>
         [...document.querySelectorAll('.modal button')].find(
@@ -24,13 +24,12 @@ export default tester(
       await delay(150);
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
 
-      const acceptAllCookiesButton = await this.page.waitForXPath(
-        "//button/span[text()='Accept all cookies']/..",
-      );
+      await this.page
+        .getByRole('button', { name: 'Accept all cookies' })
+        .click({ force: true });
 
-      await acceptAllCookiesButton.click();
       await this.page.waitForNavigation();
-      await this.page.setViewport({ height: 5100, width: 1400 });
+      await this.page.setViewportSize({ height: 5100, width: 1400 });
       const card = await this.page.waitForSelector('.card');
       await card.hover();
       await delay(500);
@@ -43,16 +42,11 @@ export default tester(
   [
     testerPluginNuxt(),
     {
-      async after() {
+      async afterEach() {
         await this.browser.close();
       },
-      async afterEach() {
-        await this.page.close();
-      },
-      async before() {
-        this.browser = await chromium.launch();
-      },
       async beforeEach() {
+        this.browser = await chromium.launch();
         this.page = await this.browser.newPage();
       },
     },

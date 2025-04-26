@@ -10,13 +10,12 @@ export default tester(
         'http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way',
       );
 
-      await this.page.setViewport({ height: 1, width: 1400 });
+      await this.page.setViewportSize({ height: 1, width: 1400 });
 
-      const acceptAllCookiesButton = await this.page.waitForXPath(
-        "//button/span[text()='Accept all cookies']/..",
-      );
+      await this.page
+        .getByRole('button', { name: 'Accept all cookies' })
+        .click({ force: true });
 
-      await acceptAllCookiesButton.click();
       await delay(500);
 
       expect(
@@ -27,16 +26,11 @@ export default tester(
   [
     testerPluginNuxt(),
     {
-      async after() {
+      async afterEach() {
         await this.browser.close();
       },
-      async afterEach() {
-        await this.page.close();
-      },
-      async before() {
-        this.browser = await chromium.launch();
-      },
       async beforeEach() {
+        this.browser = await chromium.launch();
         this.page = await this.browser.newPage();
       },
     },
