@@ -13,7 +13,7 @@ export default tester(
       await this.page.setViewportSize({ height: 1, width: 1400 });
 
       await this.page
-        .getByRole('button', { name: 'Accept all cookies' })
+        .getByRole('button', { name: 'Accept all cookies', exact: true })
         .click({ force: true });
 
       await delay(500);

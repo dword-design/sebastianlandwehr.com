@@ -9,23 +9,29 @@ export default tester(
       await this.page.goto('http://localhost:3000');
       await this.page.setViewportSize({ height: 875, width: 1400 });
 
-      const privacyPolicyButton = await this.page.waitForFunction(() =>
-        [...document.querySelectorAll('.modal button')].find(
-          el => el.innerText === 'privacy policy',
-        ),
-      );
+      const privacySettingsModal = await this.page.locator('.modal-content');
+      
+      await privacySettingsModal.hover({ trial: true });
 
-      await delay(150);
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
-      await privacyPolicyButton.click();
-      await delay(300);
+
+      await privacySettingsModal
+        .getByRole('button', { name: 'privacy policy', exact: true })
+        .click();
+
+      const privacyPolicyModal = await this.page
+        .locator('.modal-content:has(h2:text("Privacy Policy"))')
+      await privacyPolicyModal.hover({ trial: true });
+
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
+
       await this.page.mouse.click(10, 10);
-      await delay(150);
+      await privacyPolicyModal.waitFor({ state: 'detached' });
+
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
 
       await this.page
-        .getByRole('button', { name: 'Accept all cookies' })
+        .getByRole('button', { name: 'Accept all cookies', exact: true })
         .click({ force: true });
 
       await this.page.waitForNavigation();
