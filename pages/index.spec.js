@@ -8,33 +8,29 @@ export default tester(
     async init() {
       await this.page.goto('http://localhost:3000');
       await this.page.setViewportSize({ height: 875, width: 1400 });
-
       const privacySettingsModal = await this.page.locator('.modal-content');
-      
       await privacySettingsModal.hover({ trial: true });
-
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
 
       await privacySettingsModal
-        .getByRole('button', { name: 'privacy policy', exact: true })
+        .getByRole('button', { exact: true, name: 'privacy policy' })
         .click();
 
-      const privacyPolicyModal = await this.page
-        .locator('.modal-content:has(h2:text("Privacy Policy"))')
+      const privacyPolicyModal = await this.page.locator(
+        '.modal-content:has(h2:text("Privacy Policy"))',
+      );
+
       await privacyPolicyModal.hover({ trial: true });
-
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
-
       await this.page.mouse.click(10, 10);
       await privacyPolicyModal.waitFor({ state: 'detached' });
-
       expect(await this.page.screenshot()).toMatchImageSnapshot(this);
 
-      await this.page
-        .getByRole('button', { name: 'Accept all cookies', exact: true })
+      await privacySettingsModal
+        .getByRole('button', { exact: true, name: 'Accept all cookies' })
         .click({ force: true });
 
-      await this.page.waitForNavigation();
+      await privacySettingsModal.waitFor({ state: 'detached' });
       await this.page.setViewportSize({ height: 5100, width: 1400 });
       const card = await this.page.waitForSelector('.card');
       await card.hover();

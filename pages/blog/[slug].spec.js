@@ -1,4 +1,3 @@
-import { delay } from '@dword-design/functions';
 import tester from '@dword-design/tester';
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt';
 import { chromium } from 'playwright';
@@ -11,12 +10,13 @@ export default tester(
       );
 
       await this.page.setViewportSize({ height: 1, width: 1400 });
+      const privacySettingsModal = await this.page.locator('.modal-content');
 
-      await this.page
-        .getByRole('button', { name: 'Accept all cookies', exact: true })
+      await privacySettingsModal
+        .getByRole('button', { exact: true, name: 'Accept all cookies' })
         .click({ force: true });
 
-      await delay(500);
+      await privacySettingsModal.waitFor({ state: 'detached' });
 
       expect(
         await this.page.screenshot({ fullPage: true }),
