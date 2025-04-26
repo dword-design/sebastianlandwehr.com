@@ -13,7 +13,7 @@ export default tester(
         .getByRole('button', { exact: true, name: 'Accept all cookies' })
         .click({ force: true });
 
-      await privacySettingsModal.waitFor({ state: 'detached' });
+      await privacySettingsModal.waitFor({ state: 'hidden' });
       const screenshot = await this.page.screenshot({ fullPage: true });
       expect(screenshot).toMatchImageSnapshot(this);
     },
