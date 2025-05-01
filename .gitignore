@@ -12,5 +12,4 @@
 /dist
 /nginx/default.config
 /node_modules
-/nuxt.config.js
 /test-results

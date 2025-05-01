@@ -7,11 +7,10 @@ export default defineConfig({
 
   use: { trace: 'retain-on-failure' },
   webServer: {
-    command: 'nuxt dev',
-    // reuseExistingServer: !process.env.CI,
+    command: 'base dev',
+    reuseExistingServer: !isCI,
     stdout: 'pipe',
     timeout: 120000,
     url: 'http://localhost:3000',
   },
-  workers: isCI ? 1 : undefined,
 });
