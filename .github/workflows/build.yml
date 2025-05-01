@@ -33,9 +33,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Image Snapshot Diffs
-          path:
-            - "**/__image_snapshots__/__diff_output__"
-            - test-results
+          path: |-
+            **/__image_snapshots__/__diff_output__
+            test-results
       - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
