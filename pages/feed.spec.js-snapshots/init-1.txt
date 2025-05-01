@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sebastian Landwehr</title>
+    <link>http://localhost:3000/blog</link>
+    <description>Developing web apps and blogging about JavaScript and Nuxt.js</description>
+    <lastBuildDate>Foo</lastBuildDate>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <item>
+      <title>
+        <![CDATA[Using ACSS atomic CSS framework (aka Atomizer) with Nuxt]]>
+      </title>
+      <link>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</link>
+      <guid>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</guid>
+      <pubDate>Sun, 18 Jul 2021 14:17:04 GMT</pubDate>
+      <description>
+        <![CDATA[ACSS is a nice little Atomic CSS framework. In contrast to alternatives like Tailwind, it generates atomic classes from the actual class instances. This allows to 1. keep the number of generated classes at a minimum, and 2. to pass arbitrary values to the classes (which would normally lead to a big class explosion). Under the hood it uses a tool called Atomizer to generate these classes. This article describes how to use ACSS in a Nuxt app using the nuxt-atomizer module.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt/banner.png"></p>
+<p><a href="https://acss.io/" rel="nofollow">ACSS</a> is a nice little Atomic CSS framework. In contrast to alternatives like <a href="https://tailwindcss.com/" rel="nofollow">Tailwind</a>, it generates atomic classes from the actual class instances. This allows to 1. keep the number of generated classes at a minimum, and 2. to pass arbitrary values to the classes (which would normally lead to a big class explosion). Under the hood it uses a tool called <a href="https://github.com/acss-io/atomizer" rel="nofollow">Atomizer</a> to generate these classes. This article describes how to use ACSS in a Nuxt app using the <a href="https://github.com/dword-design/nuxt-atomizer" rel="nofollow">nuxt-atomizer</a> module.</p><h2 id="using-the-nuxt-atomizer-module"><a aria-hidden="true" tabindex="-1" href="#using-the-nuxt-atomizer-module"><span class="hash-link"></span></a>Using the nuxt-atomizer module</h2><p>Basic usage of the module does not require configuration. We can just add it to our module list. Let's install the module by running <code class="">npm install nuxt-atomizer</code>. Then we add it to our <code class="">nuxt.config.js</code>:</p><pre class="language-js" code="export default {
+  modules: [
+    &#x27;nuxt-atomizer&#x27;,
+  },
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    'nuxt-atomizer',
+  },
+}
+</code></pre><p>The great thing about Nuxt modules is that they can abstract away a lot of logic. The whole class generation takes place inside the module, so that we can start adding classes right away 🚀.</p><p>Let's create a template and add atomic classes:</p><pre class="language-html" code="<template>
+  <div class=&#x22;P(2rem) Bgc(#fafafa) C(#111) Bd Bdw(2px) Bdc(#ccc) Bdrs(.5rem) Ff(ss)&#x22;>
+    Hey there, I&#x27;m styled with ACSS! 🙌
+  </div>
+</template>
+" language="html" meta=""><code __ignoreMap="">&#x3C;template>
+  &#x3C;div class="P(2rem) Bgc(#fafafa) C(#111) Bd Bdw(2px) Bdc(#ccc) Bdrs(.5rem) Ff(ss)">
+    Hey there, I'm styled with ACSS! 🙌
+  &#x3C;/div>
+&#x3C;/template>
+</code></pre><p>That's it, the result is shown below. Feel free to experiment with the CodeSandbox. Also, check out the docs for further configuration.</p><iframe src="https://codesandbox.io/embed/demo-nuxt-atomizer-k8cky?fontsize=14&#x26;hidenavigation=1&#x26;theme=dark&#x26;view=preview" style="width:100%; height:500px; border-right:1px solid #000; border-radius: 4px; overflow:hidden;" title="demo-nuxt-atomizer" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>This article showed how to use ACSS in a Nuxt app. I hope it's of some use for you! If you like the module, feel free to leave a star at <a href="https://github.com/dword-design/nuxt-atomizer" rel="nofollow">star at GitHub</a> 🌟. Thanks for reading!</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Creating an RSS Feed from Nuxt Content with Full Body HTML]]>
+      </title>
+      <link>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</link>
+      <guid>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</guid>
+      <pubDate>Sat, 17 Jul 2021 22:31:24 GMT</pubDate>
+      <description>
+        <![CDATA[There is already an official doc article about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the whole article right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple drop-in module.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/banner.png"></p>
+<p>There is already <a href="https://content.nuxtjs.org/integrations/#nuxtjsfeed" rel="nofollow">an official doc article</a> about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the <strong>whole article</strong> right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple <strong>drop-in module</strong>.</p><h2 id="the-problem-with-html-code-outside-the-nuxt-content-component"><a aria-hidden="true" tabindex="-1" href="#the-problem-with-html-code-outside-the-nuxt-content-component"><span class="hash-link"></span></a>The problem with HTML code outside the nuxt-content component</h2><p>Nuxt Content is a great static CMS that makes it incredibly easy to setup a performant Markdown-based blog without the need to add loads of third party services.</p><p>The heart of the system is the <code class="">nuxt-content</code> component. This component gets the Markdown document that should be rendered, and then applies big magic to make a beautiful blog page out of it 😊.</p><pre class="language-html" code="<template>
+  <nuxt-content :document=&#x22;post&#x22; />
+</template>
+" language="html" meta=""><code __ignoreMap="">&#x3C;template>
+  &#x3C;nuxt-content :document="post" />
+&#x3C;/template>
+</code></pre><p>So far so good. As long as you use Nuxt Content for rendering, there's not much to think about. But as soon as you want to access and work with the <strong>actual generated HTML code</strong>, you won't find any field in the documents containing the raw HTML code.</p><p>Reason is that the component internally generates a <strong>JSON object</strong>, which is then turned into VDOM nodes. So it's made for being rendered by Vue.js. There is no native way of letting the Markdown pipeline run somewhere else and working with the HTML code. But this is what we need, since we want to put the article text with markup inside our RSS feed!</p><h2 id="use-nuxt-content-body-html-to-abstract-it-out"><a aria-hidden="true" tabindex="-1" href="#use-nuxt-content-body-html-to-abstract-it-out"><span class="hash-link"></span></a>Use nuxt-content-body-html to abstract it out</h2><p>I built <a href="https://github.com/dword-design/nuxt-content-body-html" rel="nofollow">nuxt-content-body-html</a>, which basically adds a <code class="">bodyHtml</code> field to all markdown documents. It reproduces the Nuxt Content Markdown pipeline to generate it and also uses the Remark and Rehype plugins from the module config, so it outputs the same HTML as the component. The good thing is, we can just drop it in and abstracts away the logic of generating the HTML code, so that we can concentrate on the feed creation.</p><p>Let's install the module by running <code class="">npm install nuxt-content-body-html</code>. Then we add it to our <code class="">nuxt.config.js</code>:</p><pre class="language-js" code="export default {
+  modules: [
+    &#x27;nuxt-content-body-html&#x27;,
+    &#x27;@nuxt/content&#x27;,
+  },
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    'nuxt-content-body-html',
+    '@nuxt/content',
+  },
+}
+</code></pre><p>Great! To test, you can check <code class="">post.bodyHtml</code> on a blog page and it should contain the HTML code.</p><p>Now we can adjust the feed creation to actually use the field. You have probably used a way similar to <a href="https://content.nuxtjs.org/integrations/#nuxtjsfeed" rel="nofollow">the Nuxt Content docs</a> to setup your feed. Here is a reduced example of a single RSS feed configuration:</p><pre class="language-js" code="export default {
+  modules: [
+    &#x27;nuxt-content-body-html&#x27;,
+    &#x27;@nuxt/content&#x27;,
+    &#x27;@nuxtjs/feed&#x27;,
+  ],
+  feed: [
+    {
+      create: async feed => {
+        const $content = require(&#x27;@nuxt/content&#x27;).$content
+        feed.options = {
+          title: &#x27;My Blog&#x27;,
+          link: &#x27;https://me.com/blog&#x27;,
+          description: &#x22;It&#x27;s all about programming!&#x22;,
+        }
+
+        const posts = await $content(&#x27;posts&#x27;)
+          .sortBy(&#x27;createdAt&#x27;, &#x27;desc&#x27;)
+          .fetch()
+        posts.forEach(post => {
+          const url = &#x60;https://me.com/blog/${post.slug}&#x60;
+          feed.addItem({
+            author: post.authors,
+            content: post.bodyHtml,
+            date: new Date(post.createdAt),
+            description: post.description,
+            id: url,
+            link: url,
+            title: post.title,
+          })
+        })
+      },
+      path: &#x27;/feed&#x27;,
+      type: &#x27;rss2&#x27;,
+    },
+  ],
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    'nuxt-content-body-html',
+    '@nuxt/content',
+    '@nuxtjs/feed',
+  ],
+  feed: [
+    {
+      create: async feed => {
+        const $content = require('@nuxt/content').$content
+        feed.options = {
+          title: 'My Blog',
+          link: 'https://me.com/blog',
+          description: "It's all about programming!",
+        }
+
+        const posts = await $content('posts')
+          .sortBy('createdAt', 'desc')
+          .fetch()
+        posts.forEach(post => {
+          const url = `https://me.com/blog/${post.slug}`
+          feed.addItem({
+            author: post.authors,
+            content: post.bodyHtml,
+            date: new Date(post.createdAt),
+            description: post.description,
+            id: url,
+            link: url,
+            title: post.title,
+          })
+        })
+      },
+      path: '/feed',
+      type: 'rss2',
+    },
+  ],
+}
+</code></pre><p>That's it, now you should have a feed with full HTML content! I recommend <a href="https://inoreader.com/" rel="nofollow">Inoreader</a> to test it, you can reload the articles with the little reload button and you should then see changes. Below you can see an example of an article shown in Inoreader:</p><p><img alt="Article in Inoreader" src="http://dword-design.test/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/post.jpg"></p><h2 id="bonus-tip-add-a-teaser-image-at-the-very-top"><a aria-hidden="true" tabindex="-1" href="#bonus-tip-add-a-teaser-image-at-the-very-top"><span class="hash-link"></span></a>Bonus tip: Add a teaser image at the very top</h2><p>Feed readers can not only display the contents of an article, they often also show the first image as a teaser image in the article list. That's a great thing for readers to get a first impression of the article's content! Simply add an image at the very top and you're good to go. Adjust the feed creation like so:</p><pre class="language-js" code="// images at static/blog/<slug>/banner.png
+
+posts.forEach(post => {
+  const url = &#x60;https://me.com/blog/${post.slug}&#x60;
+  feed.addItem({
+    // ...
+    content: &#x60;
+      <p>
+        <img
+          alt=&#x22;Cover image&#x22;
+          src=&#x22;https://me.com/blog/${post.slug}/teaser.png&#x22;
+        >
+      </p>
+      ${post.bodyHtml}
+    &#x60;,
+  })
+})
+" language="js" meta=""><code __ignoreMap="">// images at static/blog/&#x3C;slug>/banner.png
+
+posts.forEach(post => {
+  const url = `https://me.com/blog/${post.slug}`
+  feed.addItem({
+    // ...
+    content: `
+      &#x3C;p>
+        &#x3C;img
+          alt="Cover image"
+          src="https://me.com/blog/${post.slug}/teaser.png"
+        >
+      &#x3C;/p>
+      ${post.bodyHtml}
+    `,
+  })
+})
+</code></pre><p>Here is the result in Inoreader:</p><p><img alt="Article in Inoreader" src="http://dword-design.test/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/post-with-image.jpg"></p><p>And the resulting teaser view:</p><p><img alt="Teaser view in Inoreader" src="http://dword-design.test/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code/teaser-view.jpg"></p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>This article was about RSS feeds with Nuxt Content containing full HTML. <a href="https://github.com/dword-design/nuxt-content-body-html" rel="nofollow">nuxt-content-body-html</a> is a quick and easy solution to add a <code class="">bodyHtml</code> field to documents that can be used in the feed creation function. I hope it's of some use for you! If you like it, feel free to leave a star at <a href="https://github.com/dword-design/nuxt-content-body-html" rel="nofollow">star at GitHub</a> 🌟. Thanks for reading!</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Generating Beautiful Flowchart Diagrams With Mermaid and Vue/Nuxt]]>
+      </title>
+      <link>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</link>
+      <guid>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</guid>
+      <pubDate>Tue, 29 Jun 2021 16:06:44 GMT</pubDate>
+      <description>
+        <![CDATA[Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using vue-mermaid-string and nuxt-mermaid-string. They both help to integrate the wonderful Mermaid library into your Vue-based projects.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt/banner.png"></p>
+<p>Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using <a href="https://github.com/dword-design/vue-mermaid-string" rel="nofollow">vue-mermaid-string</a> and <a href="https://github.com/dword-design/nuxt-mermaid-string" rel="nofollow">nuxt-mermaid-string</a>. They both help to integrate the wonderful <a href="https://mermaid-js.github.io/" rel="nofollow">Mermaid</a> library into your Vue-based projects.</p><h2 id="setup"><a aria-hidden="true" tabindex="-1" href="#setup"><span class="hash-link"></span></a>Setup</h2><p>Alright, let's stick to Vue for now and see later how it works for Nuxt. First we need to install the component.</p><p>There are several ways to add the component to your project. The quickest solution is via CDN like this:</p><pre class="language-html" code="<script src=&#x22;https://unpkg.com/vue&#x22;></script>
+<script src=&#x22;https://unpkg.com/mermaid/dist/mermaid.min.js&#x22;></script>
+<script src=&#x22;https://unpkg.com/vue-mermaid-string&#x22;></script>
+" language="html" meta=""><code __ignoreMap="">&#x3C;script src="https://unpkg.com/vue">&#x3C;/script>
+&#x3C;script src="https://unpkg.com/mermaid/dist/mermaid.min.js">&#x3C;/script>
+&#x3C;script src="https://unpkg.com/vue-mermaid-string">&#x3C;/script>
+</code></pre><p>Note that you also need to add <code class="">mermaid</code> itself.</p><p>Alternatively, install it via a package manager:</p><pre class="language-bash" code="$ npm install vue-mermaid-string
+" language="bash" meta=""><code __ignoreMap="">$ npm install vue-mermaid-string
+</code></pre><p>And register the component. You can do it locally:</p><pre class="language-js" code="<script>
+import VueMermaidString from &#x27;vue-mermaid-string&#x27;
+
+export default {
+  components: {
+    VueMermaidString,
+  },
+}
+</script>
+" language="js" meta=""><code __ignoreMap="">&#x3C;script>
+import VueMermaidString from 'vue-mermaid-string'
+
+export default {
+  components: {
+    VueMermaidString,
+  },
+}
+&#x3C;/script>
+</code></pre><p>Globally:</p><pre class="language-js" code="import Vue from &#x27;vue&#x27;
+import VueMermaidString from &#x27;vue-mermaid-string&#x27;
+
+Vue.component(&#x27;VueMermaidString&#x27;, VueMermaidString)
+" language="js" meta=""><code __ignoreMap="">import Vue from 'vue'
+import VueMermaidString from 'vue-mermaid-string'
+
+Vue.component('VueMermaidString', VueMermaidString)
+</code></pre><p>Or as a plugin:</p><pre class="language-js" code="import Vue from &#x27;vue&#x27;
+import VueMermaidString from &#x27;vue-mermaid-string&#x27;
+
+Vue.use(VueMermaidString)
+" language="js" meta=""><code __ignoreMap="">import Vue from 'vue'
+import VueMermaidString from 'vue-mermaid-string'
+
+Vue.use(VueMermaidString)
+</code></pre><h2 id="lets-draw-some-serious-stuff"><a aria-hidden="true" tabindex="-1" href="#lets-draw-some-serious-stuff"><span class="hash-link"></span></a>Let's draw some serious stuff</h2><p>Alright, now let's start drawing a diagram! Since probably most of the readers are JavaScript fans, we create a little tech tree for demonstration purposes 😊.</p><p>Here is the code needed to display the diagram. We also add <a href="https://github.com/indentjs/endent" rel="nofollow">endent</a> to make life easier with multi-line strings.</p><pre class="language-html" code="<template>
+  <div id=&#x22;app&#x22;>
+    <vue-mermaid-string :value=&#x22;diagram&#x22; />
+  </div>
+</template>
+" language="html" meta=""><code __ignoreMap="">&#x3C;template>
+  &#x3C;div id="app">
+    &#x3C;vue-mermaid-string :value="diagram" />
+  &#x3C;/div>
+&#x3C;/template>
+</code></pre><pre class="language-js" code="<script>
+import VueMermaidString from &#x22;vue-mermaid-string&#x22;;
+import endent from &#x22;endent&#x22;;
+
+export default {
+  computed: {
+    diagram: () => endent&#x60;
+      graph TD
+        DateTime[Date and time]
+
+        JavaScript --> Frameworks
+        JavaScript --> DateTime
+        JavaScript --> 3D
+        Frameworks --> Vue.js
+        Frameworks --> React
+        DateTime --> Moment.js
+        DateTime --> date-fns
+        3D --> Three.js
+        3D --> Babylon.js
+    &#x60;,
+  },
+  components: {
+    VueMermaidString,
+  },
+};
+</script>
+" language="js" meta=""><code __ignoreMap="">&#x3C;script>
+import VueMermaidString from "vue-mermaid-string";
+import endent from "endent";
+
+export default {
+  computed: {
+    diagram: () => endent`
+      graph TD
+        DateTime[Date and time]
+
+        JavaScript --> Frameworks
+        JavaScript --> DateTime
+        JavaScript --> 3D
+        Frameworks --> Vue.js
+        Frameworks --> React
+        DateTime --> Moment.js
+        DateTime --> date-fns
+        3D --> Three.js
+        3D --> Babylon.js
+    `,
+  },
+  components: {
+    VueMermaidString,
+  },
+};
+&#x3C;/script>
+</code></pre><p>This results in the following diagram:</p><p><img alt="Diagram with JavaScript frameworks (Vue.js, React), DateTime libraries (Moment.js, date-fns), and 3D libraries (Three.js, Babylon.js)" src="http://dword-design.test/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt/normal.png"></p><p>Great! You can also edit the diagram string (for example the node labels), and it updates the result accordingly.</p><p>As a next step we change the colors for each library type. I've used <a href="https://www.paletton.com/#uid=73+1p0k2O++00++00++7n++be+Z" rel="nofollow">Paletton</a> to generate a tetradic color scheme and applied the colors to the corresponding nodes.</p><p>I've put the result into a sandbox with source code, the result looks like this:</p><p>
+  <iframe src="https://codesandbox.io/embed/demo-vue-mermaid-string-e2sp4?codemirror=1&#x26;fontsize=14&#x26;hidenavigation=1&#x26;theme=dark&#x26;view=preview" style="width:100%; height:500px; border-right:1px solid #000; border-radius: 4px; overflow:hidden;" title="demo-vue-mermaid-string" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
+  </iframe></p><p>Feel free to play around with the sandbox and try out different Mermaid strings!</p><h2 id="usage-with-nuxt"><a aria-hidden="true" tabindex="-1" href="#usage-with-nuxt"><span class="hash-link"></span></a>Usage with Nuxt</h2><p>If you are a Nuxt user, it is probably more convenient to add a module to your project and then have everything available right away. There is <a href="https://github.com/dword-design/nuxt-mermaid-string" rel="nofollow">nuxt-mermaid-string</a>, which basically wraps the vue component.</p><p>Simply install it via <code class="">npm install nuxt-mermaid-string</code>.</p><p>Then add it to your <code class="">nuxt.config.js</code> like this:</p><pre class="language-js" code="export default {
+  modules: [&#x27;nuxt-mermaid-string&#x27;],
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: ['nuxt-mermaid-string'],
+}
+</code></pre><p>And there we go. The rest works like above!</p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>In this article we had a look at diagram generation in Vue and Nuxt apps. I hope you liked it and it's of some use for you!</p><p>You help me know if people like the packages by leaving a GitHub star at <a href="https://github.com/dword-design/vue-mermaid-string" rel="nofollow">vue-mermaid-string</a> and/or <a href="https://github.com/dword-design/vue-mermaid-string" rel="nofollow">nuxt-mermaid-string</a> 🌟.</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[How to Access Nuxt.js Page Data in Route Meta Fields]]>
+      </title>
+      <link>http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</link>
+      <guid>http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</guid>
+      <pubDate>Thu, 13 May 2021 13:08:54 GMT</pubDate>
+      <description>
+        <![CDATA[Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields/banner.png"></p>
+<p>Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.</p><p>Nuxt pages allow you to define structural data like the <a href="https://github.com/nuxt/nuxt.js/issues/1687" rel="nofollow">meta</a> property or the <a href="https://auth.nuxtjs.org/guide/middleware" rel="nofollow">auth property from @nuxtjs/auth</a> (note that they should not be confused with <a href="https://nuxtjs.org/docs/2.x/features/meta-tags-seo" rel="nofollow">meta tags</a>). It would be great to be able to access them elsewhere. The route object can be accessed at quite a lot of places:</p><ul><li><code class="">context.route</code> in <code class="">asyncData</code></li><li><code class="">this.$route.meta</code> in components</li><li><code class="">this.extendRoutes</code> in modules</li><li><code class="">context.route</code> in Middlewares</li></ul><p>I did some testing and found out that the only possibility to access page data outside pages is in <code class="">asyncData</code> and middlewares, as discussed in <a href="https://github.com/nuxt/nuxt.js/issues/1687" rel="nofollow">this issue</a>. All other places do not work and have empty <code class="">meta</code> objects. Also, the case discussed in the linked issue adds a <code class="">meta</code> property in the route object itself, not in the <code class="">matched</code> array, as it is in vue-router (see the <a href="https://router.vuejs.org/guide/advanced/meta.html" rel="nofollow">example from vue-router</a>).</p><p>Alright, that's the current state. Now, how can we fix it and add page data to route objects?</p><h2 id="nuxt-route-meta"><a aria-hidden="true" tabindex="-1" href="#nuxt-route-meta"><span class="hash-link"></span></a>nuxt-route-meta</h2><p>I wrote the <a href="https://github.com/dword-design/nuxt-route-meta" rel="nofollow">nuxt-route-meta</a> module that does it by parsing the page components at build time and adding the data to the routes via <code class="">this.extendRoutes</code>. It's a zero config module, so you can just add it to your <code class="">nuxt.config.js</code> and it works out of the box.</p><p>First, install it via <code class="">npm install nuxt-route-meta</code>.</p><p>Then add it to your <code class="">nuxt.config.js</code>:</p><pre class="language-js" code="// nuxt.config.js
+
+export default {
+  modules: [&#x27;nuxt-route-meta&#x27;],
+}
+" language="js" meta=""><code __ignoreMap="">// nuxt.config.js
+
+export default {
+  modules: ['nuxt-route-meta'],
+}
+</code></pre><p>Now let's create a page with some data like so:</p><pre class="language-js" code="// pages/index.vue
+
+export default {
+  auth: true,
+  meta: {
+    theme: &#x27;light&#x27;,
+  },
+}
+" language="js" meta=""><code __ignoreMap="">// pages/index.vue
+
+export default {
+  auth: true,
+  meta: {
+    theme: 'light',
+  },
+}
+</code></pre><p>We are already done with the configuration! Let's go through the cases discussed above:</p><p><strong>asyncData</strong>:</p><pre class="language-js" code="// pages/index.vue
+
+export default {
+  auth: true,
+  meta: {
+    theme: &#x27;light&#x27;,
+  },
+  asyncData({ route }) {
+    // route.matched[0].meta.auth = true
+    // route.matched[0].meta.theme = &#x27;light&#x27;
+  }
+}
+" language="js" meta=""><code __ignoreMap="">// pages/index.vue
+
+export default {
+  auth: true,
+  meta: {
+    theme: 'light',
+  },
+  asyncData({ route }) {
+    // route.matched[0].meta.auth = true
+    // route.matched[0].meta.theme = 'light'
+  }
+}
+</code></pre><p><strong>this.$route.meta</strong>:</p><pre class="language-js" code="// pages/index.vue
+
+export default {
+  auth: true,
+  meta: {
+    theme: &#x27;light&#x27;,
+  },
+  mouted() {
+    // this.$route.meta.auth = true
+    // this.$route.meta.theme = &#x27;light&#x27;
+  },
+}
+" language="js" meta=""><code __ignoreMap="">// pages/index.vue
+
+export default {
+  auth: true,
+  meta: {
+    theme: 'light',
+  },
+  mouted() {
+    // this.$route.meta.auth = true
+    // this.$route.meta.theme = 'light'
+  },
+}
+</code></pre><p><strong>this.extendRoutes</strong>:</p><pre class="language-js" code="// modules/module.js
+
+export default function () {
+  this.extendRoutes(routes =>
+    routes.forEach(route => {
+      // route.meta.auth = true
+      // route.meta.theme = &#x27;light&#x27;
+    })
+  )
+}
+" language="js" meta=""><code __ignoreMap="">// modules/module.js
+
+export default function () {
+  this.extendRoutes(routes =>
+    routes.forEach(route => {
+      // route.meta.auth = true
+      // route.meta.theme = 'light'
+    })
+  )
+}
+</code></pre><p><strong>Middlewares</strong>:</p><pre class="language-js" code="// middleware/middleware.js
+
+export default ({ route }) => {
+  // route.matched[0].meta.auth = true
+  // route.matched[0].meta.theme = &#x27;light&#x27;
+}
+" language="js" meta=""><code __ignoreMap="">// middleware/middleware.js
+
+export default ({ route }) => {
+  // route.matched[0].meta.auth = true
+  // route.matched[0].meta.theme = 'light'
+}
+</code></pre><p>As we can see, we can access the page data everywhere now! That's it already on how to use the module.</p><h2 id="generating-a-sitemap-with-non-auth-routes"><a aria-hidden="true" tabindex="-1" href="#generating-a-sitemap-with-non-auth-routes"><span class="hash-link"></span></a>Generating a sitemap with non-auth routes</h2><p>A common use case of accessing page data is sitemap generation, especially conditionally adding entries to the sitemap. We will now configure <code class="">@nuxtjs/sitemap</code> to only add non-auth routes. So let's add the sitemap module via <code class="">npm install @nuxtjs/sitemap</code> and add it to our config:</p><pre class="language-js" code="// nuxt.config.js
+
+export default {
+  modules: [
+    &#x27;nuxt-route-meta&#x27;,
+    &#x27;@nuxtjs/sitemap&#x27;,
+  ],
+}
+" language="js" meta=""><code __ignoreMap="">// nuxt.config.js
+
+export default {
+  modules: [
+    'nuxt-route-meta',
+    '@nuxtjs/sitemap',
+  ],
+}
+</code></pre><p>Filtering the routes is easy now because we only have to check the meta property:</p><pre class="language-js" code="// nuxt.config.js
+
+export default {
+  modules: [
+    &#x27;nuxt-route-meta&#x27;
+  ],
+  [&#x27;@nuxtjs/sitemap&#x27;, {
+    filter: ({ routes }) =>
+      routes
+        .filter(route => [false, &#x27;guest&#x27;].includes(route.meta.auth)),
+  }],
+}
+" language="js" meta=""><code __ignoreMap="">// nuxt.config.js
+
+export default {
+  modules: [
+    'nuxt-route-meta'
+  ],
+  ['@nuxtjs/sitemap', {
+    filter: ({ routes }) =>
+      routes
+        .filter(route => [false, 'guest'].includes(route.meta.auth)),
+  }],
+}
+</code></pre><p>And that's it, if you check <code class="">/sitemap.xml</code>, you should only see non-auth routes!</p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>That was an introduction to <a href="https://github.com/dword-design/nuxt-route-meta" rel="nofollow">nuxt-route-meta</a>. I hope it's of some use for you! If you like it, feel free to leave a star at <a href="https://github.com/dword-design/nuxt-route-meta" rel="nofollow">star at GitHub</a> 🌟. Also, the module probably needs some more work, so in case you need something or there is a bug, <a href="https://github.com/dword-design/nuxt-route-meta/issues" rel="nofollow">file an issue</a>. Thanks for reading!</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[How to Write File-Based JavaScript Tests With Real Files]]>
+      </title>
+      <link>http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</link>
+      <guid>http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</guid>
+      <pubDate>Wed, 21 Apr 2021 10:33:23 GMT</pubDate>
+      <description>
+        <![CDATA[Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files/banner.png"></p>
+<p>Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.</p><p>A lot of my past projects in some way had to do with file access. I started to test with mocking libraries like <a href="https://github.com/tschaub/mock-fs" rel="nofollow">mock-fs</a>, but soon recognized that they do not work for all cases, and sometimes you are using third party libraries internally that you cannot mock easily. So I thought of a different solution and the one I'm using right now for most projects actually uses real files.</p><h2 id="with-local-tmp-dir-and-output-files"><a aria-hidden="true" tabindex="-1" href="#with-local-tmp-dir-and-output-files"><span class="hash-link"></span></a>with-local-tmp-dir and output-files</h2><p>Why not use real files for testing instead of mocking? I built an NPM package called <a href="https://github.com/dword-design/with-local-tmp-dir" rel="nofollow">with-local-tmp-dir</a> that basically creates a temporary subfolder inside cwd, <code class="">cd</code>s into it, runs a function, and <code class="">cd</code>s back to the previous cwd afterwards. In this function you can create files and pretty much anything, run your unit under test. Afterwards the folder is removed and everything is cleaned up. You actually do not solely need to use it for tests, you can use it anywhere, but it's mostly useful for tests.</p><p>I also wrote another helper package <a href="https://github.com/dword-design/output-files" rel="nofollow">output-files</a> that creates a whole file tree at once by passing an object. It's much easier than writing a lot of <code class="">fs.writeFile</code> calls to create many files.</p><h2 id="lets-test-a-scaffolding-tool"><a aria-hidden="true" tabindex="-1" href="#lets-test-a-scaffolding-tool"><span class="hash-link"></span></a>Let's test a scaffolding tool!</h2><p>Alright, let's dive into it! First of all you need a testing framework. I'm going to use <a href="https://github.com/mochajs/mocha" rel="nofollow">Mocha</a> here, but you can also use <a href="https://github.com/facebook/jest" rel="nofollow">Jest</a> or any other framework of your choice. I'm also using <a href="https://github.com/mjackson/expect" rel="nofollow">expect</a> for assertions. After that, we'll install some packages that we need to write our tests:</p><ul><li><a href="https://github.com/dword-design/with-local-tmp-dir" rel="nofollow">with-local-tmp-dir</a> to create our temporary testing folder.</li><li><a href="https://github.com/dword-design/output-files" rel="nofollow">output-files</a> to create multiple files at once.</li><li><a href="https://github.com/jprichardson/node-fs-extra" rel="nofollow">fs-extra</a> to read files after running the scaffolding tool.</li><li><a href="https://github.com/zhouhanseng/endent" rel="nofollow">endent</a> to declare multi-line strings.</li></ul><pre class="language-bash" code="$ npm install --save-dev with-local-tmp-dir output-files fs-extra endent
+" language="bash" meta=""><code __ignoreMap="">$ npm install --save-dev with-local-tmp-dir output-files fs-extra endent
+</code></pre><p>We are going to test a small scaffolding tool that writes config files to disk. If a file already exists, it is not overwritten. Otherwise a default file is created. It's actually not important how it works but how we test it 😀.</p><h2 id="writing-our-first-test"><a aria-hidden="true" tabindex="-1" href="#writing-our-first-test"><span class="hash-link"></span></a>Writing our first test</h2><p>Let's add a test file:</p><pre class="language-js" code="// index.spec.js
+
+const withLocalTmpDir = require(&#x27;with-local-tmp-dir&#x27;)
+const endent = require(&#x27;endent&#x27;)
+const expect = require(&#x27;expect&#x27;)
+const fs = require(&#x27;fs-extra&#x27;)
+
+const scaffold = require(&#x27;.&#x27;)
+
+it(&#x27;no existing files&#x27;, () => withLocalTmpDir(async () => {
+  await scaffold()
+  expect(await fs.readFile(&#x27;README.md&#x27;, &#x27;utf8&#x27;))
+    .toEqual(endent&#x60;
+      ## Package
+
+      This is a test package.
+    &#x60;)
+  expect(await fs.readFile(&#x27;.configrc.json&#x27;, &#x27;utf8&#x27;))
+    .toEqual(endent&#x60;
+      {
+        &#x22;name&#x22;: &#x22;Package&#x22;
+      }
+    &#x60;)
+}))
+" language="js" meta=""><code __ignoreMap="">// index.spec.js
+
+const withLocalTmpDir = require('with-local-tmp-dir')
+const endent = require('endent')
+const expect = require('expect')
+const fs = require('fs-extra')
+
+const scaffold = require('.')
+
+it('no existing files', () => withLocalTmpDir(async () => {
+  await scaffold()
+  expect(await fs.readFile('README.md', 'utf8'))
+    .toEqual(endent`
+      ## Package
+
+      This is a test package.
+    `)
+  expect(await fs.readFile('.configrc.json', 'utf8'))
+    .toEqual(endent`
+      {
+        "name": "Package"
+      }
+    `)
+}))
+</code></pre><p>And we can run our test via:</p><pre class="language-bash" code="$ mocha index.spec.js
+" language="bash" meta=""><code __ignoreMap="">$ mocha index.spec.js
+</code></pre><p>Pretty neat already, we have tested if the scaffolding tool creates a <code class="">README.md</code> and a <code class="">.configrc.json</code> file and checks if the contents are correct!</p><h2 id="writing-files-beforehand"><a aria-hidden="true" tabindex="-1" href="#writing-files-beforehand"><span class="hash-link"></span></a>Writing files beforehand</h2><p>Let's add another test that checks if the files are preserved if they are already existing. We are going to use <code class="">output-files</code> to write those files.</p><pre class="language-js" code="// index.spec.js
+
+const withLocalTmpDir = require(&#x27;with-local-tmp-dir&#x27;)
+const outputFiles = require(&#x27;output-files&#x27;)
+const endent = require(&#x27;endent&#x27;)
+const expect = require(&#x27;expect&#x27;)
+const fs = require(&#x27;fs-extra&#x27;)
+
+const scaffold = require(&#x27;.&#x27;)
+
+it(&#x27;existing files&#x27;, () => withLocalTmpDir(async () => {
+  await outputFiles({
+    &#x27;README.md&#x27;: endent&#x60;
+      ## My Package
+
+      Here is how to use this package.
+    &#x60;,
+    &#x27;.configrc.json&#x27;: endent&#x60;
+      {
+        &#x22;name&#x22;: &#x22;My Package&#x22;
+      }
+    &#x60;
+  })
+  await scaffold()
+  expect(await fs.readFile(&#x27;README.md&#x27;, &#x27;utf8&#x27;))
+    .toEqual(endent&#x60;
+      ## My Package
+
+      Here is how to use this package.
+    &#x60;)
+  expect(await fs.readFile(&#x27;.configrc.json&#x27;, &#x27;utf8&#x27;))
+    .toEqual(endent&#x60;
+      {
+        &#x22;name&#x22;: &#x22;My Package&#x22;
+      }
+    &#x60;)
+}))
+" language="js" meta=""><code __ignoreMap="">// index.spec.js
+
+const withLocalTmpDir = require('with-local-tmp-dir')
+const outputFiles = require('output-files')
+const endent = require('endent')
+const expect = require('expect')
+const fs = require('fs-extra')
+
+const scaffold = require('.')
+
+it('existing files', () => withLocalTmpDir(async () => {
+  await outputFiles({
+    'README.md': endent`
+      ## My Package
+
+      Here is how to use this package.
+    `,
+    '.configrc.json': endent`
+      {
+        "name": "My Package"
+      }
+    `
+  })
+  await scaffold()
+  expect(await fs.readFile('README.md', 'utf8'))
+    .toEqual(endent`
+      ## My Package
+
+      Here is how to use this package.
+    `)
+  expect(await fs.readFile('.configrc.json', 'utf8'))
+    .toEqual(endent`
+      {
+        "name": "My Package"
+      }
+    `)
+}))
+</code></pre><p>Great, that's already most of the work! Of course you can go into detail now and write more tests, but technically that's all it needs. You see, writing file-based tests with these packages is not a lot of more work than without them and you can use real files for your tests 🚀.</p><h2 id="writing-git-based-tests"><a aria-hidden="true" tabindex="-1" href="#writing-git-based-tests"><span class="hash-link"></span></a>Writing Git-based tests</h2><p>The test setup actually opens up another door: Using Git repositories for tests! I know this sounds a bit scary at first, but now that we can write files to disk for our tests, why not <code class="">git init</code> a git repository?</p><p>Let's assume that our scaffolding tool makes use of the currently checked out Git repository and puts the origin URL into the <code class="">.configrc.json</code> file. Now we can test if this works by actually instantiating a Git repository in our testing folder. We need another package for running child processes, run <code class="">npm install --save-dev execa</code>.</p><pre class="language-js" code="// index.spec.js
+
+const withLocalTmpDir = require(&#x27;with-local-tmp-dir&#x27;)
+const endent = require(&#x27;endent&#x27;)
+const expect = require(&#x27;expect&#x27;)
+const fs = require(&#x27;fs-extra&#x27;)
+const execa = require(&#x27;execa&#x27;)
+
+const scaffold = require(&#x27;.&#x27;)
+
+it(&#x27;uses repository url&#x27;, () => withLocalTmpDir(async () => {
+  await execa.command(&#x27;git init&#x27;)
+  await execa.command(&#x27;git config user.email &#x22;foo@bar.de&#x22;&#x27;)
+  await execa.command(&#x27;git config user.name &#x22;foo&#x22;&#x27;)
+  await execa.command(&#x27;git remote add origin git@github.com:foo/bar.git&#x27;)
+  await scaffold()
+  expect(await fs.readFile(&#x27;README.md&#x27;, &#x27;utf8&#x27;))
+    .toEqual(endent&#x60;
+      ## Package
+
+      This is a test package.
+    &#x60;)
+  expect(await fs.readFile(&#x27;.configrc.json&#x27;, &#x27;utf8&#x27;))
+    .toEqual(endent&#x60;
+      {
+        &#x22;name&#x22;: &#x22;Package&#x22;,
+        &#x22;repo&#x22;: &#x22;git@github.com:foo/bar.git&#x22;
+      }
+    &#x60;)
+}))
+" language="js" meta=""><code __ignoreMap="">// index.spec.js
+
+const withLocalTmpDir = require('with-local-tmp-dir')
+const endent = require('endent')
+const expect = require('expect')
+const fs = require('fs-extra')
+const execa = require('execa')
+
+const scaffold = require('.')
+
+it('uses repository url', () => withLocalTmpDir(async () => {
+  await execa.command('git init')
+  await execa.command('git config user.email "foo@bar.de"')
+  await execa.command('git config user.name "foo"')
+  await execa.command('git remote add origin git@github.com:foo/bar.git')
+  await scaffold()
+  expect(await fs.readFile('README.md', 'utf8'))
+    .toEqual(endent`
+      ## Package
+
+      This is a test package.
+    `)
+  expect(await fs.readFile('.configrc.json', 'utf8'))
+    .toEqual(endent`
+      {
+        "name": "Package",
+        "repo": "git@github.com:foo/bar.git"
+      }
+    `)
+}))
+</code></pre><p>Be cautious though, if the repository is not initialized correctly, user user Git config might be overridden.</p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>You see there are plenty of possibilities! 🥳 What do you think about this? Let me know in the comments! Also, if you like <a href="https://github.com/dword-design/with-local-tmp-dir" rel="nofollow">with-local-tmp-dir</a> and <a href="https://github.com/dword-design/output-files" rel="nofollow">output-files</a>, give it a star on GitHub 🌟.</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[@nuxt/content: How to Keep createdAt and updatedAt Valid After Cloning]]>
+      </title>
+      <link>http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</link>
+      <guid>http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</guid>
+      <pubDate>Tue, 13 Apr 2021 22:45:06 GMT</pubDate>
+      <description>
+        <![CDATA[I recently tried out @nuxt/content, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning/banner.png"></p>
+<p>I recently tried out <a href="https://github.com/nuxt/content" rel="nofollow">@nuxt/content</a>, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.</p><p>One thing I noticed when deploying the project to my server was that the <code class="">createdAt</code> and <code class="">updatedAt</code> fields were always reset and didn't reflect the actual dates. The reason for this is that Git does not keep file metadata. This means that the timestamps that <code class="">@nuxt/content</code> relies on are of no use.</p><h2 id="git-to-the-rescue"><a aria-hidden="true" tabindex="-1" href="#git-to-the-rescue"><span class="hash-link"></span></a>Git to the rescue!</h2><p>One way to fix this is not to use the file stats, but instead use the Git history for this. Special thanks to <a href="http://andrewkreuzer.ca/" rel="nofollow">Andrew Kreuzer</a> for the initial idea. We check the history for each file and take the earliest commit date as <code class="">createdAt</code> and the latest as <code class="">updatedAt</code>.</p><p>Requirement for this is that Git is installed on the build system and that the history is actually checked out. There will be problems if a shallow clone is made on CI, in this case the cloning has to be configured accordingly.</p><h2 id="using-the-nuxt-content-git-module-to-make-things-easy"><a aria-hidden="true" tabindex="-1" href="#using-the-nuxt-content-git-module-to-make-things-easy"><span class="hash-link"></span></a>Using the nuxt-content-git module to make things easy</h2><p>I created the Nuxt module <a href="https://github.com/dword-design/nuxt-content-git" rel="nofollow">nuxt-content-git</a> to make the setup plug-and-play. You probably do not want to reinvent the wheel in each project.</p><p>Install the module with <code class="">npm install nuxt-content-git</code> and add it to your <code class="">nuxt.config.js</code> like this:</p><pre class="language-js" code="export default {
+  modules: [
+    &#x27;nuxt-content-git&#x27;,
+    &#x27;@nuxt/content&#x27;,
+  ],
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    'nuxt-content-git',
+    '@nuxt/content',
+  ],
+}
+</code></pre><p>Note that it is important to add it <strong>before</strong> <code class="">@nuxt/content</code>, so <code class="">@nuxt/content</code> knows about the hooks that our helper module installs.</p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>That was basically it! The rest works behind the scenes. Your dates should be up to <em>date</em> 😊.</p><p>Let me know if you like this module and leave a <a href="https://github.com/dword-design/nuxt-content-git" rel="nofollow">star at GitHub</a> 🌟.</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Using Modernizr with Nuxt.js to Detect Browser Features]]>
+      </title>
+      <link>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</link>
+      <guid>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</guid>
+      <pubDate>Wed, 10 Mar 2021 13:47:54 GMT</pubDate>
+      <description>
+        <![CDATA[Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features/banner.png"></p>
+<p><a href="https://github.com/Modernizr/Modernizr" rel="nofollow">Modernizr</a> is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.</p><h2 id="using-modernizr-with-nuxtjs"><a aria-hidden="true" tabindex="-1" href="#using-modernizr-with-nuxtjs"><span class="hash-link"></span></a>Using Modernizr with Nuxt.js</h2><p>Modernizr uses a plugin-based architecture, and you have to build the package yourself, depending on the features you need to detect – at least if you are not using Nuxt.js! I have created the <a href="https://github.com/dword-design/nuxt-modernizr" rel="nofollow">nuxt-modernizr</a> module that makes it easy to add Modernizr to your Nuxt.js app. You pass the features as module options, and the module creates a Modernizr build and places it in the <code class="">.nuxt</code> folder. Here is how to configure it:</p><p>First, install the module via <code class="">npm install nuxt-modernizr</code> or <code class="">yarn add nuxt-modernizr</code>.</p><p>Then, in your <code class="">nuxt.config.js</code>, add the module and pass the options that should be passed to Modernizr:</p><pre class="language-js" code="export default {
+  modules: [
+    [&#x27;nuxt-modernizr&#x27;, {
+      &#x27;feature-detects&#x27;: [&#x27;css/scrollbars&#x27;, &#x27;css/overflow-scrolling&#x27;],
+      options: [&#x27;setClasses&#x27;],
+    }],
+  ],
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    ['nuxt-modernizr', {
+      'feature-detects': ['css/scrollbars', 'css/overflow-scrolling'],
+      options: ['setClasses'],
+    }],
+  ],
+}
+</code></pre><p>Check out the <a href="https://modernizr.com/docs/" rel="nofollow">Modernizr documentation</a> for details.</p><p>Now we can use the <code class="">Modernizr</code> variable and the generated CSS classes on the HTML root element to check for browser features. My all-time favorite among browser features is CSS scrollbars, because the support is pretty different between browsers and depending on if they are available, you can adjust container sizes and style them or not.</p><pre class="language-js" code="if (Modernizr.cssscrollbar) {
+  // CSS scrollbar support
+}
+" language="js" meta=""><code __ignoreMap="">if (Modernizr.cssscrollbar) {
+  // CSS scrollbar support
+}
+</code></pre><pre class="language-css" code="html.cssscrollbar {
+  /* CSS scrollbar support */
+}
+" language="css" meta=""><code __ignoreMap="">html.cssscrollbar {
+  /* CSS scrollbar support */
+}
+</code></pre><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>That was already it! Usage is pretty simple. Let me know if you find it useful or if there are any things that you are missing. Also, if you find it useful, leave a <a href="https://github.com/dword-design/nuxt-modernizr" rel="nofollow">GitHub star on the repository</a>.</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Image Snapshot Testing with Mocha]]>
+      </title>
+      <link>http://localhost:3000/blog/image-snapshot-testing-with-mocha</link>
+      <guid>http://localhost:3000/blog/image-snapshot-testing-with-mocha</guid>
+      <pubDate>Tue, 09 Mar 2021 18:53:01 GMT</pubDate>
+      <description>
+        <![CDATA[Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with Mocha.]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/image-snapshot-testing-with-mocha/banner.png"></p>
+<p>Snapshot testing is a testing mechanism that for long has seemed to be exclusive to <a href="https://github.com/facebook/jest" rel="nofollow">Jest</a>. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with <a href="https://github.com/mochajs/mocha" rel="nofollow">Mocha</a>.</p><h2 id="snapshot-testing-with-jest"><a aria-hidden="true" tabindex="-1" href="#snapshot-testing-with-jest"><span class="hash-link"></span></a>Snapshot testing with Jest</h2><p>Snapshot testing itself is a <a href="https://jestjs.io/docs/en/snapshot-testing" rel="nofollow">built-in feature</a> of Jest, and when searching specifically for image snapshots, you'll quickly find <a href="https://github.com/americanexpress/jest-image-snapshot" rel="nofollow">jest-image-snapshot</a>, which does great work comparing and updating image snapshots. It also provides convenience features like a base64 diff output, which allows us to view the diff from a CI environment (since the diff image file cannot be saved or viewed).</p><h2 id="what-about-mocha"><a aria-hidden="true" tabindex="-1" href="#what-about-mocha"><span class="hash-link"></span></a>What about Mocha?</h2><p>While this is all great, what if I'm not using Jest for whatever reason? What if I'm using Mocha?</p><p>For simple snapshot testing, there are some options. For Chai users, there is <a href="https://github.com/monojitb02/mocha-chai-snapshot" rel="nofollow">mocha-chai-snapshot</a>. For expect users, there is <a href="https://github.com/blogfoster/expect-mocha-snapshot" rel="nofollow">expect-mocha-snapshot</a>. It basically wraps the jest snapshot logic by injecting an artificial testing context. Big credit to <a href="https://github.com/alexbeletsky" rel="nofollow">Alexander Beletsky</a> here!</p><p>What was still missing was a package that ports image snapshot testing to Mocha. Since I'm currently using expect as an assertion library, I focused on finding a solution for this one.</p><p>I started to fiddle around with jest-image-snapshot in combination with expect-mocha-snapshot, and it turned out to be way easier than expected to make it Mocha compatible. I put it into its own NPM package, called <a href="https://github.com/dword-design/expect-mocha-image-snapshot" rel="nofollow">expect-mocha-image-snapshot</a>. Usage is pretty similar to Jest, you only have to pass the testing context via <code class="">this</code>. Here is a quick code sample:</p><pre class="language-js" code="import expect from &#x27;expect&#x27;
+import { toMatchImageSnapshot } from &#x27;expect-mocha-image-snapshot&#x27;
+
+expect.extend({ toMatchImageSnapshot })
+
+it(&#x27;works&#x27;, async function () {
+  ...
+  const screenshot = await puppeteer.screenshot()
+  expect(screenshot).toMatchImageSnapshot(this)
+});
+" language="js" meta=""><code __ignoreMap="">import expect from 'expect'
+import { toMatchImageSnapshot } from 'expect-mocha-image-snapshot'
+
+expect.extend({ toMatchImageSnapshot })
+
+it('works', async function () {
+  ...
+  const screenshot = await puppeteer.screenshot()
+  expect(screenshot).toMatchImageSnapshot(this)
+});
+</code></pre><p>You can have a look at the code in case you are interested in how it works. It is pretty straight-forward.</p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>That was my guide to image snapshot testing with Mocha. If you like <a href="https://github.com/dword-design/expect-mocha-image-snapshot" rel="nofollow">expect-mocha-image-snapshot</a>, you can support me by putting a star on GitHub. Also, let me know what you think about it.</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[Sending Emails with Nuxt.js the Easy Way]]>
+      </title>
+      <link>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</link>
+      <guid>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</guid>
+      <pubDate>Sun, 07 Mar 2021 14:43:42 GMT</pubDate>
+      <description>
+        <![CDATA[When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?]]>
+      </description>
+      <content:encoded>
+        <![CDATA[<p><img alt="Cover image" src="http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way/banner.png"></p>
+<p>When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?</p><p>That is why I wrote <a href="https://github.com/dword-design/nuxt-mail" rel="nofollow">nuxt-mail</a>, a Nuxt.js module that adds a <code class="">/mail/send</code> route to the server and injects a <code class="">$mail</code> variable that wraps the API call.</p><h2 id="usage"><a aria-hidden="true" tabindex="-1" href="#usage"><span class="hash-link"></span></a>Usage</h2><p>You start by installing the module and <a href="https://github.com/axios/axios" rel="nofollow">@nuxtjs/axios</a> via <code class="">npm install nuxt-mail @nuxtjs/axios</code> or <code class="">yarn add nuxt-mail @nuxtjs/axios</code>.</p><p><code class="">@nuxtjs/axios</code> is important here because it allows the module to do the REST call.</p><p>Then you add <code class="">@nuxtjs/axios</code> and <code class="">nuxt-mail</code> to your <code class="">nuxt.config.js</code> file. We have to pass the SMPT settings that should internally be used by <code class="">nodemailer</code>. We also configure the recipients here for security reasons. This way, a client cannot send emails to arbitrary recipients from your SMTP server. You can actually preconfigure the messages here in case you always want to give them the same title, from address or something.</p><pre class="language-js" code="export default {
+  modules: [
+    &#x27;@nuxtjs/axios&#x27;,
+    [&#x27;nuxt-mail&#x27;, {
+      message: {
+        to: &#x27;me@gmail.com&#x27;,
+      },
+      smtp: {
+        host: &#x27;smtp.mailtrap.io&#x27;,
+        port: 2525,
+        auth: {
+          user: &#x27;username&#x27;,
+          pass: &#x27;password&#x27;
+        },
+      },
+    }],
+  ],
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'me@gmail.com',
+      },
+      smtp: {
+        host: 'smtp.mailtrap.io',
+        port: 2525,
+        auth: {
+          user: 'username',
+          pass: 'password'
+        },
+      },
+    }],
+  ],
+}
+</code></pre><p>Note that you probably should pass the credentials or the whole config via environment variables (e.g. via <a href="https://github.com/motdotla/dotenv" rel="nofollow">dotenv</a>). Also note that you cannot use this module for static sites (via <code class="">nuxt generate</code>), because the server middleware does not exist.</p><p>And there we go! Now we can implement ourselves a contact form page and send emails:</p><pre class="language-html" code="<template>
+  <form>
+    <label for=&#x22;email&#x22;>Your email address:</label>
+    <input id=&#x22;email&#x22; type=&#x22;email&#x22; v-model=&#x22;email&#x22; />
+    <label for=&#x22;message&#x22;>Message:</label>
+    <textarea id=&#x22;message&#x22; v-model=&#x22;message&#x22; />
+    <button type=&#x22;submit&#x22; @click.prevent=&#x22;send&#x22;>
+      Send email
+    </button>
+  </form>
+</template>
+" language="html" meta=""><code __ignoreMap="">&#x3C;template>
+  &#x3C;form>
+    &#x3C;label for="email">Your email address:&#x3C;/label>
+    &#x3C;input id="email" type="email" v-model="email" />
+    &#x3C;label for="message">Message:&#x3C;/label>
+    &#x3C;textarea id="message" v-model="message" />
+    &#x3C;button type="submit" @click.prevent="send">
+      Send email
+    &#x3C;/button>
+  &#x3C;/form>
+&#x3C;/template>
+</code></pre><p>In the <code class="">&#x3C;script></code> section we basically call <code class="">this.$mail.send()</code>:</p><pre class="language-js" code="<script>
+export default {
+  data: () => ({
+    email: &#x27;&#x27;,
+    message: &#x27;&#x27;,
+  }),
+  methods: {
+    send() {
+      this.$mail.send({
+        from: this.email,
+        subject: &#x27;Contact form message&#x27;,
+        text: this.message,
+      })
+    }
+  }
+}
+</script>
+" language="js" meta=""><code __ignoreMap="">&#x3C;script>
+export default {
+  data: () => ({
+    email: '',
+    message: '',
+  }),
+  methods: {
+    send() {
+      this.$mail.send({
+        from: this.email,
+        subject: 'Contact form message',
+        text: this.message,
+      })
+    }
+  }
+}
+&#x3C;/script>
+</code></pre><p>When you hit the <code class="">Send</code> button now, you should receive an email into your inbox!</p><h2 id="multiple-message-configs"><a aria-hidden="true" tabindex="-1" href="#multiple-message-configs"><span class="hash-link"></span></a>Multiple message configs</h2><p>It is also possible to provide multiple message configurations by changing the <code class="">message</code> config into an array.</p><pre class="language-js" code="export default {
+  modules: [
+    &#x27;@nuxtjs/axios&#x27;,
+    [&#x27;nuxt-mail&#x27;, {
+      message: [
+        { name: &#x27;contact&#x27;, to: &#x27;contact@foo.de&#x27; },
+        { name: &#x27;support&#x27;, to: &#x27;support@foo.de&#x27; },
+      ],
+      ...
+    }],
+  ],
+}
+" language="js" meta=""><code __ignoreMap="">export default {
+  modules: [
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: [
+        { name: 'contact', to: 'contact@foo.de' },
+        { name: 'support', to: 'support@foo.de' },
+      ],
+      ...
+    }],
+  ],
+}
+</code></pre><p>Then you can reference the config like this:</p><pre class="language-js" code="this.$axios.$post(&#x27;/mail/send&#x27;, {
+  config: &#x27;support&#x27;,
+  from: &#x27;John Doe&#x27;,
+  subject: &#x27;Incredible&#x27;,
+  text: &#x27;This is an incredible test message&#x27;,
+})
+" language="js" meta=""><code __ignoreMap="">this.$axios.$post('/mail/send', {
+  config: 'support',
+  from: 'John Doe',
+  subject: 'Incredible',
+  text: 'This is an incredible test message',
+})
+</code></pre><p>Or via index (in which case you do not need the <code class="">name</code> property):</p><pre class="language-js" code="this.$axios.$post(&#x27;/mail/send&#x27;, {
+  config: 1, // resolves to &#x27;support&#x27;
+  from: &#x27;John Doe&#x27;,
+  subject: &#x27;Incredible&#x27;,
+  text: &#x27;This is an incredible test message&#x27;,
+})
+" language="js" meta=""><code __ignoreMap="">this.$axios.$post('/mail/send', {
+  config: 1, // resolves to 'support'
+  from: 'John Doe',
+  subject: 'Incredible',
+  text: 'This is an incredible test message',
+})
+</code></pre><p>That's basically it, I hope that this is of use for some of you.</p><h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="hash-link"></span></a>Conclusion</h2><p>You can use the module to easily setup email sending capabilities. If you plan to build a bigger SaaS that sends a lot of emails, an async solution that does the sending via a cronjob or via server-side hooks is probably a better idea. But for a first-off solution, it should work fine.</p><p><strong>If you like what I'm doing, follow me on <a href="https://twitter.com/seblandwehr" rel="nofollow">Twitter</a> or check out my <a href="https://sebastianlandwehr.com/" rel="nofollow">website</a>. Also consider donating at <a href="https://www.buymeacoffee.com/dword" rel="nofollow">Buy Me a Coffee</a>, <a href="https://www.paypal.com/paypalme/SebastianLandwehr" rel="nofollow">PayPal</a> or <a href="https://www.patreon.com/dworddesign" rel="nofollow">Patreon</a>. Thank you so much! ❤️</strong></p>]]>
+      </content:encoded>
+    </item>
+  </channel>
+</rss>

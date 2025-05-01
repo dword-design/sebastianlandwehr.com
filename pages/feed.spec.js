@@ -1,23 +1,11 @@
-import { property, replace } from '@dword-design/functions';
-import tester from '@dword-design/tester';
-import testerPluginNuxt from '@dword-design/tester-plugin-nuxt';
+import { expect, test } from '@playwright/test';
 import axios from 'axios';
 import pretty from 'pretty';
 
-export default tester(
-  {
-    async init() {
-      expect(
-        axios.get('http://localhost:3000/feed')
-          |> await
-          |> property('data')
-          |> pretty
-          |> replace(
-            /<lastBuildDate>.*?<\/lastBuildDate>/g,
-            '<lastBuildDate>Foo</lastBuildDate>',
-          ),
-      ).toMatchSnapshot(this);
-    },
-  },
-  [testerPluginNuxt()],
-);
+test('init', async () =>
+  expect(
+    pretty((await axios.get('http://localhost:3000/feed')).data).replace(
+      /<lastBuildDate>.*?<\/lastBuildDate>/g,
+      '<lastBuildDate>Foo</lastBuildDate>',
+    ),
+  ).toMatchSnapshot());

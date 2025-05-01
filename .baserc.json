@@ -17,8 +17,10 @@
   "gitignore": ["/.data"],
   "depcheckConfig": {
     "ignoreMatches": [
+      "playwright",
       "playwright-chromium"
     ]
   },
-  "allowedMatches": ["content.config.js"]
+  "allowedMatches": ["content.config.js"],
+  "testRunner": "playwright"
 }
