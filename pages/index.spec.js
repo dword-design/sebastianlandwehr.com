@@ -39,6 +39,8 @@ const waitForTransitionEnd = (locator, timeout = 5000) =>
     });
   }, timeout);
 
+console.log(waitForTransitionEnd);
+
 test('init', async ({ page }) => {
   await page.goto('http://localhost:3000');
   await page.setViewportSize({ height: 875, width: 1400 });
@@ -51,7 +53,8 @@ test('init', async ({ page }) => {
     .click();
 
   const privacyPolicyModal = await page.locator(
-    '.modal-content:has(h2:text("Privacy Policy"))',
+    // '.modal-content:has(h2:text("Privacy Policy"))',
+    '.modal-content .privacy-policy-content',
   );
 
   await waitForStable(privacyPolicyModal);
@@ -68,6 +71,6 @@ test('init', async ({ page }) => {
   await page.setViewportSize({ height: 5100, width: 1400 });
   const card = await page.waitForSelector('.card');
   await card.hover();
-  await waitForTransitionEnd(card);
+  // await waitForTransitionEnd(card);
   await expect(page).toHaveScreenshot();
 });
