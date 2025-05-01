@@ -7,7 +7,7 @@ export default defineConfig({
 
   use: { trace: 'retain-on-failure' },
   webServer: {
-    command: 'nuxt dev',
+    command: 'NODE_ENV=development nuxt dev',
     // reuseExistingServer: !process.env.CI,
     stdout: 'pipe',
     timeout: 120000,
