@@ -51,7 +51,7 @@ test('init', async ({ page }) => {
     .click();
 
   const privacyPolicyModal = await page.locator(
-    '.modal-content:has(h2:text("Privacy Policyfoo"))',
+    '.modal-content:has(h2:text("Privacy Policy"))',
   );
 
   await waitForStable(privacyPolicyModal);
