@@ -44,7 +44,8 @@ console.log(waitForTransitionEnd);
 test('init', async ({ page }) => {
   await page.goto('http://localhost:3000');
   await page.setViewportSize({ height: 875, width: 1400 });
-  const privacySettingsModal = await page.locator('.modal-content').waitFor({ state: 'attached' });
+  const privacySettingsModal = await page.locator('.modal-content');
+  await privacySettingsModal.waitFor({ state: 'attached' });
   await waitForStable(privacySettingsModal);
   await expect(page).toHaveScreenshot();
 
@@ -54,8 +55,8 @@ test('init', async ({ page }) => {
 
   const privacyPolicyModal = await page.locator(
     '.modal-content:has(h2:text("Privacy Policy"))',
-  ).waitFor({ state: 'attached' });
-
+  );
+  await privacyPolicyModal.waitFor({ state: 'attached' });
   await waitForStable(privacyPolicyModal);
   await expect(page).toHaveScreenshot();
   await page.mouse.click(10, 10);
