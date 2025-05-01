@@ -54,10 +54,11 @@ test('init', async ({ page }) => {
 
   const privacyPolicyModal = await page.locator(
     // '.modal-content:has(h2:text("Privacy Policy"))',
-    '.modal-content .privacy-policy-content',
+    '.modal-content:has(.privacy-policy-content)',
   );
 
-  await waitForStable(privacyPolicyModal);
+  //await waitForStable(privacyPolicyModal);
+  await waitForTransitionEnd(privacyPolicyModal);
   await expect(page).toHaveScreenshot();
   await page.mouse.click(10, 10);
   await privacyPolicyModal.waitFor({ state: 'hidden' });
