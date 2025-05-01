@@ -9,6 +9,7 @@ export default defineConfig({
     command: 'base dev',
     reuseExistingServer: !process.env.CI,
     stdout: 'pipe',
+    timeout: 120000,
     url: 'http://localhost:3000',
   },
 });

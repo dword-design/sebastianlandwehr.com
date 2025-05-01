@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 
-console.log(1 |> x => x * 2);
 const waitForStable = locator => locator.hover({ trial: true });
 
 const waitForTransitionEnd = (locator, timeout = 5000) =>
