@@ -1,4 +1,5 @@
 import { defineConfig } from '@playwright/test';
+import { isCI } from 'std-env';
 
 export default defineConfig({
   snapshotPathTemplate:
@@ -7,9 +8,10 @@ export default defineConfig({
   use: { trace: 'retain-on-failure' },
   webServer: {
     command: 'base dev',
-    reuseExistingServer: !process.env.CI,
+    // reuseExistingServer: !process.env.CI,
     stdout: 'pipe',
     timeout: 120000,
     url: 'http://localhost:3000',
   },
+  workers: isCI ? 1 : undefined,
 });
