@@ -17,6 +17,7 @@
     "depcheck": "base depcheck",
     "dev": "base dev",
     "lint": "base lint",
+    "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
     "pull": "base pull",
     "push": "base push",
@@ -49,14 +50,13 @@
     "vue-honeypot": "^3.0.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^11.3.0",
+    "@dword-design/base": "^11.3.1",
     "@dword-design/base-config-app": "^5.0.6",
     "@playwright/test": "^1.52.0",
     "axios": "^1.9.0",
     "playwright": "^1.52.0",
     "playwright-chromium": "^1.52.0",
-    "pretty": "^2.0.0",
-    "std-env": "^3.9.0"
+    "pretty": "^2.0.0"
   },
   "peerDependencies": {
     "prismjs": "^1.23.0"

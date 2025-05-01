@@ -76,8 +76,8 @@ importers:
         version: 3.0.1
     devDependencies:
       '@dword-design/base':
-        specifier: ^11.3.0
-        version: 11.3.0(@babel/core@7.27.1)(@types/eslint@9.6.1)(@types/node@22.15.3)(@typescript-eslint/parser@8.31.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)
+        specifier: ^11.3.1
+        version: 11.3.1(@babel/core@7.27.1)(@types/eslint@9.6.1)(@types/node@22.15.3)(@typescript-eslint/parser@8.31.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)
       '@dword-design/base-config-app':
         specifier: ^5.0.6
         version: 5.0.6(@netlify/blobs@8.2.0)(@nuxt/cli@3.25.0(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.15.3)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.2(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.3)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.1)(sass@1.62.1)(semantic-release@22.0.12(typescript@5.8.3))(terser@5.39.0)(typescript@5.8.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)
@@ -96,9 +96,6 @@ importers:
       pretty:
         specifier: ^2.0.0
         version: 2.0.0
-      std-env:
-        specifier: ^3.9.0
-        version: 3.9.0
 
 packages:
 
@@ -888,8 +885,8 @@ packages:
     peerDependencies:
       h3: '*'
 
-  '@dword-design/base@11.3.0':
-    resolution: {integrity: sha512-M0QbSCkJxZ1sfr8cyHxT20UBLNdTRZbEulz/VGCQlyMlS2aJ+INoBaKu6SJIlXHY6iSEhTMmpepfie2IXqTd3g==}
+  '@dword-design/base@11.3.1':
+    resolution: {integrity: sha512-Rm8SzI5pwCxVgIi0yUXXvooGZzTn0qffUvhKJ0oNWJ3KDGQl9UdEolq2ZkUGjRApEEBmbeYvu7hrC2BdD6hUKQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -11563,7 +11560,7 @@ snapshots:
       - xml2js
       - yaml
 
-  '@dword-design/base@11.3.0(@babel/core@7.27.1)(@types/eslint@9.6.1)(@types/node@22.15.3)(@typescript-eslint/parser@8.31.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)':
+  '@dword-design/base@11.3.1(@babel/core@7.27.1)(@types/eslint@9.6.1)(@types/node@22.15.3)(@typescript-eslint/parser@8.31.1(eslint@8.57.1)(typescript@5.8.3))(babel-plugin-module-resolver@5.0.2)(jest@27.5.1)(typescript@5.8.3)':
     dependencies:
       '@commitlint/cli': 18.6.1(@types/node@22.15.3)(typescript@5.8.3)
       '@commitlint/config-conventional': 18.6.3
