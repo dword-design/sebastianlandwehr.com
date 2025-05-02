@@ -56,6 +56,8 @@ test('init', async ({ page }) => {
   /*const privacyPolicyModal = await page.locator(
     '.modal-content:has(h2:text("Privacy Policy"))',
   );*/
+  const foo = await page.locator('.privacy-policy-content');
+  await foo.waitFor({ state: 'attached' });
   const privacyPolicyModal = await page.locator(
     '.modal-content:has(.privacy-policy-content)',
   );
