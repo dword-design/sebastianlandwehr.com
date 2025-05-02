@@ -2,44 +2,6 @@ import { expect, test } from '@playwright/test';
 
 const waitForStable = locator => locator.hover({ trial: true });
 
-const waitForTransitionEnd = (locator, timeout = 5000) =>
-  locator.evaluate((el, _timeout) => {
-    const isTransitioning = element => {
-      const computedStyle = window.getComputedStyle(element);
-      const duration = computedStyle.transitionDuration;
-      const delay = computedStyle.transitionDelay;
-      const durations = duration.split(',').map(d => parseFloat(d) || 0);
-      const delays = delay.split(',').map(d => parseFloat(d) || 0);
-
-      const maxDuration = Math.max(
-        ...durations.map((d, i) => d + (delays[i] || 0)),
-      );
-
-      return maxDuration > 0;
-    };
-
-    return new Promise(resolve => {
-      if (!isTransitioning(el)) {
-        resolve();
-        return;
-      }
-
-      const handler = () => {
-        el.removeEventListener('transitionend', handler);
-        resolve();
-      };
-
-      el.addEventListener('transitionend', handler);
-
-      // Safety timeout in case transitionend doesn't fire
-      setTimeout(() => {
-        el.removeEventListener('transitionend', handler);
-        resolve();
-      }, _timeout);
-    });
-  }, timeout);
-
-console.log(waitForTransitionEnd);
 
 test('init', async ({ page }) => {
   await page.goto('http://localhost:3000');
