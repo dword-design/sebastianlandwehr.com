@@ -29,13 +29,12 @@ jobs:
           TEST_MAIL_CONFIG: ${{ secrets.TEST_MAIL_CONFIG }}
           TEST_PORT: ${{ secrets.TEST_PORT }}
         run: pnpm test
-      - if: failure()
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: Image Snapshot Diffs
+          name: Images from tests
           path: |-
             **/__image_snapshots__/__diff_output__
-            test-results
+            test-results/*/trace.zip
       - uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
