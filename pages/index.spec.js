@@ -2,7 +2,6 @@ import { expect, test } from '@playwright/test';
 
 const waitForStable = locator => locator.hover({ trial: true });
 
-
 test('init', async ({ page }) => {
   await page.goto('http://localhost:3000');
   await page.setViewportSize({ height: 875, width: 1400 });

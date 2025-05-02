@@ -1,10 +1,10 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
+  retries: 3,
+
   snapshotPathTemplate:
     '{snapshotDir}/{testFileDir}/{testFileName}-snapshots/{arg}{-projectName}{ext}',
-  
-  retries: 3,
   webServer: {
     command: 'base dev',
     stdout: 'pipe',
