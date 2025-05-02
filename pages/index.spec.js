@@ -45,7 +45,6 @@ test('init', async ({ page }) => {
   await page.goto('http://localhost:3000');
   await page.setViewportSize({ height: 875, width: 1400 });
   const privacySettingsModal = await page.locator('.modal-content');
-  await privacySettingsModal.waitFor({ state: 'attached' });
   await waitForStable(privacySettingsModal);
   await expect(page).toHaveScreenshot();
 
@@ -53,18 +52,10 @@ test('init', async ({ page }) => {
     .getByRole('button', { exact: true, name: 'privacy policy' })
     .click();
 
-  /* const privacyPolicyModal = await page.locator(
-    '.modal-content:has(h2:text("Privacy Policy"))',
-  ); */
-  const foo = await page.locator('.privacy-policy-content');
-  //await foo.waitFor({ state: 'attached' });
-  await expect(foo).toBeAttached();
-
   const privacyPolicyModal = await page.locator(
-    '.modal-content:has(.privacy-policy-content)',
+    '.modal-content:has(h2:text("Privacy Policy"))',
   );
 
-  await privacyPolicyModal.waitFor({ state: 'attached' });
   await waitForStable(privacyPolicyModal);
   await expect(page).toHaveScreenshot();
   await page.mouse.click(10, 10);
