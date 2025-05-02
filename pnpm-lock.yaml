@@ -54,8 +54,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0
       nuxt-gtag:
-        specifier: ^0.5.9
-        version: 0.5.9(magicast@0.3.5)
+        specifier: ^0.6.0
+        version: 0.6.3(magicast@0.3.5)
       nuxt-mail:
         specifier: ^6.0.1
         version: 6.0.1(magicast@0.3.5)
@@ -7387,8 +7387,8 @@ packages:
     resolution: {integrity: sha512-JRwa7qySGbkmVXhv1KmY+TgvH2kMhpnVcJVPXfRbJEOt33M4tYV+aJTTw8ngyuG/78Tj3CGdcFZYISUaIL+f0g==}
     engines: {node: '>=18'}
 
-  nuxt-gtag@0.5.9:
-    resolution: {integrity: sha512-rT6HaGzECmIAbc4fyyl0KzQWd8YwMoNBbXcSTYCwZ5WEZiPGViBicz8NP5j8Olgj6JLqD1EZiGEfAVyFNGNhuA==}
+  nuxt-gtag@0.6.3:
+    resolution: {integrity: sha512-3dBM4HHyxSGrq4Sy6zlO35rvpz0d1awBU8RUN7u/UGUprygtO6M2zs0E1jISqYYjticOkW179RZ15gMT/ko9KQ==}
 
   nuxt-mail@6.0.1:
     resolution: {integrity: sha512-Ro5dey3nuJLDgpvsBs8ruTIokbHcJExoOek85kMbsBsPaOtu0PXpVTCjNqZ1Ahhm3jFS5f1sbnoOqMoXIiLtbg==}
@@ -19817,7 +19817,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  nuxt-gtag@0.5.9(magicast@0.3.5):
+  nuxt-gtag@0.6.3(magicast@0.3.5):
     dependencies:
       '@nuxt/kit': 3.17.1(magicast@0.3.5)
       defu: 6.1.4
