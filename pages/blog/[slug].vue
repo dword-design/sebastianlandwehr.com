@@ -2,26 +2,31 @@
   <main class="section">
     <article class="container is-content">
       <figure class="image is-devto-banner mb-5">
-        <img alt="Cover image" :src="`${post._path}/banner.png`" />
+        <img alt="Cover image" :src="`${post.path}/banner.png`" />
       </figure>
       <h1 class="title">{{ post.title }}</h1>
       <div class="subtitle is-size-6">
-        {{
-          new Date(post.createdAt).toLocaleDateString('en', {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
-          })
-        }}
+        <time
+          data-allow-mismatch="text"
+          :datetime="post.createdAt.toISOString()"
+        >
+          {{
+            post.createdAt.toLocaleDateString('en', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            })
+          }}
+        </time>
       </div>
       <content-renderer class="content mb-4" :value="post" />
       <div>
         <b-button
-          tag="a"
-          type="is-small is-rounded"
           href="/feed"
-          target="_blank"
           icon-left="mdi-rss"
+          tag="a"
+          target="_blank"
+          type="is-small is-rounded"
         >
           Subscribe via RSS
         </b-button>
@@ -31,15 +36,26 @@
 </template>
 
 <script setup>
-import { property } from '@dword-design/functions'
+import { queryCollection, useAsyncData, useHead, useRoute } from '#imports';
 
-import { queryContent, useAsyncData, useHead, useRoute } from '#imports'
+const route = useRoute();
 
-const route = useRoute()
+const { data: post } = await useAsyncData(
+  route.path,
+  () =>
+    queryCollection('blog')
+      .path(route.path)
+      .select(
+        ...Object.keys({
+          body: true,
+          createdAt: true,
+          path: true,
+          title: true,
+        }),
+      )
+      .first(),
+  { transform: _ => ({ ..._, createdAt: new Date(_.createdAt) }) },
+);
 
-const post =
-  useAsyncData(() => queryContent('blog', route.params.slug).findOne())
-  |> await
-  |> property('data')
-useHead({ title: post.title })
+useHead({ title: () => post.value.title });
 </script>

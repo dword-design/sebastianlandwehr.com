@@ -1,5 +1,5 @@
-import VueHoneypot from 'vue-honeypot'
+import VueHoneypot from 'vue-honeypot';
 
-import { defineNuxtPlugin } from '#imports'
+import { defineNuxtPlugin } from '#imports';
 
-export default defineNuxtPlugin(nuxtApp => nuxtApp.vueApp.use(VueHoneypot))
+export default defineNuxtPlugin(nuxtApp => nuxtApp.vueApp.use(VueHoneypot));

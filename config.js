@@ -1,6 +1,13 @@
-import packageName from 'depcheck-package-name'
+import { createResolver } from '@nuxt/kit';
+import packageName from 'depcheck-package-name';
 
-import { appName, appTitle } from './model/variables.js'
+import { appName, appTitle } from './model/variables.js';
+
+const resolver = createResolver(import.meta.url);
+
+/* if (process.env.CODESPACES) {
+  process.env.BASE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
+} */
 
 export default {
   app: {
@@ -16,8 +23,8 @@ export default {
     },
   },
   css: ['@/assets/style.scss'],
+  devtools: { enabled: false },
   modules: [
-    '@nuxt/devtools',
     '@dword-design/nuxt-buefy',
     [
       'nuxt-mail',
@@ -26,49 +33,64 @@ export default {
         smtp: JSON.parse(process.env.MAIL_CONFIG || '{}'),
       },
     ],
-    [
-      '@funken-studio/sitemap-nuxt-3',
-      {
-        hostname: process.env.BASE_URL,
-        routes: async () =>
-          (await $fetch('/api/_content/query?_path=blog&only=_path')).map(
-            _ => _._path,
-          ),
-      },
-    ],
+    '@nuxtjs/sitemap',
     [
       '@nuxt/content',
       {
-        highlight: { theme: 'light-plus' },
-        markdown: {
-          anchorLinks: false,
-          rehypePlugins: {
-            [packageName`rehype-autolink-headings`]: {
-              content: {
-                properties: { className: 'hash-link' },
-                tagName: 'span',
-                type: 'element',
+        ...(process.env.CODESPACES && { watch: false }),
+        build: {
+          markdown: {
+            highlight: { theme: 'light-plus' },
+            rehypePlugins: {
+              [packageName`rehype-slug`]: {},
+              [packageName`rehype-autolink-headings`]: {
+                options: {
+                  content: {
+                    children: [],
+                    properties: { className: 'hash-link' },
+                    tagName: 'span',
+                    type: 'element',
+                  },
+                },
+              },
+            },
+          },
+        },
+        renderer: { anchorLinks: false },
+      },
+    ],
+    'nuxt-content-git',
+    [
+      'nuxt-content-body-html',
+      {
+        fields: {
+          bodyHtml: {
+            highlight: false,
+            rehypePlugins: {
+              [packageName`rehype-urls`]: {
+                options: url => {
+                  if (url.host || !url.path) {
+                    return url;
+                  }
+
+                  return new URL(url.href, process.env.BASE_URL);
+                },
               },
             },
           },
         },
       },
     ],
-    'nuxt-content-git',
-    'nuxt-content-body-html',
     'nuxt-gtag',
+    /* ...process.env.CODESPACES ? [(options, nuxt) => nuxt.hook('nitro:config', () => nuxt.hook("nitro:init", nitro => {
+      nitro.options.runtimeConfig.public.content.wsUrl = `wss://${process.env.CODESPACE_NAME}-4000.app.github.dev/`
+    }))] : [], */
   ],
   name: appName,
+  nitro: { externals: { inline: [resolver.resolve('./model')] } },
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
-  router: {
-    options: {
-      linkActiveClass: 'is-active',
-    },
-  },
-  runtimeConfig: {
-    public: {
-      gtag: { id: process.env.GOOGLE_ANALYTICS_ID },
-    },
-  },
+  router: { options: { linkActiveClass: 'is-active' } },
+  runtimeConfig: { public: { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } } },
+  site: { url: process.env.BASE_URL },
   title: appTitle,
-}
+};

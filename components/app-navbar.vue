@@ -37,17 +37,17 @@
         <div class="buttons">
           <nuxt-link class="button is-light" :to="{ name: 'support-me' }">
             <b-icon
-              icon="mdi-heart"
               aria-hidden="true"
               class="has-text-danger"
+              icon="mdi-heart"
             />
             <span>Support me</span>
           </nuxt-link>
           <nuxt-link class="button is-light" :to="{ name: 'blog' }">
             <b-icon
-              icon="mdi-rss"
               aria-hidden="true"
               class="has-text-secondary"
+              icon="mdi-rss"
             />
             <span>Blog</span>
           </nuxt-link>
@@ -63,9 +63,9 @@
         target="_blank"
       >
         <b-icon
-          :icon="account.icon"
           aria-hidden="true"
           class="icon is-large"
+          :icon="account.icon"
           :style="{ color: account.color }"
         />
       </b-navbar-item>
@@ -74,10 +74,10 @@
 </template>
 
 <script setup>
-import { appName, appTitle } from '@/model/variables.js'
-import { resolveComponent } from '#imports'
+import { appName, appTitle } from '@/model/variables.js';
+import { resolveComponent } from '#imports';
 
-const NuxtLink = resolveComponent('NuxtLink')
+const NuxtLink = resolveComponent('NuxtLink');
 
 const accounts = [
   {
@@ -115,5 +115,5 @@ const accounts = [
     title: 'Xing',
     url: 'https://www.xing.com/profile/Sebastian_Landwehr3',
   },
-]
+];
 </script>

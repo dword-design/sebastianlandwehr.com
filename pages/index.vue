@@ -33,8 +33,8 @@
               :style="{ maxWidth: '24rem' }"
             >
               <img
-                class="is-rounded has-shadow-circle"
                 alt="Portrait"
+                class="is-rounded has-shadow-circle"
                 :src="portraitUrl"
               />
             </figure>
@@ -50,13 +50,13 @@
     <section class="section is-medium has-background-light">
       <div class="container">
         <h2 class="title">Websites and Web Apps</h2>
-        <app-projects :value="websitesAndWebApps" class="mb-6" />
+        <app-projects class="mb-6" :value="websitesAndWebApps" />
 
         <h2 class="title">Open-Source Libraries</h2>
         <app-projects :value="openSourceLibraries" />
         <p class="has-text-centered mb-6 is-size-5">
           <span class="icon-text">
-            <b-icon icon="mdi-arrow-right-bold" aria-hidden="true" />
+            <b-icon aria-hidden="true" icon="mdi-arrow-right-bold" />
             <a href="https://github.com/dword-design" target="_blank">
               Find more libraries on GitHub
             </a>
@@ -74,10 +74,10 @@
 </template>
 
 <script>
-import portraitUrl from '@/assets/portrait.jpg'
-import individualProjects from '@/model/individual-projects.js'
-import openSourceLibraries from '@/model/open-source-libraries.js'
-import websitesAndWebApps from '@/model/websites-and-web-apps.js'
+import portraitUrl from '@/assets/portrait.jpg';
+import individualProjects from '@/model/individual-projects.js';
+import openSourceLibraries from '@/model/open-source-libraries.js';
+import websitesAndWebApps from '@/model/websites-and-web-apps.js';
 
 export default {
   computed: {
@@ -86,5 +86,5 @@ export default {
     portraitUrl: () => portraitUrl,
     websitesAndWebApps: () => websitesAndWebApps,
   },
-}
+};
 </script>

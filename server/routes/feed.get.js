@@ -1,24 +1,35 @@
-import { endent } from '@dword-design/functions'
-import { Feed } from 'feed'
+import { endent } from '@dword-design/functions';
+import { Feed } from 'feed';
 
-import { appName, appTitle } from '@/model/variables.js'
-import { serverQueryContent } from '#content/server'
-import { defineEventHandler } from '#imports'
+import { appName, appTitle } from '@/model/variables.js';
+import { defineEventHandler, queryCollection } from '#imports';
 
 export default defineEventHandler(async event => {
-  const posts = await serverQueryContent(event).sort({ createdAt: -1 }).find()
+  const posts = await queryCollection(event, 'blog')
+    .select(
+      ...Object.keys({
+        bodyHtml: true,
+        createdAt: true,
+        description: true,
+        path: true,
+        title: true,
+      }),
+    )
+    .order('createdAt', 'DESC')
+    .all();
 
   const feed = new Feed({
     description: appTitle,
     link: `${process.env.BASE_URL}/blog`,
     title: appName,
-  })
+  });
+
   for (const post of posts) {
-    const url = `${process.env.BASE_URL}${post._path}`
+    const url = `${process.env.BASE_URL}${post.path}`;
+
     feed.addItem({
-      author: post.authors,
       content: endent`
-        <p><img alt="Cover image" src="${process.env.BASE_URL}${post._path}/banner.png"></p>
+        <p><img alt="Cover image" src="${process.env.BASE_URL}${post.path}/banner.png"></p>
         ${post.bodyHtml}
       `,
       date: new Date(post.createdAt),
@@ -26,8 +37,9 @@ export default defineEventHandler(async event => {
       id: url,
       link: url,
       title: post.title,
-    })
+    });
   }
-  event.res.setHeader('content-type', 'application/rss+xml')
-  event.res.end(feed.rss2())
-})
+
+  event.res.setHeader('content-type', 'application/rss+xml; charset=utf-8');
+  event.res.end(feed.rss2());
+});

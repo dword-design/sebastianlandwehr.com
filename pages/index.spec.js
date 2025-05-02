@@ -1,48 +1,36 @@
-import { delay } from '@dword-design/functions'
-import tester from '@dword-design/tester'
-import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
-import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
+import { expect, test } from '@playwright/test';
 
-export default tester(
-  {
-    async init() {
-      await this.page.goto('http://localhost:3000')
-      await this.page.setViewport({
-        height: 875,
-        width: 1400,
-      })
+const waitForStable = locator => locator.hover({ trial: true });
 
-      const privacyPolicyButton = await this.page.waitForFunction(() =>
-        [...document.querySelectorAll('.modal button')].find(
-          el => el.innerText === 'privacy policy',
-        ),
-      )
-      await delay(150)
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
-      await privacyPolicyButton.click()
-      await delay(300)
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
-      await this.page.mouse.click(10, 10)
-      await delay(150)
-      expect(await this.page.screenshot()).toMatchImageSnapshot(this)
+test('init', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+  await page.setViewportSize({ height: 875, width: 1400 });
+  const privacySettingsModal = await page.locator('.modal-content');
+  await waitForStable(privacySettingsModal);
+  await expect(page).toHaveScreenshot();
 
-      const acceptAllCookiesButton = await this.page.waitForXPath(
-        "//button/span[text()='Accept all cookies']/..",
-      )
-      await acceptAllCookiesButton.click()
-      await this.page.waitForNavigation()
-      await this.page.setViewport({
-        height: 5100,
-        width: 1400,
-      })
+  await privacySettingsModal
+    .getByRole('button', { exact: true, name: 'privacy policy' })
+    .click();
 
-      const card = await this.page.waitForSelector('.card')
-      await card.hover()
-      await delay(500)
-      expect(
-        await this.page.screenshot({ fullPage: true }),
-      ).toMatchImageSnapshot(this)
-    },
-  },
-  [testerPluginNuxt(), testerPluginPuppeteer()],
-)
+  const privacyPolicyModal = await page.locator(
+    '.modal-content:has(h2:text("Privacy Policy"))',
+  );
+
+  await waitForStable(privacyPolicyModal);
+  await expect(page).toHaveScreenshot();
+  await page.mouse.click(10, 10);
+  await privacyPolicyModal.waitFor({ state: 'hidden' });
+  await expect(page).toHaveScreenshot();
+
+  await privacySettingsModal
+    .getByRole('button', { exact: true, name: 'Accept all cookies' })
+    .click({ force: true });
+
+  await privacySettingsModal.waitFor({ state: 'hidden' });
+  await page.setViewportSize({ height: 5100, width: 1400 });
+  const card = await page.waitForSelector('.card');
+  await card.hover();
+  // await waitForTransitionEnd(card);
+  await expect(page).toHaveScreenshot();
+});

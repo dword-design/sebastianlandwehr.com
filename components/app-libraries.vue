@@ -14,11 +14,11 @@
 </template>
 
 <script setup>
-import firebaseUrl from '@/assets/libraries/firebase.png'
-import nodejsUrl from '@/assets/libraries/nodejs.png'
-import npmUrl from '@/assets/libraries/npm.png'
-import nuxtUrl from '@/assets/libraries/nuxt.png'
-import vueUrl from '@/assets/libraries/vue.png'
+import firebaseUrl from '@/assets/libraries/firebase.png';
+import nodejsUrl from '@/assets/libraries/nodejs.png';
+import npmUrl from '@/assets/libraries/npm.png';
+import nuxtUrl from '@/assets/libraries/nuxt.png';
+import vueUrl from '@/assets/libraries/vue.png';
 
 const libraries = [
   { imageUrl: nuxtUrl, title: 'Nuxt.js', websiteUrl: 'https://nuxtjs.org' },
@@ -30,5 +30,5 @@ const libraries = [
     title: 'Firebase',
     websiteUrl: 'https://firebase.google.com',
   },
-]
+];
 </script>

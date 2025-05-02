@@ -1,10 +1,10 @@
-import { endent } from '@dword-design/functions'
+import { endent } from '@dword-design/functions';
 
-import accessibilityViewUrl from '@/assets/projects/accessibility-view.png'
-import feedbutlerUrl from '@/assets/projects/feedbutler.png'
-import githubRepositoryListBadgesUrl from '@/assets/projects/github-repository-list-badges.png'
-import githubSavedFiltersUrl from '@/assets/projects/github-saved-filters.png'
-import myNpmStatsUrl from '@/assets/projects/my-npm-stats.png'
+import accessibilityViewUrl from '@/assets/projects/accessibility-view.png';
+import feedbutlerUrl from '@/assets/projects/feedbutler.png';
+import githubRepositoryListBadgesUrl from '@/assets/projects/github-repository-list-badges.png';
+import githubSavedFiltersUrl from '@/assets/projects/github-saved-filters.png';
+import myNpmStatsUrl from '@/assets/projects/my-npm-stats.png';
 
 export default [
   {
@@ -53,4 +53,4 @@ export default [
       'https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba',
     title: 'GitHub Repository List Badges',
   },
-]
+];

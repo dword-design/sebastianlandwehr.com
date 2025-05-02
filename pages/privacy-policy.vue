@@ -7,9 +7,5 @@
 </template>
 
 <script>
-export default {
-  head: {
-    title: 'Privacy Policy',
-  },
-}
+export default { head: { title: 'Privacy Policy' } };
 </script>
