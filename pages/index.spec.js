@@ -53,8 +53,11 @@ test('init', async ({ page }) => {
     .getByRole('button', { exact: true, name: 'privacy policy' })
     .click();
 
-  const privacyPolicyModal = await page.locator(
+  /*const privacyPolicyModal = await page.locator(
     '.modal-content:has(h2:text("Privacy Policy"))',
+  );*/
+  const privacyPolicyModal = await page.locator(
+    '.modal-content:has(.privacy-policy-content)',
   );
   await privacyPolicyModal.waitFor({ state: 'visible' });
   await waitForStable(privacyPolicyModal);
