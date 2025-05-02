@@ -53,14 +53,17 @@ test('init', async ({ page }) => {
     .getByRole('button', { exact: true, name: 'privacy policy' })
     .click();
 
-  /*const privacyPolicyModal = await page.locator(
+  /* const privacyPolicyModal = await page.locator(
     '.modal-content:has(h2:text("Privacy Policy"))',
-  );*/
+  ); */
+  await page.waitForSelector('.privacy-policy-content', { state: 'attached' })
   const foo = await page.locator('.privacy-policy-content');
   await foo.waitFor({ state: 'attached' });
+
   const privacyPolicyModal = await page.locator(
     '.modal-content:has(.privacy-policy-content)',
   );
+
   await privacyPolicyModal.waitFor({ state: 'attached' });
   await waitForStable(privacyPolicyModal);
   await expect(page).toHaveScreenshot();
