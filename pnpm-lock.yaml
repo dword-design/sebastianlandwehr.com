@@ -888,8 +888,8 @@ packages:
     resolution: {integrity: sha512-xFAj86B+KzUZfK2ETpiTfG+tO0EJvZSYhBdzcnTmrPj6RXRtDpR0svhQ5u+9piuGjr6ffK+vuHsAOzlZnNvM1w==}
     engines: {node: '>=18'}
 
-  '@dword-design/base-config-nuxt@6.1.8':
-    resolution: {integrity: sha512-qqN/WZ7ispfNkp/G+nYDzrN0KxTEpGEGOcwpQediaPaHIvLazvEAEzbkl2Xd0h/ZZwGp1Jo81yPJCX7B2C4/MA==}
+  '@dword-design/base-config-nuxt@6.2.0':
+    resolution: {integrity: sha512-YTNs7Y76l7116LzFxZ2EbwGuoVnXFr/J9+tAQGnTHejbfQ21Z6/kiHEdiN3W+2HtYVhme41KW6CxIxpeTmsNtQ==}
     engines: {node: '>=18'}
     peerDependencies:
       h3: '*'
@@ -11456,7 +11456,7 @@ snapshots:
 
   '@dword-design/base-config-app@5.0.6(@netlify/blobs@8.2.0)(@nuxt/cli@3.25.0(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.15.3)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.2(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.3)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.1)(sass@1.62.1)(semantic-release@22.0.12(typescript@5.8.3))(terser@5.39.0)(typescript@5.8.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)':
     dependencies:
-      '@dword-design/base-config-nuxt': 6.1.8(@netlify/blobs@8.2.0)(@nuxt/cli@3.25.0(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.15.3)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.2(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.3)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.1)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)
+      '@dword-design/base-config-nuxt': 6.2.0(@netlify/blobs@8.2.0)(@nuxt/cli@3.25.0(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.15.3)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.2(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.3)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.1)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)
       '@dword-design/functions': 6.0.2
       '@semantic-release/exec': 6.0.3(semantic-release@22.0.12(typescript@5.8.3))
       ceiling: 4.0.0(typescript@5.8.3)
@@ -11551,7 +11551,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@dword-design/base-config-nuxt@6.1.8(@netlify/blobs@8.2.0)(@nuxt/cli@3.25.0(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.15.3)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.2(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.3)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.1)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)':
+  '@dword-design/base-config-nuxt@6.2.0(@netlify/blobs@8.2.0)(@nuxt/cli@3.25.0(magicast@0.3.5))(@parcel/watcher@2.5.1)(@types/babel__core@7.20.5)(@types/node@22.15.3)(@vue/compiler-dom@3.5.13)(better-sqlite3@11.9.1)(db0@0.3.2(better-sqlite3@11.9.1))(encoding@0.1.13)(eslint@8.57.1)(h3@1.15.3)(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.3)(prettier@3.5.3)(rollup@4.40.1)(sass@1.62.1)(terser@5.39.0)(typescript@5.8.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(sass@1.62.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)(yaml@2.7.1)':
     dependencies:
       '@dword-design/depcheck-parser-sass': 4.0.4
       '@dword-design/dotenv-json-extended': 2.0.25

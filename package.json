@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "analyze": "base analyze",
+    "build": "base build",
     "checkUnknownFiles": "base checkUnknownFiles",
     "commit": "base commit",
     "depcheck": "base depcheck",
