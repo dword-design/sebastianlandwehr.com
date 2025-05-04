@@ -21,6 +21,6 @@
       "playwright-chromium"
     ]
   },
-  "allowedMatches": ["content.config.js"],
+  "allowedMatches": ["content.config.js", "global-pid.js", "global-setup.js", "global-teardown.js"],
   "testRunner": "playwright"
 }
