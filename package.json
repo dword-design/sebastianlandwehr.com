@@ -40,7 +40,7 @@
     "@nuxtjs/sitemap": "^7.2.10",
     "depcheck-package-name": "^3.0.1",
     "execa": "^9.5.2",
-    "feed": "^4.2.2",
+    "feed": "^5.0.0",
     "lodash-es": "^4.17.21",
     "nuxt-content-body-html": "^4.0.3",
     "nuxt-content-git": "^6.0.0",

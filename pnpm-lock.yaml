@@ -45,8 +45,8 @@ importers:
         specifier: ^9.5.2
         version: 9.5.2
       feed:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^5.0.0
+        version: 5.0.0
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -1924,6 +1924,7 @@ packages:
 
   '@oxc-parser/wasm@0.60.0':
     resolution: {integrity: sha512-Dkf9/D87WGBCW3L0+1DtpAfL4SrNsgeRvxwjpKCtbH7Kf6K+pxrT0IridaJfmWKu1Ml+fDvj+7HEyBcfUC/TXQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@oxc-project/types@0.60.0':
     resolution: {integrity: sha512-prhfNnb3ATFHOCv7mzKFfwLij5RzoUz6Y1n525ZhCEqfq5wreCXL+DyVoq3ShukPo7q45ZjYIdjFUgjj+WKzng==}
@@ -4876,9 +4877,9 @@ packages:
   fecha@4.2.3:
     resolution: {integrity: sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==}
 
-  feed@4.2.2:
-    resolution: {integrity: sha512-u5/sxGfiMfZNtJ3OvQpXcvotFpYkL0n9u9mM2vkui2nGo8b4wvDkJ8gAkYqbA8QpGyFCv3RK0Z+Iv+9veCS9bQ==}
-    engines: {node: '>=0.4.0'}
+  feed@5.0.0:
+    resolution: {integrity: sha512-b+xl8kQ/bxInBKTe3GLCGDFU45kFiDSIEEdDUAUGGThN1Jqpx+7uFb95NEPjI1JAjXy2iEFPzxHsK2rIEyJibw==}
+    engines: {node: '>=20', pnpm: '>=10'}
 
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
@@ -16711,7 +16712,7 @@ snapshots:
 
   fecha@4.2.3: {}
 
-  feed@4.2.2:
+  feed@5.0.0:
     dependencies:
       xml-js: 1.6.11
 
