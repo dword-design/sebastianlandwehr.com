@@ -5,7 +5,7 @@ const waitForStable = locator => locator.hover({ trial: true });
 test('init', async ({ page }) => {
   await page.goto('http://localhost:3000');
   await page.setViewportSize({ height: 875, width: 1400 });
-  const privacySettingsModal = await page.locator('.modal-content');
+  const privacySettingsModal = page.locator('.modal-content');
   await waitForStable(privacySettingsModal);
   await expect(page).toHaveScreenshot();
 
@@ -13,7 +13,7 @@ test('init', async ({ page }) => {
     .getByRole('button', { exact: true, name: 'privacy policy' })
     .click();
 
-  const privacyPolicyModal = await page.locator(
+  const privacyPolicyModal = page.locator(
     '.modal-content:has(h2:text("Privacy Policy"))',
   );
 
