@@ -29,7 +29,7 @@ test('init', async ({ page }) => {
 
   await privacySettingsModal.waitFor({ state: 'hidden' });
   await page.setViewportSize({ height: 5100, width: 1400 });
-  await page.locator('.card').hover();
+  await page.locator('.card').first().hover();
   // await waitForTransitionEnd(card);
   await expect(page).toHaveScreenshot();
 });
