@@ -78,12 +78,7 @@
             </time>
           </div>
           <p>
-            {{
-              truncate(post.description, {
-                length: 200,
-                separator: ' ',
-              })
-            }}
+            {{ truncate(post.description, { length: 200, separator: ' ' }) }}
           </p>
         </div>
       </article>
@@ -93,8 +88,6 @@
 
 <script setup>
 import { truncate } from 'lodash-es';
-
-import { queryCollection, useAsyncData, useHead } from '#imports';
 
 useHead({ title: 'Blog' });
 

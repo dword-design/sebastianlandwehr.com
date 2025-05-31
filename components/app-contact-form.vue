@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import { endent } from '@dword-design/functions';
+import dedent from 'dedent';
 
 import { appName } from '@/model/variables.js';
 
@@ -62,7 +62,7 @@ export default {
           from: 'info@sebastianlandwehr.com',
           replyTo: this.email,
           subject: `${appName} Message`,
-          text: endent`
+          text: dedent`
             From: ${this.email}
 
             ${this.message}

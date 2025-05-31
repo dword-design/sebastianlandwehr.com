@@ -28,7 +28,6 @@
     "test:raw": "base test:raw"
   },
   "dependencies": {
-    "@dword-design/functions": "^6.0.2",
     "@dword-design/get-privacy-policy": "^1.0.6",
     "@dword-design/legal-notice": "^2.0.0",
     "@dword-design/nuxt-buefy": "^4.1.3",
@@ -38,6 +37,7 @@
     "@nuxt/content": "npm:@dword-design/nuxt-content-fork@^3.0.0",
     "@nuxt/kit": "^3.17.1",
     "@nuxtjs/sitemap": "^7.2.10",
+    "dedent": "^1.6.0",
     "depcheck-package-name": "^3.0.1",
     "execa": "^9.5.2",
     "feed": "^4.2.2",
@@ -54,7 +54,7 @@
     "vue-honeypot": "^3.0.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^11.3.3",
+    "@dword-design/base": "^12.0.19",
     "@dword-design/base-config-app": "^5.0.6",
     "@playwright/test": "^1.52.0",
     "axios": "^1.9.0",

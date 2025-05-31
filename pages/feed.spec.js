@@ -2,10 +2,13 @@ import { expect, test } from '@playwright/test';
 import axios from 'axios';
 import pretty from 'pretty';
 
-test('init', async () =>
+test('init', async () => {
+  const { data } = await axios.get('http://localhost:3000/feed');
+
   expect(
-    pretty((await axios.get('http://localhost:3000/feed')).data).replace(
+    pretty(data).replaceAll(
       /<lastBuildDate>.*?<\/lastBuildDate>/g,
       '<lastBuildDate>Foo</lastBuildDate>',
     ),
-  ).toMatchSnapshot());
+  ).toMatchSnapshot();
+});

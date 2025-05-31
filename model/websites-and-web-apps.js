@@ -1,4 +1,4 @@
-import { endent } from '@dword-design/functions';
+import dedent from 'dedent';
 
 import accessibilityViewUrl from '@/assets/projects/accessibility-view.png';
 import feedbutlerUrl from '@/assets/projects/feedbutler.png';
@@ -21,7 +21,7 @@ export default [
     title: 'my-npm-stats',
   },
   {
-    description: endent`
+    description: dedent`
       Browser extension that converts an arbitrary website into its accessibility relevant form.<br/>
       <a href="https://chrome.google.com/webstore/detail/accessibility-view/ekpmnemcmjcimpnmofmiaeoggjkjohjg" target="_blank">Chrome</a><br/>
       <a href="https://addons.mozilla.org/de/firefox/addon/accessibility-view" target="_blank">Firefox</a>
@@ -32,7 +32,7 @@ export default [
     title: 'Accessibility View',
   },
   {
-    description: endent`
+    description: dedent`
       Allows to save issue and pull request filters on GitHub and access them via the main menu.<br/>
       <a href="https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de" target="_blank">Chrome</a><br/>
       <a href="https://addons.mozilla.org/de/firefox/addon/github-saved-filters/" target="_blank">Firefox</a>
@@ -43,7 +43,7 @@ export default [
     title: 'GitHub Saved Filters',
   },
   {
-    description: endent`
+    description: dedent`
       Displays badges in the GitHub repository list of a user.<br/>
       <a href="https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba" target="_blank">Chrome</a><br/>
       <a href="https://addons.mozilla.org/de/firefox/addon/github-repository-list-badges/" target="_blank">Firefox</a>

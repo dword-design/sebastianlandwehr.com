@@ -75,7 +75,6 @@
 
 <script setup>
 import { appName, appTitle } from '@/model/variables.js';
-import { resolveComponent } from '#imports';
 
 const NuxtLink = resolveComponent('NuxtLink');
 

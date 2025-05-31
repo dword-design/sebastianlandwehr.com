@@ -14,10 +14,10 @@
         "sebastianlandwehr.com"
       ],
       "path": "/var/www/sebastianlandwehr.com",
-      "user": "root",
-      "repo": "git@github.com:dword-design/sebastianlandwehr.com.git",
       "post-deploy": "source ~/.nvm/nvm.sh && pnpm install --frozen-lockfile && pnpm checkUnknownFiles && pnpm prepublishOnly && pm2 startOrReload ecosystem.json",
-      "ref": "origin/master"
+      "ref": "origin/master",
+      "repo": "git@github.com:dword-design/sebastianlandwehr.com.git",
+      "user": "root"
     }
   }
 }
