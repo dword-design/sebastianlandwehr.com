@@ -36,8 +36,6 @@
 </template>
 
 <script setup>
-import { queryCollection, useAsyncData, useHead, useRoute } from '#imports';
-
 const route = useRoute();
 
 const { data: post } = await useAsyncData(

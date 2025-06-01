@@ -9,7 +9,6 @@ import MdiSendIcon from '@mdi/svg/svg/send.svg';
 import MdiTwitterIcon from '@mdi/svg/svg/twitter.svg';
 
 import XingIcon from '@/assets/xing-icon.svg';
-import { defineNuxtPlugin } from '#imports';
 
 const icons = {
   MdiArrowRightBoldIcon,

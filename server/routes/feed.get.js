@@ -1,8 +1,7 @@
-import { endent } from '@dword-design/functions';
+import dedent from 'dedent';
 import { Feed } from 'feed';
 
 import { appName, appTitle } from '@/model/variables.js';
-import { defineEventHandler, queryCollection } from '#imports';
 
 export default defineEventHandler(async event => {
   const posts = await queryCollection(event, 'blog')
@@ -28,7 +27,7 @@ export default defineEventHandler(async event => {
     const url = `${process.env.BASE_URL}${post.path}`;
 
     feed.addItem({
-      content: endent`
+      content: dedent`
         <p><img alt="Cover image" src="${process.env.BASE_URL}${post.path}/banner.png"></p>
         ${post.bodyHtml}
       `,
