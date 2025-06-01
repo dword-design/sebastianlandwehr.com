@@ -5,13 +5,12 @@ test('init', async ({ page }) => {
     'http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way',
   );
 
-  await page.setViewportSize({ height: 1, width: 1400 });
   const privacySettingsModal = page.locator('.modal-content');
 
   await privacySettingsModal
     .getByRole('button', { exact: true, name: 'Accept all cookies' })
-    .click({ force: true });
+    .click();
 
-  await privacySettingsModal.waitFor({ state: 'hidden' });
+  await expect(privacySettingsModal).toBeHidden();
   await expect(page).toHaveScreenshot({ fullPage: true });
 });

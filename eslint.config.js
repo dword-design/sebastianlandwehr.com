@@ -4,7 +4,7 @@ import { globalIgnores } from 'eslint/config';
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt(
-  globalIgnores(['eslint.config.js']),
+  globalIgnores(['eslint.config.js', 'ecosystem.json']),
   config,
   {
     rules: {

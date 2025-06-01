@@ -1,8 +1,8 @@
-./.eslintcache
 .DS_Store
 /.ceilingrc.json
 /.data
 /.env.json
+/.eslintcache
 /.nuxt
 /.nyc_output
 /.output
