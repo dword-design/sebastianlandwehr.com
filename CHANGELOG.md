@@ -1,3 +1,10 @@
+## [1.10.69](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.68...v1.10.69) (2025-06-16)
+
+
+### Bug Fixes
+
+* remove unused class ([193ca0c](https://github.com/dword-design/sebastianlandwehr.com/commit/193ca0c5723d71890d212f06de3e94f53dda0d9f))
+
 ## [1.10.68](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.67...v1.10.68) (2025-05-04)
 
 
