@@ -1,9 +1,6 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
-  <div
-    class="content"
-    v-html="getPrivacyPolicy('en', { contact: true })"
-  />
+  <div class="content" v-html="getPrivacyPolicy('en', { contact: true })" />
   <!-- eslint-enable -->
 </template>
 
