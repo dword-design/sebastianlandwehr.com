@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
   <div
-    class="content privacy-policy-content"
+    class="content"
     v-html="getPrivacyPolicy('en', { contact: true })"
   />
   <!-- eslint-enable -->
