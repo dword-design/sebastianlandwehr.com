@@ -54,7 +54,7 @@
     "vue-honeypot": "^3.0.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^11.3.3",
+    "@dword-design/base": "^14.0.0",
     "@dword-design/base-config-app": "^5.0.6",
     "@playwright/test": "^1.52.0",
     "axios": "^1.9.0",
