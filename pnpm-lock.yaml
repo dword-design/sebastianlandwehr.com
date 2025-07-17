@@ -78,8 +78,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       tree-kill-promise:
-        specifier: ^3.0.14
-        version: 3.0.14
+        specifier: ^4.0.0
+        version: 4.0.0
       vue-honeypot:
         specifier: ^3.0.1
         version: 3.0.1
@@ -869,6 +869,7 @@ packages:
   '@dword-design/babel-config@4.2.1':
     resolution: {integrity: sha512-RFGQfX00S7JaGHJUzJUU3W/4hNKloWLpY9CMG8hvSSvY9VjaACJ2Ews1YVWBpqVSIjoxHEfoUo99PpNIIPygEg==}
     engines: {node: '>=18'}
+    deprecated: Using TypeScript now
 
   '@dword-design/babel-plugin-wildcard@0.0.3':
     resolution: {integrity: sha512-J+OooxCchKZbU9cKvlWQFc9tDc0NipACWGadLE2JKRBJJcL4e/+3yFwrwestjn9yBk+JEq1FEzRSXi38FXWrag==}
@@ -953,18 +954,22 @@ packages:
   '@dword-design/functions@4.1.7':
     resolution: {integrity: sha512-kc7bzBKZasf0icxKldgB7dkpd1mcEQkPz8c0BP5Wuxy63bMYs+kNWbywFT+xNBWDT6N9cdTczHwBuVBgc8ZU0A==}
     engines: {node: '>=14'}
+    deprecated: Use lodash and endent
 
   '@dword-design/functions@5.0.27':
     resolution: {integrity: sha512-16A97RKtn21xLWI7Y7VhFz4WCWui+TLit/J5/l77BDpWmPi2LzgjQzDbafDDw7OUeY6GEAi/M4jdbuQhsIbSEg==}
     engines: {node: '>=14'}
+    deprecated: Use lodash and endent
 
   '@dword-design/functions@6.0.2':
     resolution: {integrity: sha512-bX8MqBkzGaYEIlGAdc3hLiHO3Gia1L/sguymbQkp07yB611ZZW4Y0lTGJxWAemJEggEVM5jr1IL4vvAUmQX8VA==}
     engines: {node: '>=18'}
+    deprecated: Use lodash and endent
 
   '@dword-design/get-privacy-policy@1.0.6':
     resolution: {integrity: sha512-a4ck649V5hsaMJGtGZm+wkVPRA+JnU7F7Qg9CjCzD3mQVnCLGrwSL0QWJAJfeDy0Azz2yBYcV8Kq6v4me8dkyQ==}
     engines: {node: '>=14'}
+    deprecated: Use @dword-design/privacy-policy
 
   '@dword-design/jiti-babel-transform@2.0.0':
     resolution: {integrity: sha512-sT4TsdN6Id9k0ceZZjznmdIqdk94ZPHI21Pv0v6DeXqWRDxW0BoDVAqTbMjStSPV6n5i4AYRpwLBFN3hxYL2Lw==}
@@ -1021,6 +1026,7 @@ packages:
   '@dword-design/pretest@1.0.15':
     resolution: {integrity: sha512-xN+aEzDzAZeBOboMqnqFXkAOSP02nuSMvA1sMbOpA2BZw7qUCKPLnKi94S+en+upXWXgF/fBpLgEmRR9TeDsCQ==}
     engines: {node: '>=14'}
+    deprecated: Migrated to Playwright
 
   '@dword-design/prettier-plugin-compactify@0.0.1':
     resolution: {integrity: sha512-CsZP1JqqxKhfxnFdvSCB4MYbKbpoLWzB5llLCjDEvd248Scxgw2msdr7W//u3NJJSWmX2ohrbFsxgrUqx81rhA==}
@@ -1028,6 +1034,7 @@ packages:
   '@dword-design/setup-test@1.0.2':
     resolution: {integrity: sha512-W861E4cbZmUaYri3mhZNfpo2Yxc1hHPP0v5iDZGE+h9EHplY+8tzWaTNHIF67DmrcDLP79zxd/lkJX0xZs0l8Q==}
     engines: {node: '>=14'}
+    deprecated: Migrated to Playwright
 
   '@dword-design/stylelint-config@4.0.2':
     resolution: {integrity: sha512-GNLK3zkG0NPMQ5obmRLXlrx52etttwnsCDlRIriGcwiKpnOcu9ESNuKwooQhs/KpSGHugDaTz2OnFxWQt9WVcQ==}
@@ -1048,12 +1055,14 @@ packages:
   '@dword-design/vue-consent-buefy@2.0.5':
     resolution: {integrity: sha512-A+Hi1rgwjZpWWfgixaj5fhMYAJFb67rNo1wKhj9n4WM3QpLOWrGaTOxgksNAzaJIZYfahfBptlWnHfAYbs0BcQ==}
     engines: {node: '>=16'}
+    deprecated: Do not use Google Analytics
     peerDependencies:
       vue: ^3
 
   '@dword-design/vue-consent@3.0.0':
     resolution: {integrity: sha512-eaGTfseicNisCsJOY9sU4XyxDs4hLZG0qQG3qJLHgPJAkZZ4E3UhpS7miWc43pohAYLhQaLzHqakfORpVrIT3A==}
     engines: {node: '>=18'}
+    deprecated: Do not use Google Analytics
     peerDependencies:
       vue: ^3
 
@@ -1924,6 +1933,7 @@ packages:
 
   '@oxc-parser/wasm@0.60.0':
     resolution: {integrity: sha512-Dkf9/D87WGBCW3L0+1DtpAfL4SrNsgeRvxwjpKCtbH7Kf6K+pxrT0IridaJfmWKu1Ml+fDvj+7HEyBcfUC/TXQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@oxc-project/types@0.60.0':
     resolution: {integrity: sha512-prhfNnb3ATFHOCv7mzKFfwLij5RzoUz6Y1n525ZhCEqfq5wreCXL+DyVoq3ShukPo7q45ZjYIdjFUgjj+WKzng==}
@@ -9528,9 +9538,9 @@ packages:
     resolution: {integrity: sha512-aXJDbk6SnumuaZSANd21XAo15ucCDE38H4fkqiGsc3MhCK+wOlZvLP9cB/TvpHT0mOyWgC4Z8EwRlzqYSUzdsA==}
     engines: {node: '>= 0.4'}
 
-  tree-kill-promise@3.0.14:
-    resolution: {integrity: sha512-HMWDVJq3oby7uxA2AKVThX5fKkF7GPT3FhjNb75tG/6P4tQBtIhElaSucFHFMlBV5f3e+KPqIlHsJVZjueKX/A==}
-    engines: {node: '>=14'}
+  tree-kill-promise@4.0.0:
+    resolution: {integrity: sha512-k6PxcH/5e+dJiTyw3KUO0Pfxav4H10M+JMFgssaWqnTweAP5oVRNuWbWoYJgowbRdi46yXV9YvyVnDwGGvSCvw==}
+    engines: {node: '>=20'}
 
   tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
@@ -22537,7 +22547,7 @@ snapshots:
 
   traverse@0.6.8: {}
 
-  tree-kill-promise@3.0.14:
+  tree-kill-promise@4.0.0:
     dependencies:
       tree-kill: 1.2.2
 
