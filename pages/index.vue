@@ -75,9 +75,9 @@
 
 <script>
 import portraitUrl from '@/assets/portrait.jpg';
-import individualProjects from '@/model/individual-projects.js';
-import openSourceLibraries from '@/model/open-source-libraries.js';
-import websitesAndWebApps from '@/model/websites-and-web-apps.js';
+import individualProjects from '@/model/individual-projects';
+import openSourceLibraries from '@/model/open-source-libraries';
+import websitesAndWebApps from '@/model/websites-and-web-apps';
 
 export default {
   computed: {

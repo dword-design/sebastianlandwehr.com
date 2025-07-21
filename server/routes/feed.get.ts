@@ -1,0 +1,38 @@
+import endent from 'endent';
+import { Feed } from 'feed';
+
+import { appName, appTitle } from '@/model/variables';
+
+export default defineEventHandler(async event => {
+  // TODO: Add server/tsconfig.json. See https://content.nuxt.com/docs/utils/query-collection#server-usage
+  // @ts-expect-error See TODO
+  const posts = await queryCollection(event, 'blog')
+    .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
+    .order('createdAt', 'DESC')
+    .all();
+
+  const feed = new Feed({
+    description: appTitle,
+    link: `${process.env.BASE_URL}/blog`,
+    title: appName,
+  });
+
+  for (const post of posts) {
+    const url = `${process.env.BASE_URL}${post.path}`;
+
+    feed.addItem({
+      content: endent`
+        <p><img alt="Cover image" src="${process.env.BASE_URL}${post.path}/banner.png"></p>
+        ${post.bodyHtml}
+      `,
+      date: new Date(post.createdAt),
+      description: post.description,
+      id: url,
+      link: url,
+      title: post.title,
+    });
+  }
+
+  event.res.setHeader('content-type', 'application/rss+xml; charset=utf-8');
+  event.res.end(feed.rss2());
+});

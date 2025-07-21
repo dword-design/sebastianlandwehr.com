@@ -1,26 +1,14 @@
 {
-  "name": "@dword-design/app",
-  "testInContainer": true,
-  "eslintConfig": {
-    "rules": {
-      "import/no-unresolved": [
-        "error",
-        {
-          "ignore": [
-            "#content"
-          ]
-        }
-      ]
-    }
-  },
-  "editorIgnore": [".data"],
-  "gitignore": ["/.data"],
+  "allowedMatches": ["content.config.ts", "global-pid.ts", "global-setup.ts", "global-teardown.ts"],
   "depcheckConfig": {
     "ignoreMatches": [
-      "playwright",
-      "playwright-chromium"
+      "@playwright/browser-chromium"
     ]
   },
-  "allowedMatches": ["content.config.js", "global-pid.js", "global-setup.js", "global-teardown.js"],
-  "testRunner": "playwright"
+  "editorIgnore": [".data"],
+  "fetchGitHistory": true,
+  "gitignore": ["/.data"],
+  "name": "@dword-design/app",
+  "testInContainer": true,
+  "virtualImports": ["#content"]
 }

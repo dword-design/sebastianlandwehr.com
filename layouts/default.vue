@@ -1,6 +1,7 @@
 <template>
-  <b-consent />
-  <app-navbar />
-  <slot />
-  <app-footer />
+  <div>
+    <app-navbar />
+    <slot />
+    <app-footer />
+  </div>
 </template>

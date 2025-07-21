@@ -13,7 +13,7 @@
   </ul>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import firebaseUrl from '@/assets/libraries/firebase.png';
 import nodejsUrl from '@/assets/libraries/nodejs.png';
 import npmUrl from '@/assets/libraries/npm.png';

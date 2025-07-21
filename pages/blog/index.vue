@@ -78,12 +78,7 @@
             </time>
           </div>
           <p>
-            {{
-              truncate(post.description, {
-                length: 200,
-                separator: ' ',
-              })
-            }}
+            {{ truncate(post.description, { length: 200, separator: ' ' }) }}
           </p>
         </div>
       </article>
@@ -91,24 +86,15 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { truncate } from 'lodash-es';
-
-import { queryCollection, useAsyncData, useHead } from '#imports';
 
 useHead({ title: 'Blog' });
 
 const { data: posts } = await useAsyncData(
   () =>
     queryCollection('blog')
-      .select(
-        ...Object.keys({
-          createdAt: true,
-          description: true,
-          path: true,
-          title: true,
-        }),
-      )
+      .select('createdAt', 'description', 'path', 'title')
       .order('createdAt', 'DESC')
       .all(),
   {

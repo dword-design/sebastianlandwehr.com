@@ -35,9 +35,7 @@
   </main>
 </template>
 
-<script setup>
-import { queryCollection, useAsyncData, useHead, useRoute } from '#imports';
-
+<script setup lang="ts">
 const route = useRoute();
 
 const { data: post } = await useAsyncData(
@@ -45,14 +43,7 @@ const { data: post } = await useAsyncData(
   () =>
     queryCollection('blog')
       .path(route.path)
-      .select(
-        ...Object.keys({
-          body: true,
-          createdAt: true,
-          path: true,
-          title: true,
-        }),
-      )
+      .select('body', 'createdAt', 'path', 'title')
       .first(),
   { transform: _ => ({ ..._, createdAt: new Date(_.createdAt) }) },
 );

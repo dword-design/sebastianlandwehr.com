@@ -3,4 +3,4 @@ ignoredBuiltDependencies:
   - esbuild
 onlyBuiltDependencies:
   - better-sqlite3
-  - playwright-chromium
+  - '@playwright/browser-chromium'

@@ -13,8 +13,9 @@
   </main>
 </template>
 
-<script setup>
-import { useHead } from '#imports';
-
-useHead({ title: 'Legal Notice' });
+<script setup lang="ts">
+useHead({
+  meta: [{ content: 'noindex', name: 'robots' }],
+  title: 'Legal Notice',
+});
 </script>

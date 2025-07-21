@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import { endent } from '@dword-design/functions';
+import endent from 'endent';
 
-import { appName } from '@/model/variables.js';
+import { appName } from '@/model/variables';
 
 export default {
   data: () => ({

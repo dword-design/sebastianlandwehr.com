@@ -108,10 +108,9 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import imageUrl from '@/assets/support-me.jpg';
-import donationPlatforms from '@/model/donation-platforms.js';
-import { useHead } from '#imports';
+import donationPlatforms from '@/model/donation-platforms';
 
 useHead({ title: 'Support me' });
 </script>

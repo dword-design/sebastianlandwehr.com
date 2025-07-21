@@ -244,3 +244,39 @@ a.is-text {
     padding-bottom: 3rem !important;
   }
 }
+
+.has-border {
+  border: 1px solid $border;
+}
+
+.has-border-primary {
+  border: 1px solid $primary;
+}
+
+.has-border-link {
+  border: 1px solid $link;
+}
+
+.has-border-info {
+  border: 1px solid $info;
+}
+
+.has-border-success {
+  border: 1px solid $success;
+}
+
+.has-border-warning {
+  border: 1px solid $warning;
+}
+
+.has-border-danger {
+  border: 1px solid $danger;
+}
+
+#matomo-opt-out p:first-child {
+  color: $danger !important;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
