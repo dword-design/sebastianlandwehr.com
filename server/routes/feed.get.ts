@@ -5,15 +5,7 @@ import { appName, appTitle } from '@/model/variables';
 
 export default defineEventHandler(async event => {
   const posts = await queryCollection(event, 'blog')
-    .select(
-      ...Object.keys({
-        bodyHtml: true,
-        createdAt: true,
-        description: true,
-        path: true,
-        title: true,
-      }),
-    )
+    .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
     .order('createdAt', 'DESC')
     .all();
 
