@@ -24,7 +24,7 @@ const icons = {
 };
 
 export default defineNuxtPlugin(nuxtApp => {
-  for (const entry of Object.entries(icons)) {
-    nuxtApp.vueApp.component(entry[0], entry[1]);
+  for (const [name, icon] of Object.entries(icons)) {
+    nuxtApp.vueApp.component(name, icon);
   }
 });
