@@ -25,7 +25,9 @@
     "setupDeploy": "base setupDeploy",
     "start": "base start",
     "test": "base test",
-    "test:raw": "base test:raw"
+    "test:raw": "base test:raw",
+    "typecheck": "base typecheck",
+    "verify": "base verify"
   },
   "dependencies": {
     "@dword-design/get-privacy-policy": "^1.0.6",
@@ -35,31 +37,30 @@
     "@dword-design/vue-consent-buefy": "^2.0.5",
     "@mdi/svg": "^7.4.47",
     "@nuxt/content": "npm:@dword-design/nuxt-content-fork@^3.0.0",
-    "@nuxt/kit": "^3.17.4",
-    "@nuxtjs/sitemap": "^7.3.0",
-    "dedent": "^1.6.0",
-    "depcheck-package-name": "^3.0.1",
+    "@nuxt/kit": "^3.17.7",
+    "@nuxtjs/sitemap": "^7.4.3",
+    "depcheck-package-name": "^4.0.0",
+    "endent": "npm:@dword-design/endent@^1.4.7",
     "execa": "^9.6.0",
     "feed": "^4.2.2",
     "lodash-es": "^4.17.21",
     "nuxt-content-body-html": "^4.0.4",
-    "nuxt-content-git": "^6.0.0",
+    "nuxt-content-git": "^6.0.1",
     "nuxt-gtag": "^0.5.9",
     "nuxt-mail": "^6.0.2",
     "port-ready": "^0.1.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
     "rehype-urls": "^1.2.0",
-    "tree-kill-promise": "^3.0.14",
+    "tree-kill-promise": "^4.0.0",
     "vue-honeypot": "^3.0.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^12.1.1",
-    "@dword-design/base-config-app": "^5.0.8",
-    "@playwright/test": "^1.52.0",
-    "axios": "^1.9.0",
-    "playwright": "^1.52.0",
-    "playwright-chromium": "^1.52.0",
+    "@dword-design/base": "^15.1.1",
+    "@dword-design/base-config-app": "^7.0.2",
+    "@playwright/browser-chromium": "^1.54.1",
+    "@playwright/test": "^1.54.1",
+    "axios": "^1.10.0",
     "pretty": "^2.0.0"
   },
   "peerDependencies": {
@@ -67,7 +68,7 @@
   },
   "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "publishConfig": {
     "access": "public"

@@ -1,7 +1,7 @@
-import dedent from 'dedent';
+import endent from 'endent';
 import { Feed } from 'feed';
 
-import { appName, appTitle } from '@/model/variables.js';
+import { appName, appTitle } from '@/model/variables';
 
 export default defineEventHandler(async event => {
   const posts = await queryCollection(event, 'blog')
@@ -27,7 +27,7 @@ export default defineEventHandler(async event => {
     const url = `${process.env.BASE_URL}${post.path}`;
 
     feed.addItem({
-      content: dedent`
+      content: endent`
         <p><img alt="Cover image" src="${process.env.BASE_URL}${post.path}/banner.png"></p>
         ${post.bodyHtml}
       `,

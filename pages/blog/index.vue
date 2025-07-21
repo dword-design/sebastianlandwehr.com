@@ -86,7 +86,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { truncate } from 'lodash-es';
 
 useHead({ title: 'Blog' });

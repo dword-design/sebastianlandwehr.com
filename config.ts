@@ -1,7 +1,7 @@
 import { createResolver } from '@nuxt/kit';
 import packageName from 'depcheck-package-name';
 
-import { appName, appTitle } from './model/variables.js';
+import { appName, appTitle } from './model/variables';
 
 const resolver = createResolver(import.meta.url);
 

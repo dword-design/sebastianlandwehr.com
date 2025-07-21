@@ -73,8 +73,8 @@
   </b-navbar>
 </template>
 
-<script setup>
-import { appName, appTitle } from '@/model/variables.js';
+<script setup lang="ts">
+import { appName, appTitle } from '@/model/variables';
 
 const NuxtLink = resolveComponent('NuxtLink');
 

@@ -1,7 +1,7 @@
 import { execaCommand } from 'execa';
 import portReady from 'port-ready';
 
-import pid from './global-pid.js';
+import pid from './global-pid';
 
 export default async () => {
   await execaCommand('base build', { stdio: 'inherit' });

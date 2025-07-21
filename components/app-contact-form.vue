@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import dedent from 'dedent';
+import endent from 'endent';
 
-import { appName } from '@/model/variables.js';
+import { appName } from '@/model/variables';
 
 export default {
   data: () => ({
@@ -62,7 +62,7 @@ export default {
           from: 'info@sebastianlandwehr.com',
           replyTo: this.email,
           subject: `${appName} Message`,
-          text: dedent`
+          text: endent`
             From: ${this.email}
 
             ${this.message}

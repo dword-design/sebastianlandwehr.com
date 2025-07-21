@@ -12,5 +12,5 @@
 /dist
 /nginx/default.config
 /node_modules
-/nuxt.config.js
+/nuxt.config.ts
 /test-results

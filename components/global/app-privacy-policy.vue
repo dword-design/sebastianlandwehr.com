@@ -7,6 +7,6 @@
   <!-- eslint-enable -->
 </template>
 
-<script setup>
+<script setup lang="ts">
 import getPrivacyPolicy from '@dword-design/get-privacy-policy';
 </script>

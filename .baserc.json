@@ -1,9 +1,8 @@
 {
-  "allowedMatches": ["content.config.js", "global-pid.js", "global-setup.js", "global-teardown.js"],
+  "allowedMatches": ["content.config.ts", "global-pid.ts", "global-setup.ts", "global-teardown.ts"],
   "depcheckConfig": {
     "ignoreMatches": [
-      "playwright",
-      "playwright-chromium"
+      "@playwright/browser-chromium"
     ]
   },
   "editorIgnore": [".data"],
@@ -11,6 +10,5 @@
   "gitignore": ["/.data"],
   "name": "@dword-design/app",
   "testInContainer": true,
-  "testRunner": "playwright",
   "virtualImports": ["#content"]
 }

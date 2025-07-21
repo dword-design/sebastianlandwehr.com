@@ -21,21 +21,19 @@ jobs:
       - run: git config --global user.name "GitHub Actions"
       - run: pnpm install --frozen-lockfile
       - env:
+          BASE_URL: ${{ secrets.BASE_URL }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TEST_BASE_URL: ${{ secrets.TEST_BASE_URL }}
-          TEST_GOOGLE_ANALYTICS_ID: ${{ secrets.TEST_GOOGLE_ANALYTICS_ID }}
-          TEST_MAIL_CONFIG: ${{ secrets.TEST_MAIL_CONFIG }}
-          TEST_PORT: ${{ secrets.TEST_PORT }}
-        run: pnpm test
+          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+          MAIL_CONFIG: ${{ secrets.MAIL_CONFIG }}
+          PORT: ${{ secrets.PORT }}
+        run: pnpm verify
       - if: always()
         uses: actions/upload-artifact@v4
         with:
           if-no-files-found: ignore
-          name: Images from tests
-          path: |-
-            **/__image_snapshots__/__diff_output__
-            test-results/*/**
-      - uses: codecov/codecov-action@v3
+          name: Data from tests
+          path: test-results/*/**
+      - uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
       - run: pnpm checkUnknownFiles
@@ -49,7 +47,7 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - if: github.ref == 'refs/heads/master'
-        run: ssh-keyscan sebastianlandwehr.com >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H sebastianlandwehr.com >> ~/.ssh/known_hosts
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: github.ref == 'refs/heads/master'

@@ -13,6 +13,6 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({ title: 'Legal Notice' });
 </script>

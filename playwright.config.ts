@@ -1,8 +1,8 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  globalSetup: './global-setup.js',
-  globalTeardown: './global-teardown.js',
+  globalSetup: './global-setup',
+  globalTeardown: './global-teardown',
   snapshotPathTemplate:
     '{snapshotDir}/{testFileDir}/{testFileName}-snapshots/{arg}{-projectName}{ext}',
   timeout: 60_000,
