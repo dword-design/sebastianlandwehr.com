@@ -14,5 +14,8 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Legal Notice' });
+useHead({
+  meta: [{ content: 'noindex', name: 'robots' }],
+  title: 'Legal Notice',
+});
 </script>

@@ -5,7 +5,7 @@ import { appName, appTitle } from '@/model/variables';
 
 export default defineEventHandler(async event => {
   // TODO: Add server/tsconfig.json. See https://content.nuxt.com/docs/utils/query-collection#server-usage
-  // @ts-ignore
+  // @ts-expect-error
   const posts = await queryCollection(event, 'blog')
     .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
     .order('createdAt', 'DESC')

@@ -34,6 +34,7 @@ export default {
       },
     ],
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     [
       '@nuxt/content',
       {
@@ -81,7 +82,6 @@ export default {
         },
       },
     ],
-    'nuxt-gtag',
     /* ...process.env.CODESPACES ? [(options, nuxt) => nuxt.hook('nitro:config', () => nuxt.hook("nitro:init", nitro => {
       nitro.options.runtimeConfig.public.content.wsUrl = `wss://${process.env.CODESPACE_NAME}-4000.app.github.dev/`
     }))] : [], */
@@ -90,7 +90,14 @@ export default {
   nitro: { externals: { inline: [resolver.resolve('./model')] } },
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
   router: { options: { linkActiveClass: 'is-active' } },
-  runtimeConfig: { public: { gtag: { id: process.env.GOOGLE_ANALYTICS_ID } } },
   site: { url: process.env.BASE_URL },
   title: appTitle,
+  vite: {
+    optimizeDeps: {
+      include: Object.keys({
+        'endent': true,
+        'lodash-es': true,
+      }),
+    },
+  },
 };

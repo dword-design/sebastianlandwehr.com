@@ -26,6 +26,9 @@ importers:
       '@nuxt/kit':
         specifier: ^3.17.7
         version: 3.17.7(magicast@0.3.5)
+      '@nuxtjs/robots':
+        specifier: ^5.4.0
+        version: 5.4.0(magicast@0.3.5)(vue@3.5.17(typescript@5.8.3))
       '@nuxtjs/sitemap':
         specifier: ^7.4.3
         version: 7.4.3(h3@1.15.3)(magicast@0.3.5)(vite@6.3.5(@types/node@24.0.15)(jiti@2.4.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
@@ -50,9 +53,6 @@ importers:
       nuxt-content-git:
         specifier: ^6.0.1
         version: 6.0.1
-      nuxt-gtag:
-        specifier: ^0.5.9
-        version: 0.5.9(magicast@0.3.5)
       nuxt-mail:
         specifier: ^6.0.2
         version: 6.0.2(magicast@0.3.5)
@@ -915,6 +915,9 @@ packages:
   '@fastify/busboy@3.1.1':
     resolution: {integrity: sha512-5DGmA8FTdB2XbDeEwc/5ZXBl6UbBAyBOOLlPuBnZ/N1SwdH9Ii+cOX3tBROlDgcTXxjOYnLMVoKk9+FXAw0CJw==}
 
+  '@fingerprintjs/botd@1.9.1':
+    resolution: {integrity: sha512-7kv3Yolsx9E56i+L1hCEcupH5yqcI5cmVktxy6B0K7rimaH5qDXwsiA5FL+fkxeUny7XQKn7p13HvK7ofDZB3g==}
+
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
     engines: {node: '>=18.18.0'}
@@ -1235,6 +1238,9 @@ packages:
   '@nuxtjs/mdc@https://pkg.pr.new/@nuxtjs/mdc@c44090f':
     resolution: {tarball: https://pkg.pr.new/@nuxtjs/mdc@c44090f}
     version: 0.16.1
+
+  '@nuxtjs/robots@5.4.0':
+    resolution: {integrity: sha512-E+bzaVsRQRgyN1RjhUexaqVZDV3MLKHff2e3WYHPiXrUNnOQ/RverO3D0yrP7fH5HqOBG0nBV6X3gD/q3+kUEA==}
 
   '@nuxtjs/sitemap@7.4.3':
     resolution: {integrity: sha512-edJ0bVuKS87PefTnKVMqcEwSZbur0yLg2eCKU2kjNDI1jC9tOnCHwXMHQficiKPXZolzqmlK7+U23Tv95OzVbg==}
@@ -5949,9 +5955,6 @@ packages:
     resolution: {integrity: sha512-1k6BC5E/UjL8eb51bHm97VIVHoagVhTGesESDchM4nszEkYd86C+8FK2JBGBGPnUJDYpNvUOsI5xJ9Y7MKnd9w==}
     engines: {node: '>=18'}
 
-  nuxt-gtag@0.5.9:
-    resolution: {integrity: sha512-rT6HaGzECmIAbc4fyyl0KzQWd8YwMoNBbXcSTYCwZ5WEZiPGViBicz8NP5j8Olgj6JLqD1EZiGEfAVyFNGNhuA==}
-
   nuxt-mail@6.0.2:
     resolution: {integrity: sha512-XjoI5S2sot6vk+TkG4xhmALV76/cVCLnfOhfSL2yhzCMh8xF6PGv3x+M/yVlTww3dfsbKLPIXBkU8vmFRN8V2w==}
     engines: {node: '>=18'}
@@ -9722,6 +9725,10 @@ snapshots:
 
   '@fastify/busboy@3.1.1': {}
 
+  '@fingerprintjs/botd@1.9.1':
+    dependencies:
+      tslib: 2.8.1
+
   '@humanfs/core@0.19.1': {}
 
   '@humanfs/node@0.16.6':
@@ -10483,6 +10490,22 @@ snapshots:
     transitivePeerDependencies:
       - magicast
       - supports-color
+
+  '@nuxtjs/robots@5.4.0(magicast@0.3.5)(vue@3.5.17(typescript@5.8.3))':
+    dependencies:
+      '@fingerprintjs/botd': 1.9.1
+      '@nuxt/kit': 3.17.7(magicast@0.3.5)
+      consola: 3.4.2
+      defu: 6.1.4
+      nuxt-site-config: 3.2.2(magicast@0.3.5)(vue@3.5.17(typescript@5.8.3))
+      pathe: 2.0.3
+      pkg-types: 2.2.0
+      sirv: 3.0.1
+      std-env: 3.9.0
+      ufo: 1.6.1
+    transitivePeerDependencies:
+      - magicast
+      - vue
 
   '@nuxtjs/sitemap@7.4.3(h3@1.15.3)(magicast@0.3.5)(vite@6.3.5(@types/node@24.0.15)(jiti@2.4.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
@@ -15624,14 +15647,6 @@ snapshots:
       simple-git: 3.28.0
     transitivePeerDependencies:
       - supports-color
-
-  nuxt-gtag@0.5.9(magicast@0.3.5):
-    dependencies:
-      '@nuxt/kit': 3.17.7(magicast@0.3.5)
-      defu: 6.1.4
-      pathe: 1.1.2
-    transitivePeerDependencies:
-      - magicast
 
   nuxt-mail@6.0.2(magicast@0.3.5):
     dependencies:
