@@ -94,14 +94,7 @@ useHead({ title: 'Blog' });
 const { data: posts } = await useAsyncData(
   () =>
     queryCollection('blog')
-      .select(
-        ...Object.keys({
-          createdAt: true,
-          description: true,
-          path: true,
-          title: true,
-        }),
-      )
+      .select('createdAt', 'description', 'path', 'title')
       .order('createdAt', 'DESC')
       .all(),
   {

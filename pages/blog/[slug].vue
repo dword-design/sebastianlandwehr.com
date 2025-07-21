@@ -43,14 +43,7 @@ const { data: post } = await useAsyncData(
   () =>
     queryCollection('blog')
       .path(route.path)
-      .select(
-        ...Object.keys({
-          body: true,
-          createdAt: true,
-          path: true,
-          title: true,
-        }),
-      )
+      .select('body', 'createdAt', 'path', 'title')
       .first(),
   { transform: _ => ({ ..._, createdAt: new Date(_.createdAt) }) },
 );
