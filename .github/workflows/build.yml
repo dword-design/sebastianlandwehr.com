@@ -23,7 +23,6 @@ jobs:
       - env:
           BASE_URL: ${{ secrets.BASE_URL }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
           MAIL_CONFIG: ${{ secrets.MAIL_CONFIG }}
           PORT: ${{ secrets.PORT }}
         run: pnpm verify
