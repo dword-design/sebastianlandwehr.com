@@ -4,7 +4,7 @@ import { Feed } from 'feed';
 import { appName, appTitle } from '@/model/variables';
 
 export default defineEventHandler(async event => {
-  const posts = await queryCollection(event, 'blog')
+  const posts = await queryCollection('blog')
     .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
     .order('createdAt', 'DESC')
     .all();
