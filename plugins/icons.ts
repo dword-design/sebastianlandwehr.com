@@ -1,14 +1,14 @@
-import MdiArrowRightBoldIcon from '@mdi/svg/svg/arrow-right-bold.svg';
-import MdiFacebookIcon from '@mdi/svg/svg/facebook.svg';
-import MdiGithubIcon from '@mdi/svg/svg/github.svg';
-import MdiHeartIcon from '@mdi/svg/svg/heart.svg';
-import MdiInstagramIcon from '@mdi/svg/svg/instagram.svg';
-import MdiLinkedinIcon from '@mdi/svg/svg/linkedin.svg';
-import MdiRssIcon from '@mdi/svg/svg/rss.svg';
-import MdiSendIcon from '@mdi/svg/svg/send.svg';
-import MdiTwitterIcon from '@mdi/svg/svg/twitter.svg';
+import MdiArrowRightBoldIcon from '@mdi/svg/svg/arrow-right-bold.svg?component';
+import MdiFacebookIcon from '@mdi/svg/svg/facebook.svg?component';
+import MdiGithubIcon from '@mdi/svg/svg/github.svg?component';
+import MdiHeartIcon from '@mdi/svg/svg/heart.svg?component';
+import MdiInstagramIcon from '@mdi/svg/svg/instagram.svg?component';
+import MdiLinkedinIcon from '@mdi/svg/svg/linkedin.svg?component';
+import MdiRssIcon from '@mdi/svg/svg/rss.svg?component';
+import MdiSendIcon from '@mdi/svg/svg/send.svg?component';
+import MdiTwitterIcon from '@mdi/svg/svg/twitter.svg?component';
 
-import XingIcon from '@/assets/xing-icon.svg';
+import XingIcon from '@/assets/xing-icon.svg?component';
 
 const icons = {
   MdiArrowRightBoldIcon,
