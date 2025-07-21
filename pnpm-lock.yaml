@@ -8,21 +8,15 @@ importers:
 
   .:
     dependencies:
-      '@dword-design/get-privacy-policy':
-        specifier: ^1.0.6
-        version: 1.0.6
       '@dword-design/legal-notice':
         specifier: ^2.0.0
         version: 2.0.0(vue@3.5.17(typescript@5.8.3))
       '@dword-design/nuxt-buefy':
         specifier: ^4.1.3
         version: 4.1.3(magicast@0.3.5)(vue@3.5.17(typescript@5.8.3))
-      '@dword-design/vue-consent':
-        specifier: ^3.0.0
-        version: 3.0.0(vue@3.5.17(typescript@5.8.3))
-      '@dword-design/vue-consent-buefy':
-        specifier: ^2.0.5
-        version: 2.0.5(vue@3.5.17(typescript@5.8.3))
+      '@dword-design/privacy-policy':
+        specifier: ^2.0.2
+        version: 2.0.2(vue@3.5.17(typescript@5.8.3))
       '@mdi/svg':
         specifier: ^7.4.47
         version: 7.4.47
@@ -473,11 +467,6 @@ packages:
     engines: {node: '>=18'}
     deprecated: Use lodash and endent
 
-  '@dword-design/get-privacy-policy@1.0.6':
-    resolution: {integrity: sha512-a4ck649V5hsaMJGtGZm+wkVPRA+JnU7F7Qg9CjCzD3mQVnCLGrwSL0QWJAJfeDy0Azz2yBYcV8Kq6v4me8dkyQ==}
-    engines: {node: '>=14'}
-    deprecated: Use @dword-design/privacy-policy
-
   '@dword-design/legal-notice@2.0.0':
     resolution: {integrity: sha512-c06/cObzf2ROi/hQHqj9s97HfrfRMxDFNolLhTjRcEDHNPTzOGdn+a9NyOujp9i5rou6xORraWQZ4KroeIQv3g==}
     engines: {node: '>=16'}
@@ -522,10 +511,6 @@ packages:
     resolution: {integrity: sha512-PHqxFhY1TaiiSJtcg0GM3hQDtRRWeFhEz8qjV91sZ9GGSrmrBpn3SqNfgQe5CzaDpf7pDFPbQvy1UmlZT8z4QQ==}
     engines: {node: '>=8'}
 
-  '@dword-design/personal-data@1.0.1':
-    resolution: {integrity: sha512-qD8ihxt/i39/oQsOipovRVOET67yEMINu1SYP7Z5PGFq8Yy8476n27oqCZZ0sjXBXhIDCn1+H/5SD74bYcfEFA==}
-    engines: {node: '>=12'}
-
   '@dword-design/personal-data@2.0.3':
     resolution: {integrity: sha512-ufLKbxChE+oKnyDziyMvyiSfdTTaExXuq5u++/opEOgbN5CY+sw9BvAtqR5EbAhfNQhxbwo4jPfWhUkeEwDbwQ==}
     engines: {node: '>=14'}
@@ -533,23 +518,15 @@ packages:
   '@dword-design/plugin-name-to-package-name@0.1.2':
     resolution: {integrity: sha512-kATg/RzRkq/Yv0qNJziPqwAzKstBTzuXnowH4MvAMyqW6C7o5HlgZtik3GzO0kBKCBZBoRswBSvo9AHclOTxfg==}
 
+  '@dword-design/privacy-policy@2.0.2':
+    resolution: {integrity: sha512-m757FxZFaO2K6V/B5tqI7kYUULavz/ISXymO6HC6qHOGq1T6uTIztO6rk3c8XCq7b8vXpxK5BOcoQcjB8pru4A==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      vue: '*'
+
   '@dword-design/stylelint-config@4.1.0':
     resolution: {integrity: sha512-3n7LpQ1NZTyQT2xVEDFNzuW3xZjOSzRgNfJu5Ua5rVnD8h0pJdqNzToMDBDGiph+kOL8oclrIJnOjsD2Zz50tA==}
     engines: {node: '>=18'}
-
-  '@dword-design/vue-consent-buefy@2.0.5':
-    resolution: {integrity: sha512-A+Hi1rgwjZpWWfgixaj5fhMYAJFb67rNo1wKhj9n4WM3QpLOWrGaTOxgksNAzaJIZYfahfBptlWnHfAYbs0BcQ==}
-    engines: {node: '>=16'}
-    deprecated: Do not use Google Analytics
-    peerDependencies:
-      vue: ^3
-
-  '@dword-design/vue-consent@3.0.0':
-    resolution: {integrity: sha512-eaGTfseicNisCsJOY9sU4XyxDs4hLZG0qQG3qJLHgPJAkZZ4E3UhpS7miWc43pohAYLhQaLzHqakfORpVrIT3A==}
-    engines: {node: '>=18'}
-    deprecated: Do not use Google Analytics
-    peerDependencies:
-      vue: ^3
 
   '@emnapi/core@1.4.5':
     resolution: {integrity: sha512-XsLw1dEOpkSX/WucdqUhPWP7hDxSvZiY+fsUC14h+FtQ2Ifni4znbBt8punRX+Uj2JG/uDb8nEHVKvrVlvdZ5Q==}
@@ -2918,10 +2895,6 @@ packages:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
 
-  clone-regexp@3.0.0:
-    resolution: {integrity: sha512-ujdnoq2Kxb8s3ItNBtnYeXdm07FcU0u8ARAT1lQ2YdMwQC+cdiXX8KoqMVuglztILivceTtp4ivqGSmEmhBUJw==}
-    engines: {node: '>=12'}
-
   clone@1.0.4:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
@@ -3064,10 +3037,6 @@ packages:
     resolution: {integrity: sha512-ZPMl0ZJbw74iS9LuX9YIAiW8pfM5p3yh2o/NbXHbkFuZzY5jvdi5jFycEOkmBW5H5I7nA+D6f3UcsCLP2vvSEA==}
     engines: {node: '>=16'}
     hasBin: true
-
-  convert-hrtime@5.0.0:
-    resolution: {integrity: sha512-lOETlkIeYSJWcbbcvjRKGxVMXJR+8+OQb/mTPbA4ObPMytYIsUbuOE0Jzy60hjARYszq1id0j8KgVhC+WGZVTg==}
-    engines: {node: '>=12'}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -4260,10 +4229,6 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  function-timeout@0.1.1:
-    resolution: {integrity: sha512-0NVVC0TaP7dSTvn1yMiy6d6Q8gifzbvQafO46RtLG/kHJUBNd+pVRGOBoK44wNBvtSPUJRfdVvkFdD3p0xvyZg==}
-    engines: {node: '>=14.16'}
-
   fuse.js@7.1.0:
     resolution: {integrity: sha512-trLf4SzuuUxfusZADLINj+dE8clK1frKdmqiJNb1Es75fmI5oY6X2mxLVUciLLjxqw/xr72Dhy+lER6dGd02FQ==}
     engines: {node: '>=10'}
@@ -4754,10 +4719,6 @@ packages:
     resolution: {integrity: sha512-zHtQzGojZXTwZTHQqra+ETKd4Sn3vgi7uBmlPoXVWZqYvuKmtI0l/VZTjqGmJY9x88GGOaZ9+G9ES8hC4T4X8g==}
     engines: {node: '>= 12'}
 
-  ip-regex@5.0.0:
-    resolution: {integrity: sha512-fOCG6lhoKKakwv+C6KdsOnGvgXnmgfmp0myi3bcNwj3qfwPAxRKWEuFhvEFF7ceYIz6+1jRZ+yguLFAmUNPEfw==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
@@ -4868,10 +4829,6 @@ packages:
     resolution: {integrity: sha512-2HvIEKRoqS62guEC+qBjpvRubdX910WCMuJTZ+I9yvqKU2/12eSL549HMwtabb4oupdj2sMP50k+XJfB/8JE6w==}
     engines: {node: '>=8'}
 
-  is-ip@5.0.1:
-    resolution: {integrity: sha512-FCsGHdlrOnZQcp0+XT5a+pYowf33itBalCl+7ovNXC/7o5BhIpG14M3OrpPPdBSIQJCm+0M5+9mO7S9VVTTCFw==}
-    engines: {node: '>=14.16'}
-
   is-module@1.0.0:
     resolution: {integrity: sha512-51ypPSPCoTEIN9dy5Oy+h4pShgJmPCygKfyRCISBI+JoWT/2oJvK8QPxmwv7b/p239jXrm9M1mlQbyKJ5A152g==}
 
@@ -4921,10 +4878,6 @@ packages:
 
   is-reference@1.2.1:
     resolution: {integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==}
-
-  is-regexp@3.1.0:
-    resolution: {integrity: sha512-rbku49cWloU5bSMI+zaRaXdQHXnthP6DZ/vLnfdSKyL4zUzuWnomtOEiZZOd+ioQ+avFo/qau3KPTc7Fjy1uPA==}
-    engines: {node: '>=12'}
 
   is-relative@1.0.0:
     resolution: {integrity: sha512-Kw/ReK0iqwKeu0MITLFuj0jbPAmEiOsIwyIXvvbfa6QfmN9pkD1M+8pdk7Rl/dTKbH34/XBFMbgD4iMJhLQbGA==}
@@ -6249,10 +6202,6 @@ packages:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
 
-  parse-domain@8.2.2:
-    resolution: {integrity: sha512-CoksenD3UDqphCHlXIcNh/TX0dsYLHo6dSAUC/QBcJRWJXcV5rc1mwsS4WbhYGu4LD4Uxc0v3ZzGo+OHCGsLcw==}
-    hasBin: true
-
   parse-entities@4.0.2:
     resolution: {integrity: sha512-GG2AQYWoLgL877gQIKeRPGO1xF9+eG1ujIb5soS5gPvLQ1y2o8FL90w2QWNdf9I361Mpp7726c+lj3U0qK1uGw==}
 
@@ -7550,10 +7499,6 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  super-regex@0.2.0:
-    resolution: {integrity: sha512-WZzIx3rC1CvbMDloLsVw0lkZVKJWbrkJ0k1ghKFmcnPrW1+jWbgTkTEWVtD9lMdmI4jZEz40+naBxl1dCUhXXw==}
-    engines: {node: '>=14.16'}
-
   superjson@2.2.2:
     resolution: {integrity: sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==}
     engines: {node: '>=16'}
@@ -7689,10 +7634,6 @@ packages:
 
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
-
-  time-span@5.1.0:
-    resolution: {integrity: sha512-75voc/9G4rDIJleOo4jPvN4/YC4GRZrY8yy1uU4lwrB3XEQbWve8zXoO5No4eFrGcTAMYyoY67p8jRQdtA1HbA==}
-    engines: {node: '>=12'}
 
   tiny-invariant@1.3.3:
     resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
@@ -9376,11 +9317,6 @@ snapshots:
       lodash: 4.17.21
       tinycolor2: 1.6.0
 
-  '@dword-design/get-privacy-policy@1.0.6':
-    dependencies:
-      '@dword-design/functions': 4.1.7
-      '@dword-design/personal-data': 1.0.1
-
   '@dword-design/legal-notice@2.0.0(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@dword-design/personal-data': 2.0.3
@@ -9492,10 +9428,6 @@ snapshots:
       git-config-path: 2.0.0
       ini: 1.3.8
 
-  '@dword-design/personal-data@1.0.1':
-    dependencies:
-      '@dword-design/functions': 4.1.7
-
   '@dword-design/personal-data@2.0.3':
     dependencies:
       '@dword-design/functions': 4.1.7
@@ -9503,6 +9435,11 @@ snapshots:
   '@dword-design/plugin-name-to-package-name@0.1.2':
     dependencies:
       is-absolute: 1.0.0
+
+  '@dword-design/privacy-policy@2.0.2(vue@3.5.17(typescript@5.8.3))':
+    dependencies:
+      '@dword-design/personal-data': 2.0.3
+      vue: 3.5.17(typescript@5.8.3)
 
   '@dword-design/stylelint-config@4.1.0(postcss@8.5.6)(prettier@3.6.2)(stylelint@16.22.0(typescript@5.8.3))(tailwindcss@4.1.11)':
     dependencies:
@@ -9521,18 +9458,6 @@ snapshots:
       - prettier
       - stylelint
       - tailwindcss
-
-  '@dword-design/vue-consent-buefy@2.0.5(vue@3.5.17(typescript@5.8.3))':
-    dependencies:
-      '@dword-design/buefy-addons': 2.0.14
-      vue: 3.5.17(typescript@5.8.3)
-
-  '@dword-design/vue-consent@3.0.0(vue@3.5.17(typescript@5.8.3))':
-    dependencies:
-      js-cookie: 3.0.5
-      lodash-es: 4.17.21
-      parse-domain: 8.2.2
-      vue: 3.5.17(typescript@5.8.3)
 
   '@emnapi/core@1.4.5':
     dependencies:
@@ -12298,10 +12223,6 @@ snapshots:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
 
-  clone-regexp@3.0.0:
-    dependencies:
-      is-regexp: 3.1.0
-
   clone@1.0.4: {}
 
   cluster-key-slot@1.1.2: {}
@@ -12448,8 +12369,6 @@ snapshots:
       is-text-path: 2.0.0
       meow: 12.1.1
       split2: 4.2.0
-
-  convert-hrtime@5.0.0: {}
 
   convert-source-map@2.0.0: {}
 
@@ -13745,8 +13664,6 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  function-timeout@0.1.1: {}
-
   fuse.js@7.1.0: {}
 
   gensync@1.0.0-beta.2: {}
@@ -14378,8 +14295,6 @@ snapshots:
       jsbn: 1.1.0
       sprintf-js: 1.1.3
 
-  ip-regex@5.0.0: {}
-
   iron-webcrypto@1.2.1: {}
 
   is-absolute-url@4.0.1: {}
@@ -14467,11 +14382,6 @@ snapshots:
 
   is-interactive@1.0.0: {}
 
-  is-ip@5.0.1:
-    dependencies:
-      ip-regex: 5.0.0
-      super-regex: 0.2.0
-
   is-module@1.0.0: {}
 
   is-number@2.1.0:
@@ -14501,8 +14411,6 @@ snapshots:
   is-reference@1.2.1:
     dependencies:
       '@types/estree': 1.0.8
-
-  is-regexp@3.1.0: {}
 
   is-relative@1.0.0:
     dependencies:
@@ -16141,10 +16049,6 @@ snapshots:
     dependencies:
       callsites: 3.1.0
 
-  parse-domain@8.2.2:
-    dependencies:
-      is-ip: 5.0.1
-
   parse-entities@4.0.2:
     dependencies:
       '@types/unist': 2.0.11
@@ -17674,12 +17578,6 @@ snapshots:
       - supports-color
       - typescript
 
-  super-regex@0.2.0:
-    dependencies:
-      clone-regexp: 3.0.0
-      function-timeout: 0.1.1
-      time-span: 5.1.0
-
   superjson@2.2.2:
     dependencies:
       copy-anything: 3.0.5
@@ -17831,10 +17729,6 @@ snapshots:
       readable-stream: 3.6.2
 
   through@2.3.8: {}
-
-  time-span@5.1.0:
-    dependencies:
-      convert-hrtime: 5.0.0
 
   tiny-invariant@1.3.3: {}
 

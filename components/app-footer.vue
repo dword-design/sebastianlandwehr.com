@@ -10,11 +10,6 @@
             Privacy Policy
           </nuxt-link>
         </li>
-        <li class="column is-narrow">
-          <b-button class="is-link" @click="$consent.open()">
-            Privacy Settings
-          </b-button>
-        </li>
       </ul>
     </nav>
   </footer>

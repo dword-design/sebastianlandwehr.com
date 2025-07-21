@@ -1,7 +1,12 @@
 <template>
   <main class="section">
     <div class="container is-content">
-      <app-privacy-policy />
+      <div class="content">
+        <app-privacy-policy
+          :config="{ contact: true, matomo: true }"
+          locale="en"
+        />
+      </div>
     </div>
   </main>
 </template>

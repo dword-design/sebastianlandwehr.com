@@ -10,11 +10,11 @@ export default defineEventHandler(async event => {
     .all();
 
   const feed = new Feed({
-    id: `${process.env.BASE_URL}/blog`,
-    title: appName,
-    description: appTitle,
-    link: `${process.env.BASE_URL}/blog`,
     copyright: `Copyright © ${new Date().getFullYear()} ${appName}`,
+    description: appTitle,
+    id: `${process.env.BASE_URL}/blog`,
+    link: `${process.env.BASE_URL}/blog`,
+    title: appName,
   });
 
   for (const post of posts) {
