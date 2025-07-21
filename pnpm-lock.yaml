@@ -79,8 +79,8 @@ importers:
         version: 3.0.1
     devDependencies:
       '@dword-design/base':
-        specifier: ^15.1.1
-        version: 15.1.1(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(esbuild@0.25.8)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))
+        specifier: ^15.1.2
+        version: 15.1.2(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(esbuild@0.25.8)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))
       '@dword-design/base-config-app':
         specifier: ^7.0.2
         version: 7.0.2(@netlify/blobs@9.1.2)(@parcel/watcher@2.5.1)(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(@vue/compiler-dom@3.5.17)(@vue/compiler-sfc@3.5.17)(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(esbuild@0.25.8)(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.6.2)(rollup@4.45.1)(semantic-release@22.0.12(typescript@5.8.3))(tailwindcss@4.1.11)(terser@5.43.1)(tsx@4.20.3)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.15)(jiti@2.4.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))(vue-tsc@2.2.12(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))(webpack@5.100.2(esbuild@0.25.8))
@@ -387,8 +387,8 @@ packages:
     resolution: {integrity: sha512-NhpI8K5B0H29qHq9EXKyWwk+7lYXXB5+YpM3EaMd9xmVkIr0uWR84cW5WOcD/pRDU/CP8Vja404Exd4NAe4H5A==}
     engines: {node: '>=20'}
 
-  '@dword-design/base@15.1.1':
-    resolution: {integrity: sha512-/36h3j5enp51lRb3y+ruF6+mj/6WQvGDU09xal9DqpP67I34jDj697hfmwAxd/9oZTai/E2kEKbKNvi9SvDpkQ==}
+  '@dword-design/base@15.1.2':
+    resolution: {integrity: sha512-TkjZ7g9rLjyez7AP8ed1U3GoL4anvmQNWR4tlHzkaqzltZSybgAMMQ3lBpeBg7Y3q3UdyAtw9kipsEe+U8gsgg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -8982,7 +8982,7 @@ snapshots:
   '@dword-design/base-config-nuxt@8.0.2(@netlify/blobs@9.1.2)(@parcel/watcher@2.5.1)(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(@vue/compiler-dom@3.5.17)(@vue/compiler-sfc@3.5.17)(better-sqlite3@11.10.0)(db0@0.3.2(better-sqlite3@11.10.0))(esbuild@0.25.8)(eslint@9.31.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.6.2)(rollup@4.45.1)(tailwindcss@4.1.11)(terser@5.43.1)(tsx@4.20.3)(vite@6.3.5(@types/node@24.0.15)(jiti@2.4.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))(vue-tsc@2.2.12(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))(webpack@5.100.2(esbuild@0.25.8))(yaml@2.8.0)':
     dependencies:
       '@babel/core': 7.28.0
-      '@dword-design/base': 15.1.1(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(esbuild@0.25.8)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))
+      '@dword-design/base': 15.1.2(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(esbuild@0.25.8)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))
       '@dword-design/depcheck-parser-sass': 5.0.0
       '@dword-design/dotenv-json-extended': 4.0.1
       '@dword-design/nuxt-i18n': 1.0.1(@vue/compiler-dom@3.5.17)(eslint@9.31.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.45.1)(vue@3.5.17(typescript@5.8.3))
@@ -9083,7 +9083,7 @@ snapshots:
       - xml2js
       - yaml
 
-  '@dword-design/base@15.1.1(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(esbuild@0.25.8)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))':
+  '@dword-design/base@15.1.2(@types/eslint@9.6.1)(@types/node@24.0.15)(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-core@3.5.17)(esbuild@0.25.8)(vue-eslint-parser@10.2.0(eslint@9.31.0(jiti@2.4.2)))':
     dependencies:
       '@commitlint/cli': 18.6.1(@types/node@24.0.15)(typescript@5.8.3)
       '@commitlint/config-conventional': 18.6.3
