@@ -1,3 +1,10 @@
+## [1.10.71](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.70...v1.10.71) (2025-07-21)
+
+
+### Bug Fixes
+
+* remove types ([ae8c562](https://github.com/dword-design/sebastianlandwehr.com/commit/ae8c562b6e53d68706cb85da8e9d183f8759e8a4))
+
 ## [1.10.70](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.69...v1.10.70) (2025-07-21)
 
 
