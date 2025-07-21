@@ -244,3 +244,11 @@ a.is-text {
     padding-bottom: 3rem !important;
   }
 }
+
+#matomo-opt-out p:first-child {
+  color: $danger !important;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}

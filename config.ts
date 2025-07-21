@@ -93,11 +93,6 @@ export default {
   site: { url: process.env.BASE_URL },
   title: appTitle,
   vite: {
-    optimizeDeps: {
-      include: Object.keys({
-        'endent': true,
-        'lodash-es': true,
-      }),
-    },
+    optimizeDeps: { include: Object.keys({ endent: true, 'lodash-es': true }) },
   },
 };

@@ -3,7 +3,7 @@
     <div class="container is-content">
       <div class="content">
         <app-privacy-policy
-          :config="{ contact: true, matomo: true }"
+          :config="{ contact: true, matomo: { optOutContainerClasses: 'box' } }"
           locale="en"
         />
       </div>
