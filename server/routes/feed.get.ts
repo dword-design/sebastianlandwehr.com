@@ -4,15 +4,15 @@ import { Feed } from 'feed';
 import { appName, appTitle } from '@/model/variables';
 
 export default defineEventHandler(async event => {
-  const posts = await queryCollection('blog')
+  // TODO: Add server/tsconfig.json. See https://content.nuxt.com/docs/utils/query-collection#server-usage
+  // @ts-ignore
+  const posts = await queryCollection(event, 'blog')
     .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
     .order('createdAt', 'DESC')
     .all();
 
   const feed = new Feed({
-    copyright: `Copyright © ${new Date().getFullYear()} ${appName}`,
     description: appTitle,
-    id: `${process.env.BASE_URL}/blog`,
     link: `${process.env.BASE_URL}/blog`,
     title: appName,
   });
