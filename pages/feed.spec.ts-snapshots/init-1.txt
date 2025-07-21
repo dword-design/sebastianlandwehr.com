@@ -12,7 +12,7 @@
         <![CDATA[Using ACSS atomic CSS framework (aka Atomizer) with Nuxt]]>
       </title>
       <link>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</link>
-      <guid>http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/using-acss-atomic-css-framework-aka-atomizer-with-nuxt</guid>
       <pubDate>Sun, 18 Jul 2021 14:17:04 GMT</pubDate>
       <description>
         <![CDATA[ACSS is a nice little Atomic CSS framework. In contrast to alternatives like Tailwind, it generates atomic classes from the actual class instances. This allows to 1. keep the number of generated classes at a minimum, and 2. to pass arbitrary values to the classes (which would normally lead to a big class explosion). Under the hood it uses a tool called Atomizer to generate these classes. This article describes how to use ACSS in a Nuxt app using the nuxt-atomizer module.]]>
@@ -47,7 +47,7 @@
         <![CDATA[Creating an RSS Feed from Nuxt Content with Full Body HTML]]>
       </title>
       <link>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</link>
-      <guid>http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/creating-an-rss-feed-from-nuxt-content-with-full-body-html-code</guid>
       <pubDate>Sat, 17 Jul 2021 22:31:24 GMT</pubDate>
       <description>
         <![CDATA[There is already an official doc article about how to create an RSS feed from Nuxt Content. But it only adds the excerpt as the actual content. Most feed readers allow the reader to read the whole article right in the app without a context switch. This article will present a way to add the whole document to the RSS feed by adding a simple drop-in module.]]>
@@ -188,7 +188,7 @@ posts.forEach(post => {
         <![CDATA[Generating Beautiful Flowchart Diagrams With Mermaid and Vue/Nuxt]]>
       </title>
       <link>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</link>
-      <guid>http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/generating-beautiful-flowchart-diagrams-with-mermaid-and-vue-nuxt</guid>
       <pubDate>Tue, 29 Jun 2021 16:06:44 GMT</pubDate>
       <description>
         <![CDATA[Hey folks, today I want to show you how to generate flowchart diagrams in a Vue or Nuxt application using vue-mermaid-string and nuxt-mermaid-string. They both help to integrate the wonderful Mermaid library into your Vue-based projects.]]>
@@ -315,7 +315,7 @@ export default {
         <![CDATA[How to Access Nuxt.js Page Data in Route Meta Fields]]>
       </title>
       <link>http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</link>
-      <guid>http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/how-to-access-nuxt-js-page-data-in-route-meta-fields</guid>
       <pubDate>Thu, 13 May 2021 13:08:54 GMT</pubDate>
       <description>
         <![CDATA[Hey folks, this article is about accessing page data in route objects. It's a use case I have frequently stumbled upon, for example when generating sitemaps.]]>
@@ -476,7 +476,7 @@ export default {
         <![CDATA[How to Write File-Based JavaScript Tests With Real Files]]>
       </title>
       <link>http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</link>
-      <guid>http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/how-to-write-file-based-javascript-tests-with-real-files</guid>
       <pubDate>Wed, 21 Apr 2021 10:33:23 GMT</pubDate>
       <description>
         <![CDATA[Hey guys, this post is about writing tests for projects that access the file system by reading and writing files to disk.]]>
@@ -677,7 +677,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[@nuxt/content: How to Keep createdAt and updatedAt Valid After Cloning]]>
       </title>
       <link>http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</link>
-      <guid>http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/nuxt-content-how-to-keep-createdat-and-updatedat-valid-after-cloning</guid>
       <pubDate>Tue, 13 Apr 2021 22:45:06 GMT</pubDate>
       <description>
         <![CDATA[I recently tried out @nuxt/content, a Git-based CMS for Nuxt projects. And I really like it! It allows me to write markdown files and host them right in my existing project.]]>
@@ -704,7 +704,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[Using Modernizr with Nuxt.js to Detect Browser Features]]>
       </title>
       <link>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</link>
-      <guid>http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/using-modernizr-with-nuxt-js-to-detect-browser-features</guid>
       <pubDate>Wed, 10 Mar 2021 13:47:54 GMT</pubDate>
       <description>
         <![CDATA[Modernizr is a package that detects browser features and makes them queriable via JavaScript and CSS. This is very handy to find out which CSS properties are supported, for example. The approach is much more flexible and stable than using browser vendor and version for this. I wrote a module that allows to use Modernizr with Nuxt.js.]]>
@@ -747,7 +747,7 @@ it('uses repository url', () => withLocalTmpDir(async () => {
         <![CDATA[Image Snapshot Testing with Mocha]]>
       </title>
       <link>http://localhost:3000/blog/image-snapshot-testing-with-mocha</link>
-      <guid>http://localhost:3000/blog/image-snapshot-testing-with-mocha</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/image-snapshot-testing-with-mocha</guid>
       <pubDate>Tue, 09 Mar 2021 18:53:01 GMT</pubDate>
       <description>
         <![CDATA[Snapshot testing is a testing mechanism that for long has seemed to be exclusive to Jest. The main idea is to generate expected values into a separate file and to compare the actual tested values with these saved values. It is also possible to update snapshots by passing an environment variable. This testing approach is great for complex data like large strings, DOM content, or images. I wrote a package to use image snapshot testing also with Mocha.]]>
@@ -782,7 +782,7 @@ it('works', async function () {
         <![CDATA[Sending Emails with Nuxt.js the Easy Way]]>
       </title>
       <link>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</link>
-      <guid>http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</guid>
+      <guid isPermaLink="false">http://localhost:3000/blog/sending-emails-with-nuxt-js-the-easy-way</guid>
       <pubDate>Sun, 07 Mar 2021 14:43:42 GMT</pubDate>
       <description>
         <![CDATA[When I started to work with Nuxt.js, I frequently had the problem that I wanted so send emails via a contact form. While there are third party services to do that, I thought: Why not use the existing server infrastructure that comes with Nuxt.js?]]>
