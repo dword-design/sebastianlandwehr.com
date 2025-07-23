@@ -95,7 +95,8 @@ export default {
   vite: {
     optimizeDeps: {
       include: Object.keys({
-        '@dword-design/legal-notic': true,
+        '@dword-design/legal-notice': true,
+        '@dword-design/privacy-policy': true,
         endent: true,
         'lodash-es': true,
       }),

@@ -30,9 +30,9 @@
     "verify": "base verify"
   },
   "dependencies": {
-    "@dword-design/legal-notice": "^2.0.0",
+    "@dword-design/legal-notice": "^3.0.0",
     "@dword-design/nuxt-buefy": "^4.1.3",
-    "@dword-design/privacy-policy": "^2.0.2",
+    "@dword-design/privacy-policy": "^3.0.0",
     "@mdi/svg": "^7.4.47",
     "@nuxt/content": "npm:@dword-design/nuxt-content-fork@^3.0.0",
     "@nuxt/kit": "^3.17.7",
@@ -45,7 +45,7 @@
     "lodash-es": "^4.17.21",
     "nuxt-content-body-html": "^4.0.4",
     "nuxt-content-git": "^6.0.1",
-    "nuxt-mail": "^6.0.2",
+    "nuxt-mail": "^7.0.1",
     "port-ready": "^0.1.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
@@ -54,7 +54,7 @@
     "vue-honeypot": "^3.0.1"
   },
   "devDependencies": {
-    "@dword-design/base": "^15.1.2",
+    "@dword-design/base": "^15.1.6",
     "@dword-design/base-config-app": "^7.0.2",
     "@playwright/browser-chromium": "^1.54.1",
     "@playwright/test": "^1.54.1",
