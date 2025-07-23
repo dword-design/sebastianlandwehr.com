@@ -1,3 +1,10 @@
+## [1.10.72](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.71...v1.10.72) (2025-07-23)
+
+
+### Bug Fixes
+
+* foo ([1a5e4bc](https://github.com/dword-design/sebastianlandwehr.com/commit/1a5e4bc227a0fd16da2d44935d08297f2e650e1a))
+
 ## [1.10.71](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.70...v1.10.71) (2025-07-21)
 
 
