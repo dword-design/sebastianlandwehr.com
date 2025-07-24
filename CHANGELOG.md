@@ -1,3 +1,10 @@
+## [1.10.73](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.72...v1.10.73) (2025-07-24)
+
+
+### Bug Fixes
+
+* update pnpm to v10.13.1 ([#197](https://github.com/dword-design/sebastianlandwehr.com/issues/197)) ([dcef792](https://github.com/dword-design/sebastianlandwehr.com/commit/dcef7925cc7af57404098589bbac9a06c845492b))
+
 ## [1.10.72](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.71...v1.10.72) (2025-07-23)
 
 
