@@ -12,8 +12,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(vue@3.5.18(typescript@5.8.3))
       '@dword-design/nuxt-buefy':
-        specifier: ^4.1.3
-        version: 4.1.3(magicast@0.3.5)(vue@3.5.18(typescript@5.8.3))
+        specifier: ^5.0.0
+        version: 5.0.7(magicast@0.3.5)(vue@3.5.18(typescript@5.8.3))
       '@dword-design/privacy-policy':
         specifier: ^3.0.0
         version: 3.0.0(vue@3.5.18(typescript@5.8.3))
@@ -482,9 +482,9 @@ packages:
     resolution: {integrity: sha512-ns0t/Fxwsf3Egva6SNEStZ/3TKTIgCJW4fGGtQoeAz3PWQRWumrqxTa3tM6dzU4w8thSi8dcaEjP6RRQJtvLhg==}
     engines: {node: '>= 14'}
 
-  '@dword-design/nuxt-buefy@4.1.3':
-    resolution: {integrity: sha512-HN2yC4nQSzxUyNNo3lCZskAbL5tyYAS96Rj3gtQ0Bi3zwntrtZet0rH/l/ehspBheIB2MqrC3VEsAIraGCt9AA==}
-    engines: {node: '>=18'}
+  '@dword-design/nuxt-buefy@5.0.7':
+    resolution: {integrity: sha512-O/fsOq3Oyu+HPHJe2bob2Lwle1XW/KRfyKyMHkIxjmVaWaIPERAnBnyCiVSwiOh86rlMZ0BnD+oLpF+v/s6Plw==}
+    engines: {node: '>=20'}
 
   '@dword-design/nuxt-content-fork@3.0.0':
     resolution: {integrity: sha512-kLIqzJzbqD8Se1D2GSQsqbIPVu3hRYrDet+R30AcNVz6c+EMg6jdUy667kXATB6H8YTvHoFdPr5G94enzr0WLw==}
@@ -9348,13 +9348,14 @@ snapshots:
       findup-sync: 0.4.3
       resolve-from: 5.0.0
 
-  '@dword-design/nuxt-buefy@4.1.3(magicast@0.3.5)(vue@3.5.18(typescript@5.8.3))':
+  '@dword-design/nuxt-buefy@5.0.7(magicast@0.3.5)(vue@3.5.18(typescript@5.8.3))':
     dependencies:
       '@dword-design/buefy-addons': 2.0.14
       '@dword-design/buefy-svg-icon': 3.0.0
       '@nuxt/kit': 3.17.7(magicast@0.3.5)
       buefy: '@dword-design/buefy-next-fork@0.1.0(vue@3.5.18(typescript@5.8.3))'
       bulma: 0.9.4
+      depcheck-package-name: 4.0.0
       sass-stretched-link: 2.0.53
     transitivePeerDependencies:
       - magicast
