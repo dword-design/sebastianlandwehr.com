@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+
+// @ts-nocheck
+
 export default defineNuxtPlugin(() => {
   const _paq = (globalThis._paq = globalThis._paq || []);
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */

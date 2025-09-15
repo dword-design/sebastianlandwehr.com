@@ -3,8 +3,8 @@ import { globalIgnores } from 'eslint/config';
 
 import withNuxt from './.nuxt/eslint.config.mjs';
 
-export default withNuxt(
-  globalIgnores(['eslint.config.ts', 'ecosystem.json']),
+export default await withNuxt(
+  globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts', 'ecosystem.json']),
   config,
 {
   rules: {
@@ -17,4 +17,4 @@ export default withNuxt(
       'unicorn/filename-case': 'off',
     },
   },
-);
+).toConfigs();

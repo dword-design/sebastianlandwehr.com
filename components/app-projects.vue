@@ -30,6 +30,6 @@
   </div>
 </template>
 
-<script>
-export default { props: { value: {} } };
+<script setup lang="ts">
+defineProps<{ value: Project[] }>();
 </script>

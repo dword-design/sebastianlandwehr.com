@@ -6,6 +6,6 @@ import pid from './global-pid';
 export default async () => {
   await execaCommand('base build', { stdio: 'inherit' });
   const nuxt = execaCommand('base start', { stderr: 'inherit' });
-  pid.value = nuxt.pid;
+  pid.value = nuxt.pid!;
   await portReady(3000);
 };

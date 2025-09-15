@@ -12,5 +12,7 @@ export default defineNuxtModule({
       filePath: packageName`@dword-design/privacy-policy`,
       name: 'AppPrivacyPolicy',
     });
+
+    addComponent({ filePath: packageName`vue-honeypot`, name: 'VueHoneypot' });
   },
 });

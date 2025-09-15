@@ -14,7 +14,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({
   meta: [{ content: 'noindex', name: 'robots' }],
   script: [
