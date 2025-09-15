@@ -34,6 +34,7 @@
     "docker-compose.yml": true,
     "ecosystem.json": true,
     "eslint.config.ts": true,
+    "eslint.lint-staged.config.ts": true,
     "nginx": true,
     "node_modules": true,
     "nuxt.config.ts": true,

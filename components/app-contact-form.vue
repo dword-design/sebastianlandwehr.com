@@ -38,50 +38,53 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import endent from 'endent';
 
 import { appName } from '@/model/variables';
 
-export default {
-  data: () => ({
-    email: '',
-    error: '',
-    honeypot: '',
-    isLoading: false,
-    message: '',
-    myEmail: '',
-  }),
-  methods: {
-    async submit() {
-      try {
-        this.$refs.honeypot.validate();
-        this.isLoading = true;
-
-        await this.$mail.send({
-          from: 'info@sebastianlandwehr.com',
-          replyTo: this.email,
-          subject: `${appName} Message`,
-          text: endent`
-            From: ${this.email}
-
-            ${this.message}
-          `,
-        });
-
-        this.$buefy.toast.open('Your message has been sent successfully.');
-        this.email = '';
-        this.message = '';
-        this.error = '';
-      } catch (error) {
-        this.error = error.message;
-      } finally {
-        this.isLoading = false;
-      }
+const {
+  vueApp: {
+    config: {
+      globalProperties: { $buefy },
     },
   },
-  mounted() {
-    this.myEmail = 'info@sebastianlandwehr.com';
-  },
+} = useNuxtApp();
+
+const mail = useMail();
+const email = ref('');
+const error = ref('');
+const honeypot = useTemplateRef('honeypot');
+const isLoading = ref(false);
+const message = ref('');
+const myEmail = ref('');
+
+const submit = async () => {
+  try {
+    honeypot.value.validate();
+    isLoading.value = true;
+
+    await mail.send({
+      from: 'info@sebastianlandwehr.com',
+      replyTo: email.value,
+      subject: `${appName} Message`,
+      text: endent`
+        From: ${email.value}
+
+        ${message.value}
+      `,
+    });
+
+    $buefy.toast.open('Your message has been sent successfully.');
+    email.value = '';
+    message.value = '';
+    error.value = '';
+  } catch (_error) {
+    error.value = _error instanceof Error ? _error.message : String(_error);
+  } finally {
+    isLoading.value = false;
+  }
 };
+
+onMounted(() => (myEmail.value = 'info@sebastianlandwehr.com'));
 </script>

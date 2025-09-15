@@ -24,6 +24,7 @@ export default {
   },
   css: ['@/assets/style.scss'],
   devtools: { enabled: false },
+  future: { compatibilityVersion: 4 },
   modules: [
     '@dword-design/nuxt-buefy',
     [
@@ -69,8 +70,8 @@ export default {
             highlight: false,
             rehypePlugins: {
               [packageName`rehype-urls`]: {
-                options: url => {
-                  if (url.host || !url.path) {
+                options: (url: URL) => {
+                  if (url.host || !url.pathname) {
                     return url;
                   }
 

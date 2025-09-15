@@ -73,18 +73,9 @@
   </main>
 </template>
 
-<script>
+<script setup lang="ts">
 import portraitUrl from '@/assets/portrait.jpg';
 import individualProjects from '@/model/individual-projects';
 import openSourceLibraries from '@/model/open-source-libraries';
 import websitesAndWebApps from '@/model/websites-and-web-apps';
-
-export default {
-  computed: {
-    individualProjects: () => individualProjects,
-    openSourceLibraries: () => openSourceLibraries,
-    portraitUrl: () => portraitUrl,
-    websitesAndWebApps: () => websitesAndWebApps,
-  },
-};
 </script>
