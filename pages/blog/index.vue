@@ -98,6 +98,7 @@ const { data: posts } = await useAsyncData(
       .order('createdAt', 'DESC')
       .all(),
   {
+    default: () => [],
     transform: _ =>
       _.map(post => ({ ...post, createdAt: new Date(post.createdAt) })),
   },
