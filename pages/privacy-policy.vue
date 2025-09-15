@@ -8,7 +8,9 @@
             matomo: { optOutContainerClasses: 'has-border p-4' },
           }"
           locale="en"
-        />
+        >
+          <app-privacy-policy-brevo />
+        </app-privacy-policy>
       </div>
     </div>
   </main>

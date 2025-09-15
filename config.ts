@@ -71,9 +71,7 @@ export default {
             rehypePlugins: {
               [packageName`rehype-urls`]: {
                 options: (url: URL) => {
-                  console.log(url);
-
-                  if (url.host || !url.path) {
+                  if (url.host || !url.pathname) {
                     return url;
                   }
 

@@ -1,5 +1,5 @@
 <template>
-  <main class="section">
+  <main v-if="post" class="section">
     <article class="container is-content">
       <figure class="image is-devto-banner mb-5">
         <img alt="Cover image" :src="`${post.path}/banner.png`" />
@@ -45,8 +45,18 @@ const { data: post } = await useAsyncData(
       .path(route.path)
       .select('body', 'createdAt', 'path', 'title')
       .first(),
-  { transform: _ => ({ ..._, createdAt: new Date(_.createdAt) }) },
+  {
+    default: () => null,
+    transform: rawPost =>
+      rawPost
+        ? { ...rawPost, createdAt: new Date(rawPost.createdAt) }
+        : rawPost,
+  },
 );
 
-useHead({ title: () => post.value.title });
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Post not found' });
+}
+
+useHead({ title: () => post.value!.title });
 </script>
