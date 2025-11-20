@@ -1,3 +1,11 @@
+## [1.10.83](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.82...v1.10.83) (2025-11-20)
+
+
+### Bug Fixes
+
+* archived my-npm-stats ([7559a65](https://github.com/dword-design/sebastianlandwehr.com/commit/7559a659fa9538f95d1bb83b67714e0e7ea65986))
+* foo ([0dc38cb](https://github.com/dword-design/sebastianlandwehr.com/commit/0dc38cbf862ca8a9ceffb866e6349e3b2b39680d))
+
 ## [1.10.82](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.81...v1.10.82) (2025-11-03)
 
 
