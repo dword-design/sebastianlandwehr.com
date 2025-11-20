@@ -53,4 +53,4 @@ export default [
     projectUrl: 'https://furtheralong.de',
     title: 'Further Along',
   },
-];
+].map(project => ({ isArchived: false, ...project }));

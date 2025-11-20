@@ -22,4 +22,4 @@ export default [
     projectUrl: 'https://github.com/dword-design/nuxt-route-meta',
     title: 'nuxt-route-meta',
   },
-];
+].map(project => ({ isArchived: false, ...project }));

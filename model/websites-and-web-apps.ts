@@ -54,4 +54,4 @@ export default [
     projectUrl: 'https://my-npm-stats.org',
     title: 'my-npm-stats',
   },
-];
+].map(project => ({ isArchived: false, ...project }));
