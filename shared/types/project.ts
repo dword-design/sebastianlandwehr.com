@@ -3,4 +3,5 @@ export interface Project {
   imageUrl: string;
   projectUrl: string;
   title: string;
+  isArchived: boolean;
 }

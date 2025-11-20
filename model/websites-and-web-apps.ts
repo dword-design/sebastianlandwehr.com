@@ -15,12 +15,6 @@ export default [
     title: 'Feedbutler',
   },
   {
-    description: 'Package stats and dependents for NPM authors.',
-    imageUrl: myNpmStatsUrl,
-    projectUrl: 'https://my-npm-stats.org',
-    title: 'my-npm-stats',
-  },
-  {
     description: endent`
       Browser extension that converts an arbitrary website into its accessibility relevant form.<br/>
       <a href="https://chrome.google.com/webstore/detail/accessibility-view/ekpmnemcmjcimpnmofmiaeoggjkjohjg" target="_blank">Chrome</a><br/>
@@ -52,5 +46,12 @@ export default [
     projectUrl:
       'https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba',
     title: 'GitHub Repository List Badges',
+  },
+  {
+    description: 'Package stats and dependents for NPM authors.',
+    imageUrl: myNpmStatsUrl,
+    isArchived: true,
+    projectUrl: 'https://my-npm-stats.org',
+    title: 'my-npm-stats',
   },
 ];

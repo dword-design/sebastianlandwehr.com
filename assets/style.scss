@@ -280,3 +280,7 @@ a.is-text {
 input[type="checkbox"] {
   margin-right: 0.5rem;
 }
+
+.card.is-disabled {
+  opacity: $button-disabled-opacity;
+}
