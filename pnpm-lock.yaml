@@ -15,8 +15,8 @@ importers:
         specifier: ^5.0.7
         version: 5.0.7(magicast@0.3.5)(vue@3.5.22(typescript@5.9.3))
       '@dword-design/privacy-policy':
-        specifier: ^3.1.0
-        version: 3.1.0(vue@3.5.22(typescript@5.9.3))
+        specifier: ^4.0.0
+        version: 4.0.0(vue@3.5.22(typescript@5.9.3))
       '@mdi/svg':
         specifier: ^7.4.47
         version: 7.4.47
@@ -493,6 +493,7 @@ packages:
   '@dword-design/nuxt-i18n@1.0.1':
     resolution: {integrity: sha512-K2YLu+WSOiUA89siWlgJuO4EOxDaeqbQCEumLMvKxuu9ugjSSYB5K50CY+Y+FHopgGqV/Rsb0YsosbdycN4zkg==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@dword-design/nuxt-locale-link@1.0.0':
     resolution: {integrity: sha512-W697WSP2KEVOjWhtGhpenkBzH1QOYcPoDbgzrAlD8NpZayRQuM9vWJGj+6nVJfmPT3DyUOCRxRAaOW8LpK8ctQ==}
@@ -518,9 +519,9 @@ packages:
   '@dword-design/plugin-name-to-package-name@0.1.2':
     resolution: {integrity: sha512-kATg/RzRkq/Yv0qNJziPqwAzKstBTzuXnowH4MvAMyqW6C7o5HlgZtik3GzO0kBKCBZBoRswBSvo9AHclOTxfg==}
 
-  '@dword-design/privacy-policy@3.1.0':
-    resolution: {integrity: sha512-Pz2OMjIj5+uVuAiDJ/srB7bjV0UmReH1ejoG9XuiAhEZk88YXJ4lHATjk1YI5vHjNBkQNXyHxzI4SUXAhHmljw==}
-    engines: {node: '>=20'}
+  '@dword-design/privacy-policy@4.0.0':
+    resolution: {integrity: sha512-tkChwxYQ4KspzuJz38xXykHCxM3S4Vy/KXw3sZBa9Kq1bPLBOjLmPNv7koV1aWAxafDjSOyQSLS095NjEnwDrg==}
+    engines: {node: '>=22'}
     peerDependencies:
       vue: '*'
 
@@ -9093,7 +9094,7 @@ snapshots:
     dependencies:
       is-absolute: 1.0.0
 
-  '@dword-design/privacy-policy@3.1.0(vue@3.5.22(typescript@5.9.3))':
+  '@dword-design/privacy-policy@4.0.0(vue@3.5.22(typescript@5.9.3))':
     dependencies:
       '@dword-design/personal-data': 3.0.0
       vue: 3.5.22(typescript@5.9.3)

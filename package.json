@@ -32,7 +32,7 @@
   "dependencies": {
     "@dword-design/legal-notice": "^3.0.0",
     "@dword-design/nuxt-buefy": "^5.0.7",
-    "@dword-design/privacy-policy": "^3.1.0",
+    "@dword-design/privacy-policy": "^4.0.0",
     "@mdi/svg": "^7.4.47",
     "@nuxt/content": "^3.7.0",
     "@nuxt/kit": "^3.19.2",
