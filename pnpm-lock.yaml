@@ -24,8 +24,8 @@ importers:
         specifier: ^3.7.0
         version: 3.8.0(better-sqlite3@12.4.1)(magicast@0.3.5)
       '@nuxt/kit':
-        specifier: ^3.19.2
-        version: 3.20.0(magicast@0.3.5)
+        specifier: ^4.0.0
+        version: 4.2.0(magicast@0.3.5)
       '@nuxtjs/robots':
         specifier: ^5.5.1
         version: 5.5.6(h3@1.15.4)(magicast@0.3.5)(vue@3.5.22(typescript@5.9.3))
@@ -493,6 +493,7 @@ packages:
   '@dword-design/nuxt-i18n@1.0.1':
     resolution: {integrity: sha512-K2YLu+WSOiUA89siWlgJuO4EOxDaeqbQCEumLMvKxuu9ugjSSYB5K50CY+Y+FHopgGqV/Rsb0YsosbdycN4zkg==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@dword-design/nuxt-locale-link@1.0.0':
     resolution: {integrity: sha512-W697WSP2KEVOjWhtGhpenkBzH1QOYcPoDbgzrAlD8NpZayRQuM9vWJGj+6nVJfmPT3DyUOCRxRAaOW8LpK8ctQ==}
@@ -2786,6 +2787,7 @@ packages:
   ceiling@4.0.0:
     resolution: {integrity: sha512-LgUyOPLn8GFMUcAR/6hBqLaPPibGvtgUWM+jFW+orGFPp3W/uBZWR9lnrjB3hk17A+VxJZF75eNyQcLRcE/5gw==}
     engines: {node: '>=16'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     hasBin: true
 
   chalk@2.4.2:
