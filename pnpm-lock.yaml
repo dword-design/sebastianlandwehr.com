@@ -75,8 +75,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       vue-honeypot:
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^4.0.0
+        version: 4.0.0(vue@3.5.22(typescript@5.9.3))
     devDependencies:
       '@dword-design/base':
         specifier: ^15.4.1
@@ -493,6 +493,7 @@ packages:
   '@dword-design/nuxt-i18n@1.0.1':
     resolution: {integrity: sha512-K2YLu+WSOiUA89siWlgJuO4EOxDaeqbQCEumLMvKxuu9ugjSSYB5K50CY+Y+FHopgGqV/Rsb0YsosbdycN4zkg==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@dword-design/nuxt-locale-link@1.0.0':
     resolution: {integrity: sha512-W697WSP2KEVOjWhtGhpenkBzH1QOYcPoDbgzrAlD8NpZayRQuM9vWJGj+6nVJfmPT3DyUOCRxRAaOW8LpK8ctQ==}
@@ -2786,6 +2787,7 @@ packages:
   ceiling@4.0.0:
     resolution: {integrity: sha512-LgUyOPLn8GFMUcAR/6hBqLaPPibGvtgUWM+jFW+orGFPp3W/uBZWR9lnrjB3hk17A+VxJZF75eNyQcLRcE/5gw==}
     engines: {node: '>=16'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     hasBin: true
 
   chalk@2.4.2:
@@ -5718,6 +5720,7 @@ packages:
   nuxt-alias-path@2.0.0:
     resolution: {integrity: sha512-rkitqBhqyW+UKWAGHAzwHmIWnZ5FLICSkiPdO/vHllKXG7lqtD7Dtnc+a2HNblD5iVNT6jwI+v7gajBLuUa+Zw==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   nuxt-basic-authentication-module@0.2.1:
     resolution: {integrity: sha512-xjKC7pjORo093L6BbiJif7ZXnZxXKPo52LT2zyganz1OTCOMlJyDq/R6H8bpRduYETKJPmqMWeYT7eDLcIobNw==}
@@ -7914,9 +7917,11 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  vue-honeypot@3.0.1:
-    resolution: {integrity: sha512-fJQCVJriWWTY11tHDLWLFCmar+CV9nmEF7lU/iK+uXpEJx447EWoEbJTrkEgWXoBZXipF/kDqGTnnRToFUEMjw==}
-    engines: {node: '>=16'}
+  vue-honeypot@4.0.0:
+    resolution: {integrity: sha512-Fu0CL8FUYo65aVoaGMug9yuhR8bYOqL6549JqgIMMl5ZW7MJZW6ZhKkledI47P1o+Q0TCM+Wiwb4zUL4N950Qg==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      vue: ^3
 
   vue-i18n@10.0.8:
     resolution: {integrity: sha512-mIjy4utxMz9lMMo6G9vYePv7gUFt4ztOMhY9/4czDJxZ26xPeJ49MAGa9wBAE3XuXbYCrtVPmPxNjej7JJJkZQ==}
@@ -17609,7 +17614,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-honeypot@3.0.1: {}
+  vue-honeypot@4.0.0(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.22(typescript@5.9.3)
 
   vue-i18n@10.0.8(vue@3.5.22(typescript@5.9.3)):
     dependencies:
