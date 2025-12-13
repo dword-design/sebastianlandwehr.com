@@ -27,17 +27,6 @@ export default [
   },
   {
     description: endent`
-      Allows to save issue and pull request filters on GitHub and access them via the main menu.<br/>
-      <a href="https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de" target="_blank">Chrome</a><br/>
-      <a href="https://addons.mozilla.org/de/firefox/addon/github-saved-filters/" target="_blank">Firefox</a>
-    `,
-    imageUrl: githubSavedFiltersUrl,
-    projectUrl:
-      'https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de',
-    title: 'GitHub Saved Filters',
-  },
-  {
-    description: endent`
       Displays badges in the GitHub repository list of a user.<br/>
       <a href="https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba" target="_blank">Chrome</a><br/>
       <a href="https://addons.mozilla.org/de/firefox/addon/github-repository-list-badges/" target="_blank">Firefox</a>
@@ -46,6 +35,18 @@ export default [
     projectUrl:
       'https://chrome.google.com/webstore/detail/github-repository-list-ba/eahkhdaolahcidlldobhnaepjnfmlbba',
     title: 'GitHub Repository List Badges',
+  },
+  {
+    description: endent`
+      Allows to save issue and pull request filters on GitHub and access them via the main menu.<br/>
+      <a href="https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de" target="_blank">Chrome</a><br/>
+      <a href="https://addons.mozilla.org/de/firefox/addon/github-saved-filters/" target="_blank">Firefox</a>
+    `,
+    imageUrl: githubSavedFiltersUrl,
+    isArchived: true,
+    projectUrl:
+      'https://chrome.google.com/webstore/detail/github-saved-filters/olkmmlhdbdmibnebknmghijmdijadhpf?hl=de',
+    title: 'GitHub Saved Filters',
   },
   {
     description: 'Package stats and dependents for NPM authors.',
