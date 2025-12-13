@@ -1,3 +1,10 @@
+## [1.10.84](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.83...v1.10.84) (2025-12-13)
+
+
+### Bug Fixes
+
+* archive GitHub Saved Filters ([0c3b952](https://github.com/dword-design/sebastianlandwehr.com/commit/0c3b9526242652bed0baf4d47476d370000ea890))
+
 ## [1.10.83](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.82...v1.10.83) (2025-11-20)
 
 
