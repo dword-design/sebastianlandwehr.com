@@ -72,8 +72,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       tree-kill-promise:
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.0.0
+        version: 5.0.0
       vue-honeypot:
         specifier: ^3.0.1
         version: 3.0.1
@@ -493,6 +493,7 @@ packages:
   '@dword-design/nuxt-i18n@1.0.1':
     resolution: {integrity: sha512-K2YLu+WSOiUA89siWlgJuO4EOxDaeqbQCEumLMvKxuu9ugjSSYB5K50CY+Y+FHopgGqV/Rsb0YsosbdycN4zkg==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@dword-design/nuxt-locale-link@1.0.0':
     resolution: {integrity: sha512-W697WSP2KEVOjWhtGhpenkBzH1QOYcPoDbgzrAlD8NpZayRQuM9vWJGj+6nVJfmPT3DyUOCRxRAaOW8LpK8ctQ==}
@@ -2786,6 +2787,7 @@ packages:
   ceiling@4.0.0:
     resolution: {integrity: sha512-LgUyOPLn8GFMUcAR/6hBqLaPPibGvtgUWM+jFW+orGFPp3W/uBZWR9lnrjB3hk17A+VxJZF75eNyQcLRcE/5gw==}
     engines: {node: '>=16'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     hasBin: true
 
   chalk@2.4.2:
@@ -5718,6 +5720,7 @@ packages:
   nuxt-alias-path@2.0.0:
     resolution: {integrity: sha512-rkitqBhqyW+UKWAGHAzwHmIWnZ5FLICSkiPdO/vHllKXG7lqtD7Dtnc+a2HNblD5iVNT6jwI+v7gajBLuUa+Zw==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   nuxt-basic-authentication-module@0.2.1:
     resolution: {integrity: sha512-xjKC7pjORo093L6BbiJif7ZXnZxXKPo52LT2zyganz1OTCOMlJyDq/R6H8bpRduYETKJPmqMWeYT7eDLcIobNw==}
@@ -7406,9 +7409,9 @@ packages:
     resolution: {integrity: sha512-aXJDbk6SnumuaZSANd21XAo15ucCDE38H4fkqiGsc3MhCK+wOlZvLP9cB/TvpHT0mOyWgC4Z8EwRlzqYSUzdsA==}
     engines: {node: '>= 0.4'}
 
-  tree-kill-promise@4.0.0:
-    resolution: {integrity: sha512-k6PxcH/5e+dJiTyw3KUO0Pfxav4H10M+JMFgssaWqnTweAP5oVRNuWbWoYJgowbRdi46yXV9YvyVnDwGGvSCvw==}
-    engines: {node: '>=20'}
+  tree-kill-promise@5.0.0:
+    resolution: {integrity: sha512-KHqu1wzZCXYhwE26pj+g49VRnpJ68rtaIr7ycosNpoAw8rwpZSOwek1l9M99wFfFbuEO6WFeXGla0MGlDCTSLQ==}
+    engines: {node: '>=22'}
 
   tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
@@ -17087,7 +17090,7 @@ snapshots:
 
   traverse@0.6.8: {}
 
-  tree-kill-promise@4.0.0:
+  tree-kill-promise@5.0.0:
     dependencies:
       tree-kill: 1.2.2
 
