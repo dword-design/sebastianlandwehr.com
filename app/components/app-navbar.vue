@@ -74,7 +74,7 @@
 </template>
 
 <script setup lang="ts">
-import { appName, appTitle } from '@/model/variables';
+import { appName, appTitle } from '@@/model/variables';
 
 const NuxtLink = resolveComponent('NuxtLink');
 

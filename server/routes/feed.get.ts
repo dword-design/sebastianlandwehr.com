@@ -1,7 +1,7 @@
 import endent from 'endent';
 import { Feed } from 'feed';
 
-import { appName, appTitle } from '@/model/variables';
+import { appName, appTitle } from '@@/model/variables';
 
 export default defineEventHandler(async event => {
   // TODO: Add server/tsconfig.json. See https://content.nuxt.com/docs/utils/query-collection#server-usage

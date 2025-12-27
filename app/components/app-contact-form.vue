@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import endent from 'endent';
 
-import { appName } from '@/model/variables';
+import { appName } from '@@/model/variables';
 
 const {
   vueApp: {
@@ -61,7 +61,7 @@ const myEmail = ref('');
 
 const submit = async () => {
   try {
-    honeypot.value.validate();
+    honeypot.value!.validate(); // TODO: Honeypot is mounted
     isLoading.value = true;
 
     await mail.send({
