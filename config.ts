@@ -27,6 +27,7 @@ export default {
   future: { compatibilityVersion: 4 },
   modules: [
     '@dword-design/nuxt-buefy',
+    'nuxt-svgo-loader',
     [
       'nuxt-mail',
       {

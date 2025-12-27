@@ -4,8 +4,8 @@
 /.env.json
 /.eslintcache
 /.nuxt
-/.nyc_output
 /.output
+/.pnpm-store
 /.stylelintcache
 /.test.env.json
 /codecov
