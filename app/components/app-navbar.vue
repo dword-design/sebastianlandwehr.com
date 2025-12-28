@@ -18,20 +18,6 @@
         </div>
       </b-navbar-item>
     </template>
-    <!--<b-navbar-item
-      href={context.parent.$router.resolve({ name: 'support-me' }).href}
-      slot="end"
-    >
-      <MdiHeart aria-hidden="true" class="icon has-text-danger" />
-      <span>Support me</span>
-    </b-navbar-item>
-    <b-navbar-item
-      href={context.parent.$router.resolve({ name: 'blog' }).href}
-      slot="end"
-    >
-      <MdiRss aria-hidden="true" class="icon has-text-secondary" />
-      <span>Blog</span>
-    </b-navbar-item>-->
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">

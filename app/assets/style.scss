@@ -1,20 +1,34 @@
-$fullhd-enabled: false;
+@use "sass:color";
 
-// $widescreen-enabled: false;
-$body-size: 17px;
-$body-line-height: 1.8;
-$size-3: 2rem;
-$size-7: 0.9rem;
-$navbar-padding-vertical: 0.5rem;
-$hero-body-padding-medium: 5rem 0.75rem;
-$section-padding-medium: 5rem 0.75rem;
 $primary: #3273dc;
-$secondary: #ffd257; // #ffca2b;
 $link: $primary;
-$level-item-spacing: 1.5rem;
 
-@import "bulma/sass/utilities/all";
-@import "@dword-design/nuxt-buefy/style";
+@use "@dword-design/nuxt-buefy/style" as bulma with (
+  $fullhd-enabled: false,
+
+  // $widescreen-enabled: false,
+  $body-size: 17px,
+  $body-line-height: 1.8,
+  $size-3: 2rem,
+  $size-7: 0.9rem,
+  $navbar-padding-vertical: 0.5rem,
+  $hero-body-padding-medium: 5rem 0.75rem,
+  $section-padding-medium: 5rem 0.75rem,
+  $primary: $primary,
+  $custom-colors: (
+    "secondary": #ffd257,
+  ),
+  $link: $link,
+  $level-item-spacing: 1.5rem,
+  $button-weight: var(--bulma-weight-body),
+  $card-radius: 0.25rem,
+  $radius: 4px
+);
+@use "bulma/sass/utilities/mixins";
+
+:root {
+  --bulma-link-on-scheme-l: #{color.lightness($link)};
+}
 
 body {
   // fixes horizontal spacing bug on mobile
@@ -23,19 +37,15 @@ body {
 }
 
 .has-shadow {
-  box-shadow: $shadow;
+  box-shadow: var(--bulma-shadow);
 }
 
 .has-shadow-lg {
-  box-shadow: $shadow-lg;
+  box-shadow: var(--bulma-shadow-lg);
 }
 
 .has-shadow-circle {
   box-shadow: 0.2rem 0.5rem 1rem 0 rgba(#000, 0.1);
-}
-
-.has-text-secondary {
-  color: $secondary !important;
 }
 
 .icon {
@@ -79,60 +89,28 @@ body {
     &.is-large {
       height: 1.65em;
     }
-
-    &:first-child:not(:last-child) {
-      @include ltr-property("margin", $button-padding-horizontal * 0.25);
-    }
-
-    &:last-child:not(:first-child) {
-      @include ltr-property("margin", $button-padding-horizontal * 0.25, false);
-    }
   }
-}
-
-.navbar-end {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .card-image {
-  border-bottom: 1px solid $border-light;
-}
-
-a.is-text {
-  color: $text;
-
-  &:hover,
-  &:focus,
-  &.is-active {
-    color: $link;
-  }
+  border-bottom: 1px solid var(--bulma-border-weak);
 }
 
 .section.is-bordered {
-  border-bottom: 2px solid $background;
+  border-bottom: 2px solid var(--bulma-background);
 }
 
 .columns {
-  position: relative;
-
   &.is-variable {
-    &.is-10 {
-      --column-gap: 2.5rem;
-    }
-
-    &.is-0-mobile {
-      @include mobile {
+    &.is-0-mobile:not(:last-child) {
+      @include mixins.mobile {
         margin-top: 0;
-        margin-bottom: 0.75rem;
-        padding-bottom: 0.75rem;
-      }
-
-      > .column {
-        @include mobile {
-          padding: var(--column-gap);
-        }
+        margin-bottom: calc(
+          (var(--bulma-block-spacing) - var(--bulma-column-gap)) / 2
+        );
+        padding-bottom: calc(
+          (var(--bulma-block-spacing) - var(--bulma-column-gap)) / 2
+        );
       }
     }
   }
@@ -142,12 +120,12 @@ a.is-text {
       position: relative;
 
       &::after {
-        @include mobile {
+        @include mixins.mobile {
           top: 100%;
           left: 50%;
         }
 
-        @include tablet {
+        @include mixins.tablet {
           top: 50%;
           left: 100%;
           transform: translate(-50%, -50%);
@@ -158,14 +136,14 @@ a.is-text {
         width: 5px;
         height: 5px;
         border-radius: 100%;
-        background: $text;
+        background: var(--bulma-text);
       }
     }
   }
 }
 
 .hash-link {
-  color: $grey;
+  color: var(--bulma-grey);
 
   &::after {
     content: "# ";
@@ -173,114 +151,34 @@ a.is-text {
 }
 
 .container {
-  &.is-narrow {
-    max-width: 872px; // taken from Hashnode
-  }
-
   &.is-content {
-    max-width: 740px;
+    max-width: 740px !important;
   }
-}
-
-.covering-image {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-
-  img {
-    @include tablet {
-      object-fit: contain;
-      object-position: bottom;
-    }
-
-    position: absolute;
-    inset: 0;
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.image {
-  &.is-devto-banner {
-    padding-top: 42%;
-
-    img {
-      position: absolute;
-      inset: 0;
-    }
-  }
-}
-
-.level {
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
-
-.level-item {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
 }
 
 .has-border-bottom {
-  border-bottom: 1px solid $border;
-}
-
-.h-20rem-mobile {
-  @include mobile {
-    height: 20rem;
-  }
-}
-
-.pb-6-tablet {
-  @include tablet {
-    padding-bottom: 3rem !important;
-  }
+  border-bottom: 1px solid var(--bulma-border);
 }
 
 .has-border {
-  border: 1px solid $border;
+  border: 1px solid var(--bulma-border);
 }
 
-.has-border-primary {
-  border: 1px solid $primary;
-}
+#matomo-opt-out {
+  p:first-child {
+    color: hsl(
+      var(--bulma-danger-h) var(--bulma-danger-s)
+        var(--bulma-danger-on-scheme-l)
+    );
+  }
 
-.has-border-link {
-  border: 1px solid $link;
-}
-
-.has-border-info {
-  border: 1px solid $info;
-}
-
-.has-border-success {
-  border: 1px solid $success;
-}
-
-.has-border-warning {
-  border: 1px solid $warning;
-}
-
-.has-border-danger {
-  border: 1px solid $danger;
-}
-
-#matomo-opt-out p:first-child {
-  color: $danger !important;
-}
-
-input[type="checkbox"] {
-  margin-right: 0.5rem;
+  input[type="checkbox"] + label {
+    &::before {
+      content: " ";
+    }
+  }
 }
 
 .card.is-disabled {
-  opacity: $button-disabled-opacity;
+  opacity: bulma.$button-disabled-opacity;
 }
