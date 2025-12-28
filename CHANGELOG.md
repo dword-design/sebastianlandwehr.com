@@ -1,3 +1,10 @@
+## [1.10.86](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.85...v1.10.86) (2025-12-28)
+
+
+### Bug Fixes
+
+* fix navbar and remove body fix ([#230](https://github.com/dword-design/sebastianlandwehr.com/issues/230)) ([a3ea410](https://github.com/dword-design/sebastianlandwehr.com/commit/a3ea410e6ffd77f519d8372561af4c72900fba16))
+
 ## [1.10.85](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.84...v1.10.85) (2025-12-28)
 
 
