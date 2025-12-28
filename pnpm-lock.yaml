@@ -92,7 +92,7 @@ importers:
         version: 16.1.6(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
       '@dword-design/base-config-app':
         specifier: ^8.0.0
-        version: 8.0.0(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(esbuild@0.27.2)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(sass@1.97.1)(semantic-release@25.0.2(typescript@5.9.3))(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))
+        version: 8.0.0(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(semantic-release@25.0.2(typescript@5.9.3))(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))
       '@playwright/browser-chromium':
         specifier: ^1.57.0
         version: 1.57.0
@@ -556,12 +556,12 @@ packages:
     resolution: {integrity: sha512-aKW3isS1okZBt+9ej+J2OO2GprD6maDW4+T9H522lJd1U9m6KA0CoswXf9cVeVMjhXVSlII13bIvEE7ObQJIjw==}
     engines: {node: '>=22'}
 
-  '@dword-design/base-config-node@5.0.2':
-    resolution: {integrity: sha512-lHNer7VhesThOJXOme6wx/k7Clr1Yh14tzbxZ5h04DhTFMmXK2lr2slzkIMaZHMTB4WNB2ppg5bOm9g9jgHcRA==}
+  '@dword-design/base-config-node@5.0.3':
+    resolution: {integrity: sha512-GuM/kVVgkDhox+9LViPe6+8PkQeM/zgk3WHDQ+tsZPzQz2TL++7GiEFYm8uFqmPf0sJX3jvw3i7AG2b3jNCN0A==}
     engines: {node: '>=22'}
 
-  '@dword-design/base-config-nuxt@9.0.7':
-    resolution: {integrity: sha512-c97VFKG2pU4UWx3o52/wMYONfpi1msCV0wGL5aK1U8tCtGCqq7F5KnYOVtqcya1dcNzBe8GScfFZ8KB2XLnpKw==}
+  '@dword-design/base-config-nuxt@9.0.8':
+    resolution: {integrity: sha512-UaDs6r0GvLyksMLSRvzsfjlffds5lpOC4OhZUFm4aAUzTZnPBtD8igxKag0Ky4GLmRngspFre+01CK5D/eD0OQ==}
     engines: {node: '>=22'}
     peerDependencies:
       depcheck: '*'
@@ -599,9 +599,9 @@ packages:
     engines: {node: '>=18'}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
-  '@dword-design/depcheck-parser-sass@5.0.0':
-    resolution: {integrity: sha512-WXVEIWxgS3G4kXhb1IgU9i+cJO7kkx6qAwibeqsnjzuFQaIfzQlHvbPyoU3DPc6SvRYREQdzNB1CFg9MC79abw==}
-    engines: {node: '>=20'}
+  '@dword-design/depcheck-parser-sass@6.0.3':
+    resolution: {integrity: sha512-7WVKv82oWukC4oKJkDtlrjbPvBskc2DJT4WpZO/c2V/BcrtEFjEBxhKZDDR+D8Ef0fw+28iJgwAnpnXoPwaVNg==}
+    engines: {node: '>=22'}
 
   '@dword-design/depcheck@0.0.12':
     resolution: {integrity: sha512-cTkvdU6mgc57B642oE3XSqwH2tBlt2KBjNIaf9lVvJp+NSBmIO2bSzmOJO4Iih7j6tpb3x6xESDuHZMva7Evfg==}
@@ -2112,8 +2112,8 @@ packages:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
 
-  '@sindresorhus/is@7.1.1':
-    resolution: {integrity: sha512-rO92VvpgMc3kfiTjGT52LEtJ8Yc5kCWhZjLQ3LwlA4pSgPpQO7bVpYXParOD8Jwf+cVQECJo3yP/4I8aZtUQTQ==}
+  '@sindresorhus/is@7.2.0':
+    resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
     engines: {node: '>=18'}
 
   '@sindresorhus/merge-streams@2.3.0':
@@ -2921,8 +2921,8 @@ packages:
     resolution: {integrity: sha512-Sg0xJUNDU1sJNGdfGWhVHX0kkZ+HWcvmVymJbj6NSgZZmW/8S9Y2HQ5euytnIgakgxN6papOAWiwDo1ctFDcoQ==}
     hasBin: true
 
-  basic-ftp@5.0.5:
-    resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
+  basic-ftp@5.1.0:
+    resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
     engines: {node: '>=10.0.0'}
 
   before-after-hook@4.0.0:
@@ -4866,9 +4866,6 @@ packages:
 
   image-meta@0.2.2:
     resolution: {integrity: sha512-3MOLanc3sb3LNGWQl1RlQlNWURE5g32aUphrDyFeCsxBTk08iE3VNe4CwsUZ0Qs1X+EfX0+r29Sxdpza4B+yRA==}
-
-  immutable@4.3.7:
-    resolution: {integrity: sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==}
 
   immutable@5.1.4:
     resolution: {integrity: sha512-p6u1bG3YSnINT5RQmx/yRZBpenIl30kVxkTLDyHLIMk0gict704Q9n+thfDI7lTRm9vXdDYutVzXhzcThxTnXA==}
@@ -7263,11 +7260,6 @@ packages:
     resolution: {integrity: sha512-luN05rJgBogER4ln1i68Lyav/G9MXLwqwwHdd1WBwitWMDlDFjJTcuuMWmcFVxAzHhWaZzxo03yos5NPEgb2vw==}
     engines: {node: '>=22'}
 
-  sass@1.62.1:
-    resolution: {integrity: sha512-NHpxIzN29MXvWiuswfc1W3I0N8SXBd8UR26WntmDlRYf0bSADnwnOjsyMZ3lMezSlArD33Vs3YFhp7dWvL770A==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
-
   sass@1.97.1:
     resolution: {integrity: sha512-uf6HoO8fy6ClsrShvMgaKUn14f2EHQLQRtpsZZLeU/Mv0Q1K5P0+x2uvH6Cub39TVVbWNSrraUhDAoFph6vh0A==}
     engines: {node: '>=14.0.0'}
@@ -7825,8 +7817,8 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
-  systeminformation@5.28.1:
-    resolution: {integrity: sha512-E1R8ILjak1wPx9CNiQbPV+AeDkT2n5UTOumB8nJ7TPk9QVjhOZvs+xGnp5LqPyQCmh8izuJPZ777COK1X2Cj4g==}
+  systeminformation@5.28.2:
+    resolution: {integrity: sha512-AWrPnmbIcfjLX7wiQMd7r6bl3PDaGoqvrfn8pCLJbk9CiB+vQXTk8RVxNs2vQRTezYlhb9skxEIyAPTm1If5bQ==}
     engines: {node: '>=8.0.0'}
     os: [darwin, linux, win32, freebsd, openbsd, netbsd, sunos, android]
     hasBin: true
@@ -8693,8 +8685,8 @@ packages:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
     engines: {node: '>= 14'}
 
-  zod-to-json-schema@3.25.0:
-    resolution: {integrity: sha512-HvWtU2UG41LALjajJrML6uQejQhNJx+JBO9IflpSja4R03iNWfKXrj6W2h7ljuLyc1nKS+9yDyL/9tD1U/yBnQ==}
+  zod-to-json-schema@3.25.1:
+    resolution: {integrity: sha512-pM/SU9d3YAggzi6MtR4h7ruuQlqKtad8e9S0fmxcMi+ueAK5Korys/aWcV9LIIHTVbj01NdzxcnXSN+O74ZIVA==}
     peerDependencies:
       zod: ^3.25 || ^4
 
@@ -9527,10 +9519,10 @@ snapshots:
 
   '@dual-bundle/import-meta-resolve@4.2.1': {}
 
-  '@dword-design/base-config-app@8.0.0(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(esbuild@0.27.2)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(sass@1.97.1)(semantic-release@25.0.2(typescript@5.9.3))(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))':
+  '@dword-design/base-config-app@8.0.0(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(semantic-release@25.0.2(typescript@5.9.3))(terser@5.44.1)(tsx@4.21.0)(typescript@5.9.3)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))':
     dependencies:
       '@dword-design/base': 16.1.6(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
-      '@dword-design/base-config-nuxt': 9.0.7(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(esbuild@0.27.2)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(terser@5.44.1)(tsx@4.21.0)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))(yaml@2.8.2)
+      '@dword-design/base-config-nuxt': 9.0.8(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(terser@5.44.1)(tsx@4.21.0)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))(yaml@2.8.2)
       '@semantic-release/exec': 7.1.0(semantic-release@25.0.2(typescript@5.9.3))
       ceiling: 4.0.0(@types/node@25.0.3)(typescript@5.9.3)
       depcheck-package-name: 4.0.1
@@ -9571,7 +9563,6 @@ snapshots:
       - '@vercel/functions'
       - '@vercel/kv'
       - '@vitejs/devtools'
-      - '@vue/compiler-core'
       - '@vue/compiler-sfc'
       - aws4fetch
       - bare-abort-controller
@@ -9583,7 +9574,6 @@ snapshots:
       - depcheck
       - drizzle-orm
       - encoding
-      - esbuild
       - eslint
       - eslint-import-resolver-node
       - eslint-plugin-format
@@ -9604,7 +9594,6 @@ snapshots:
       - react-native-b4a
       - rolldown
       - rollup
-      - sass
       - sass-embedded
       - semantic-release
       - sqlite3
@@ -9624,11 +9613,11 @@ snapshots:
       - webpack
       - xml2js
 
-  '@dword-design/base-config-node@5.0.2(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)':
+  '@dword-design/base-config-node@5.0.3(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)':
     dependencies:
       '@babel/core': 7.28.5
       '@dword-design/base': 16.1.6(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
-      '@dword-design/depcheck-parser-sass': 5.0.0
+      '@dword-design/depcheck-parser-sass': 6.0.3
       babel-plugin-add-import-extension: 1.6.0(@babel/core@7.28.5)
       babel-plugin-module-resolver: 5.0.2
       chokidar: 4.0.3
@@ -9656,11 +9645,11 @@ snapshots:
       - sass
       - supports-color
 
-  '@dword-design/base-config-nuxt@9.0.7(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(esbuild@0.27.2)(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(terser@5.44.1)(tsx@4.21.0)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))(yaml@2.8.2)':
+  '@dword-design/base-config-nuxt@9.0.8(@parcel/watcher@2.5.1)(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.8.2)(magicast@0.5.1)(meow@13.2.0)(optionator@0.9.4)(postcss@8.5.6)(prettier@3.7.4)(rollup@4.54.0)(sass-embedded@1.97.1)(terser@5.44.1)(tsx@4.21.0)(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(sass-embedded@1.97.1)(sass@1.97.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2))(vue-tsc@3.2.1(typescript@5.9.3))(yaml@2.8.2)':
     dependencies:
       '@babel/core': 7.28.5
       '@dword-design/base': 16.1.6(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
-      '@dword-design/depcheck-parser-sass': 5.0.0
+      '@dword-design/depcheck-parser-sass': 6.0.3
       '@dword-design/dotenv-json-extended': 4.0.1
       '@dword-design/nuxt-page-title': 1.0.0(magicast@0.5.1)
       '@dword-design/stylelint-config': 4.1.0(postcss@8.5.6)(prettier@3.7.4)(stylelint@16.26.1(typescript@5.9.3))
@@ -9710,7 +9699,6 @@ snapshots:
       - '@vercel/functions'
       - '@vercel/kv'
       - '@vitejs/devtools'
-      - '@vue/compiler-core'
       - '@vue/compiler-sfc'
       - aws4fetch
       - bare-abort-controller
@@ -9721,7 +9709,6 @@ snapshots:
       - db0
       - drizzle-orm
       - encoding
-      - esbuild
       - eslint
       - eslint-import-resolver-node
       - eslint-plugin-format
@@ -9764,7 +9751,7 @@ snapshots:
     dependencies:
       '@commitlint/cli': 18.6.1(@types/node@25.0.3)(typescript@5.9.3)
       '@commitlint/config-conventional': 18.6.3
-      '@dword-design/base-config-node': 5.0.2(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
+      '@dword-design/base-config-node': 5.0.3(@types/node@25.0.3)(@typescript-eslint/parser@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
       '@dword-design/ci': 5.0.0
       '@dword-design/defu': 1.0.3
       '@dword-design/dotenv-json-extended': 4.0.1
@@ -9858,12 +9845,12 @@ snapshots:
     dependencies:
       defu: 6.1.4
 
-  '@dword-design/depcheck-parser-sass@5.0.0':
+  '@dword-design/depcheck-parser-sass@6.0.3':
     dependencies:
       enhanced-resolve: 5.18.4
       get-package-name: 2.2.0
       lodash-es: 4.17.22
-      sass: 1.62.1
+      sass: 1.97.1
 
   '@dword-design/depcheck@0.0.12':
     dependencies:
@@ -10579,7 +10566,7 @@ snapshots:
       unist-util-visit: 5.0.0
       unplugin: 2.3.11
       zod: 3.25.76
-      zod-to-json-schema: 3.25.0(zod@3.25.76)
+      zod-to-json-schema: 3.25.1(zod@3.25.76)
     optionalDependencies:
       better-sqlite3: 12.5.0
     transitivePeerDependencies:
@@ -11395,7 +11382,7 @@ snapshots:
   '@poppinss/dumper@0.6.5':
     dependencies:
       '@poppinss/colors': 4.1.6
-      '@sindresorhus/is': 7.1.1
+      '@sindresorhus/is': 7.2.0
       supports-color: 10.2.2
 
   '@poppinss/exception@1.2.3': {}
@@ -11689,7 +11676,7 @@ snapshots:
 
   '@sindresorhus/is@4.6.0': {}
 
-  '@sindresorhus/is@7.1.1': {}
+  '@sindresorhus/is@7.2.0': {}
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
@@ -12644,7 +12631,7 @@ snapshots:
 
   baseline-browser-mapping@2.9.11: {}
 
-  basic-ftp@5.0.5: {}
+  basic-ftp@5.1.0: {}
 
   before-after-hook@4.0.0: {}
 
@@ -14298,7 +14285,7 @@ snapshots:
 
   get-uri@6.0.5:
     dependencies:
-      basic-ftp: 5.0.5
+      basic-ftp: 5.1.0
       data-uri-to-buffer: 6.0.2
       debug: 4.4.3
     transitivePeerDependencies:
@@ -14771,8 +14758,6 @@ snapshots:
   ignore@7.0.5: {}
 
   image-meta@0.2.2: {}
-
-  immutable@4.3.7: {}
 
   immutable@5.1.4: {}
 
@@ -16830,7 +16815,7 @@ snapshots:
       async: 3.2.6
       debug: 4.4.3
       pidusage: 2.0.21
-      systeminformation: 5.28.1
+      systeminformation: 5.28.2
       tx2: 1.0.5
     transitivePeerDependencies:
       - supports-color
@@ -17642,12 +17627,6 @@ snapshots:
 
   sass-stretched-link@3.0.0: {}
 
-  sass@1.62.1:
-    dependencies:
-      chokidar: 3.6.0
-      immutable: 4.3.7
-      source-map-js: 1.2.1
-
   sass@1.97.1:
     dependencies:
       chokidar: 4.0.3
@@ -18294,7 +18273,7 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
-  systeminformation@5.28.1:
+  systeminformation@5.28.2:
     optional: true
 
   table@6.9.0:
@@ -19157,7 +19136,7 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-to-json-schema@3.25.0(zod@3.25.76):
+  zod-to-json-schema@3.25.1(zod@3.25.76):
     dependencies:
       zod: 3.25.76
 
