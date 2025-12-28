@@ -27,7 +27,7 @@ $link: $primary;
 @use "bulma/sass/utilities/mixins";
 
 :root {
-  --bulma-link-on-scheme-l: #{color.lightness($link)};
+  --bulma-link-on-scheme-l: #{color.channel($link, "lightness", hsl)};
 }
 
 body {
