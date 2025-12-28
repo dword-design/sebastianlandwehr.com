@@ -3,7 +3,6 @@
     active
     class="has-shadow is-spaced"
     :close-on-click="false"
-    :mobile-burger="false"
     wrapper-class="container"
   >
     <template #brand>
@@ -43,7 +42,7 @@
         v-for="account in accounts"
         :key="account.url"
         :aria-label="account.title"
-        class="navbar-item"
+        class="navbar-item is-inline-flex"
         :href="account.url"
         tag="a"
         target="_blank"
