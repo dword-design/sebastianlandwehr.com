@@ -11,5 +11,9 @@
   "exclude": [
     "test-results"
   ],
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "vueCompilerOptions": {
+    "cssModulesLocalsConvention": "camelCaseOnly",
+    "strictCssModules": true
+  }
 }

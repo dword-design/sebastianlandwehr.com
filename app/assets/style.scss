@@ -1,0 +1,184 @@
+@use "sass:color";
+
+$primary: #3273dc;
+$link: $primary;
+
+@use "@dword-design/nuxt-buefy/style" as bulma with (
+  $fullhd-enabled: false,
+
+  // $widescreen-enabled: false,
+  $body-size: 17px,
+  $body-line-height: 1.8,
+  $size-3: 2rem,
+  $size-7: 0.9rem,
+  $navbar-padding-vertical: 0.5rem,
+  $hero-body-padding-medium: 5rem 0.75rem,
+  $section-padding-medium: 5rem 0.75rem,
+  $primary: $primary,
+  $custom-colors: (
+    "secondary": #ffd257,
+  ),
+  $link: $link,
+  $level-item-spacing: 1.5rem,
+  $button-weight: var(--bulma-weight-body),
+  $card-radius: 0.25rem,
+  $radius: 4px
+);
+@use "bulma/sass/utilities/mixins";
+
+:root {
+  --bulma-link-on-scheme-l: #{color.channel($link, "lightness", hsl)};
+}
+
+body {
+  // fixes horizontal spacing bug on mobile
+  // https://stackoverflow.com/questions/49642824/bulma-columns-mobile-overflowing-body
+  overflow-x: hidden;
+}
+
+.has-shadow {
+  box-shadow: var(--bulma-shadow);
+}
+
+.has-shadow-lg {
+  box-shadow: var(--bulma-shadow-lg);
+}
+
+.has-shadow-circle {
+  box-shadow: 0.2rem 0.5rem 1rem 0 rgba(#000, 0.1);
+}
+
+.icon {
+  .button & {
+    width: auto;
+
+    &,
+    &.is-medium {
+      height: 1.3em;
+    }
+  }
+
+  &.is-small {
+    height: 0.9rem;
+  }
+
+  &.is-large {
+    height: 1.65em;
+  }
+
+  path {
+    fill: currentcolor !important;
+  }
+}
+
+.navbar-item {
+  display: flex;
+
+  // otherwise the brand will overflow on mobile
+  flex-shrink: 1;
+
+  // support icons in navbar items. Taken from button
+  > .icon {
+    width: auto;
+
+    &,
+    &.is-medium {
+      height: 1.3em;
+    }
+
+    &.is-large {
+      height: 1.65em;
+    }
+  }
+}
+
+.card-image {
+  border-bottom: 1px solid var(--bulma-border-weak);
+}
+
+.section.is-bordered {
+  border-bottom: 2px solid var(--bulma-background);
+}
+
+.columns {
+  &.is-variable {
+    &.is-0-mobile:not(:last-child) {
+      @include mixins.mobile {
+        margin-top: 0;
+        margin-bottom: calc(
+          (var(--bulma-block-spacing) - var(--bulma-column-gap)) / 2
+        );
+        padding-bottom: calc(
+          (var(--bulma-block-spacing) - var(--bulma-column-gap)) / 2
+        );
+      }
+    }
+  }
+
+  &.has-separator-dot {
+    .column:not(:last-child) {
+      position: relative;
+
+      &::after {
+        @include mixins.mobile {
+          top: 100%;
+          left: 50%;
+        }
+
+        @include mixins.tablet {
+          top: 50%;
+          left: 100%;
+          transform: translate(-50%, -50%);
+        }
+
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: var(--bulma-text);
+      }
+    }
+  }
+}
+
+.hash-link {
+  color: var(--bulma-grey);
+
+  &::after {
+    content: "# ";
+  }
+}
+
+.container {
+  &.is-content {
+    max-width: 740px !important;
+  }
+}
+
+.has-border-bottom {
+  border-bottom: 1px solid var(--bulma-border);
+}
+
+.has-border {
+  border: 1px solid var(--bulma-border);
+}
+
+#matomo-opt-out {
+  p:first-child {
+    color: hsl(
+      var(--bulma-danger-h) var(--bulma-danger-s)
+        var(--bulma-danger-on-scheme-l)
+    );
+  }
+
+  input[type="checkbox"] + label {
+    &::before {
+      content: " ";
+    }
+  }
+}
+
+.card.is-disabled {
+  opacity: bulma.$button-disabled-opacity;
+}

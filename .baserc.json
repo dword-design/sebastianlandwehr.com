@@ -2,7 +2,8 @@
   "allowedMatches": ["content.config.ts", "global-pid.ts", "global-setup.ts", "global-teardown.ts"],
   "depcheckConfig": {
     "ignoreMatches": [
-      "@playwright/browser-chromium"
+      "@playwright/browser-chromium",
+      "sass-embedded"
     ]
   },
   "editorIgnore": [".data"],

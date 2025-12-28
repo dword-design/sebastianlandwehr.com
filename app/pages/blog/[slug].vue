@@ -1,7 +1,7 @@
 <template>
   <main v-if="post" class="section">
     <article class="container is-content">
-      <figure class="image is-devto-banner mb-5">
+      <figure class="image mb-5">
         <img alt="Cover image" :src="`${post.path}/banner.png`" />
       </figure>
       <h1 class="title">{{ post.title }}</h1>

@@ -4,7 +4,7 @@
       v-for="library in libraries"
       :key="library.websiteUrl"
       class="level-item"
-      :style="{ maxWidth: '10rem' }"
+      :style="{ maxWidth: '9rem' }"
     >
       <a :href="library.websiteUrl" target="_blank">
         <img :alt="library.title" :src="library.imageUrl" />

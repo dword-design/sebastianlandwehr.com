@@ -22,11 +22,34 @@ export default {
       ],
     },
   },
+  content: {
+    ...(process.env.CODESPACES && { watch: false }),
+    build: {
+      markdown: {
+        highlight: { theme: 'light-plus' },
+        rehypePlugins: {
+          [packageName`rehype-slug`]: {},
+          [packageName`rehype-autolink-headings`]: {
+            options: {
+              content: {
+                children: [],
+                properties: { className: 'hash-link' },
+                tagName: 'span',
+                type: 'element',
+              },
+            },
+          },
+        },
+      },
+    },
+    renderer: { anchorLinks: false },
+  },
   css: ['@/assets/style.scss'],
   devtools: { enabled: false },
   future: { compatibilityVersion: 4 },
   modules: [
     '@dword-design/nuxt-buefy',
+    'nuxt-svgo-loader',
     [
       'nuxt-mail',
       {
@@ -36,31 +59,7 @@ export default {
     ],
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    [
-      '@nuxt/content',
-      {
-        ...(process.env.CODESPACES && { watch: false }),
-        build: {
-          markdown: {
-            highlight: { theme: 'light-plus' },
-            rehypePlugins: {
-              [packageName`rehype-slug`]: {},
-              [packageName`rehype-autolink-headings`]: {
-                options: {
-                  content: {
-                    children: [],
-                    properties: { className: 'hash-link' },
-                    tagName: 'span',
-                    type: 'element',
-                  },
-                },
-              },
-            },
-          },
-        },
-        renderer: { anchorLinks: false },
-      },
-    ],
+    '@nuxt/content',
     'nuxt-content-git',
     [
       'nuxt-content-body-html',
@@ -94,6 +93,13 @@ export default {
   site: { url: process.env.BASE_URL },
   title: appTitle,
   vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          quietDeps: true, // TODO: https://github.com/jgthms/bulma/issues/4026
+        },
+      },
+    },
     optimizeDeps: {
       include: Object.keys({
         '@dword-design/legal-notice': true,

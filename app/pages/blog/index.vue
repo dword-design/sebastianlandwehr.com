@@ -1,6 +1,6 @@
 <template>
   <main class="section">
-    <div class="container is-narrow">
+    <div class="container">
       <div class="level is-align-items-flex-start mb-6">
         <div class="level-left">
           <div class="level-item">
@@ -40,7 +40,7 @@
       <article
         v-for="(post, index) in posts"
         :key="post.path"
-        class="columns is-flex-direction-row-reverse"
+        class="columns is-flex-direction-row-reverse is-relative"
         :style="
           index < posts.length - 1 ? { marginBottom: '2.25rem' } : undefined
         "
@@ -48,7 +48,7 @@
         <header class="column is-two-fifths">
           <div class="card is-shadowless">
             <nuxt-link class="card-image" :to="post.path">
-              <figure class="image is-devto-banner">
+              <figure class="image">
                 <img
                   :alt="`Cover image for ${post.title}`"
                   :src="`${post.path}/banner.png`"
