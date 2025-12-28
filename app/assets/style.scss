@@ -30,12 +30,6 @@ $link: $primary;
   --bulma-link-on-scheme-l: #{color.channel($link, "lightness", hsl)};
 }
 
-body {
-  // fixes horizontal spacing bug on mobile
-  // https://stackoverflow.com/questions/49642824/bulma-columns-mobile-overflowing-body
-  overflow-x: hidden;
-}
-
 .has-shadow {
   box-shadow: var(--bulma-shadow);
 }
@@ -69,6 +63,10 @@ body {
   path {
     fill: currentcolor !important;
   }
+}
+
+.navbar {
+  --bulma-navbar-burger-color: #{var(--bulma-text)};
 }
 
 .navbar-item {
