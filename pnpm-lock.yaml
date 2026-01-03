@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@dword-design/legal-notice':
-        specifier: ^3.0.0
-        version: 3.0.0(vue@3.5.26(typescript@5.9.3))
+        specifier: ^4.0.0
+        version: 4.0.0(vue@3.5.26(typescript@5.9.3))
       '@dword-design/nuxt-buefy':
         specifier: ^7.0.1
         version: 7.0.1(bulma@1.0.4)(magicast@0.5.1)(vue@3.5.26(typescript@5.9.3))
@@ -649,9 +649,9 @@ packages:
     engines: {node: '>=18'}
     deprecated: Use lodash and endent
 
-  '@dword-design/legal-notice@3.0.0':
-    resolution: {integrity: sha512-TV+9ggdOjiHwRooEygT1Q1v1RSvwv1FsLxetRVV4BqPnAUr1s7d938hp5jrDgdkK3W5JGCYmTyBAzUi1NYSWHw==}
-    engines: {node: '>=20'}
+  '@dword-design/legal-notice@4.0.0':
+    resolution: {integrity: sha512-fMbIizAvpizglwKh/A3b5srTU0qoIOmL1FBBfSusd4C9UYRvUWhIUXw39RViYlp8JII41uqa606nwNpEuCYDIA==}
+    engines: {node: '>=22'}
     peerDependencies:
       vue: ^3
 
@@ -680,6 +680,10 @@ packages:
   '@dword-design/personal-data@3.0.0':
     resolution: {integrity: sha512-ZC0Wb4O5hQB0016zjut7OMIa/x4ZU40caQHymCQNZIPOE9R54yfWMKfmsU337KPJaXBBWo0d15UhcOzRTJkG6w==}
     engines: {node: '>=20'}
+
+  '@dword-design/personal-data@4.0.0':
+    resolution: {integrity: sha512-CiQ455Gspzmr9KrWJMAaO+hYGH2i5KnbjFTp1ZXKrm6x1Nbhtz1lLNVvbpNVvEPgAyVtane+FhHPgnQHU9SUgw==}
+    engines: {node: '>=22'}
 
   '@dword-design/plugin-name-to-package-name@0.1.2':
     resolution: {integrity: sha512-kATg/RzRkq/Yv0qNJziPqwAzKstBTzuXnowH4MvAMyqW6C7o5HlgZtik3GzO0kBKCBZBoRswBSvo9AHclOTxfg==}
@@ -9988,9 +9992,9 @@ snapshots:
       lodash: 4.17.21
       tinycolor2: 1.6.0
 
-  '@dword-design/legal-notice@3.0.0(vue@3.5.26(typescript@5.9.3))':
+  '@dword-design/legal-notice@4.0.0(vue@3.5.26(typescript@5.9.3))':
     dependencies:
-      '@dword-design/personal-data': 3.0.0
+      '@dword-design/personal-data': 4.0.0
       vue: 3.5.26(typescript@5.9.3)
 
   '@dword-design/module-root@0.2.5':
@@ -10026,6 +10030,10 @@ snapshots:
   '@dword-design/parse-packagejson-name-fork@0.0.2': {}
 
   '@dword-design/personal-data@3.0.0':
+    dependencies:
+      endent: '@dword-design/endent@1.4.7'
+
+  '@dword-design/personal-data@4.0.0':
     dependencies:
       endent: '@dword-design/endent@1.4.7'
 
