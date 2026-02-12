@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@dword-design/legal-notice": "^3.0.0",
-    "@dword-design/nuxt-buefy": "^7.0.1",
+    "@dword-design/nuxt-buefy": "^8.0.0",
     "@dword-design/privacy-policy": "^4.0.0",
     "@mdi/svg": "^7.4.47",
     "@nuxt/content": "^3.10.0",
