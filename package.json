@@ -30,7 +30,7 @@
     "verify": "base verify"
   },
   "dependencies": {
-    "@dword-design/legal-notice": "^3.0.0",
+    "@dword-design/legal-notice": "^4.0.0",
     "@dword-design/nuxt-buefy": "^7.0.1",
     "@dword-design/privacy-policy": "^4.0.0",
     "@mdi/svg": "^7.4.47",
