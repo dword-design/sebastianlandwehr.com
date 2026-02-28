@@ -1,5 +1,5 @@
 {
-  "allowedMatches": ["content.config.ts", "global-pid.ts", "global-setup.ts", "global-teardown.ts"],
+  "allowedMatches": ["content.config.ts", "global-pid.ts", "global-setup.ts", "global-teardown.ts", "content/blog/*.md"],
   "depcheckConfig": {
     "ignoreMatches": [
       "@playwright/browser-chromium",
@@ -10,6 +10,5 @@
   "fetchGitHistory": true,
   "gitignore": ["/.data"],
   "name": "@dword-design/app",
-  "testInContainer": true,
-  "virtualImports": ["#content"]
+  "testInContainer": true
 }

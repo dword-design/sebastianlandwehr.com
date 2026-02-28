@@ -21,9 +21,8 @@ jobs:
       - run: git config --global user.name "GitHub Actions"
       - run: pnpm install --frozen-lockfile
       - env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAIL_CONFIG: ${{ secrets.MAIL_CONFIG }}
+          NUXT_MAIL_SMTP: ${{ secrets.NUXT_MAIL_SMTP }}
+          NUXT_SITE_URL: ${{ secrets.NUXT_SITE_URL }}
           PORT: ${{ secrets.PORT }}
         run: pnpm verify
       - if: always()
@@ -41,11 +40,40 @@ jobs:
         name: Push changed files
         run: pnpm dw-ci push-changed-files
       - if: github.ref == 'refs/heads/master'
+        name: Build project
+        run: pnpm build
+      - if: github.ref == 'refs/heads/master'
+        name: Create deploy artifact
+        run: tar -czf deploy.tgz .output .env.schema.json ecosystem.json
+      - if: github.ref == 'refs/heads/master'
+        name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - if: github.ref == 'refs/heads/master'
+        name: Install ansible
+        run: |-
+          python -m pip install --upgrade pip
+          pip install ansible
+      - if: github.ref == 'refs/heads/master'
+        name: Install requirements
+        run: ansible-galaxy install -r requirements.yml
+      - if: github.ref == 'refs/heads/master'
         uses: webfactory/ssh-agent@v0.5.1
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - if: github.ref == 'refs/heads/master'
         run: ssh-keyscan -H sebastianlandwehr.com >> ~/.ssh/known_hosts
+      - if: github.ref == 'refs/heads/master'
+        run: >-
+          cat <<EOF > .inventory
+
+          [servers]
+
+          sebastianlandwehr.com ansible_user=${{ secrets.SSH_USER }}
+          ansible_become=True
+
+          EOF
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: github.ref == 'refs/heads/master'

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "declaration": false,
+    "declaration": true,
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -11,7 +11,21 @@
   "exclude": [
     "test-results"
   ],
-  "extends": "./.nuxt/tsconfig.json",
+  "files": [],
+  "references": [
+    {
+      "path": "./.nuxt/tsconfig.server.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.app.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.shared.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.node.json"
+    }
+  ],
   "vueCompilerOptions": {
     "cssModulesLocalsConvention": "camelCaseOnly",
     "strictCssModules": true

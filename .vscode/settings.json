@@ -38,7 +38,9 @@
     "nginx": true,
     "node_modules": true,
     "nuxt.config.ts": true,
-    "pnpm-lock.yaml": true
+    "playbook.yml": true,
+    "pnpm-lock.yaml": true,
+    "requirements.yml": true
   },
   "workbench.editor.enablePreview": false
 }

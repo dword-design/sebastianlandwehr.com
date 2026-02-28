@@ -1,11 +1,10 @@
+import { queryCollection } from '@nuxt/content/server'; // TODO: Otherwise type error
 import endent from 'endent';
 import { Feed } from 'feed';
 
-import { appName, appTitle } from '@@/model/variables';
-
 export default defineEventHandler(async event => {
-  // TODO: Add server/tsconfig.json. See https://content.nuxt.com/docs/utils/query-collection#server-usage
-  // @ts-expect-error See TODO
+  const { url: siteUrl } = getSiteConfig(event);
+
   const posts = await queryCollection(event, 'blog')
     .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
     .order('createdAt', 'DESC')
@@ -13,16 +12,16 @@ export default defineEventHandler(async event => {
 
   const feed = new Feed({
     description: appTitle,
-    link: `${process.env.BASE_URL}/blog`,
+    link: `${siteUrl}/blog`,
     title: appName,
   });
 
   for (const post of posts) {
-    const url = `${process.env.BASE_URL}${post.path}`;
+    const url = `${siteUrl}${post.path}`;
 
     feed.addItem({
       content: endent`
-        <p><img alt="Cover image" src="${process.env.BASE_URL}${post.path}/banner.png"></p>
+        <p><img alt="Cover image" src="${siteUrl}${post.path}/banner.png"></p>
         ${post.bodyHtml}
       `,
       date: new Date(post.createdAt),

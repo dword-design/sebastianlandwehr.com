@@ -4,13 +4,8 @@ import { globalIgnores } from 'eslint/config';
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default await withNuxt(
-  globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts', 'ecosystem.json']),
+  globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts', 'nuxt.config.ts', 'ecosystem.json']),
   config,
-{
-  rules: {
-    'import-x/no-unresolved': ['error', { ignore: ['#content'] }],
-  },
-},
   {
     files: ['**/pages/**/*.{vue,ts}', 'server/api/**/*.ts'],
     rules: {

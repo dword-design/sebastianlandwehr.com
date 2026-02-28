@@ -6,7 +6,7 @@
       class="level-item"
       :style="{ maxWidth: '9rem' }"
     >
-      <a :href="library.websiteUrl" target="_blank">
+      <a :href="library.websiteUrl" rel="noopener" target="_blank">
         <img :alt="library.title" :src="library.imageUrl" />
       </a>
     </li>

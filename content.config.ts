@@ -7,8 +7,8 @@ export default defineContentConfig({
       asSitemapCollection({
         schema: z.object({
           bodyHtml: z.string(),
-          createdAt: z.date(),
-          updatedAt: z.date(),
+          createdAt: z.string().datetime(),
+          updatedAt: z.string().datetime(),
         }),
         source: 'blog/*.md',
         type: 'page',

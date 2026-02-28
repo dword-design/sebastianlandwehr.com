@@ -44,6 +44,7 @@
         :aria-label="account.title"
         class="navbar-item is-inline-flex"
         :href="account.url"
+        rel="noopener"
         tag="a"
         target="_blank"
       >
@@ -59,9 +60,7 @@
 </template>
 
 <script setup lang="ts">
-import { appName, appTitle } from '@@/model/variables';
-
-const NuxtLink = resolveComponent('NuxtLink');
+import { NuxtLink } from '#components';
 
 const accounts = [
   {

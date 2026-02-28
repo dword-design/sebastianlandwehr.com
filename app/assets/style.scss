@@ -3,7 +3,7 @@
 $primary: #3273dc;
 $link: $primary;
 
-@use "@dword-design/nuxt-buefy/style" as bulma with (
+@use "bulma/sass" as bulma with (
   $fullhd-enabled: false,
 
   // $widescreen-enabled: false,
@@ -24,6 +24,7 @@ $link: $primary;
   $card-radius: 0.25rem,
   $radius: 4px
 );
+@use "@dword-design/nuxt-buefy/style";
 @use "bulma/sass/utilities/mixins";
 
 :root {

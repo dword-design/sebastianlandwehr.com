@@ -13,6 +13,7 @@
               <b-button
                 href="/feed"
                 icon-left="mdi-rss"
+                rel="noopener"
                 tag="a"
                 target="_blank"
                 type="is-small is-rounded"
@@ -22,14 +23,26 @@
             </p>
             <p>
               I'm also publishing on{{ ' ' }}
-              <a href="https://dev.to/seblandwehr" target="_blank">
+              <a
+                href="https://dev.to/seblandwehr"
+                rel="noopener"
+                target="_blank"
+              >
                 <strong>dev.to</strong>
               </a>
               ,{{ ' ' }}
-              <a href="https://dworddesign.hashnode.dev" target="_blank">
+              <a
+                href="https://dworddesign.hashnode.dev"
+                rel="noopener"
+                target="_blank"
+              >
                 <strong>Hashnode</strong> </a
               >{{ ' ' }} and{{ ' ' }}
-              <a href="https://sebastianlandwehr.medium.com" target="_blank">
+              <a
+                href="https://sebastianlandwehr.medium.com"
+                rel="noopener"
+                target="_blank"
+              >
                 <strong>Medium</strong>
               </a>
               .

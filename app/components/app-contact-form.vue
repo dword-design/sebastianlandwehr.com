@@ -41,8 +41,6 @@
 <script setup lang="ts">
 import endent from 'endent';
 
-import { appName } from '@@/model/variables';
-
 const {
   vueApp: {
     config: {
