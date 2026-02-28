@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^16.1.6",
-    "@dword-design/base-config-app": "^8.0.0",
+    "@dword-design/base-config-app": "^9.0.0",
     "@playwright/browser-chromium": "^1.57.0",
     "@playwright/test": "^1.57.0",
     "@types/lodash-es": "^4.17.12",
