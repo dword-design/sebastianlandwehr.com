@@ -60,8 +60,8 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1
       nuxt-mail:
-        specifier: ^8.0.2
-        version: 8.0.2(h3@1.15.5)(magicast@0.5.2)(nitropack@2.13.1(better-sqlite3@12.6.2))(ofetch@2.0.0-alpha.3)
+        specifier: ^8.0.3
+        version: 8.0.3(h3@1.15.5)(magicast@0.5.2)(nitropack@2.13.1(better-sqlite3@12.6.2))(ofetch@2.0.0-alpha.3)
       nuxt-svgo-loader:
         specifier: ^0.6.3
         version: 0.6.3(magicast@0.5.2)(oxc-parser@0.112.0)(vite@7.3.1(@types/node@25.3.2)(jiti@2.6.1)(sass-embedded@1.97.3)(sass@1.97.3)(terser@5.46.0)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.29(typescript@5.9.3))
@@ -5746,8 +5746,8 @@ packages:
     resolution: {integrity: sha512-1k6BC5E/UjL8eb51bHm97VIVHoagVhTGesESDchM4nszEkYd86C+8FK2JBGBGPnUJDYpNvUOsI5xJ9Y7MKnd9w==}
     engines: {node: '>=18'}
 
-  nuxt-mail@8.0.2:
-    resolution: {integrity: sha512-KuTgSBY0Sciqs9GoA0t4O8Q/y2QjQdIiBAnJjGtKD/PXhDPxd6otyWJeYDkVwqLfBr7GzI+cmM9ZBFTBq/b9GQ==}
+  nuxt-mail@8.0.3:
+    resolution: {integrity: sha512-XH8h1b0EJAkDnnLnCWexcah+SXhPWiFhDl5YIK1xEhYpw+EDjRjwwQeEEjhgvwZRHi2iEOy82veHkjuf5NHjZg==}
     engines: {node: '>=22'}
     peerDependencies:
       h3: '*'
@@ -14932,7 +14932,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  nuxt-mail@8.0.2(h3@1.15.5)(magicast@0.5.2)(nitropack@2.13.1(better-sqlite3@12.6.2))(ofetch@2.0.0-alpha.3):
+  nuxt-mail@8.0.3(h3@1.15.5)(magicast@0.5.2)(nitropack@2.13.1(better-sqlite3@12.6.2))(ofetch@2.0.0-alpha.3):
     dependencies:
       '@nuxt/kit': 4.3.1(magicast@0.5.2)
       '@types/lodash-es': 4.17.12

@@ -45,7 +45,7 @@
     "lodash-es": "^4.17.23",
     "nuxt-content-body-html": "^4.0.4",
     "nuxt-content-git": "^6.0.1",
-    "nuxt-mail": "^8.0.2",
+    "nuxt-mail": "^8.0.3",
     "nuxt-svgo-loader": "^0.6.3",
     "port-ready": "^0.1.0",
     "rehype-autolink-headings": "^7.1.0",
