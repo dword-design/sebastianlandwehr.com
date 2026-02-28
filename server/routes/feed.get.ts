@@ -1,11 +1,8 @@
+import { queryCollection } from '@nuxt/content/server'; // TODO: Otherwise type error
 import endent from 'endent';
 import { Feed } from 'feed';
 
-import { appName, appTitle } from '@@/model/variables';
-
 export default defineEventHandler(async event => {
-  // TODO: Add server/tsconfig.json. See https://content.nuxt.com/docs/utils/query-collection#server-usage
-  // @ts-expect-error See TODO
   const posts = await queryCollection(event, 'blog')
     .select('bodyHtml', 'createdAt', 'description', 'path', 'title')
     .order('createdAt', 'DESC')

@@ -44,6 +44,7 @@
             integrated and automatically tested. Also, I'm using{{ ' ' }}
             <a
               href="https://www.whitesourcesoftware.com/free-developer-tools/renovate/"
+              rel="noopener"
               target="_blank"
             >
               Renovate
@@ -86,6 +87,7 @@
               <a
                 class="is-block mx-auto"
                 :href="platform.url"
+                rel="noopener"
                 :style="{ maxWidth: platform.imageMaxWidth || '13rem' }"
                 target="_blank"
               >
@@ -110,7 +112,6 @@
 
 <script setup lang="ts">
 import imageUrl from '@/assets/support-me.jpg';
-import donationPlatforms from '@@/model/donation-platforms';
 
 useHead({ title: 'Support me' });
 </script>

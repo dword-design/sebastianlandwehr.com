@@ -24,6 +24,7 @@
         <b-button
           href="/feed"
           icon-left="mdi-rss"
+          rel="noopener"
           tag="a"
           target="_blank"
           type="is-small is-rounded"

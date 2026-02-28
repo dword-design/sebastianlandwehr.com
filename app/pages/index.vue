@@ -57,7 +57,11 @@
         <p class="has-text-centered mb-6 is-size-5">
           <span class="icon-text">
             <b-icon aria-hidden="true" icon="mdi-arrow-right-bold" />
-            <a href="https://github.com/dword-design" target="_blank">
+            <a
+              href="https://github.com/dword-design"
+              rel="noopener"
+              target="_blank"
+            >
               Find more libraries on GitHub
             </a>
           </span>
@@ -75,7 +79,4 @@
 
 <script setup lang="ts">
 import portraitUrl from '@/assets/portrait.jpg';
-import individualProjects from '@@/model/individual-projects';
-import openSourceLibraries from '@@/model/open-source-libraries';
-import websitesAndWebApps from '@@/model/websites-and-web-apps';
 </script>

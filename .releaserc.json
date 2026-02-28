@@ -19,7 +19,7 @@
     [
       "@semantic-release/exec",
       {
-        "publishCmd": "pm2 deploy production --force"
+        "publishCmd": "ansible-playbook playbook.yml -i .inventory"
       }
     ]
   ]

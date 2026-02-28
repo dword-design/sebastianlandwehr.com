@@ -15,5 +15,5 @@
 /dist
 /nginx/default.config
 /node_modules
-/nuxt.config.ts
 /test-results
+/tsconfig.tsbuildinfo

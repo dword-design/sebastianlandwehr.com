@@ -23,6 +23,7 @@
             <a
               class="is-stretched has-text-dark"
               :href="project.projectUrl"
+              rel="noopener"
               target="_blank"
             >
               {{ project.title }}

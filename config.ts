@@ -1,9 +1,6 @@
-import { createResolver } from '@nuxt/kit';
 import packageName from 'depcheck-package-name';
 
-import { appName, appTitle } from './model/variables';
-
-const resolver = createResolver(import.meta.url);
+import { appName, appTitle } from './shared/utils/variables';
 
 /* if (process.env.CODESPACES) {
   process.env.BASE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
@@ -46,7 +43,6 @@ export default {
   },
   css: ['@/assets/style.scss'],
   devtools: { enabled: false },
-  future: { compatibilityVersion: 4 },
   modules: [
     '@dword-design/nuxt-buefy',
     'nuxt-svgo-loader',
@@ -87,7 +83,6 @@ export default {
     }))] : [], */
   ],
   name: appName,
-  nitro: { externals: { inline: [resolver.resolve('./model')] } },
   ogImage: `${process.env.BASE_URL}/images/og-image.png`,
   router: { options: { linkActiveClass: 'is-active' } },
   site: { url: process.env.BASE_URL },
