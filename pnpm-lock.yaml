@@ -57,8 +57,8 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4(@nuxt/content@3.12.0(better-sqlite3@12.6.2)(magicast@0.5.2))(@nuxtjs/mdc@0.20.1(magicast@0.5.2))(magicast@0.5.2)
       nuxt-content-git:
-        specifier: ^6.0.1
-        version: 6.0.1
+        specifier: ^7.0.0
+        version: 7.0.0(magicast@0.5.2)
       nuxt-mail:
         specifier: ^8.0.4
         version: 8.0.4(h3@1.15.5)(magicast@0.5.2)(nitropack@2.13.1(better-sqlite3@12.6.2))(ofetch@2.0.0-alpha.3)
@@ -5742,9 +5742,9 @@ packages:
       '@nuxt/content': ^3
       '@nuxtjs/mdc': ^0.16
 
-  nuxt-content-git@6.0.1:
-    resolution: {integrity: sha512-1k6BC5E/UjL8eb51bHm97VIVHoagVhTGesESDchM4nszEkYd86C+8FK2JBGBGPnUJDYpNvUOsI5xJ9Y7MKnd9w==}
-    engines: {node: '>=18'}
+  nuxt-content-git@7.0.0:
+    resolution: {integrity: sha512-imQnWDfiB0WONrEBSrc/0H+Em2FCnyiHfhXNc1yzr8nHw02ePSZTl+SOqa4oCFCopWzPLB9l3MNQCUKK1OBKqw==}
+    engines: {node: '>=22'}
 
   nuxt-mail@8.0.4:
     resolution: {integrity: sha512-0jUMIBg14yhzHr207ch9Oa3MqlMhUf9ujwjfR0NURdWtiL5dbg+Yn2Vigt2gvpGtnpqICY4xVJfMloH4EHmhWg==}
@@ -14920,11 +14920,12 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  nuxt-content-git@6.0.1:
+  nuxt-content-git@7.0.0(magicast@0.5.2):
     dependencies:
-      lodash-es: 4.17.23
+      '@nuxt/kit': 4.3.1(magicast@0.5.2)
       simple-git: 3.32.3
     transitivePeerDependencies:
+      - magicast
       - supports-color
 
   nuxt-mail@8.0.4(h3@1.15.5)(magicast@0.5.2)(nitropack@2.13.1(better-sqlite3@12.6.2))(ofetch@2.0.0-alpha.3):
