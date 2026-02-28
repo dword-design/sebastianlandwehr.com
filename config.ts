@@ -3,7 +3,7 @@ import packageName from 'depcheck-package-name';
 import { appName, appTitle } from './shared/utils/variables';
 
 /* if (process.env.CODESPACES) {
-  process.env.BASE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
+  process.env.NUXT_SITE_URL = `https://${process.env.CODESPACE_NAME}-${process.env.PORT}.app.github.dev`;
 } */
 
 export default {
@@ -46,13 +46,7 @@ export default {
   modules: [
     '@dword-design/nuxt-buefy',
     'nuxt-svgo-loader',
-    [
-      'nuxt-mail',
-      {
-        message: { to: 'info@sebastianlandwehr.com' },
-        smtp: JSON.parse(process.env.MAIL_CONFIG || '{}'),
-      },
-    ],
+    ['nuxt-mail', { message: { to: 'info@sebastianlandwehr.com' } }],
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     '@nuxt/content',
@@ -70,7 +64,7 @@ export default {
                     return url;
                   }
 
-                  return new URL(url.href, process.env.BASE_URL);
+                  return new URL(url.href, process.env.NUXT_SITE_URL);
                 },
               },
             },
@@ -83,9 +77,7 @@ export default {
     }))] : [], */
   ],
   name: appName,
-  ogImage: `${process.env.BASE_URL}/images/og-image.png`,
   router: { options: { linkActiveClass: 'is-active' } },
-  site: { url: process.env.BASE_URL },
   title: appTitle,
   vite: {
     css: {

@@ -21,8 +21,8 @@ jobs:
       - run: git config --global user.name "GitHub Actions"
       - run: pnpm install --frozen-lockfile
       - env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          MAIL_CONFIG: ${{ secrets.MAIL_CONFIG }}
+          NUXT_MAIL_SMTP: ${{ secrets.NUXT_MAIL_SMTP }}
+          NUXT_SITE_URL: ${{ secrets.NUXT_SITE_URL }}
           PORT: ${{ secrets.PORT }}
         run: pnpm verify
       - if: always()
