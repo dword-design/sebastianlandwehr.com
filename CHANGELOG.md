@@ -1,3 +1,14 @@
+## [1.10.88](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.87...v1.10.88) (2026-02-28)
+
+
+### Bug Fixes
+
+* foo ([8377f0d](https://github.com/dword-design/sebastianlandwehr.com/commit/8377f0df26be44e194d236e66d1af63206b45082))
+* lock file maintenance ([#235](https://github.com/dword-design/sebastianlandwehr.com/issues/235)) ([c03fc57](https://github.com/dword-design/sebastianlandwehr.com/commit/c03fc57b683b5a9d2bf8e4ed6e7d1ce30068bce6))
+* update nuxt-mail ([936191f](https://github.com/dword-design/sebastianlandwehr.com/commit/936191f8a18c5c514ebe0e3d6626b07e119807f0))
+* update nuxt-mail ([43bdea8](https://github.com/dword-design/sebastianlandwehr.com/commit/43bdea8e1e1664a8f837c1a3da0c4c02ec9ffdbb))
+* updates and rolling deployment ([#237](https://github.com/dword-design/sebastianlandwehr.com/issues/237)) ([1d4012e](https://github.com/dword-design/sebastianlandwehr.com/commit/1d4012e17360b2ac0f48b3520ae087bf304d941b))
+
 ## [1.10.87](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.86...v1.10.87) (2025-12-29)
 
 
