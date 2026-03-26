@@ -10,7 +10,8 @@
     "enabled": false
   },
   "ignorePaths": [
-    "docker-compose.yml"
+    "docker-compose.yml",
+    "requirements.yml"
   ],
   "labels": [
     "maintenance"
