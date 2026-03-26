@@ -1,3 +1,10 @@
+## [1.10.93](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.92...v1.10.93) (2026-03-26)
+
+
+### Bug Fixes
+
+* ignore requirements.yml for renovate ([92c6fa5](https://github.com/dword-design/sebastianlandwehr.com/commit/92c6fa58ec5aeb564b914a071b844936e2187ee0))
+
 ## [1.10.92](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.91...v1.10.92) (2026-03-23)
 
 
