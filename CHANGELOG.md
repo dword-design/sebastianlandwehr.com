@@ -1,3 +1,11 @@
+## [1.10.105](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.104...v1.10.105) (2026-05-27)
+
+
+### Bug Fixes
+
+* fix zero downtime deployment ([7e2cf50](https://github.com/dword-design/sebastianlandwehr.com/commit/7e2cf50f13edf8b5f0015424fc457b82bb0da54c))
+* update config files ([15eb749](https://github.com/dword-design/sebastianlandwehr.com/commit/15eb74973ed77ce76c1293b766e396e3d7a37d7f))
+
 ## [1.10.104](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.103...v1.10.104) (2026-05-27)
 
 
