@@ -1,3 +1,11 @@
+## [1.10.104](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.103...v1.10.104) (2026-05-27)
+
+
+### Bug Fixes
+
+* revert last change ([925fea3](https://github.com/dword-design/sebastianlandwehr.com/commit/925fea37bb94bf75d44f0d3c1d37043e608a34ca))
+* test deployment ([046e597](https://github.com/dword-design/sebastianlandwehr.com/commit/046e5978cbc2862915be16df688dceaf75f45b81))
+
 ## [1.10.103](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.102...v1.10.103) (2026-05-27)
 
 
