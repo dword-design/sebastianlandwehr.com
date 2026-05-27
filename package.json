@@ -20,8 +20,6 @@
     "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "pull": "base pull",
-    "push": "base push",
     "start": "base start",
     "test": "base test",
     "test:raw": "base test:raw",
