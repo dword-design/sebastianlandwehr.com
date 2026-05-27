@@ -1,10 +1,11 @@
 {
   "apps": [
     {
+      "cwd": "/var/www/sebastianlandwehr.com/current",
       "exec_mode": "cluster",
       "instances": "max",
-      "kill_timeout": 10000,
-      "listen_timeout": 20000,
+      "kill_timeout": 100000,
+      "listen_timeout": 100000,
       "name": "sebastianlandwehr.com",
       "script": "./prod-entry.mjs"
     }
