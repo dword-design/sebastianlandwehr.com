@@ -1,3 +1,10 @@
+## [1.10.103](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.102...v1.10.103) (2026-05-27)
+
+
+### Bug Fixes
+
+* fix prod downtime ([7d1faf7](https://github.com/dword-design/sebastianlandwehr.com/commit/7d1faf79af0c4a5a2b68658f245a31c55db7caf0))
+
 ## [1.10.102](https://github.com/dword-design/sebastianlandwehr.com/compare/v1.10.101...v1.10.102) (2026-05-25)
 
 
