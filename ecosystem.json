@@ -1,11 +1,12 @@
 {
   "apps": [
     {
-      "args": "-- node .output/server/index.mjs",
       "exec_mode": "cluster",
       "instances": "max",
+      "kill_timeout": 10000,
+      "listen_timeout": 20000,
       "name": "sebastianlandwehr.com",
-      "script": "dotenv-json-extended"
+      "script": "./prod-entry.mjs"
     }
   ]
 }

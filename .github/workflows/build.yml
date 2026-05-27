@@ -44,7 +44,7 @@ jobs:
         run: pnpm build
       - if: github.ref == 'refs/heads/master'
         name: Create deploy artifact
-        run: tar -czf deploy.tgz .output .env.schema.json ecosystem.json
+        run: tar -czf deploy.tgz .output .env.schema.json ecosystem.json prod-entry.mjs
       - if: github.ref == 'refs/heads/master'
         name: Install Python
         uses: actions/setup-python@v4

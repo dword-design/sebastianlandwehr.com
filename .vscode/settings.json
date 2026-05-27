@@ -40,6 +40,7 @@
     "nuxt.config.ts": true,
     "playbook.yml": true,
     "pnpm-lock.yaml": true,
+    "prod-entry.mjs": true,
     "requirements.yml": true
   },
   "workbench.editor.enablePreview": false

@@ -4,7 +4,7 @@ import { globalIgnores } from 'eslint/config';
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default await withNuxt(
-  globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts', 'nuxt.config.ts', 'ecosystem.json']),
+  globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts', 'nuxt.config.ts', 'ecosystem.json', 'prod-entry.mjs']),
   config,
   {
     files: ['**/pages/**/*.{vue,ts}', 'server/api/**/*.ts'],
